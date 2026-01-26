@@ -11,7 +11,10 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage --maxWorkers=2",
-    "postbuild": "prisma generate"
+    "postbuild": "prisma generate",
+    "tokens:config": "bash CONFIGURAR_TOKENS.sh",
+    "tokens:verify": "bash scripts/verificar-tokens.sh",
+    "tokens:load": "source scripts/carregar-env.sh"
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",

@@ -1,0 +1,13 @@
+# Git Large File Storage (LFS)
+# Arquivos grandes serão gerenciados pelo Git LFS
+
+# Arquivos PowerPoint grandes (>50MB)
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.ppsx filter=lfs diff=lfs merge=lfs -text
+
+# Arquivos de vídeo (se adicionar no futuro)
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+
+# Arquivos ZIP grandes
+*.zip filter=lfs diff=lfs merge=lfs -text
