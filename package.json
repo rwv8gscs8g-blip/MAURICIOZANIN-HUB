@@ -1,6 +1,6 @@
 {
   "name": "mauriciozanin-hub",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,7 +14,14 @@
     "postbuild": "prisma generate",
     "tokens:config": "bash CONFIGURAR_TOKENS.sh",
     "tokens:verify": "bash scripts/verificar-tokens.sh",
-    "tokens:load": "source scripts/carregar-env.sh"
+    "tokens:load": "source scripts/carregar-env.sh",
+    "version:get": "node scripts/version-manager.js get",
+    "version:increment": "node scripts/version-manager.js increment",
+    "version:info": "node scripts/version-manager.js info",
+    "prebuild": "node scripts/pre-build.js",
+    "deploy:dev": "bash scripts/deploy-dev.sh",
+    "deploy:preview": "bash scripts/deploy-preview.sh",
+    "deploy:prod": "bash scripts/deploy-production.sh"
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",

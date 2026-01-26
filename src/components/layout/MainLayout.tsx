@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Building2, FileText, Share2, BarChart3, Calendar, Newspaper } from "lucide-react";
 import { useAccessTracking } from "@/hooks/useAccessTracking";
+import { VersionFooter } from "./VersionFooter";
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -80,6 +81,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             <p className="text-fluid-xs text-[#64748B] mt-2">
               Especialista em Governança e Compras Públicas
             </p>
+            <VersionFooter />
           </div>
         </div>
       </footer>
