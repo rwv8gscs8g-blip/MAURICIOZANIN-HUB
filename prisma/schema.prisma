@@ -1,0 +1,254 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  ADMIN
+  CLIENTE
+  ALUNO
+}
+
+enum CaseStatus {
+  PENDENTE
+  EM_ANALISE
+  CONCLUIDO
+  ARQUIVADO
+}
+
+enum PublicationCategory {
+  CARTILHA_SEBRAE
+  ARTIGO_TECNICO
+  PROJETO_INTERNACIONAL
+  OUTRO
+}
+
+enum NewsStatus {
+  PENDENTE
+  APROVADO
+  REJEITADO
+}
+
+enum EventType {
+  VIDEO
+  DOC
+  NEWS
+  PROJECT
+  PUBLICATION
+}
+
+enum EventCategory {
+  INOVAJUNTOS
+  COOPERACAO_INTERNACIONAL
+  CNM
+  SEBRAE
+  OUTRO
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  role      UserRole @default(CLIENTE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relacionamentos
+  consultancyCases ConsultancyCase[]
+  meetings         Meeting[]
+  resourceDownloads ResourceDownload[]
+}
+
+model ConsultancyCase {
+  id          String     @id @default(cuid())
+  title       String
+  description String?
+  status      CaseStatus @default(PENDENTE)
+  diagnosis   String?    // Diagnóstico do caso
+  clientId    String
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  // Relacionamentos
+  client  User            @relation(fields: [clientId], references: [id])
+  files   CaseFile[]
+  reports Report[]
+}
+
+model CaseFile {
+  id        String   @id @default(cuid())
+  filename  String
+  url       String
+  caseId    String
+  createdAt DateTime @default(now())
+
+  case ConsultancyCase @relation(fields: [caseId], references: [id], onDelete: Cascade)
+}
+
+model Resource {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  type        String   // pdf, doc, xls, etc
+  syncUrl     String   // URL do Sync.com
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relacionamentos
+  downloads ResourceDownload[]
+}
+
+model ResourceDownload {
+  id         String   @id @default(cuid())
+  resourceId String
+  userId     String?
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  resource Resource @relation(fields: [resourceId], references: [id])
+  user     User?    @relation(fields: [userId], references: [id])
+}
+
+model Meeting {
+  id          String    @id @default(cuid())
+  title       String
+  description String?
+  startTime   DateTime
+  endTime     DateTime?
+  zoomUrl     String?
+  zoomId      String?
+  zoomPasscode String?
+  userId      String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model Report {
+  id        String   @id @default(cuid())
+  caseId    String
+  data      Json     // JSON de análise de documentos
+  createdAt DateTime @default(now())
+
+  case ConsultancyCase @relation(fields: [caseId], references: [id], onDelete: Cascade)
+}
+
+model Publication {
+  id          String              @id @default(cuid())
+  title       String
+  description String?             // Resumo
+  category    PublicationCategory
+  link        String?             // URL externa
+  dateOriginal DateTime           // Data original da publicação (permite retroação)
+  coverImage  String?             // URL da imagem de capa
+  isActive    Boolean             @default(true)
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+}
+
+model NewsMention {
+  id          String      @id @default(cuid())
+  url         String      @unique
+  title       String
+  source      String      // Nome da fonte (ex: "Folha de S.Paulo")
+  excerpt     String?     // Trecho da notícia
+  status      NewsStatus  @default(PENDENTE)
+  publishedAt DateTime?   // Data da publicação original
+  validatedAt DateTime?   // Data da validação
+  validatedBy String?    // ID do usuário que validou
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+model ProjectEvent {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  date        DateTime // Data do evento (permite retroação)
+  projectId   String?  // ID do projeto relacionado (ex: "inovajuntos")
+  projectName String?  // Nome do projeto (ex: "Rede Inovajuntos")
+  location    String?  // Local do evento
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model LinkedInPost {
+  id          String   @id @default(cuid())
+  postId      String   @unique // ID do post no LinkedIn
+  content     String   // Texto do post
+  imageUrl    String?  // URL da imagem se houver
+  linkUrl     String?  // Link compartilhado
+  publishedAt DateTime // Data de publicação no LinkedIn
+  likes       Int      @default(0)
+  comments    Int      @default(0)
+  shares      Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Event {
+  id          String        @id @default(cuid())
+  title       String
+  description String?
+  date        DateTime      // Data do evento (permite retroação)
+  type        EventType
+  category    EventCategory
+  url         String?       // URL do vídeo, documento ou notícia
+  thumbnailUrl String?      // Thumbnail para vídeos
+  duration    Int?          // Duração em segundos (para vídeos)
+  isActive    Boolean       @default(true)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([date])
+  @@index([type])
+  @@index([category])
+}
+
+model Lead {
+  id            String   @id @default(cuid())
+  name          String
+  email         String
+  organization  String?
+  interestArea  String?  // Área de interesse
+  phone         String?
+  message       String?
+  source        String?  // Origem do lead (ex: "compartilhe", "sobre")
+  referrer      String?  // URL de referência
+  userAgent     String?  // User agent do navegador
+  ipAddress     String?  // IP do visitante
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([email])
+  @@index([createdAt])
+  @@index([source])
+}
+
+model AccessLog {
+  id            String   @id @default(cuid())
+  path          String   // Rota acessada
+  referrer      String?  // URL de referência (Wikipedia, LinkedIn, etc.)
+  userAgent     String?  // User agent
+  ipAddress     String?  // IP do visitante
+  source        String?  // Fonte identificada (wikipedia, linkedin, google, etc.)
+  country       String?  // País (opcional, via geolocalização)
+  createdAt     DateTime @default(now())
+
+  @@index([path])
+  @@index([source])
+  @@index([createdAt])
+  @@index([referrer])
+}

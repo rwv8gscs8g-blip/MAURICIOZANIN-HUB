@@ -1,0 +1,58 @@
+name: Pre-Deploy Validation
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate Before Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run test:ci
+
+      - name: Build check
+        run: npm run build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL || 'postgresql://test:test@localhost:5432/test' }}
+          NEXT_PUBLIC_SITE_URL: https://mauriciozanin.com.br
+
+      - name: Check for common issues
+        run: |
+          echo "Checking for common deployment issues..."
+          
+          # Check for console.log in production code
+          if grep -r "console.log" src/ --exclude-dir=__tests__; then
+            echo "⚠️ Warning: console.log found in source code"
+          fi
+          
+          # Check for TODO/FIXME
+          if grep -r "TODO\|FIXME" src/; then
+            echo "⚠️ Warning: TODO/FIXME comments found"
+          fi
+          
+          # Check for hardcoded URLs
+          if grep -r "localhost\|127.0.0.1" src/ --exclude-dir=__tests__; then
+            echo "⚠️ Warning: Hardcoded localhost found"
+          fi
