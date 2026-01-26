@@ -56,7 +56,7 @@ export default function SobrePage() {
               className="bg-gradient-to-br from-[#1E3A8A]/5 to-transparent border-l-4 border-[#1E3A8A] p-6 rounded-r-lg"
             >
               <h2 className="text-fluid-xl font-bold text-[#0F172A] mb-4 tracking-tight">
-                Formação e Atuação
+                Mini-Currículo: Formação e Atuação
               </h2>
               <div className="space-y-4 text-fluid-base text-[#0F172A] leading-[1.8]">
                 <div>
@@ -79,12 +79,12 @@ export default function SobrePage() {
                   </p>
                 </div>
                 <div>
-                  <p className="font-semibold text-[#1E3A8A] mb-2">Relacionamento com Órgãos de Controle, Municípios e Poderes Públicos</p>
+                  <p className="font-semibold text-[#1E3A8A] mb-2">Relacionamento com Órgãos de Controle, Municípios, Poderes Públicos e clientes</p>
                   <p>
                     Realiza as ações junto aos órgãos de controle como{" "}
                     <strong>Tribunais de Contas</strong>, <strong>Atricon</strong>,{" "}
                     <strong>Ministério Público</strong>, <strong>AGU</strong> e{" "}
-                    <strong>procuradorias</strong>  incentivando políticas de governança e melhoria da Getão Pública bem como atua com e demais clientes na promoção desenvolvimento de políticas públicas municipais para a promoção do desenvolvimento econômico local e regional assim como atua na estruturação pragmática de obtenção dos ODS em municípios e na implementação da Nova Agenda Urbana - NAU
+                    <strong>procuradorias</strong>  incentivando e implementando políticas de governança e melhoria da Getão Pública bem como atua com e demais clientes na promoção desenvolvimento de políticas públicas municipais para a promoção do desenvolvimento econômico local e regional assim como atua na estruturação pragmática de obtenção dos ODS em municípios e na implementação da Nova Agenda Urbana - NAU
                   </p>
                 </div>
               </div>

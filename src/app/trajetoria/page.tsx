@@ -16,15 +16,6 @@ function cleanUrl(url?: string): string | undefined {
   return url;
 }
 
-// Função para limpar URLs do formato markdown
-function cleanUrl(url?: string): string | undefined {
-  if (!url) return undefined;
-  // Remove markdown links [texto](url) e retorna apenas a URL
-  const markdownMatch = url.match(/\[.*?\]\((.*?)\)/);
-  if (markdownMatch) return markdownMatch[1];
-  return url;
-}
-
 // Eventos extraídos dos relatórios do InovaJuntos (2020-2024)
 const mockEvents = [
   // Eventos de 2020 (do relatório processado)
