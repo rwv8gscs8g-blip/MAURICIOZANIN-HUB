@@ -238,8 +238,21 @@ export default function SobrePage() {
                     <SectionTitle color="bg-purple-600">Formação Acadêmica</SectionTitle>
                     <div className="grid md:grid-cols-2 gap-4 print:gap-2">
                       <div className="print:mb-2">
-                        <p className="font-bold text-slate-900 print:text-black">Bacharel em Administração Pública</p>
-                        <p className="text-slate-600 print:text-black text-sm">Universidade Estadual Paulista (UNESP)</p>
+                        <div className="text-slate-700 font-medium print:text-black">
+                          Bacharel em Administração Pública
+                        </div>
+                        <div className="text-slate-500 text-sm print:text-black">
+                          Universidade Estadual Paulista (UNESP)
+                        </div>
+
+                        <div className="mt-4">
+                          <h4 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-2">Idiomas</h4>
+                          <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-slate-700 print:text-black">
+                            <li><strong>Português:</strong> Nativo</li>
+                            <li><strong>Inglês:</strong> Fluente</li>
+                            <li><strong>Espanhol:</strong> Fluente</li>
+                          </ul>
+                        </div>
                       </div>
                       <div>
                         <p className="font-bold text-slate-900 print:text-black">MBA em Políticas Públicas</p>
@@ -282,11 +295,11 @@ export default function SobrePage() {
 
                     <ExperienceItem
                       role="Consultor Internacional em Governança e Compras Públicas"
-                      org="Organismos Multilaterais e Cooperação Técnica Internacional (2002-2024)"
+                      org="Organismos Multilaterais e Cooperação Técnica Internacional (2002-2026)"
                     >
                       <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
                         <li><strong>Portugal:</strong> Consultoria à Presidência do Conselho de Ministros para validação do Plano Nacional de Compras Eletrônicas (PNCE) e implantação de sistemas de compras governamentais junto à UMIC.</li>
-                        <li><strong>América Latina:</strong> Missões técnicas em El Salvador, Guatemala, México, Chile e Bolívia para implementação de sistemas de compras governamentais e transferência de conhecimento brasileiro.</li>
+                        <li><strong>América Latina:</strong> Missões técnicas em El Salvador, Guatemala, México, Argentina e outros países, para implementação de sistemas de compras governamentais e transferência de conhecimento brasileiro.</li>
                         <li><strong>Europa:</strong> Participação como orador em fóruns da União Europeia, incluindo Lisbon Information Society Forum, Smart City Expo Barcelona e EU-Latin America & Caribbean Forum.</li>
                         <li><strong>Organismos Internacionais:</strong> Colaboração com Organização dos Estados Americanos (OEA), Banco Interamericano de Desenvolvimento (BID) e Programa das Nações Unidas para o Desenvolvimento (PNUD).</li>
                       </ul>
@@ -302,7 +315,7 @@ export default function SobrePage() {
                       org="Gestão de Projetos Tecnológicos e Fortalecimento Institucional"
                     >
                       <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                        <li>Desenvolvimento e coordenação de projetos estratégicos de modernização administrativa municipal. Apresentador do programa da TV CNM - Bate Papo com a CNM. Criador e organizador da Rede de Agentes Municipalistas.</li>
+                        <li>Desenvolvimento e coordenação de projetos estratégicos de modernização administrativa municipal.<br /><br />Apresentador do programa da TV CNM - <strong>Bate Papo com a CNM</strong> como âncora.<br /><br />Criador e organizador da Rede de Agentes Municipalistas.</li>
                         <li>Articulação com Presidência da República, Ministérios e Itamaraty em ações de cooperação Internacional. Representante do SubGrupo 18 do Mercosul para definição de políticas de Integração Transfronteiriça e discussão do impacto do Acordo de Mercado Comum Brasil-União Europeia.</li>
                         <li>Atuação com órgãos de controle, tribunais de contas e ministérios públicos para garantir conformidade e transparência de ações para Municípios.</li>
                         <li>Elaboração de Cartilhas, estudos técnicos e material de qualificação de equipes multidisciplinares. Articulação e Participação da Elaboração dos eventos Marcha a Brasília em Defesa dos Municípios.</li>
@@ -396,6 +409,11 @@ export default function SobrePage() {
                             url="/inovajuntos/relatorio-final/RelatorioTecnicoFinalInovajuntos-MenorResolucao_assinado.pdf"
                             highlight={true}
                           />
+                          <PublicationItem
+                            title="Tese de MBA em Políticas Públicas"
+                            publisher="FGB - Fundação Getulio Vargas (Documento)"
+                            url="/zanin-fgv-final.pdf"
+                          />
                           <PublicationItem title="Compras governamentais com a aplicação dos benefícios para as micro e pequenas empresas: guia do educador" publisher="Brasília: Sebrae, 2009, 368 p." />
                           <PublicationItem title="Compras governamentais: como vender para a administração pública sem risco: guia do educador" publisher="Brasília: SEBRAE, 2009. 308 p. (em coautoria com Noelma Silva)" />
                           <PublicationItem title="Tecnologia e Modernização Administrativa: do Governo Eletrônico à Governança Conectada" publisher="Brasília: CNM, 2008, 104 p." />
@@ -433,10 +451,10 @@ export default function SobrePage() {
                       <div>
                         <h4 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-2">Capacitação e Formação</h4>
                         <ul className="list-disc pl-5 space-y-1 text-sm text-slate-700 print:text-black">
-                          <li>Mais de 100 seminários e capacitações presenciais realizados em 17 estados brasileiros</li>
+                          <li>Mais de 500 seminários e capacitações presenciais realizados em todos estados brasileiros</li>
                           <li>Treinamentos internacionais em Guatemala, El Salvador, México e Portugal</li>
                           <li>Desenvolvimento de metodologias pedagógicas inovadoras (jogos de licitação, workshops participativos)</li>
-                          <li>Criação de plataformas de ensino à distância e conteúdos multimídia</li>
+                          <li>Criação de plataformas de ensino à distância e conteúdos multimídia e professor da Universidade Coorporativa Sebrae</li>
                         </ul>
                       </div>
                     </div>
