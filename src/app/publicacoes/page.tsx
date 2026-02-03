@@ -60,6 +60,33 @@ export default function PublicacoesPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12"
         >
+          {/* Highlight Card */}
+          <div className="mb-12 bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl">
+            <div className="relative z-10 max-w-3xl">
+              <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold uppercase tracking-wider mb-4 border border-white/20">
+                Destaque
+              </div>
+              <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-tight">
+                Relatório de Ações - InovaJuntos 2024
+              </h2>
+              <p className="text-blue-100 text-lg mb-8 leading-relaxed">
+                Acesse o documento completo com os resultados, impactos e boas práticas consolidadas do projeto de cooperação internacional.
+              </p>
+              <a
+                href="/inovajuntos/relatorios/(2024)Relatório de ações - InovaJuntos - Google Docs.pdf"
+                target="_blank"
+                className="inline-flex items-center gap-2 bg-white text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+              >
+                <FileText className="w-5 h-5" />
+                Ler Relatório Completo (PDF)
+              </a>
+            </div>
+            {/* Decorative Background */}
+            <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
+              <Globe className="w-full h-full text-white transform translate-x-1/3 -translate-y-1/3" />
+            </div>
+          </div>
+
           <h1 className="text-fluid-3xl font-bold text-[#0F172A] mb-4 tracking-tight">
             Publicações e Atualizações
           </h1>

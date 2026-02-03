@@ -7,27 +7,17 @@ import { YouTubePlaylist } from "@/components/youtube/YouTubePlaylist";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ProfessionalGallery } from "@/components/gallery/ProfessionalGallery";
 import { professionalPhotos } from "@/data/professional-photos";
-import { Printer, Globe, ShoppingCart } from "lucide-react";
+import { Printer, Globe, ShoppingCart, Mail, Phone, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const biography = {
   name: "Luís Maurício Junqueira Zanin",
-  title: "Estrategista de Compras Públicas & Cooperação Internacional",
-  content: `
-    Luís Maurício Junqueira Zanin é reconhecido como uma das principais autoridades brasileiras em compras governamentais focada na inclusão de Micro e Pequenas Empresas nas contratações públicas para a promoção do desenvolvimento nacional sustentável, cooperação intermunicipal e internacional para compartilhamento e boas práticas e gestão pública. Com mais de 25 anos de experiência dedicados à transformação da administração pública, combina expertise técnica com visão estratégica para resultados transformadores. A Primeira interação com o Compras.gov.br teve inicio no ano 2000 no lançamento do portal.
-
-    Sua trajetória profissional é marcada pela liderança em projetos de grande impacto nacional e internacional. Como Coordenador do Projeto Inovajuntos e fundador da Rede Inovajuntos, consolidou a maior rede de inovação municipal do Brasil, conectando mais de 200 municípios em uma plataforma de compartilhamento de conhecimento e boas práticas em gestão pública.
-
-    Especialista em conformidade legal e implementação de novas legislações, Maurício Zanin tem sido referência na adaptação de municípios à Lei 14.133/2021, a nova lei de licitações e contratos administrativos. Sua abordagem combina rigor técnico com pragmatismo, facilitando a transição de gestores públicos para os novos paradigmas legais.
-
-    No âmbito internacional, atua como consultor de organismos multilaterais, incluindo a União Europeia e agências das Nações Unidas, desenvolvendo projetos de cooperação técnica em compras públicas sustentáveis e governança. Sua expertise transcende fronteiras, contribuindo para o fortalecimento de sistemas de compras públicas em diversos países.
-
-    Como autor e educador, produziu dezenas de publicações técnicas, cartilhas e materiais didáticos que se tornaram referência para gestores públicos. Suas obras abordam desde aspectos práticos de processos licitatórios até estratégias avançadas de cooperação intermunicipal e consórcios públicos.
-
-    A atuação em mídia, especialmente através de programas da Confederação Nacional de Municípios (CNM), amplificou seu alcance, permitindo que milhares de gestores públicos tenham acesso a conhecimento especializado sobre compras governamentais e gestão municipal.
-
-    Sua visão estratégica e capacidade de articulação transformaram a Rede Inovajuntos em um case de sucesso, demonstrando como a cooperação intermunicipal pode gerar resultados concretos em eficiência, economia e qualidade na gestão pública brasileira.
-  `,
+  title: "International Project Manager | Public Procurement & Governance Specialist",
+  summary: `
+    Especialista em gestão de projetos internacionais, com mais de 25 anos de experiência em governança pública, compras públicas sustentáveis e cooperação internacional. Reconhecido pela capacidade de liderar equipes remotas e multiculturais, articular atores institucionais em contextos municipais, nacionais e internacionais, e entregar resultados mensuráveis em projetos de alta complexidade financiados por organismos multilaterais.
+    
+    Expertise consolidada na estruturação de redes institucionais, implementação de agendas globais (ODS, Nova Agenda Urbana) e coordenação de consórcios internacionais em ambientes culturalmente diversos, com foco em diplomacia pública, desenvolvimento institucional e fortalecimento de capacidades locais.
+  `
 };
 
 type CurriculumTab = "compras" | "internacional";
@@ -49,9 +39,14 @@ export default function SobrePage() {
             <h1 className="text-fluid-3xl font-bold text-[#0F172A] mb-2 tracking-tight">
               {biography.name}
             </h1>
-            <p className="text-fluid-lg text-[#64748B] print:text-black">
+            <p className="text-fluid-lg text-[#64748B] print:text-black font-semibold">
               {biography.title}
             </p>
+            <div className="mt-6 text-[#64748B] max-w-4xl mx-auto leading-relaxed print:text-black text-justify">
+              {biography.summary.split('\n').map((paragraph, index) => (
+                <p key={index} className="mb-2">{paragraph.trim()}</p>
+              ))}
+            </div>
           </div>
 
           {/* Controls (No Print) */}
@@ -67,14 +62,14 @@ export default function SobrePage() {
                 )}
               >
                 <ShoppingCart className="w-4 h-4" />
-                Compras Governamentais
+                Governança & Compras
               </button>
               <button
                 onClick={() => setActiveTab("internacional")}
                 className={cn(
                   "flex items-center gap-2 px-6 py-2.5 rounded-md text-sm font-medium transition-all",
                   activeTab === "internacional"
-                    ? "bg-white text-blue-900 shadow-sm"
+                    ? "bg-white text-purple-900 shadow-sm"
                     : "text-slate-500 hover:text-slate-700"
                 )}
               >
@@ -85,16 +80,34 @@ export default function SobrePage() {
 
             <button
               onClick={handlePrint}
-              className="flex items-center gap-2 px-6 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors text-sm font-medium"
+              className="flex items-center gap-2 px-6 py-2.5 bg-[#0066cc] text-white rounded-lg hover:bg-[#0052a3] transition-colors text-sm font-medium shadow-sm"
             >
               <Printer className="w-4 h-4" />
               Imprimir Currículo
             </button>
           </div>
 
+          {/* Contact Info (Print Only) */}
+          <div className="hidden print:block mb-8 border-b border-gray-300 pb-4">
+            <div className="flex flex-wrap gap-6 text-sm">
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                mauriciozanin@me.com
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4" />
+                +55 61 98132-1000
+              </div>
+              <div className="flex items-center gap-2">
+                <Globe className="w-4 h-4" />
+                mauriciozanin.com
+              </div>
+            </div>
+          </div>
+
           {/* Currículo Content */}
           <div className="reading-column mb-16 print:mb-4">
-            <div className="bg-gradient-to-br from-[#1E3A8A]/5 to-transparent border-l-4 border-[#1E3A8A] p-8 md:p-10 rounded-r-lg print:border-l-2 print:border-black print:bg-none print:p-0 print:pl-4">
+            <div className="bg-gradient-to-br from-[#1E3A8A]/5 to-transparent border-l-4 border-[#1E3A8A] p-8 md:p-10 rounded-r-lg print:border-l-0 print:border-none print:bg-none print:p-0">
 
               {/* Tab: Compras Governamentais */}
               {activeTab === "compras" && (
@@ -102,33 +115,51 @@ export default function SobrePage() {
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   key="compras"
+                  className="space-y-8"
                 >
-                  <h2 className="text-2xl font-bold text-[#0F172A] mb-6 tracking-tight flex items-center gap-3">
-                    <span className="w-8 h-1 bg-blue-600 rounded-full block print:bg-black"></span>
-                    Compras Governamentais & Governança
-                  </h2>
-                  <div className="space-y-8 text-[#0F172A] leading-relaxed">
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Formação Acadêmica</h3>
-                      <p>
-                        Formado em <strong>Administração Pública</strong> pela{" "}
-                        <strong>Universidade Estadual Paulista – Unesp</strong> e pós-graduado com{" "}
-                        <strong>MBA em Políticas Públicas</strong> pela{" "}
-                        <strong>Fundação Getúlio Vargas – FGV</strong>.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Atuação Profissional</h3>
-                      <p>
-                        Autor da estratégia e dos conteúdos de compras governamentais do{" "}
-                        <strong>Sebrae Nacional</strong>. Atua como consultor especializado junto ao Ministério da Gestão, Inovação e Governo Digital na evolução dos portais <strong>Compras.gov.br</strong> e <strong>PNCP</strong>.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Consultoria Estratégica</h3>
-                      <p>
-                        Lidera ações junto a órgãos de controle (Tribunais de Contas, Atricon, Ministério Público) para implementação de políticas de governança. Especialista na <strong>Nova Lei de Licitações (14.133/2021)</strong>, capacitando gestores em todo o país.
-                      </p>
+                  <SectionTitle color="bg-blue-600">Experiência em Governança, Compliance e Políticas Públicas</SectionTitle>
+
+                  <ExperienceItem
+                    role="Diretor de Projetos | Gestão de Projetos Tecnológicos e Fortalecimento Institucional"
+                    org="Confederação Nacional de Municípios (2006-2015)"
+                  >
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Desenvolvimento e coordenação de projetos estratégicos de modernização administrativa municipal.</li>
+                      <li>Articulação com tribunais de contas, ministérios públicos e órgãos de controle para garantir conformidade e transparência.</li>
+                      <li>Implementação de políticas de integridade e governança em municípios de diferentes portes.</li>
+                    </ul>
+                  </ExperienceItem>
+
+                  <ExperienceItem
+                    role="Consultor SEBRAE Nacional | Unidade de Políticas Públicas"
+                    org="Estratégia Nacional de Compras Governamentais (2006-2015)"
+                  >
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Desenho da Política Nacional de Compras Públicas do SEBRAE e distribuição de metodologias para todos os SEBRAEs estaduais.</li>
+                      <li>Elaboração de programas estaduais de compras governamentais (Rio de Janeiro, Rio Grande do Sul, Distrito Federal).</li>
+                      <li>Criação de cursos oficiais para compradores públicos e fornecedores, com foco em desenvolvimento local e inclusão de micro e pequenas empresas.</li>
+                      <li>Capacitação de multiplicadores em compras governamentais em 17 estados brasileiros.</li>
+                    </ul>
+                  </ExperienceItem>
+
+                  <ExperienceItem
+                    role="Instrutor e Conteudista"
+                    org="Escola Nacional de Administração Pública (ENAP) (2005-2013)"
+                  >
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Desenvolvimento de conteúdo técnico sobre evolução das compras governamentais no Brasil e no mundo.</li>
+                      <li>Formação de gestores públicos em logística de suprimentos, licitações sustentáveis e políticas públicas aplicadas.</li>
+                      <li>Parceria com Banco Interamericano de Desenvolvimento (BID) para programa de capacitação municipal.</li>
+                    </ul>
+                  </ExperienceItem>
+
+                  <div className="print:break-inside-avoid">
+                    <SectionTitle color="bg-blue-600">Produção Técnica e Publicações Relevantes</SectionTitle>
+                    <div className="space-y-4">
+                      <PublicationItem title="Compras governamentais com a aplicação dos benefícios para as micro e pequenas empresas: guia do educador" publisher="Brasília: Sebrae, 2009, 368 p." />
+                      <PublicationItem title="Compras governamentais: como vender para a administração pública sem risco: guia do educador" publisher="Brasília: SEBRAE, 2009. 308 p. (em coautoria com Noelma Silva)" />
+                      <PublicationItem title="Tecnologia e Modernização Administrativa: do Governo Eletrônico à Governança Conectada" publisher="Brasília: CNM, 2008, 104 p." />
+                      <PublicationItem title="Cartilha do Fornecedor: Compras públicas governamentais: seu novo canal de negócios" publisher="Brasília: CNM, Sebrae, 2008 (em coautoria com Cláudio Pereira Barreto)" />
                     </div>
                   </div>
                 </motion.div>
@@ -140,46 +171,85 @@ export default function SobrePage() {
                   initial={{ opacity: 0, x: 10 }}
                   animate={{ opacity: 1, x: 0 }}
                   key="internacional"
+                  className="space-y-8"
                 >
-                  <h2 className="text-2xl font-bold text-[#0F172A] mb-6 tracking-tight flex items-center gap-3">
-                    <span className="w-8 h-1 bg-purple-600 rounded-full block print:bg-black"></span>
-                    Cooperação Internacional & Projetos
-                  </h2>
-                  <div className="space-y-8 text-[#0F172A] leading-relaxed">
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Liderança de Projetos</h3>
-                      <p>
-                        Coordenador e Fundador da <strong>Rede Inovajuntos</strong>, projeto de cooperação internacional que conecta mais de 200 municípios brasileiros e portugueses para intercâmbio de inovação e tecnologia na gestão pública.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Consultoria Multilateral</h3>
-                      <p>
-                        Consultor para organismos como <strong>União Europeia</strong> e agências da <strong>ONU</strong>. Desenvolve frameworks para compras sustentáveis e localização dos ODS (Objetivos de Desenvolvimento Sustentável) em governos locais.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Nova Agenda Urbana</h3>
-                      <p>
-                        Implementador da Nova Agenda Urbana (NAU), atuando na estruturação pragmática de consórcios públicos intermunicipais e parcerias globais para o desenvolvimento regional sustentável.
-                      </p>
+                  <SectionTitle color="bg-purple-600">Experiência Internacional em Cooperação e Diplomacia Pública</SectionTitle>
+
+                  <ExperienceItem
+                    role="Coordenador Geral - Projeto InovaJuntos (2019-2024)"
+                    org="Confederação Nacional de Municípios (CNM) | Financiamento: União Europeia"
+                  >
+                    <p className="mb-3 italic">Coordenei durante 4 anos um dos maiores projetos de cooperação descentralizada entre Brasil, Portugal e América Latina, envolvendo 19 municípios brasileiros, 12 municípios portugueses e 15 municípios latino-americanos.</p>
+                    <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2">Principais Responsabilidades e Resultados:</h4>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li><strong>Gestão de Consórcio Internacional:</strong> Articulação entre CNM (Brasil) e Centro de Estudos Sociais da Universidade de Coimbra (Portugal), garantindo coerência metodológica e governança multinível.</li>
+                      <li><strong>Coordenação de Equipes Multiculturais:</strong> Liderança de equipes técnicas distribuídas em 3 continentes.</li>
+                      <li><strong>Diplomacia Pública:</strong> Promoção de diálogo contínuo entre governos locais, nacionais e organismos multilaterais (UE, ONU-Habitat).</li>
+                      <li><strong>Implementação de Agendas Globais:</strong> Incorporação dos ODS e da Nova Agenda Urbana em políticas locais.</li>
+                      <li><strong>Monitoramento e Avaliação:</strong> Gestão de logframe, indicadores de impacto e sistema OPSYS da UE (aprovado em auditorias ROM).</li>
+                      <li><strong>Impactos:</strong> 18 espaços de inovação, 19 diagnósticos vocacionais, Rede InovaJuntos criada.</li>
+                    </ul>
+                  </ExperienceItem>
+
+                  <ExperienceItem
+                    role="Consultor Internacional em Governança e Compras Públicas"
+                    org="Organismos Multilaterais e Cooperação Técnica Internacional (2002-2024)"
+                  >
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li><strong>Portugal:</strong> Consultoria à Presidência do Conselho de Ministros para validação do Plano Nacional de Compras Eletrônicas (PNCE).</li>
+                      <li><strong>América Latina:</strong> Missões técnicas em El Salvador, Guatemala, México, Chile e Bolívia para sistemas de compras governamentais.</li>
+                      <li><strong>Europa:</strong> Orador em fóruns da União Europeia (Lisbon Information Society Forum, Smart City Expo Barcelona).</li>
+                      <li><strong>Organismos:</strong> Colaboração com OEA, BID e PNUD.</li>
+                    </ul>
+                  </ExperienceItem>
+
+                  <div className="print:break-inside-avoid">
+                    <SectionTitle color="bg-purple-600">Diferenciais para Projetos de Diplomacia Pública da UE</SectionTitle>
+                    <div className="grid md:grid-cols-2 gap-3">
+                      <CheckItem>Experiência comprovada em coordenação de projetos financiados pela UE</CheckItem>
+                      <CheckItem>Expertise em governança multinível e cooperação descentralizada</CheckItem>
+                      <CheckItem>Histórico de compliance com sistemas de monitoramento da UE</CheckItem>
+                      <CheckItem>Experiência em gestão de equipes remotas e consórcios internacionais</CheckItem>
+                      <CheckItem>Rede consolidada de contatos institucionais</CheckItem>
                     </div>
                   </div>
                 </motion.div>
               )}
-            </div>
-          </div>
 
-          {/* Biografia Completa (Sempre Visível, ajustada para print) */}
-          <div className="reading-column mb-16 print:mb-0">
-            <div className="print:hidden mb-8">
-              <h3 className="text-xl font-bold text-slate-800 border-b border-slate-200 pb-2">Biografia Detalhada</h3>
-            </div>
-            <article className="prose prose-lg max-w-none text-justify print:prose-base">
-              <div className="text-serif text-fluid-base text-[#0F172A] leading-[1.9] whitespace-pre-line">
-                {biography.content.trim()}
+              {/* Shared: Formação e Idiomas (Visible in both prints effectively, or logically placed) */}
+              <div className="mt-12 pt-8 border-t border-gray-200 print:break-inside-avoid">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-800 mb-4 uppercase tracking-wider">Formação Acadêmica</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-bold">MBA em Políticas Públicas</p>
+                        <p className="text-sm text-slate-600">Fundação Getúlio Vargas (FGV)</p>
+                      </div>
+                      <div>
+                        <p className="font-bold">Bacharel em Administração Pública</p>
+                        <p className="text-sm text-slate-600">Universidade Estadual Paulista (UNESP)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-800 mb-4 uppercase tracking-wider">Idiomas</h3>
+                    <ul className="space-y-2">
+                      <li className="flex justify-between border-b border-slate-100 pb-1">
+                        <span>Português</span> <span className="font-semibold text-slate-900">Nativo</span>
+                      </li>
+                      <li className="flex justify-between border-b border-slate-100 pb-1">
+                        <span>Espanhol</span> <span className="font-semibold text-slate-900">Fluente</span>
+                      </li>
+                      <li className="flex justify-between border-b border-slate-100 pb-1">
+                        <span>Inglês</span> <span className="font-semibold text-slate-900">Intermediário</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </article>
+
+            </div>
           </div>
 
           {/* Citation Box (Print Visible) */}
@@ -217,4 +287,43 @@ export default function SobrePage() {
       </div>
     </>
   );
+}
+
+function SectionTitle({ children, color }: { children: React.ReactNode, color: string }) {
+  return (
+    <h2 className="text-xl font-bold text-[#0F172A] mb-6 tracking-tight flex items-center gap-3">
+      <span className={cn("w-8 h-1 rounded-full block print:bg-black", color)}></span>
+      {children}
+    </h2>
+  );
+}
+
+function ExperienceItem({ role, org, children }: { role: string, org: string, children?: React.ReactNode }) {
+  return (
+    <div className="mb-6 print:mb-4">
+      <h3 className="font-bold text-[#1E3A8A] text-lg print:text-black leading-tight">{role}</h3>
+      <div className="text-slate-600 font-medium mb-2 print:text-black">{org}</div>
+      <div className="text-slate-700 leading-relaxed text-sm print:text-black">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function PublicationItem({ title, publisher }: { title: string, publisher: string }) {
+  return (
+    <div className="mb-3">
+      <p className="font-bold text-slate-800 text-sm print:text-black">{title}</p>
+      <p className="text-xs text-slate-500 print:text-black">{publisher}</p>
+    </div>
+  )
+}
+
+function CheckItem({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-start gap-2 text-sm text-slate-700 print:text-black">
+      <span className="text-green-600 font-bold print:text-black">✓</span>
+      <span>{children}</span>
+    </div>
+  )
 }
