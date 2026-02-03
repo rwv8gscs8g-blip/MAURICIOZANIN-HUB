@@ -12,8 +12,29 @@ datasource db {
 
 enum UserRole {
   ADMIN
+  SUPERCONSULTOR
+  MUNICIPIO
+  CONSULTOR
   CLIENTE
-  ALUNO
+}
+
+enum AuthTokenType {
+  MAGIC_LINK
+  PASSWORD_RESET
+}
+
+enum ClassroomSessionStatus {
+  PREPARACAO
+  ATIVA
+  ENCERRADA
+  CANCELADA
+}
+
+enum AccessRole {
+  OWNER
+  EDITOR
+  VIEWER
+  MEMBER
 }
 
 enum CaseStatus {
@@ -36,6 +57,11 @@ enum NewsStatus {
   REJEITADO
 }
 
+enum TimelineVisibility {
+  PUBLICO
+  INTERNO
+}
+
 enum EventType {
   VIDEO
   DOC
@@ -52,11 +78,257 @@ enum EventCategory {
   OUTRO
 }
 
+enum HubAxis {
+  COOPERACAO_INTERNACIONAL
+  COMPRAS_GOVERNAMENTAIS
+  SUPORTE_MUNICIPIOS
+  DESENVOLVIMENTO_SOFTWARE
+}
+
+enum ContentType {
+  PRODUCT
+  NEWS
+  PUBLICATION
+  MEDIA
+  LINKEDIN
+  EVENT
+  DIAGNOSIS
+  DOCUMENT
+}
+
+enum ContentStatus {
+  DRAFT
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum AttachmentType {
+  PDF
+  IMAGE
+  LINK
+  VIDEO
+}
+
+model ClientOrganization {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  logoUrl     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  units    ClientUnit[]
+  products Product[]
+  projects Project[]
+  users    User[]
+  contents ContentItem[]
+  diagnosticos Diagnostico[]
+  resourceAccesses ResourceAccess[]
+  classroomSessions ClassroomSession[]
+  auditLogs AuditLog[]
+}
+
+model ClientUnit {
+  id        String   @id @default(cuid())
+  clientId  String
+  name      String
+  slug      String
+  uf        String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  client   ClientOrganization @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  products Product[]
+  contents ContentItem[]
+  diagnosticos Diagnostico[]
+  resourceAccesses ResourceAccess[]
+  classroomSessions ClassroomSession[]
+  auditLogs AuditLog[]
+
+  @@unique([clientId, slug])
+}
+
+model Product {
+  id              String   @id @default(cuid())
+  clientId        String
+  clientUnitId    String?
+  projectId       String?
+  contentItemId   String?  @unique
+  name            String
+  slug            String
+  description     String?
+  path            String?
+  fileUrl         String?
+  year            Int?
+  hub             HubAxis?
+  isVisiblePublic Boolean  @default(false)
+  isVisibleClient Boolean  @default(true)
+  isVisibleTimeline Boolean @default(false)
+  isVisibleShare Boolean @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  client     ClientOrganization @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  clientUnit ClientUnit?         @relation(fields: [clientUnitId], references: [id], onDelete: SetNull)
+  project    Project?            @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  contentItem ContentItem?       @relation("ProductContent", fields: [contentItemId], references: [id], onDelete: SetNull)
+  atestados  AtestadoProduct[]
+  diagnosticos Diagnostico[]
+
+  @@unique([clientId, slug])
+}
+
+model Atestado {
+  id        String   @id @default(cuid())
+  title     String
+  issuedBy  String?
+  issuedAt  DateTime?
+  summary   String?
+  fileUrl   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  products AtestadoProduct[]
+}
+
+model AtestadoProduct {
+  atestadoId String
+  productId  String
+
+  atestado Atestado @relation(fields: [atestadoId], references: [id], onDelete: Cascade)
+  product  Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@id([atestadoId, productId])
+}
+
+model TimelineItem {
+  id          String             @id @default(cuid())
+  date        DateTime
+  title       String
+  description String?
+  type        EventType
+  category    String?
+  url         String?
+  axis        String?
+  hub         HubAxis?
+  source      String?
+  tags        Json?
+  visibility  TimelineVisibility @default(INTERNO)
+  approved    Boolean            @default(false)
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+}
+
+model ContentItem {
+  id           String        @id @default(cuid())
+  type         ContentType
+  title        String
+  summary      String?
+  body         String?
+  eventDate    DateTime?
+  publishDate  DateTime?
+  status       ContentStatus @default(DRAFT)
+  isPublic     Boolean       @default(false)
+  hub          HubAxis?
+  axis         String?
+  sourceName   String?
+  sourceUrl    String?
+  clientId     String?
+  clientUnitId String?
+  createdById  String?
+  approvedById String?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  client     ClientOrganization? @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  clientUnit ClientUnit?         @relation(fields: [clientUnitId], references: [id], onDelete: SetNull)
+  product    Product?            @relation("ProductContent")
+  createdBy  User?               @relation("contentCreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  approvedBy User?               @relation("contentApprovedBy", fields: [approvedById], references: [id], onDelete: SetNull)
+
+  channels    ContentItemChannel[]
+  attachments ContentAttachment[]
+  tags        ContentItemTag[]
+}
+
+model ContentChannel {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  items ContentItemChannel[]
+}
+
+model ContentItemChannel {
+  contentItemId String
+  channelId     String
+  isVisible     Boolean  @default(true)
+  pinned        Boolean  @default(false)
+  sortOrder     Int?
+  metadata      Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  contentItem ContentItem   @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+  channel     ContentChannel @relation(fields: [channelId], references: [id], onDelete: Cascade)
+
+  @@id([contentItemId, channelId])
+}
+
+model ContentAttachment {
+  id            String         @id @default(cuid())
+  contentItemId String
+  type          AttachmentType
+  url           String
+  coverUrl      String?
+  pageCount     Int?
+  metadata      Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  contentItem ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+}
+
+model ContentTag {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  items ContentItemTag[]
+}
+
+model ContentItemTag {
+  contentItemId String
+  tagId         String
+
+  contentItem ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+  tag         ContentTag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([contentItemId, tagId])
+}
+
 model User {
   id        String   @id @default(cuid())
   email     String   @unique
   name      String
-  role      UserRole @default(CLIENTE)
+  role      UserRole @default(MUNICIPIO)
+  passwordHash       String?
+  avatarUrl          String?
+  currentSessionId   String?
+  lastLogin          DateTime?
+  failedLoginAttempts Int      @default(0)
+  lockedUntil        DateTime?
+  certificateThumbprint String?
+  certificateOnly    Boolean   @default(false)
+  clientOrganizationId String?
+  clientAccessApproved Boolean  @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -64,6 +336,257 @@ model User {
   consultancyCases ConsultancyCase[]
   meetings         Meeting[]
   resourceDownloads ResourceDownload[]
+  diagnosticsCreated Diagnostico[] @relation("diagnosticRespondent")
+  diagnosticsReviewed Diagnostico[] @relation("diagnosticConsultant")
+  authTokens AuthToken[]
+  clientOrganization ClientOrganization? @relation(fields: [clientOrganizationId], references: [id])
+  hubAccesses UserHubAccess[]
+  projectAccesses UserProjectAccess[]
+  resourceAccesses ResourceAccess[]
+  classroomSessions ClassroomSession[] @relation("classroomConsultant")
+  classroomParticipations ClassroomParticipant[]
+  auditLogs AuditLog[]
+
+  contentCreated ContentItem[] @relation("contentCreatedBy")
+  contentApproved ContentItem[] @relation("contentApprovedBy")
+}
+
+model Municipio {
+  ibgeId       String   @id
+  nome         String
+  uf           String
+  populacao    Int?
+  areaKm2      Float?
+  densidade    Float?
+  idhm         Float?
+  pibPerCapita Float?
+  fontes       Json?
+  updatedAt    DateTime @updatedAt
+  createdAt    DateTime @default(now())
+
+  diagnosticos Diagnostico[]
+  cnpjMappings CnpjMunicipio[]
+  prefeitoMandatos PrefeitoMandato[]
+  classroomSessions ClassroomSession[]
+}
+
+model CnpjMunicipio {
+  id                String   @id @default(cuid())
+  cnpj              String   @unique
+  municipioIbgeId   String
+  validatedByAdmin  Boolean  @default(false)
+  createdAt         DateTime @default(now())
+
+  municipio Municipio @relation(fields: [municipioIbgeId], references: [ibgeId])
+}
+
+enum DiagnosticoStatus {
+  DRAFT
+  SUBMITTED
+  IN_REVIEW
+  RETURNED
+  FINALIZED
+}
+
+model Diagnostico {
+  id              String            @id @default(cuid())
+  municipioIbgeId String
+  cnpj            String
+  respondentName  String
+  respondentEmail String?
+  respondentPhone String?
+  clientOrganizationId String?
+  clientUnitId         String?
+  productId            String?
+  classroomSessionId   String?
+  status          DiagnosticoStatus @default(DRAFT)
+  consentLgpd     Boolean           @default(false)
+  dataDiagnostico DateTime          @default(now())
+  cicloGestaoInicio Int?
+  cicloGestaoFim    Int?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  submittedAt     DateTime?
+  finalizedAt     DateTime?
+  consultantId    String?
+  respondentId    String?
+  prefeitoMandatoId String?
+
+  municipio Municipio @relation(fields: [municipioIbgeId], references: [ibgeId])
+  eixos      EixoResposta[]
+  analises   EixoAnaliseConsultor[]
+  perguntas  PerguntasChaveResposta?
+  versions   DiagnosticoVersion[]
+  prefeitoMandato PrefeitoMandato? @relation(fields: [prefeitoMandatoId], references: [id])
+  clientOrganization ClientOrganization? @relation(fields: [clientOrganizationId], references: [id], onDelete: SetNull)
+  clientUnit         ClientUnit?         @relation(fields: [clientUnitId], references: [id], onDelete: SetNull)
+  product            Product?            @relation(fields: [productId], references: [id], onDelete: SetNull)
+  classroomSession   ClassroomSession?   @relation(fields: [classroomSessionId], references: [id], onDelete: SetNull)
+
+  consultant User? @relation("diagnosticConsultant", fields: [consultantId], references: [id])
+  respondent User? @relation("diagnosticRespondent", fields: [respondentId], references: [id])
+}
+
+model ClassroomSession {
+  id              String                 @id @default(cuid())
+  code            String                 @unique
+  tokenHash       String?
+  status          ClassroomSessionStatus @default(PREPARACAO)
+  expiresAt       DateTime?
+  title           String
+  description     String?
+  municipioIbgeId String?
+  clientOrganizationId String?
+  clientUnitId         String?
+  consultantId    String?
+  cicloGestaoInicio Int?
+  cicloGestaoFim    Int?
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+
+  municipio         Municipio?        @relation(fields: [municipioIbgeId], references: [ibgeId])
+  clientOrganization ClientOrganization? @relation(fields: [clientOrganizationId], references: [id], onDelete: SetNull)
+  clientUnit         ClientUnit?         @relation(fields: [clientUnitId], references: [id], onDelete: SetNull)
+  consultant        User?             @relation("classroomConsultant", fields: [consultantId], references: [id])
+  participants      ClassroomParticipant[]
+  diagnosticos      Diagnostico[]
+}
+
+model ClassroomParticipant {
+  id                String   @id @default(cuid())
+  classroomSessionId String
+  userId            String?
+  name              String
+  email             String?
+  role              String?
+  organization      String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  classroomSession ClassroomSession @relation(fields: [classroomSessionId], references: [id], onDelete: Cascade)
+  user             User?            @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model PrefeitoMandato {
+  id             String   @id @default(cuid())
+  municipioIbgeId String
+  prefeitoNome   String
+  partidoSigla   String?
+  partidoNome    String?
+  eleicaoAno     Int
+  inicioMandato  DateTime
+  fimMandato     DateTime?
+  motivoFim      String?
+  fotoUrl        String?
+  fonte          Json?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  municipio   Municipio   @relation(fields: [municipioIbgeId], references: [ibgeId])
+  diagnosticos Diagnostico[]
+}
+
+model DiagnosticoVersion {
+  id            String   @id @default(cuid())
+  diagnosticoId String
+  versionNumber Int
+  snapshot      Json
+  createdAt     DateTime @default(now())
+  createdByRole String
+
+  diagnostico Diagnostico @relation(fields: [diagnosticoId], references: [id], onDelete: Cascade)
+}
+
+model EixoResposta {
+  id             String   @id @default(cuid())
+  diagnosticoId  String
+  eixoKey        String
+  positivoParte1 Json?
+  positivoParte2 String?
+  positivoNota   Int?
+  positivoNotaConsultor Int?
+  negativoParte1 Json?
+  negativoParte2 String?
+  negativoNota   Int?
+  negativoNotaConsultor Int?
+  solucaoParte1  Json?
+  solucaoParte2  String?
+  solucaoNota    Int?
+  solucaoNotaConsultor Int?
+  solucaoSebraeDescs Json?
+  solucaoDescricao   String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  diagnostico Diagnostico @relation(fields: [diagnosticoId], references: [id], onDelete: Cascade)
+}
+
+model EixoAnaliseConsultor {
+  id             String   @id @default(cuid())
+  diagnosticoId  String
+  eixoKey        String
+  positivoParte3 String?
+  negativoParte3 String?
+  solucaoParte3  String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  diagnostico Diagnostico @relation(fields: [diagnosticoId], references: [id], onDelete: Cascade)
+}
+
+model PerguntasChaveResposta {
+  id               String   @id @default(cuid())
+  diagnosticoId    String   @unique
+  pcaPacPncp       String?
+  integracaoPlanejamento String?
+  sebraeSolucoes   Json?
+  sistemasUtilizados Json?
+  tramitacaoEletronicaNota Int?
+  tramitacaoEletronicaComentario String?
+  salaEmpreendedor String?
+  estrategiasFornecedores String?
+  beneficiosLc123  String?
+  integracaoSustentabilidade String?
+  consultorAnalise String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  diagnostico Diagnostico @relation(fields: [diagnosticoId], references: [id], onDelete: Cascade)
+}
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  clientOrganizationId String?
+  clientUnitId         String?
+  userId      String?
+  entity      String
+  entityId    String
+  action      String
+  data        Json?
+  ipAddress   String?
+  userAgent   String?
+  requestId   String?
+  performedBy String?
+  createdAt   DateTime @default(now())
+
+  clientOrganization ClientOrganization? @relation(fields: [clientOrganizationId], references: [id], onDelete: SetNull)
+  clientUnit         ClientUnit?         @relation(fields: [clientUnitId], references: [id], onDelete: SetNull)
+  user               User?               @relation(fields: [userId], references: [id], onDelete: SetNull)
+}
+
+model AuthToken {
+  id        String        @id @default(cuid())
+  userId    String
+  type      AuthTokenType
+  tokenHash String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime      @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, type])
+  @@index([tokenHash])
 }
 
 model ConsultancyCase {
@@ -151,6 +674,10 @@ model Publication {
   link        String?             // URL externa
   dateOriginal DateTime           // Data original da publicação (permite retroação)
   coverImage  String?             // URL da imagem de capa
+  year        Int?
+  hub         HubAxis?
+  isPublic    Boolean             @default(false)
+  approved    Boolean             @default(false)
   isActive    Boolean             @default(true)
   createdAt   DateTime            @default(now())
   updatedAt   DateTime            @updatedAt
@@ -162,12 +689,79 @@ model NewsMention {
   title       String
   source      String      // Nome da fonte (ex: "Folha de S.Paulo")
   excerpt     String?     // Trecho da notícia
+  hub         HubAxis?
   status      NewsStatus  @default(PENDENTE)
   publishedAt DateTime?   // Data da publicação original
   validatedAt DateTime?   // Data da validação
   validatedBy String?    // ID do usuário que validou
   createdAt   DateTime    @default(now())
   updatedAt   DateTime    @updatedAt
+}
+
+model UserHubAccess {
+  id     String   @id @default(cuid())
+  userId String
+  hub    HubAxis
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, hub])
+}
+
+model ResourceAccess {
+  id           String     @id @default(cuid())
+  userId       String
+  role         AccessRole
+  clientId     String?
+  clientUnitId String?
+  projectId    String?
+  hubAxis      HubAxis?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  user       User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  client     ClientOrganization?  @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  clientUnit ClientUnit?          @relation(fields: [clientUnitId], references: [id], onDelete: Cascade)
+  project    Project?             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, clientId])
+  @@unique([userId, clientUnitId])
+  @@unique([userId, projectId])
+  @@unique([userId, hubAxis])
+  @@index([userId])
+  @@index([clientId])
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  clientId    String
+  name        String
+  slug        String
+  description String?
+  hub         HubAxis
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  client   ClientOrganization @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  products Product[]
+  accesses UserProjectAccess[]
+  resourceAccesses ResourceAccess[]
+
+  @@unique([clientId, slug])
+}
+
+model UserProjectAccess {
+  id        String   @id @default(cuid())
+  userId    String
+  projectId String
+  createdAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, projectId])
 }
 
 model ProjectEvent {

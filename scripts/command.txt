@@ -1,0 +1,2 @@
+# Cole aqui o comando recomendado e salve o arquivo.
+# O script "action" vai limpar e executar este conteúdo.

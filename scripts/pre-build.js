@@ -20,24 +20,21 @@ if (ENV === 'production') {
   environment = 'preview';
 }
 
-// Incrementar versão apenas em preview e production
-if (environment !== 'development') {
-  try {
-    const newVersion = execSync('node scripts/version-manager.js increment patch', { encoding: 'utf8' }).trim();
-    console.log(`✅ Versão incrementada: ${newVersion}`);
-  } catch (error) {
-    console.error('⚠️  Erro ao incrementar versão:', error.message);
-  }
-}
-
-// Ler versão atual
+// Ler versão atual (não incrementa automaticamente: release precisa ser reprodutível
+// e a mesma versão/commit deve poder ser promovida entre preview e produção).
 let version = 'V1.0.000';
 let build = Date.now().toString().slice(-6);
 let buildDate = new Date().toISOString();
 
 try {
   version = execSync('node scripts/version-manager.js get', { encoding: 'utf8' }).trim();
-  build = execSync('node scripts/version-manager.js build', { encoding: 'utf8' }).trim();
+  // Preferir SHA do git para manter o mesmo "build" entre dev/preview/prod
+  // para o MESMO commit (promovível).
+  try {
+    build = execSync('git rev-parse --short HEAD', { encoding: 'utf8' }).trim();
+  } catch {
+    build = execSync('node scripts/version-manager.js build', { encoding: 'utf8' }).trim();
+  }
 } catch (error) {
   console.error('⚠️  Erro ao ler versão:', error.message);
 }
@@ -49,6 +46,7 @@ NEXT_PUBLIC_VERSION=${version}
 NEXT_PUBLIC_BUILD=${build}
 NEXT_PUBLIC_BUILD_DATE=${buildDate}
 NEXT_PUBLIC_ENVIRONMENT=${environment}
+NEXT_PUBLIC_GIT_SHA=${build}
 `;
 
 fs.writeFileSync(envBuildPath, envBuildContent, 'utf8');
