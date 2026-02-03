@@ -1,19 +1,15 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
-import { getSession } from "@/lib/auth";
+import { requireAuth } from "@/lib/auth";
 import { verifyAccess } from "@/lib/auth-guard";
-import fs from "fs/promises";
-import path from "path";
+import { uploadFile } from "@/lib/storage";
 
 export const runtime = "nodejs";
 
 export async function GET() {
   try {
-    const session = await getSession();
-    if (!session?.user || session.user.role !== "ADMIN") {
-      return NextResponse.json({ error: "Acesso negado." }, { status: 403 });
-    }
+    await requireAuth(["ADMIN"]);
     const clients = await prisma.clientOrganization.findMany({
       orderBy: { name: "asc" },
       select: { id: true, name: true },
@@ -27,10 +23,8 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    const session = await getSession();
-    if (!session?.user) {
-      return NextResponse.json({ error: "Faça login para enviar a logo." }, { status: 401 });
-    }
+    const session = await requireAuth(["ADMIN", "VIEWER", "EDITOR", "OWNER"]); // Permissive initially, refined by verifyAccess
+
     const formData = await request.formData();
     const clientId = String(formData.get("clientId") || "").trim();
     const file = formData.get("file");
@@ -48,7 +42,8 @@ export async function POST(request: Request) {
     }
 
     const isAdmin = session.user.role === "ADMIN";
-    const canEditClient = isAdmin || (await verifyAccess({ resource: "client", id: client.id, minRole: "VIEWER" }));
+    const canEditClient = isAdmin || (await verifyAccess({ resource: "client", id: client.id, minRole: "EDITOR" }));
+
     if (!canEditClient) {
       return NextResponse.json({ error: "Sem permissão para alterar a logo deste cliente." }, { status: 403 });
     }
@@ -57,19 +52,14 @@ export async function POST(request: Request) {
     if (bytes.length === 0) {
       return NextResponse.json({ error: "Arquivo vazio ou inválido." }, { status: 400 });
     }
-    const ext = file.type.includes("png")
-      ? "png"
-      : file.type.includes("webp")
-      ? "webp"
-      : "jpg";
-    const fileName = `logo.${ext}`;
-    const relativeDirFs = path.join("clients", client.slug);
-    const relativeDirUrl = path.posix.join("clients", client.slug);
-    const outputDir = path.join(process.cwd(), "public", relativeDirFs);
-    await fs.mkdir(outputDir, { recursive: true });
-    await fs.writeFile(path.join(outputDir, fileName), bytes);
 
-    const logoUrl = `/${relativeDirUrl}/${fileName}`;
+    const ext = file.type.includes("png") ? "png" : file.type.includes("webp") ? "webp" : "jpg";
+    const fileName = `logo-${Date.now()}.${ext}`;
+    const contentType = file.type || `image/${ext}`;
+
+    // Upload to R2
+    const logoUrl = await uploadFile(bytes, fileName, contentType, `clients/${client.slug}`);
+
     await prisma.clientOrganization.update({
       where: { id: client.id },
       data: { logoUrl },

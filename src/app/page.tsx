@@ -4,7 +4,7 @@ import { TriplePillar } from "@/components/home/TriplePillar";
 import { InovajuntosTransition } from "@/components/home/InovajuntosTransition";
 import { prisma } from "@/lib/prisma";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export default async function HomePage() {
   let timeline: Awaited<ReturnType<typeof prisma.contentItem.findMany>> = [];
