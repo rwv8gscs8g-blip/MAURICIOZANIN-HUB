@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+    <g transform="matrix(1 0 0 1 103.1 10.18)">
+        <path id="BR-DF" title="Distrito Federal" 
+                fill="#ccc" stroke="#424242" stroke-width="0.5"
+                vector-effect="non-scaling-stroke"
+                transform=" translate(-409.11, -329.45)"
+                d="M 416.71 333.87 L 402.02 333.85 L 401.5 330.59 L 402.42 328.76 L 402.8 325.03 L 414.75 325.04 L 416.58 327.02 L 416.64 329.23 L 416.05 330.42 L 415.84 332.86 z"
+                
+                
+                
+               />
+    </g>
+</svg>
