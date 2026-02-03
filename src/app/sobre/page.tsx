@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSearchParams, useRouter } from "next/navigation";
 import { CitationBox } from "@/components/citation/CitationBox";
-import { YouTubePlaylist } from "@/components/youtube/YouTubePlaylist";
+import { Quote, Building2, Globe, GraduationCap, Award, BookOpen, Printer, Download, Mail, Phone, MapPin, Linkedin, ArrowRight, Share2, FileText, CheckCircle2, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ProfessionalGallery } from "@/components/gallery/ProfessionalGallery";
 import { professionalPhotos } from "@/data/professional-photos";
-import { Printer, Globe, ShoppingCart, Mail, Phone, MapPin, Download, X } from "lucide-react";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 // Conteúdo Original para Compras Governamentais
@@ -16,17 +16,17 @@ const bioCompras = {
   name: "Luís Maurício Junqueira Zanin",
   title: "Estrategista de Compras Públicas",
   summary: `
-    Luís Maurício Junqueira Zanin é reconhecido como uma das principais autoridades brasileiras em compras governamentais focada na inclusão de Micro e Pequenas Empresas nas contratações públicas para a promoção do desenvolvimento nacional sustentável, cooperação intermunicipal e internacional para compartilhamento e boas práticas e gestão pública. Com mais de 25 anos de experiência dedicados à transformação da administração pública, combina expertise técnica com visão estratégica para resultados transformadores. A Primeira interação com o Compras.gov.br teve inicio no ano 2000 no lançamento do portal.
+    Luís Maurício Junqueira Zanin é reconhecido como uma das principais autoridades brasileiras em compras governamentais focada na inclusão de Micro e Pequenas Empresas nas contratações públicas para a promoção do desenvolvimento nacional sustentável, cooperação intermunicipal e internacional para compartilhamento e boas práticas e gestão pública.Com mais de 25 anos de experiência dedicados à transformação da administração pública, combina expertise técnica com visão estratégica para resultados transformadores.A Primeira interação com o Compras.gov.br teve inicio no ano 2000 no lançamento do portal.
 
-    Sua trajetória profissional é marcada pela liderança em projetos de grande impacto nacional e internacional. Como Coordenador do Projeto Inovajuntos e fundador da Rede Inovajuntos, consolidou a maior rede de inovação municipal do Brasil, conectando mais de 200 municípios em uma plataforma de compartilhamento de conhecimento e boas práticas em gestão pública.
+    Sua trajetória profissional é marcada pela liderança em projetos de grande impacto nacional e internacional.Como Coordenador do Projeto Inovajuntos e fundador da Rede Inovajuntos, consolidou a maior rede de inovação municipal do Brasil, conectando mais de 200 municípios em uma plataforma de compartilhamento de conhecimento e boas práticas em gestão pública.
 
-    Especialista em conformidade legal e implementação de novas legislações, Maurício Zanin tem sido referência na adaptação de municípios à Lei 14.133/2021, a nova lei de licitações e contratos administrativos. Sua abordagem combina rigor técnico com pragmatismo, facilitando a transição de gestores públicos para os novos paradigmas legais.
+    Especialista em conformidade legal e implementação de novas legislações, Maurício Zanin tem sido referência na adaptação de municípios à Lei 14.133 / 2021, a nova lei de licitações e contratos administrativos.Sua abordagem combina rigor técnico com pragmatismo, facilitando a transição de gestores públicos para os novos paradigmas legais.
 
-    No âmbito internacional, atua como consultor de organismos multilaterais, incluindo a União Europeia e agências das Nações Unidas, desenvolvendo projetos de cooperação técnica em compras públicas sustentáveis e governança. Sua expertise transcende fronteiras, contribuindo para o fortalecimento de sistemas de compras públicas em diversos países.
+    No âmbito internacional, atua como consultor de organismos multilaterais, incluindo a União Europeia e agências das Nações Unidas, desenvolvendo projetos de cooperação técnica em compras públicas sustentáveis e governança.Sua expertise transcende fronteiras, contribuindo para o fortalecimento de sistemas de compras públicas em diversos países.
 
-    Como autor e educador, produziu dezenas de publicações técnicas, cartilhas e materiais didáticos que se tornaram referência para gestores públicos. Suas obras abordam desde aspectos práticos de processos licitatórios até estratégias avançadas de cooperação intermunicipal e consórcios públicos.
+    Como autor e educador, produziu dezenas de publicações técnicas, cartilhas e materiais didáticos que se tornaram referência para gestores públicos.Suas obras abordam desde aspectos práticos de processos licitatórios até estratégias avançadas de cooperação intermunicipal e consórcios públicos.
 
-    A atuação em mídia, especialmente através de programas da Confederação Nacional de Municípios (CNM), amplificou seu alcance, permitindo que milhares de gestores públicos tenham acesso a conhecimento especializado sobre compras governamentais e gestão municipal.
+    A atuação em mídia, especialmente através de programas da Confederação Nacional de Municípios(CNM), amplificou seu alcance, permitindo que milhares de gestores públicos tenham acesso a conhecimento especializado sobre compras governamentais e gestão municipal.
 
     Sua visão estratégica e capacidade de articulação transformaram a Rede Inovajuntos em um case de sucesso, demonstrando como a cooperação intermunicipal pode gerar resultados concretos em eficiência, economia e qualidade na gestão pública brasileira.
   `
@@ -37,17 +37,30 @@ const bioInternacional = {
   name: "Luís Maurício Junqueira Zanin",
   title: "International Project Manager | Public Procurement & Governance Specialist",
   summary: `
-    Especialista em gestão de projetos internacionais, com mais de 25 anos de experiência em governança pública, compras públicas sustentáveis e cooperação internacional. Reconhecido pela capacidade de liderar equipes remotas e multiculturais, articular atores institucionais em contextos municipais, nacionais e internacionais, e entregar resultados mensuráveis em projetos de alta complexidade financiados por organismos multilaterais.
+    Especialista em gestão de projetos internacionais, com mais de 25 anos de experiência em governança pública, compras públicas sustentáveis e cooperação internacional.Reconhecido pela capacidade de liderar equipes remotas e multiculturais, articular atores institucionais em contextos municipais, nacionais e internacionais, e entregar resultados mensuráveis em projetos de alta complexidade financiados por organismos multilaterais.
     
-    Expertise consolidada na estruturação de redes institucionais, implementação de agendas globais (ODS, Nova Agenda Urbana) e coordenação de consórcios internacionais em ambientes culturalmente diversos, com foco em diplomacia pública, desenvolvimento institucional e fortalecimento de capacidades locais.
+    Expertise consolidada na estruturação de redes institucionais, implementação de agendas globais(ODS, Nova Agenda Urbana) e coordenação de consórcios internacionais em ambientes culturalmente diversos, com foco em diplomacia pública, desenvolvimento institucional e fortalecimento de capacidades locais.
   `
 };
 
 type CurriculumTab = "compras" | "internacional";
 
 export default function SobrePage() {
-  const [activeTab, setActiveTab] = useState<CurriculumTab>("compras");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const initialTab = (searchParams.get("tab") as CurriculumTab) || "compras";
+  const [activeTab, setActiveTab] = useState<CurriculumTab>(initialTab);
   const [showPrintModal, setShowPrintModal] = useState(false);
+
+  // Sync state with URL when tab changes
+  useEffect(() => {
+    const currentTab = searchParams.get("tab");
+    if (currentTab !== activeTab) {
+      const newParams = new URLSearchParams(searchParams.toString());
+      newParams.set("tab", activeTab);
+      router.replace(`?${newParams.toString()}`, { scroll: false });
+    }
+  }, [activeTab, router, searchParams]);
 
   const handlePrint = (tab: CurriculumTab) => {
     setActiveTab(tab);
@@ -62,17 +75,17 @@ export default function SobrePage() {
 
   // Atualiza o título da página para que o cabeçalho da impressão fique correto
   useEffect(() => {
-    document.title = `Sobre | ${currentBio.name} - ${currentBio.title}`;
+    document.title = `Sobre | ${currentBio.name} - ${currentBio.title} `;
   }, [currentBio]);
 
   return (
     <>
       <JsonLd type="person" />
       <div className="min-h-screen bg-white py-16 print:py-0 print:m-0">
-        <div className="container-fluid print:p-0 print:max-w-none">
+        <div className="container-fluid print:p-0 print:max-w-none print:pb-32">
 
           {/* Controls (No Print) */}
-          <div className="no-print flex flex-col md:flex-row items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-6 print:hidden">
+          <div className="no-print flex flex-col md:flex-row items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-6 print:hidden print:pb-0">
             <div className="flex p-1 bg-slate-100 rounded-lg">
               <button
                 onClick={() => setActiveTab("compras")}
@@ -83,7 +96,7 @@ export default function SobrePage() {
                     : "text-slate-500 hover:text-slate-700"
                 )}
               >
-                <ShoppingCart className="w-4 h-4" />
+                <Building2 className="w-4 h-4" />
                 Governança & Compras
               </button>
               <button
@@ -249,8 +262,8 @@ export default function SobrePage() {
                           <h4 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-2">Idiomas</h4>
                           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-slate-700 print:text-black">
                             <li><strong>Português:</strong> Nativo</li>
-                            <li><strong>Inglês:</strong> Fluente</li>
-                            <li><strong>Espanhol:</strong> Fluente</li>
+                            <li><strong>Espanhol:</strong> Fluente (2º idioma)</li>
+                            <li><strong>Inglês:</strong> Fluente (3º idioma)</li>
                           </ul>
                         </div>
                       </div>
@@ -353,7 +366,7 @@ export default function SobrePage() {
                     <SectionTitle color="bg-purple-600">Competências Técnicas Destacadas</SectionTitle>
                     <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-sm print:text-xs">
                       <div>
-                        <strong className="block text-slate-900 print:text-black mb-2 text-base">Gestão de Projetos Internacionais</strong>
+                        <strong className="block text-slate-900 print:text-black mb-2 text-base">Gestão de Cooperação Internacional</strong>
                         <ul className="list-disc pl-4 space-y-1 text-slate-600 print:text-black">
                           <li>Coordenação de consórcios multinacionais</li>
                           <li>Gestão de equipes remotas e multiculturais</li>
@@ -412,7 +425,7 @@ export default function SobrePage() {
                           <PublicationItem
                             title="Tese de MBA em Políticas Públicas"
                             publisher="FGB - Fundação Getulio Vargas (Documento)"
-                            url="/zanin-fgv-final.pdf"
+                            highlight={true}
                           />
                           <PublicationItem title="Compras governamentais com a aplicação dos benefícios para as micro e pequenas empresas: guia do educador" publisher="Brasília: Sebrae, 2009, 368 p." />
                           <PublicationItem title="Compras governamentais: como vender para a administração pública sem risco: guia do educador" publisher="Brasília: SEBRAE, 2009. 308 p. (em coautoria com Noelma Silva)" />
@@ -484,7 +497,7 @@ export default function SobrePage() {
             <div className="reading-column mb-16">
               <CitationBox
                 author="ZANIN, Luís Maurício Junqueira"
-                title={`Currículo: ${activeTab === 'compras' ? 'Compras Governamentais' : 'Cooperação Internacional'}`}
+                title={`Currículo: ${activeTab === 'compras' ? 'Compras Governamentais' : 'Cooperação Internacional'} `}
                 publisher="Maurício Zanin Hub"
                 year={new Date().getFullYear().toString()}
                 url="https://mauriciozanin.com.br/sobre"
@@ -506,7 +519,7 @@ export default function SobrePage() {
                   e cooperação intermunicipal produzidos para a CNM e projetos Inovajuntos.
                 </p>
               </div>
-              <YouTubePlaylist maxVideos={12} />
+
             </div>
           </div>
         </div>
@@ -517,9 +530,9 @@ export default function SobrePage() {
 
 function SectionTitle({ children, color }: { children: React.ReactNode, color: string }) {
   return (
-    <h2 className="text-xl font-bold text-[#0F172A] mb-4 tracking-tight flex items-center gap-3 print:mb-2 print:text-lg print:border-b print:border-black print:pb-1">
-      <span className={cn("w-8 h-1 rounded-full block print:bg-black", color)}></span>
-      <span className="print:text-black">{children}</span>
+    <h2 className="text-xl font-bold text-[#0F172A] mb-4 tracking-tight flex items-center gap-3 print:mb-2 print:text-lg print:border-b print:pb-1">
+      <span className={cn("w-8 h-1 rounded-full block", color)}></span>
+      <span>{children}</span>
     </h2>
   );
 }
@@ -527,9 +540,9 @@ function SectionTitle({ children, color }: { children: React.ReactNode, color: s
 function ExperienceItem({ role, org, children }: { role: string, org: string, children?: React.ReactNode }) {
   return (
     <div className="mb-6 print:mb-4">
-      <h3 className="font-bold text-[#1E3A8A] text-lg print:text-black leading-tight print:text-base">{role}</h3>
-      <div className="text-slate-600 font-medium mb-2 print:text-black print:text-sm print:italic">{org}</div>
-      <div className="text-slate-700 leading-relaxed text-sm print:text-black print:text-xs print:leading-normal">
+      <h3 className="font-bold text-[#1E3A8A] text-lg leading-tight print:text-base">{role}</h3>
+      <div className="text-slate-600 font-medium mb-2 print:text-sm">{org}</div>
+      <div className="text-slate-700 leading-relaxed text-sm print:text-xs print:leading-normal">
         {children}
       </div>
     </div>
@@ -540,12 +553,12 @@ function PublicationItem({ title, publisher, url, highlight }: { title: string, 
   return (
     <div className={cn(
       "mb-2 print:mb-1",
-      highlight && "bg-amber-50 border-l-4 border-amber-400 p-3 rounded-r-md my-4 shadow-sm print:border-black print:bg-transparent print:p-0 print:border-l-0 print:my-1"
+      highlight && "bg-amber-50 border-l-4 border-amber-400 p-3 rounded-r-md my-4 shadow-sm print:my-2"
     )}>
       {url ? (
         <a href={url} target="_blank" rel="noopener noreferrer" className="group block">
           <p className={cn(
-            "font-bold text-slate-800 text-sm print:text-black print:text-xs transition-colors flex items-center gap-1",
+            "font-bold text-slate-800 text-sm transition-colors flex items-center gap-1",
             !highlight && "group-hover:text-blue-700",
             highlight && "text-slate-900 text-base"
           )}>
@@ -560,12 +573,12 @@ function PublicationItem({ title, publisher, url, highlight }: { title: string, 
               highlight ? "text-amber-700 bg-amber-100 border-amber-200" : "text-blue-600 bg-blue-50 border-blue-100"
             )}>PDF</span>
           </p>
-          <p className="text-xs text-slate-500 print:text-black print:text-[10px] group-hover:text-slate-700">{publisher}</p>
+          <p className="text-xs text-slate-500 group-hover:text-slate-700">{publisher}</p>
         </a>
       ) : (
         <>
-          <p className="font-bold text-slate-800 text-sm print:text-black print:text-xs">{title}</p>
-          <p className="text-xs text-slate-500 print:text-black print:text-[10px]">{publisher}</p>
+          <p className="font-bold text-slate-800 text-sm">{title}</p>
+          <p className="text-xs text-slate-500">{publisher}</p>
         </>
       )}
     </div>
@@ -574,8 +587,8 @@ function PublicationItem({ title, publisher, url, highlight }: { title: string, 
 
 function CheckItem({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-start gap-2 text-sm text-slate-700 print:text-black">
-      <span className="text-green-600 font-bold print:text-black">✓</span>
+    <div className="flex items-start gap-2 text-sm text-slate-700">
+      <span className="text-green-600 font-bold">✓</span>
       <span>{children}</span>
     </div>
   )

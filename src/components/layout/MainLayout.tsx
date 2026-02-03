@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Building2, FileText, Share2, BarChart3, Calendar, Newspaper } from "lucide-react";
 import { useAccessTracking } from "@/hooks/useAccessTracking";
@@ -14,6 +14,7 @@ interface MainLayoutProps {
 
 export function MainLayout({ children }: MainLayoutProps) {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   useAccessTracking(); // Rastrear acessos
   const [session, setSession] = useState<{ user?: { role?: string } } | null>(null);
   const [sessionLoading, setSessionLoading] = useState(true);
@@ -71,7 +72,7 @@ export function MainLayout({ children }: MainLayoutProps) {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       {!hideChrome && (
-        <header className="bg-white border-b border-[#E2E8F0]">
+        <header className="bg-white border-b border-[#E2E8F0] print:hidden">
           <div className="container-fluid">
             <div className="flex items-center justify-between py-4">
               <Link href="/" className="flex items-center space-x-3 group">
@@ -128,8 +129,8 @@ export function MainLayout({ children }: MainLayoutProps) {
                   </>
                 ) : (
                   <Link
-                    href="/sobre"
-                    className="px-4 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-fluid-sm hover:bg-[#F8FAFF] transition-colors rounded-md"
+                    href={searchParams?.get("tab") ? `/sobre?tab=${searchParams.get("tab")}` : "/sobre"}
+                    className="px-4 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-fluid-sm hover:bg-[#F8FAFF] transition-colors rounded-md active:bg-blue-50"
                   >
                     Acessar
                   </Link>
@@ -145,7 +146,7 @@ export function MainLayout({ children }: MainLayoutProps) {
 
       {/* Footer */}
       {!hideChrome && (
-        <footer className="bg-[#FAFAFA] border-t border-[#E2E8F0] py-12 mt-auto">
+        <footer className="bg-[#FAFAFA] border-t border-[#E2E8F0] py-12 mt-auto print:hidden">
           <div className="container-fluid">
             <div className="text-center">
               <p className="text-fluid-sm text-[#64748B]">

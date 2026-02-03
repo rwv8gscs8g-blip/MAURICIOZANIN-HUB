@@ -34,6 +34,18 @@ export async function GET() {
     link: p.link,
   }));
 
+  // MBA Thesis (Static Injection)
+  normalizedPubs.push({
+    id: "pub-mba-fgv",
+    date: "2025-01-01T12:00:00.000Z", // Assuming 2025 as requested for "publication on site" logic
+    title: "Tese de MBA em Políticas Públicas - FGV",
+    description: "Tese completa de MBA em Políticas Públicas pela Fundação Getúlio Vargas.",
+    category: "Publicação",
+    type: "publication",
+    hub: "MAURICIOZANIN-HUB",
+    link: "/zanin-fgv-final.pdf",
+  });
+
   const normalizedItems = contentItems.map((i) => ({
     id: `item-${i.id}`,
     date: i.eventDate ? new Date(i.eventDate).toISOString() : i.publishDate ? new Date(i.publishDate).toISOString() : new Date().toISOString(),
