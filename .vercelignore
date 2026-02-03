@@ -1,44 +1,68 @@
-# Arquivos e pastas a ignorar no deploy do Vercel
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Desenvolvimento
-.env.local
-.env.development
-.env.test
-*.log
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Testes
-coverage/
-.nyc_output/
-*.test.ts
-*.test.tsx
-*.spec.ts
-*.spec.tsx
-__tests__/
-**/__tests__/**
+# local env files
+.env*.local
+.env
+.env.local
+.env.production
+.env.development
+.env.build
+.env.local.build
 
-# Documentação (opcional - pode incluir se quiser)
-# *.md
-# docs/
+# vercel
+.vercel
 
-# Arquivos temporários
-.DS_Store
-*.swp
-*.swo
-*~
+# local release sign-offs
+.release
 
-# IDE
-.vscode/
-.idea/
-*.sublime-*
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
-# Build local
-.next/
-out/
-dist/
-build/
 
-# Prisma (gerado)
-prisma/migrations/
+# prisma
+/prisma/migrations
+
+# large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.tar.gz
+
+
+# Large Media Exclusions for Vercel
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.tar.gz
+data/inovajuntos/Site-Inovajuntos-Produtos/57_Teaser/*.mp4
