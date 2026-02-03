@@ -358,7 +358,7 @@ export default function SobrePage() {
 
                           <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2 print:text-black">Principais Responsabilidades e Resultados:</h4>
                           <ul className="list-disc pl-5 space-y-2 text-sm mb-4 print:text-black">
-                            <li><strong>Gestão de Consórcio Internacional:</strong> Articulação entre CNM (Brasil) e Centro de Estudos Sociais da Universidade de Coimbra (Portugal), garantindo coerência metodológica, cumprimento de marcos contratuais e governança multinível.</li>
+                            <li><strong>Gestão de Cooperação Internacional:</strong> Articulação entre CNM (Brasil) e Centro de Estudos Sociais da Universidade de Coimbra (Portugal), garantindo coerência metodológica, cumprimento de marcos contratuais e governança multinível.</li>
                             <li><strong>Coordenação de Equipes Multiculturais:</strong> Liderança de equipes técnicas distribuídas em 3 continentes, assegurando alinhamento estratégico, padronização de processos e integração operacional.</li>
                             <li><strong>Diplomacia Pública e Articulação Institucional:</strong> Promoção de diálogo contínuo entre governos locais, nacionais e organismos multilaterais, incluindo participação em eventos da União Europeia, ONU-Habitat e encontros ministeriais, com representantes de agentes de cooperação e articulação do SubGrupo 18 do Mercosul.</li>
                             <li><strong>Implementação de Agendas Globais:</strong> Incorporação dos ODS e da Nova Agenda Urbana em políticas locais através de diagnósticos vocacionais participativos, capacitações técnicas e criação de espaços de inovação municipal.</li>
@@ -395,11 +395,13 @@ export default function SobrePage() {
                         <SectionTitle color="bg-purple-600">Experiência em Governança, Compliance e Políticas Públicas</SectionTitle>
 
                         <ExperienceItem
-                          role="Diretor de Projetos - Confederação Nacional de Municípios (2006-2025)"
+                          role="Coordenador de Projetos - Confederação Nacional de Municípios (2006-2026)"
                           org="Gestão de Projetos Tecnológicos e Fortalecimento Institucional"
                         >
                           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                            <li>Desenvolvimento e coordenação de projetos estratégicos de modernização administrativa municipal.<br /><br />Apresentador do programa da TV CNM - <strong>Bate Papo com a CNM</strong> como âncora.<br /><br />Criador e organizador da Rede de Agentes Municipalistas.</li>
+                            <li>Desenvolvimento e coordenação de projetos estratégicos de modernização administrativa municipal.</li>
+                            <li>Apresentador do programa da TV CNM - <strong>Bate Papo com a CNM</strong> como âncora.</li>
+                            <li>Criador e organizador da Rede de Agentes Municipalistas.</li>
                             <li>Articulação com Presidência da República, Ministérios e Itamaraty em ações de cooperação Internacional. Representante do SubGrupo 18 do Mercosul para definição de políticas de Integração Transfronteiriça e discussão do impacto do Acordo de Mercado Comum Brasil-União Europeia.</li>
                             <li>Atuação com órgãos de controle, tribunais de contas e ministérios públicos para garantir conformidade e transparência de ações para Municípios.</li>
                             <li>Elaboração de Cartilhas, estudos técnicos e material de qualificação de equipes multidisciplinares. Articulação e Participação da Elaboração dos eventos Marcha a Brasília em Defesa dos Municípios.</li>
@@ -495,8 +497,7 @@ export default function SobrePage() {
                               />
                               <PublicationItem
                                 title="Tese de MBA em Políticas Públicas"
-                                publisher="FGB - Fundação Getulio Vargas (Documento)"
-                                highlight={true}
+                                publisher="Fundação Getulio Vargas - FGV, 2014. (Documento)"
                               />
                               <PublicationItem title="Compras governamentais com a aplicação dos benefícios para as micro e pequenas empresas: guia do educador" publisher="Brasília: Sebrae, 2009, 368 p." />
                               <PublicationItem title="Compras governamentais: como vender para a administração pública sem risco: guia do educador" publisher="Brasília: SEBRAE, 2009. 308 p. (em coautoria com Noelma Silva)" />
@@ -592,7 +593,7 @@ export default function SobrePage() {
                           <p className="mb-3 italic">Coordiné durante 4 años uno de los mayores proyectos de cooperación descentralizada entre Brasil, Portugal y América Latina.</p>
                           <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2 print:text-black">Principales Responsabilidades y Resultados:</h4>
                           <ul className="list-disc pl-5 space-y-2 text-sm mb-4 print:text-black">
-                            <li><strong>Gestión de Consorcio Internacional:</strong> Articulación entre CNM (Brasil) y Centro de Estudios Sociales de la Universidad de Coimbra, garantizando coherencia metodológica y gobernanza multinivel.</li>
+                            <li><strong>Gestión de Cooperación Internacional:</strong> Articulación entre CNM (Brasil) y Centro de Estudios Sociales de la Universidad de Coimbra, garantizando coherencia metodológica y gobernanza multinivel.</li>
                             <li><strong>Coordinación de Equipos Multiculturales:</strong> Liderazgo de equipos técnicos distribuidos en 3 continentes, asegurando alineación estratégica e integración operacional.</li>
                             <li><strong>Diplomacia Pública:</strong> Promoción de diálogo continuo entre gobiernos locales, nacionales y organismos multilaterales, incluyendo participación en eventos de la UE, ONU-Hábitat y encuentros ministeriales.</li>
                             <li><strong>Implementación de Agendas Globales:</strong> Incorporación de los ODS y la Nueva Agenda Urbana en políticas locales mediante diagnósticos y espacios de innovación.</li>
@@ -628,7 +629,7 @@ export default function SobrePage() {
                         <SectionTitle color="bg-purple-600">Experiencia en Gobernanza, Compliance y Políticas Públicas</SectionTitle>
 
                         <ExperienceItem
-                          role="Director de Proyectos - Confederación Nacional de Municipios (2006-2015)"
+                          role="Coordinador de Proyectos - Confederación Nacional de Municipios (2006-2026)"
                           org="Gestión de Proyectos Tecnológicos y Fortalecimiento Institucional"
                         >
                           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm print:text-black">
@@ -818,7 +819,7 @@ export default function SobrePage() {
                           <p className="mb-3 italic">Coordinated for 4 years one of the largest decentralised cooperation projects between Brazil, Portugal, and Latin America.</p>
                           <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2 print:text-black">Key Responsibilities and Results:</h4>
                           <ul className="list-disc pl-5 space-y-2 text-sm mb-4 print:text-black">
-                            <li><strong>International Consortium Management:</strong> Articulation between CNM (Brazil) and University of Coimbra (Portugal).</li>
+                            <li><strong>International Cooperation Management:</strong> Articulation between CNM (Brazil) and University of Coimbra (Portugal).</li>
                             <li><strong>Multicultural Team Coordination:</strong> Leadership of technical teams distributed across 3 continents.</li>
                             <li><strong>Public Diplomacy:</strong> Promotion of dialogue amongst local/national governments and multilateral organisations (EU, UN-Habitat).</li>
                             <li><strong>Global Agendas:</strong> Incorporation of SDGs and New Urban Agenda into local policies.</li>
@@ -854,7 +855,7 @@ export default function SobrePage() {
                         <SectionTitle color="bg-purple-600">Experience in Governance, Compliance, and Public Policy</SectionTitle>
 
                         <ExperienceItem
-                          role="Director of Projects - National Confederation of Municipalities (2006-2015)"
+                          role="Project Coordinator - National Confederation of Municipalities (2006-2026)"
                           org="Management of Technological Projects and Institutional Strengthening"
                         >
                           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm print:text-black">
