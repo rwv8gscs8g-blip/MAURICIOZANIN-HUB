@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { Suspense } from "react";
+import { HeaderActions } from "./HeaderActions";
 import { cn } from "@/lib/utils";
 import { Building2, FileText, Share2, BarChart3, Calendar, Newspaper } from "lucide-react";
 import { useAccessTracking } from "@/hooks/useAccessTracking";
@@ -14,7 +16,6 @@ interface MainLayoutProps {
 
 export function MainLayout({ children }: MainLayoutProps) {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   useAccessTracking(); // Rastrear acessos
   const [session, setSession] = useState<{ user?: { role?: string } } | null>(null);
   const [sessionLoading, setSessionLoading] = useState(true);
@@ -108,33 +109,9 @@ export function MainLayout({ children }: MainLayoutProps) {
               </nav>
 
               <div className="hidden md:flex items-center gap-2">
-                {sessionLoading ? null : session?.user ? (
-                  <>
-                    <Link
-                      href="/dashboard"
-                      className="px-4 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-fluid-sm hover:bg-[#F8FAFF] transition-colors rounded-md"
-                    >
-                      Painel
-                    </Link>
-                    <button
-                      type="button"
-                      onClick={async () => {
-                        await fetch("/api/auth/logout", { method: "POST" });
-                        window.location.href = "/";
-                      }}
-                      className="px-4 py-2 bg-[#1E3A8A] text-white text-fluid-sm rounded-md"
-                    >
-                      Sair
-                    </button>
-                  </>
-                ) : (
-                  <Link
-                    href={searchParams?.get("tab") ? `/sobre?tab=${searchParams.get("tab")}` : "/sobre"}
-                    className="px-4 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-fluid-sm hover:bg-[#F8FAFF] transition-colors rounded-md active:bg-blue-50"
-                  >
-                    Acessar
-                  </Link>
-                )}
+                <Suspense fallback={<div className="w-24 h-10 bg-slate-100 animate-pulse rounded-md" />}>
+                  <HeaderActions session={session} sessionLoading={sessionLoading} />
+                </Suspense>
               </div>
             </div>
           </div>

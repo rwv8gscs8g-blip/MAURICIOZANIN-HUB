@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+export const dynamic = "force-dynamic";
+
 import { prisma } from "@/lib/prisma";
 import { extractRequestInfo, canJoinSession } from "@/lib/classroom";
 import { logAudit } from "@/lib/audit";

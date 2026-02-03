@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams, useRouter } from "next/navigation";
 import { CitationBox } from "@/components/citation/CitationBox";
@@ -65,8 +65,16 @@ const bioInternacionalEs = {
     Expertise consolidada en la estructuración de redes institucionales, implementación de agendas globales (ODS, Nueva Agenda Urbana) y coordinación de consorcios internacionales en entornos culturalmente diversos, con enfoque en diplomacia pública, desarrollo institucional y fortalecimiento de capacidades locales.
   `
 };
-
 export default function SobrePage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white flex items-center justify-center">Carregando...</div>}>
+      <SobreContent />
+    </Suspense>
+  );
+}
+
+
+function SobreContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const initialTab = (searchParams.get("tab") as CurriculumTab) || "compras";
