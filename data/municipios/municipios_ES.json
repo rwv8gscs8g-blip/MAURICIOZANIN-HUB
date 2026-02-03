@@ -1,0 +1,475 @@
+{
+  "uf": "ES",
+  "fonte": "IBGE Malha 2023",
+  "total": 78,
+  "municipios": [
+    {
+      "ibgeId": "3200102",
+      "nome": "Afonso ClÃ¡udio",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200136",
+      "nome": "Ãguia Branca",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200169",
+      "nome": "Ãgua Doce do Norte",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200201",
+      "nome": "Alegre",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200300",
+      "nome": "Alfredo Chaves",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200359",
+      "nome": "Alto Rio Novo",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200409",
+      "nome": "Anchieta",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200508",
+      "nome": "ApiacÃ¡",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200607",
+      "nome": "Aracruz",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200706",
+      "nome": "AtÃ­lio VivÃ¡cqua",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200805",
+      "nome": "Baixo Guandu",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3200904",
+      "nome": "Barra de SÃ£o Francisco",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201001",
+      "nome": "Boa EsperanÃ§a",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201100",
+      "nome": "Bom Jesus do Norte",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201159",
+      "nome": "Brejetuba",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201209",
+      "nome": "Cachoeiro de Itapemirim",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201308",
+      "nome": "Cariacica",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201407",
+      "nome": "Castelo",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201506",
+      "nome": "Colatina",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201605",
+      "nome": "ConceiÃ§Ã£o da Barra",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201704",
+      "nome": "ConceiÃ§Ã£o do Castelo",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201803",
+      "nome": "Divino de SÃ£o LourenÃ§o",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3201902",
+      "nome": "Domingos Martins",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202009",
+      "nome": "Dores do Rio Preto",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202108",
+      "nome": "Ecoporanga",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202207",
+      "nome": "FundÃ£o",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202256",
+      "nome": "Governador Lindenberg",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202306",
+      "nome": "GuaÃ§uÃ­",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202405",
+      "nome": "Guarapari",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202454",
+      "nome": "Ibatiba",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202504",
+      "nome": "IbiraÃ§u",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202553",
+      "nome": "Ibitirama",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202603",
+      "nome": "Iconha",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202652",
+      "nome": "Irupi",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202702",
+      "nome": "ItaguaÃ§u",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202801",
+      "nome": "Itapemirim",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3202900",
+      "nome": "Itarana",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203007",
+      "nome": "IÃºna",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203056",
+      "nome": "JaguarÃ©",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203106",
+      "nome": "JerÃ´nimo Monteiro",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203130",
+      "nome": "JoÃ£o Neiva",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203163",
+      "nome": "Laranja da Terra",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203205",
+      "nome": "Linhares",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203304",
+      "nome": "MantenÃ³polis",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203320",
+      "nome": "MarataÃ­zes",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203346",
+      "nome": "Marechal Floriano",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203353",
+      "nome": "MarilÃ¢ndia",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203403",
+      "nome": "Mimoso do Sul",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203502",
+      "nome": "Montanha",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203601",
+      "nome": "Mucurici",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203700",
+      "nome": "Muniz Freire",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203809",
+      "nome": "Muqui",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3203908",
+      "nome": "Nova VenÃ©cia",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204005",
+      "nome": "Pancas",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204054",
+      "nome": "Pedro CanÃ¡rio",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204104",
+      "nome": "Pinheiros",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204203",
+      "nome": "PiÃºma",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204252",
+      "nome": "Ponto Belo",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204302",
+      "nome": "Presidente Kennedy",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204351",
+      "nome": "Rio Bananal",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204401",
+      "nome": "Rio Novo do Sul",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204500",
+      "nome": "Santa Leopoldina",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204559",
+      "nome": "Santa Maria de JetibÃ¡",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204609",
+      "nome": "Santa Teresa",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204658",
+      "nome": "SÃ£o Domingos do Norte",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204708",
+      "nome": "SÃ£o Gabriel da Palha",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204807",
+      "nome": "SÃ£o JosÃ© do CalÃ§ado",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204906",
+      "nome": "SÃ£o Mateus",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3204955",
+      "nome": "SÃ£o Roque do CanaÃ£",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205002",
+      "nome": "Serra",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205010",
+      "nome": "Sooretama",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205036",
+      "nome": "Vargem Alta",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205069",
+      "nome": "Venda Nova do Imigrante",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205101",
+      "nome": "Viana",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205150",
+      "nome": "Vila PavÃ£o",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205176",
+      "nome": "Vila ValÃ©rio",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205200",
+      "nome": "Vila Velha",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3205309",
+      "nome": "VitÃ³ria",
+      "uf": "ES",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

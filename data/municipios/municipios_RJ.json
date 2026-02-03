@@ -1,0 +1,559 @@
+{
+  "uf": "RJ",
+  "fonte": "IBGE Malha 2023",
+  "total": 92,
+  "municipios": [
+    {
+      "ibgeId": "3300100",
+      "nome": "Angra dos Reis",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300159",
+      "nome": "AperibÃ©",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300209",
+      "nome": "Araruama",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300225",
+      "nome": "Areal",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300233",
+      "nome": "ArmaÃ§Ã£o dos BÃºzios",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300258",
+      "nome": "Arraial do Cabo",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300308",
+      "nome": "Barra do PiraÃ­",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300407",
+      "nome": "Barra Mansa",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300456",
+      "nome": "Belford Roxo",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300506",
+      "nome": "Bom Jardim",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300605",
+      "nome": "Bom Jesus do Itabapoana",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300704",
+      "nome": "Cabo Frio",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300803",
+      "nome": "Cachoeiras de Macacu",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300902",
+      "nome": "Cambuci",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300936",
+      "nome": "Carapebus",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3300951",
+      "nome": "Comendador Levy Gasparian",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301009",
+      "nome": "Campos dos Goytacazes",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301108",
+      "nome": "Cantagalo",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301157",
+      "nome": "Cardoso Moreira",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301207",
+      "nome": "Carmo",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301306",
+      "nome": "Casimiro de Abreu",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301405",
+      "nome": "ConceiÃ§Ã£o de Macabu",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301504",
+      "nome": "Cordeiro",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301603",
+      "nome": "Duas Barras",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301702",
+      "nome": "Duque de Caxias",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301801",
+      "nome": "Engenheiro Paulo de Frontin",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301850",
+      "nome": "Guapimirim",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301876",
+      "nome": "Iguaba Grande",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3301900",
+      "nome": "ItaboraÃ­",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302007",
+      "nome": "ItaguaÃ­",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302056",
+      "nome": "Italva",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302106",
+      "nome": "Itaocara",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302205",
+      "nome": "Itaperuna",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302254",
+      "nome": "Itatiaia",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302270",
+      "nome": "Japeri",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302304",
+      "nome": "Laje do MuriaÃ©",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302403",
+      "nome": "MacaÃ©",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302452",
+      "nome": "Macuco",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302502",
+      "nome": "MagÃ©",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302601",
+      "nome": "Mangaratiba",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302700",
+      "nome": "MaricÃ¡",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302809",
+      "nome": "Mendes",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302858",
+      "nome": "Mesquita",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3302908",
+      "nome": "Miguel Pereira",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303005",
+      "nome": "Miracema",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303104",
+      "nome": "Natividade",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303203",
+      "nome": "NilÃ³polis",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303302",
+      "nome": "NiterÃ³i",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303401",
+      "nome": "Nova Friburgo",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303500",
+      "nome": "Nova IguaÃ§u",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303609",
+      "nome": "Paracambi",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303708",
+      "nome": "ParaÃ­ba do Sul",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303807",
+      "nome": "Paraty",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303856",
+      "nome": "Paty do Alferes",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303906",
+      "nome": "PetrÃ³polis",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3303955",
+      "nome": "Pinheiral",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304003",
+      "nome": "PiraÃ­",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304102",
+      "nome": "PorciÃºncula",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304110",
+      "nome": "Porto Real",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304128",
+      "nome": "Quatis",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304144",
+      "nome": "Queimados",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304151",
+      "nome": "QuissamÃ£",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304201",
+      "nome": "Resende",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304300",
+      "nome": "Rio Bonito",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304409",
+      "nome": "Rio Claro",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304508",
+      "nome": "Rio das Flores",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304524",
+      "nome": "Rio das Ostras",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304557",
+      "nome": "Rio de Janeiro",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304607",
+      "nome": "Santa Maria Madalena",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304706",
+      "nome": "Santo AntÃ´nio de PÃ¡dua",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304755",
+      "nome": "SÃ£o Francisco de Itabapoana",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304805",
+      "nome": "SÃ£o FidÃ©lis",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3304904",
+      "nome": "SÃ£o GonÃ§alo",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305000",
+      "nome": "SÃ£o JoÃ£o da Barra",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305109",
+      "nome": "SÃ£o JoÃ£o de Meriti",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305133",
+      "nome": "SÃ£o JosÃ© de UbÃ¡",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305158",
+      "nome": "SÃ£o JosÃ© do Vale do Rio Preto",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305208",
+      "nome": "SÃ£o Pedro da Aldeia",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305307",
+      "nome": "SÃ£o SebastiÃ£o do Alto",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305406",
+      "nome": "Sapucaia",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305505",
+      "nome": "Saquarema",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305554",
+      "nome": "SeropÃ©dica",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305604",
+      "nome": "Silva Jardim",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305703",
+      "nome": "Sumidouro",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305752",
+      "nome": "TanguÃ¡",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305802",
+      "nome": "TeresÃ³polis",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3305901",
+      "nome": "Trajano de Moraes",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3306008",
+      "nome": "TrÃªs Rios",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3306107",
+      "nome": "ValenÃ§a",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3306156",
+      "nome": "Varre-Sai",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3306206",
+      "nome": "Vassouras",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3306305",
+      "nome": "Volta Redonda",
+      "uf": "RJ",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

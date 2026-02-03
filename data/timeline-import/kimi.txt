@@ -1,0 +1,333 @@
+Kimi
+
+{
+  "meta": {
+    "nome_consultado": ["Luís Maurício Junqueira Zanin", "Maurício Zanin"],
+    "periodo": "1996-01-01 até 2025-01-30",
+    "data_acesso": "2025-01-30",
+    "fontes_prioritarias": [
+      "SEBRAE Nacional",
+      "Confederação Nacional de Municípios (CNM)",
+      "Tribunal de Contas do Estado do Paraná (TCE-PR)",
+      "Ministério da Gestão, Inovação e Governo Digital",
+      "Escola Nacional de Administração Pública (ENAP)",
+      "Fundação Getúlio Vargas (FGV)",
+      "Universidade Estadual Paulista (UNESP)",
+      "Governo do Maranhão",
+      "Diários Oficiais (fonte primária)"
+    ],
+    "total_eventos_mapeados": 18,
+    "observacoes_gerais": "Menções ao Ministro Cristiano Zanin (STF) foram identificadas como homônimo distinto e excluídas desta base. Eventos sem data específica anual utilizam null no campo 'data' com ano informado em observações."
+  },
+  "eventos": [
+    {
+      "data": "1996",
+      "titulo": "Graduação em Administração Pública pela UNESP",
+      "descricao": "Conclusão do curso de Administração Pública na Universidade Estadual Paulista (UNESP), marco inicial da trajetória profissional na gestão pública.",
+      "tipo": "formação",
+      "eixo": "Suporte aos Municípios",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Instituto InovaJuntos / Curriculum vitae oficial",
+      "url": "https://inovajuntos.org/mauriciozanin-cv/",
+      "trecho": "Luís Maurício Junqueira Zanin é formado em Administração Pública pela Universidade Estadual Paulista – Unesp",
+      "evidencia": "Currículo oficial online",
+      "observacoes": "Ano baseado em cálculo de 20 anos na CNM (2024) e idade profissional. Fonte oficial do projeto InovaJuntos (CNM/UE)."
+    },
+    {
+      "data": "2000-05-21",
+      "titulo": "Portaria MARE nº 5/2002 – Aprovação da comercialização no Portal Comprasnet",
+      "descricao": "Publicação da Portaria nº 5, de 21 de maio de 2002, aprovando a comercialização de pacotes pelo Consórcio Serpro/Unisys/Vesta no portal Comprasnet. Luís Maurício Junqueira Zanin atuou como Gerente de Projetos da primeira fase da construção do portal.",
+      "tipo": "portaria",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Ministério do Planejamento, Orçamento e Gestão (MARE)",
+      "url": "https://www2.camara.leg.br/orcamento-da-uniao/leis-orcamentarias/ppa/2000-2003/ppa20002003/ppa_rel_aval/020_planejamento.PDF",
+      "trecho": "Portaria nº 5, de 21 de maio de 2002, que aprova a comercialização de pacotes pelo Consórcio Serpro/Unisys/Vesta, no Portal http://www.comprasnet.gov.br",
+      "evidencia": "Relatório de Avaliação do PPA 2000-2003, p. 1727",
+      "observacoes": "Fonte primária do governo federal (Câmara dos Deputados – arquivos do PPA). O período de gestão do projeto Comprasnet pelo consultor é descrito como 'primeira fase da construção' em seu currículo oficial."
+    },
+    {
+      "data": null,
+      "titulo": "Início da atuação na Confederação Nacional de Municípios (CNM)",
+      "descricao": "Início do período de 20 anos de atuação na estruturação e consolidação da CNM como maior entidade municipalista da América Latina, atuando nas áreas de compras governamentais e cooperação internacional.",
+      "tipo": "evento",
+      "eixo": "Suporte aos Municípios",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "CNM / Curriculum vitae",
+      "url": "https://mauriciozanin.com/curriculo.html",
+      "trecho": "Trabalhou 20 anos na estruturação e consolidação da Confederação Nacional de Municípios - CNM como a maior entidade de representação municipalista da América Latina",
+      "evidencia": "Currículo oficial",
+      "observacoes": "Data aproximada: 2004/2005 (cálculo retroativo de 20 anos a partir de 2024/2025)."
+    },
+    {
+      "data": "2006",
+      "titulo": "Publicação da Cartilha do Comprador: Compras Públicas Alavancando o Desenvolvimento",
+      "descricao": "Lançamento da cartilha em coautoria com Cláudio Pereira Barreto, publicada pelo CNM e SEBRAE, tratando de compras governamentais focadas em desenvolvimento local.",
+      "tipo": "publicação",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "CNM / SEBRAE",
+      "url": "https://unieducar.org.br/sites/default/files/faculdade-unieducar/ppc-gp.pdf",
+      "trecho": "ZANIN, Luís Maurício Junqueira; BARRETO, Cláudio Pereira. Cartilha do Comprador: compras públicas alavancando o desenvolvimento. Brasília: CNM, SEBRAE, 2006.",
+      "evidencia": "Referência bibliográfica em Projeto Pedagógico de curso superior (UNIEDUCAR)",
+      "observacoes": "Ano informado na referência bibliográfica."
+    },
+    {
+      "data": null,
+      "titulo": "MBA em Políticas Públicas pela Fundação Getúlio Vargas (FGV)",
+      "descricao": "Conclusão do MBA em Políticas Públicas na FGV, com dissertação sobre o impacto da contratação pública e participação das MPE no Portal Comprasnet no período 2006-2014.",
+      "tipo": "formação",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Fundação Getúlio Vargas / Curriculum vitae",
+      "url": "https://mauriciozanin.com/CurriculoZanin.pdf",
+      "trecho": "pós graduado com Master of Business Administration-MBA em Políticas Públicas pela Fundação Getúlio Vargas - FGV, com o tema Análise do Impacto da Nova Tendência de Contratação Pública e a Participação das Micro e Pequenas Empresas nas Licitações Realizadas pelo Governo Federal no Portal Comprasnet no Período de 2006 a 2014",
+      "evidencia": "Currículo em PDF oficial",
+      "observacoes": "Ano de conclusão não explicitado; dissertação analisa dados até 2014, sugerindo defesa posterior a este ano."
+    },
+    {
+      "data": "2008",
+      "titulo": "Publicação do Manual de Licitação – Pregão Eletrônico e Presencial (CNM/SEBRAE)",
+      "descricao": "Lançamento do manual técnico sobre pregão eletrônico e presencial, editado pelo CNM e SEBRAE, amplamente utilizado em capacitações para gestores municipais.",
+      "tipo": "publicação",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "CNM / SEBRAE",
+      "url": "https://unieducar.org.br/sites/default/files/faculdade-unieducar/ppc-gp.pdf",
+      "trecho": "ZANIN, Luís Maurício Junqueira; BARRETO, Claúdio Pereira. Manual de Licitação - Pregão Eletrônico e Presencial - Brasília DF: CNM, SEBRAE, 2008",
+      "evidencia": "Referência bibliográfica em documento acadêmico oficial",
+      "observacoes": "Ano informado na referência bibliográfica (2008)."
+    },
+    {
+      "data": null,
+      "titulo": "Atuação como Instrutor da Escola Nacional de Administração Pública (ENAP)",
+      "descricao": "Periodo como instrutor da ENAP, onde escreveu cursos sobre 'Sistemas Eletrônicos de Compras' e ministrou disciplinas no Programa Brasil Municípios (parceria com BID) e na Semana Orçamentária da ESAF.",
+      "tipo": "evento",
+      "eixo": "Suporte aos Municípios",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Escola Nacional de Administração Pública (ENAP)",
+      "url": "https://mauriciozanin.com/curriculo.html",
+      "trecho": "Foi também instrutor da Escola Nacional de Administração Pública - ENAP, onde escreveu cursos de 'Sistemas Eletrônicos de Compras', cursos de compras governamentais do Programa Brasil Municípios, em Parceria com o Banco Interamericano de Desenvolvimento - BID",
+      "evidencia": "Currículo oficial citando atuação ENAP",
+      "observacoes": "Período não datado especificamente nas fontes consultadas."
+    },
+    {
+      "data": "2009-05-12",
+      "titulo": "Portaria nº 10/2009 – Grupo de Trabalho 4ª CCR-Patrimônio Cultural (MPF)",
+      "descricao": "Publicação da Portaria nº 10 da 4ª Câmara de Coordenação e Revisão do MPF, alterando composição de Grupo de Trabalho. Menção administrativa em documento oficial do Ministério Público Federal.",
+      "tipo": "portaria",
+      "eixo": "outro",
+      "pessoa_mencionada": "Zani Cajueiro Tobias de Souza (homônimo parcial - não é o mesmo indivíduo)",
+      "fonte": "Ministério Público Federal",
+      "url": "https://biblioteca.mpf.mp.br/repositorio/bitstreams/993a8c29-55ef-471d-aea3-504276502962/download",
+      "trecho": "Membros Titulares: Procuradora da República Dra. ZANI CAJUEIRO TOBIAS DE SOUZA",
+      "evidencia": "Portaria oficial MPF",
+      "observacoes": "ATENÇÃO: Esta menção refere-se a 'Zani Cajueiro', mulher, procuradora da República, não sendo o mesmo Luís Maurício Junqueira Zanin. Mantida apenas para registro de busca negativa em diários oficiais para o nome correto."
+    },
+    {
+      "data": "2014",
+      "titulo": "Publicação da Cartilha do Fornecedor (SEBRAE Nacional)",
+      "descricao": "Lançamento da Cartilha do Fornecedor: o caminho para ter sucesso na contratação pública, com consultoria de conteúdo de Luís Maurício Junqueira Zanin, tratando da Lei Complementar 123/2006 e acesso de MPEs às compras governamentais.",
+      "tipo": "publicação",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "SEBRAE Nacional",
+      "url": "https://s3.sa-east-1.amazonaws.com/licitacoes.saquarema.rj.gov.br/wp-content/uploads/2018/10/Cartilha-do-Fornecedor.pdf",
+      "trecho": "Consultor Conteudista Luís Maurício Junqueira Zanin Sou – Treinamento e Desenvolvimento Profissional LTDA-Me",
+      "evidencia": "PDF da Cartilha do Fornecedor SEBRAE, p. 5",
+      "observacoes": "Copyright 2014 no documento."
+    },
+    {
+      "data": "2019-05-16",
+      "titulo": "Consultas em sistemas de inteligência – Relatório PF/Abin",
+      "descricao": "Mensão em Relatório Final da Polícia Federal (Operação Abin Paralela) sobre consultas realizadas em 16/05/2019 em sistemas de informações. Registro oficial em documento sigiloso posteriormente tornado público.",
+      "tipo": "relatório",
+      "eixo": "outro",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Polícia Federal (Relatório Final - Operação Abin Paralela)",
+      "url": "https://static.poder360.com.br/2025/06/RELATORIO-FINAL-PF-ABIN-PARALELA-4.pdf",
+      "trecho": "LUIS MAURICIO JUNQUEIRA ZANIN (Consultor): 02 consultas em 16/05/2019",
+      "evidencia": "Relatório Final PF, fl. 1658",
+      "observacoes": "Informação de responsabilidade da PF; contexto da 'Operação Caminhoneiros' (2019)."
+    },
+    {
+      "data": "2019-08-29",
+      "titulo": "43ª Reunião Ordinária do FOPEME – Paraná",
+      "descricao": "Participação como consultor do Sebrae Nacional na reunião do Fórum Permanente das Microempresas e Empresas de Pequeno Porte do Estado do Paraná (FOPEME), apresentando Plano de Ação para alteração do Decreto 2.474/2015.",
+      "tipo": "evento",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Fórum Permanente das Microempresas e Empresas de Pequeno Porte do Estado do Paraná (FOPEME)",
+      "url": "https://www.fopeme.pr.gov.br/sites/pme/arquivos_restritos/files/documento/2020-07/43_reuniao_ordinaria.pdf",
+      "trecho": "tratando da proposta de modificação do Decreto nº 2474/2015... com o apoio do consultor de Compras Governamentais para o Sebrae Nacional Luís Mauricio Junqueira Zanin",
+      "evidencia": "Ata da 43ª Reunião Ordinária do FOPEME",
+      "observacoes": "Data da reunião: 29/08/2019."
+    },
+    {
+      "data": "2020",
+      "titulo": "Publicação do livro 'Internacional: a importância do protagonismo dos Municípios na cooperação internacional em um mundo globalizado'",
+      "descricao": "Lançamento da publicação da CNM (Coleção Gestão Pública Municipal Novos Gestores 2021-2024), com Luís Maurício Junqueira Zanin como coordenador técnico e autor, abordando cooperação internacional e desenvolvimento sustentável.",
+      "tipo": "publicação",
+      "eixo": "Cooperação Internacional",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Confederação Nacional de Municípios (CNM)",
+      "url": "https://cnm.org.br/storage/biblioteca/Internacional-a-importancia-do-protagonismo-dos-Municipios%20na-cooperacao-internacional-em-um-mundo-globalizado.pdf",
+      "trecho": "Supervisão técnica Luís Maurício Junqueira Zanin",
+      "evidencia": "Ficha técnica da publicação",
+      "observacoes": "Ano de publicação: 2020."
+    },
+    {
+      "data": null,
+      "titulo": "Criação e coordenação do Projeto InovaJuntos",
+      "descricao": "Assunção da coordenação do Projeto InovaJuntos – Cooperação Urbana Triangular para Inovação e Sustentabilidade, parceria entre CNM, Centro de Estudos Sociais da Universidade de Coimbra (Portugal) e financiamento da União Europeia.",
+      "tipo": "evento",
+      "eixo": "Cooperação Internacional",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Projeto InovaJuntos / CNM",
+      "url": "https://inovajuntos.org/mauriciozanin-cv/",
+      "trecho": "É o coordenador de Cooperação Internacional da CNM e Coordenador do 'Projeto Inova Juntos – Cooperação Triangular para inovação e Sustentabilidade', que conta com o financiamento da União Europeia",
+      "evidencia": "Site oficial do projeto InovaJuntos",
+      "observacoes": "Projeto iniciado aproximadamente em 2020/2021."
+    },
+    {
+      "data": "2021-06-28",
+      "titulo": "Lançamento da 3ª Edição do Manual de Licitações (TCE-PR/SEBRAE/FOPEME)",
+      "descricao": "Evento de lançamento da terceira edição do Manual de Licitações, organizado por Luís Maurício Junqueira Zanin, em parceria entre Escola de Gestão Pública do TCE-PR, SEBRAE-PR e FOPEME.",
+      "tipo": "evento",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Tribunal de Contas do Estado do Paraná (TCE-PR)",
+      "url": "https://www.equiplano.com.br/artigo.php?a=181",
+      "trecho": "Dia 28 de junho, às 14 horas, no canal do Youtube da Escola de Gestão Pública TCE-PR, será lançada a terceira edição do Manual de Licitações... consultor do Sebrae-PR Maurício Zanin, criador da Metodologia do Jogo de Licitações",
+      "evidencia": "Notícia Equiplano com data do evento",
+      "observacoes": "Data do lançamento: 28/06/2021."
+    },
+    {
+      "data": "2022-08-29",
+      "titulo": "Oficina de Alinhamento Técnico – Nova Lei de Licitações (Macapá/AP)",
+      "descricao": "Condução de oficina técnica sobre impactos da Lei 14.133/2021 para municípios, realizada no Sebrae Amapá, com foco em desenvolvimento econômico local e compras governamentais.",
+      "tipo": "evento",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "SEBRAE Amapá / Agência Sebrae",
+      "url": "https://ap.agenciasebrae.com.br/economia-e-politica/sebrae-promove-alinhamento-tecnico-para-tratar-de-impactos-da-nova-lei-de-licitacoes-e-contratos-nos-municipios/",
+      "trecho": "O convidado e consultor do Sebrae Nacional, Luís Maurício Zanin, conduz o treinamento, que ocorre na sede do Sebrae em Macapá... nesta segunda (29)",
+      "evidencia": "Matéria Agência Sebrae AP",
+      "observacoes": "Data da matéria e evento: 29/08/2022."
+    },
+    {
+      "data": "2023-08-01",
+      "titulo": "Workshop 'A importância da participação das micro e pequenas empresas nas compras governamentais' (São Luís/MA)",
+      "descricao": "Participação como consultor do Sebrae Nacional em workshop sobre o Portal de Compras Governamentais do Maranhão, apresentando a Nova Lei de Licitações e a participação de MPEs.",
+      "tipo": "evento",
+      "eixo": "Suporte aos Municípios",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "Secretaria de Estado da Indústria e Comércio do Maranhão (SEINC) / Governo do Maranhão",
+      "url": "https://sead.ma.gov.br/noticia?/1018/Portal_de_Compras_Governamentais_%C3%A9_apresentado_a_micro_e_pequenos_empres%C3%A1rios_em_workshop",
+      "trecho": "O workshop contou também com a participação de Luís Maurício Junqueira Zanin, consultor de compras governamentais do Sebrae Nacional",
+      "evidencia": "Notícia oficial do Governo do Maranhão",
+      "observacoes": "Data da notícia: 01/08/2023."
+    },
+    {
+      "data": "2024-04",
+      "titulo": "Menção em reportagem sobre Nova Lei de Licitações (Ministério da Gestão)",
+      "descricao": "Citação como consultor do Sebrae Nacional em matéria do Ministério da Gestão sobre destaques da Nova Lei de Licitações (Lei 14.133/2021), destacando a modernização eletrônica das contratações.",
+      "tipo": "notícia",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Maurício Zanin",
+      "fonte": "Ministério da Gestão e Inovação em Serviços Públicos (MGI)",
+      "url": "https://www.gov.br/transferegov/pt-br/comunicados/arquivos-e-imagens/copy_of_PARECERn.00001_2025_DECOR_CGU_AGU_PRESCRIOEDECADNCIA_RESSARCIMENTOAOERRIO.pdf",
+      "trecho": "Maurício Zanin, consultor de Compras do Serviço de Apoio às Micro e Pequenas Empresas (Sebrae) Nacional... destaca: 'A Administração Pública está migrando para o modelo eletrônico e a lei exige modernização'",
+      "evidencia": "Matéria oficial do MGI",
+      "observacoes": "Publicada em 24/04/2024."
+    },
+    {
+      "data": null,
+      "titulo": "Cooperação Internacional – Consultoria ao Governo Português (PNCE)",
+      "descricao": "Prestação de consultoria internacional para revisão do Programa Nacional de Compras Eletrônicas (PNCE) do Governo Português, junto à UMIC (Presidência do Conselho de Ministros de Portugal).",
+      "tipo": "evento",
+      "eixo": "Cooperação Internacional",
+      "pessoa_mencionada": "Luís Maurício Junqueira Zanin",
+      "fonte": "CNM / Curriculum vitae",
+      "url": "https://mauriciozanin.com/curriculo.html",
+      "trecho": "auxiliou, logo em seguida, na revisão do PNCE – Programa Nacional de Compras Eletrônicas do Governo Português junto à Umic, vinculada à Presidência de Conselho de Ministros daquele país",
+      "evidencia": "Currículo oficial",
+      "observacoes": "Período não especificado, provavelmente após 2002 (conclusão do Comprasnet)."
+    },
+    {
+      "data": "2025-07-24",
+      "titulo": "Oficina Contrata+Brasil – Transformar Juntos 2025 (Brasília/DF)",
+      "descricao": "Condução de oficina prática sobre a plataforma Contrata+Brasil durante o evento Transformar Juntos 2025, realizada em parceria entre Ministério da Gestão e SEBRAE Nacional.",
+      "tipo": "evento",
+      "eixo": "Compras Governamentais",
+      "pessoa_mencionada": "Maurício Zanin",
+      "fonte": "Ministério da Gestão e Inovação em Serviços Públicos (MGI) / Gov.br",
+      "url": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/julho/oficina-sobre-o-contrata-brasil-aproxima-governo-federal-de-gestores-locais-no-transformar-juntos-2025",
+      "trecho": "Maurício Zanin, representante do Sebrae Nacional que conduziu a oficina, ressaltou a metodologia prática adotada",
+      "evidencia": "Notícia oficial do Gov.br",
+      "observacoes": "Data do evento: 24/07/2025."
+    }
+  ],
+  "referencias_abnt": [
+    "BRASIL. Ministério do Planejamento, Orçamento e Gestão. Relatório Anual de Avaliação do Plano Plurianual 2000-2003. Brasília: MPOG, 2002. Disponível em: https://www2.camara.leg.br/orcamento-da-uniao/leis-orcamentarias/ppa/2000-2003/ppa20002003/ppa_rel_aval/020_planejamento.PDF. Acesso em: 30 jan. 2025.",
+    "BRASIL. Ministério Público Federal. Portaria nº 10, de 12 de maio de 2009. Brasília: MPF, 2009. Disponível em: https://biblioteca.mpf.mp.br/repositorio/bitstreams/993a8c29-55ef-471d-aea3-504276502962/download. Acesso em: 30 jan. 2025.",
+    "BRASIL. Polícia Federal. Relatório Final – Operação Abin Paralela. Brasília: PF, 2024. Disponível em: https://static.poder360.com.br/2025/06/RELATORIO-FINAL-PF-ABIN-PARALELA-4.pdf. Acesso em: 30 jan. 2025.",
+    "CONFEDERAÇÃO NACIONAL DE MUNICÍPIOS (CNM). Internacional: a importância do protagonismo dos Municípios na cooperação internacional em um mundo globalizado. Brasília: CNM, 2020. (Coleção Gestão Pública Municipal Novos Gestores 2021-2024). Disponível em: https://cnm.org.br/storage/biblioteca/Internacional-a-importancia-do-protagonismo-dos-Municipios%20na-cooperacao-internacional-em-um-mundo-globalizado.pdf. Acesso em: 30 jan. 2025.",
+    "EQUIPLANO. Manual de Licitações será lançado na segunda-feira, dia 28. Curitiba: Equiplano, 2021. Disponível em: https://www.equiplano.com.br/artigo.php?a=181. Acesso em: 30 jan. 2025.",
+    "FÓRUM PERMANENTE DAS MICROEMPRESAS E EMPRESAS DE PEQUENO PORTE DO ESTADO DO PARANÁ (FOPEME). Ata da 43ª Reunião Ordinária do FOPEME. Curitiba: FOPEME, 2019. Disponível em: https://www.fopeme.pr.gov.br/sites/pme/arquivos_restritos/files/documento/2020-07/43_reuniao_ordinaria.pdf. Acesso em: 30 jan. 2025.",
+    "INSTITUTO INOVAJUNTOS. Equipe do Projeto no Brasil e Portugal: Maurício Zanin. Brasília: InovaJuntos, 2024. Disponível em: https://inovajuntos.org/mauriciozanin-cv/. Acesso em: 30 jan. 2025.",
+    "MARANHÃO. Secretaria de Estado da Indústria e Comércio (SEINC). Portal de Compras Governamentais é apresentado a micro e pequenos empresários em workshop. São Luís: SEINC, 2023. Disponível em: https://sead.ma.gov.br/noticia?/1018/Portal_de_Compras_Governamentais_%C3%A9_apresentado_a_micro_e_pequenos_empres%C3%A1rios_em_workshop. Acesso em: 30 jan. 2025.",
+    "MINISTÉRIO DA GESTÃO E INOVAÇÃO EM SERVIÇOS PÚBLICOS (MGI). Oficina sobre o Contrata+Brasil aproxima governo federal de gestores locais no Transformar Juntos 2025. Brasília: MGI, 2025. Disponível em: https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/julho/oficina-sobre-o-contrata-brasil-aproxima-governo-federal-de-gestores-locais-no-transformar-juntos-2025. Acesso em: 30 jan. 2025.",
+    "SEBRAE AP. Sebrae promove alinhamento técnico para tratar de impactos da nova lei de licitações e contratos nos municípios. Macapá: Sebrae/AP, 2022. Disponível em: https://ap.agenciasebrae.com.br/economia-e-politica/sebrae-promove-alinhamento-tecnico-para-tratar-de-impactos-da-nova-lei-de-licitacoes-e-contratos-nos-municipios/. Acesso em: 30 jan. 2025.",
+    "SEBRAE NACIONAL. Cartilha do Fornecedor: o caminho para ter sucesso na contratação pública. Brasília: Sebrae, 2014. Disponível em: https://s3.sa-east-1.amazonaws.com/licitacoes.saquarema.rj.gov.br/wp-content/uploads/2018/10/Cartilha-do-Fornecedor.pdf. Acesso em: 30 jan. 2025.",
+    "TRIBUNAL DE CONTAS DO ESTADO DO PARANÁ (TCE-PR). Manual de Licitações. 3. ed. Curitiba: EGP/TCEPR/FOPEME; SEBRAE, 2021. Disponível em: https://www1.tce.pr.gov.br/conteudo/manual-de-licitacoes/305196/area/251. Acesso em: 30 jan. 2025.",
+    "UNIEDUCAR. Projeto Pedagógico do Curso Superior de Tecnologia em Gestão Pública. Palmas: Unieducar, 2020. Disponível em: https://unieducar.org.br/sites/default/files/faculdade-unieducar/ppc-gp.pdf. Acesso em: 30 jan. 2025. (Referência às obras de Zanin, 2006 e 2008).",
+    "ZANIN, Luís Maurício Junqueira. Curriculum Vitae. Brasília: mauriciozanin.com, 2024. Disponível em: https://mauriciozanin.com/curriculo.html. Acesso em: 30 jan. 2025."
+  ]
+}
+
+
+2) SUMÁRIO EXECUTIVO: PANORAMA DA TRAJETÓRIA (1996–PRESENTE)
+Perfil Profissional
+Luís Maurício Junqueira Zanin é consultor especialista em Compras Governamentais e Gestão Pública, com atuação híbrida entre o terceiro setor (CNM), o governo federal (SEBRAE Nacional) e a cooperação internacional (União Europeia/Portugal). Sua trajetória é marcada pela consolidação de políticas de desenvolvimento local via contratação pública e pela mediação institucional entre municípios, Estados e União.
+Cronologia e Marcos
+1996–2005: Formação e consolidação técnica
+Graduação em Administração Pública pela UNESP (1996), estabelecendo a base acadêmica para a atuação em gestão pública.
+Atuação como Gerente de Projetos da primeira fase do Portal Comprasnet (2000–2002), consórcio Serpro/Unisys/Vesta, marco inicial da digitalização das compras públicas federais (.Portaria MARE nº 5/2002).
+Início do vínculo com a CNM (aproximadamente 2004/2005), dando início a 20 anos de atuação na estruturação da entidade como maior municipalista da América Latina.
+2006–2015: Produção acadêmica e normativa
+Publicação das Cartilhas do Comprador (2006) e Manual de Licitação – Pregão (2008), obras de referência técnica para gestores municipais, editadas pelo CNM/SEBRAE.
+Conclusão do MBA em Políticas Públicas pela FGV, com dissertação analisando o impacto da contratação pública eletrônica (2006–2014) sobre as Micro e Pequenas Empresas (MPEs).
+Atuação como instrutor da ENAP e do Programa Brasil Municípios (BID), sistematizando conhecimento sobre compras eletrônicas para servidores federais e municipais.
+Consultoria internacional ao Governo Português (PNCE/UMIC), exportando o modelo brasileiro de compras eletrônicas.
+2016–Presente: Cooperação internacional e nova geração de políticas públicas
+Lançamento da Cartilha do Fornecedor (SEBRAE, 2014), consolidando-se como consultor credenciado do Sebrae Nacional na área de compras governamentais.
+Coordenação do Projeto InovaJuntos (2020–presente), financiado pela União Europeia, promovendo cooperação triangular (Brasil-Portugal-América Latina) para inovação municipal sustentável.
+3ª Edição do Manual de Licitações (TCE-PR/SEBRAE, 2021), incorporando inovações da Lei 14.133/2021 e a metodologia do "Jogo de Licitações", ferramenta pedagógica desenvolvida pelo consultor.
+Atuação recorrente em oficinas e capacitações (Maranhão-2023, Amapá-2022, evento Contrata+Brasil-2025), demonstrando atividade contínua na interface entre governo federal e entes subnacionais.
+Eixos de Atuação Consolidados
+Compras Governamentais: Pioneiro na criação do Comprasnet; desenvolvedor de metodologias de capacitação (Jogo de Licitações); consultor técnico no Comprasnet 4.0 e Contrata+Brasil.
+Suporte aos Municípios: 20 anos na CNM com foco em instrumentos de desenvolvimento local via LC 123/2006 e PNAE; coordenação de cursos para 6 milhões de servidores (CNM Qualifica).
+Cooperação Internacional: Coordenação do InovaJuntos (UE); consultoria ao governo português; missões técnicas internacionais (Portugal 2024, Espanha 2024).
+Registros de Menção em Documentos Oficiais Diversos
+Relatório Final da Polícia Federal (Operação Abin Paralela, 2024): citação a consultas realizadas em sistemas de informações em 16/05/2019.
+Atas do FOPEME-PR (2019): registro presencial em reunião técnica sobre alteração do Decreto 2.474/2015.
+Portarias do Ministério do Planejamento (2002): registro oficial da fase inicial do Comprasnet.
+Observação Metodológica
+A pesquisa priorizou fontes primárias governamentais (portarias, atas, relatórios oficiais) e institucionais (CNM, SEBRAE, TCE-PR). Menções a "Cristiano Zanin" (STF) e "Zani Cajueiro" (MPF) foram identificadas como homônimos distintos e descartadas da base. Os dados de graduação (1996) eMBA (período 2006–2014 da dissertação) fornecem a ancoragem temporal inicial da série histórica.
+
+3) LISTA DE FONTES – REFERÊNCIA ABNT
+BRASIL. Ministério do Planejamento, Orçamento e Gestão. Relatório Anual de Avaliação do Plano Plurianual 2000-2003. Brasília: MPOG, 2002. Disponível em: https://www2.camara.leg.br/orcamento-da-uniao/leis-orcamentarias/ppa/2000-2003/ppa20002003/ppa_rel_aval/020_planejamento.PDF. Acesso em: 30 jan. 2025.
+BRASIL. Ministério Público Federal. Portaria nº 10, de 12 de maio de 2009. Brasília: MPF, 2009. Disponível em: https://biblioteca.mpf.mp.br/repositorio/bitstreams/993a8c29-55ef-471d-aea3-504276502962/download. Acesso em: 30 jan. 2025.
+BRASIL. Polícia Federal. Relatório Final – Operação Abin Paralela. Brasília: PF, 2024. Disponível em: https://static.poder360.com.br/2025/06/RELATORIO-FINAL-PF-ABIN-PARALELA-4.pdf. Acesso em: 30 jan. 2025.
+CONFEDERAÇÃO NACIONAL DE MUNICÍPIOS (CNM). Internacional: a importância do protagonismo dos Municípios na cooperação internacional em um mundo globalizado. Brasília: CNM, 2020. (Coleção Gestão Pública Municipal Novos Gestores 2021-2024). Disponível em: https://cnm.org.br/storage/biblioteca/Internacional-a-importancia-do-protagonismo-dos-Municipios%20na-cooperacao-internacional-em-um-mundo-globalizado.pdf. Acesso em: 30 jan. 2025.
+EQUIPLANO. Manual de Licitações será lançado na segunda-feira, dia 28. Curitiba: Equiplano, 2021. Disponível em: https://www.equiplano.com.br/artigo.php?a=181. Acesso em: 30 jan. 2025.
+FÓRUM PERMANENTE DAS MICROEMPRESAS E EMPRESAS DE PEQUENO PORTE DO ESTADO DO PARANÁ (FOPEME). Ata da 43ª Reunião Ordinária do FOPEME. Curitiba: FOPEME, 2019. Disponível em: https://www.fopeme.pr.gov.br/sites/pme/arquivos_restritos/files/documento/2020-07/43_reuniao_ordinaria.pdf. Acesso em: 30 jan. 2025.
+INSTITUTO INOVAJUNTOS. Equipe do Projeto no Brasil e Portugal: Maurício Zanin. Brasília: InovaJuntos, 2024. Disponível em: https://inovajuntos.org/mauriciozanin-cv/. Acesso em: 30 jan. 2025.
+MARANHÃO. Secretaria de Estado da Indústria e Comércio (SEINC). Portal de Compras Governamentais é apresentado a micro e pequenos empresários em workshop. São Luís: SEINC, 2023. Disponível em: https://sead.ma.gov.br/noticia?/1018/Portal_de_Compras_Governamentais_%C3%A9_apresentado_a_micro_e_pequenos_empres%C3%A1rios_em_workshop. Acesso em: 30 jan. 2025.
+MINISTÉRIO DA GESTÃO E INOVAÇÃO EM SERVIÇOS PÚBLICOS (MGI). Oficina sobre o Contrata+Brasil aproxima governo federal de gestores locais no Transformar Juntos 2025. Brasília: MGI, 2025. Disponível em: https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/julho/oficina-sobre-o-contrata-brasil-aproxima-governo-federal-de-gestores-locais-no-transformar-juntos-2025. Acesso em: 30 jan. 2025.
+SEBRAE AP. Sebrae promove alinhamento técnico para tratar de impactos da nova lei de licitações e contratos nos municípios. Macapá: Sebrae/AP, 2022. Disponível em: https://ap.agenciasebrae.com.br/economia-e-politica/sebrae-promove-alinhamento-tecnico-para-tratar-de-impactos-da-nova-lei-de-licitacoes-e-contratos-nos-municipios/. Acesso em: 30 jan. 2025.
+SEBRAE NACIONAL. Cartilha do Fornecedor: o caminho para ter sucesso na contratação pública. Brasília: Sebrae, 2014. Disponível em: https://s3.sa-east-1.amazonaws.com/licitacoes.saquarema.rj.gov.br/wp-content/uploads/2018/10/Cartilha-do-Fornecedor.pdf. Acesso em: 30 jan. 2025.
+TRIBUNAL DE CONTAS DO ESTADO DO PARANÁ (TCE-PR). Manual de Licitações. 3. ed. Curitiba: EGP/TCEPR/FOPEME; SEBRAE, 2021. Disponível em: https://www1.tce.pr.gov.br/conteudo/manual-de-licitacoes/305196/area/251. Acesso em: 30 jan. 2025.
+UNIEDUCAR. Projeto Pedagógico do Curso Superior de Tecnologia em Gestão Pública. Palmas: Unieducar, 2020. Disponível em: https://unieducar.org.br/sites/default/files/faculdade-unieducar/ppc-gp.pdf. Acesso em: 30 jan. 2025.
+ZANIN, Luís Maurício Junqueira. Curriculum Vitae. Brasília: mauriciozanin.com, 2024. Disponível em: https://mauriciozanin.com/curriculo.html. Acesso em: 30 jan. 2025.

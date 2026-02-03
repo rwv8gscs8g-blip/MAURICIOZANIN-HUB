@@ -1,0 +1,841 @@
+{
+  "uf": "TO",
+  "fonte": "IBGE Malha 2023",
+  "total": 139,
+  "municipios": [
+    {
+      "ibgeId": "1700251",
+      "nome": "AbreulÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1700301",
+      "nome": "AguiarnÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1700350",
+      "nome": "AlianÃ§a do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1700400",
+      "nome": "Almas",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1700707",
+      "nome": "Alvorada",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1701002",
+      "nome": "AnanÃ¡s",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1701051",
+      "nome": "Angico",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1701101",
+      "nome": "Aparecida do Rio Negro",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1701309",
+      "nome": "Aragominas",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1701903",
+      "nome": "Araguacema",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702000",
+      "nome": "AraguaÃ§u",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702109",
+      "nome": "AraguaÃ­na",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702158",
+      "nome": "AraguanÃ£",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702208",
+      "nome": "Araguatins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702307",
+      "nome": "Arapoema",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702406",
+      "nome": "Arraias",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702554",
+      "nome": "AugustinÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702703",
+      "nome": "Aurora do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1702901",
+      "nome": "AxixÃ¡ do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703008",
+      "nome": "BabaÃ§ulÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703057",
+      "nome": "Bandeirantes do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703073",
+      "nome": "Barra do Ouro",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703107",
+      "nome": "BarrolÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703206",
+      "nome": "Bernardo SayÃ£o",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703305",
+      "nome": "Bom Jesus do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703602",
+      "nome": "BrasilÃ¢ndia do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703701",
+      "nome": "Brejinho de NazarÃ©",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703800",
+      "nome": "Buriti do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703826",
+      "nome": "Cachoeirinha",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703842",
+      "nome": "Campos Lindos",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703867",
+      "nome": "Cariri do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703883",
+      "nome": "CarmolÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703891",
+      "nome": "Carrasco Bonito",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1703909",
+      "nome": "Caseara",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1704105",
+      "nome": "CentenÃ¡rio",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1704600",
+      "nome": "Chapada de Areia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1705102",
+      "nome": "Chapada da Natividade",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1705508",
+      "nome": "Colinas do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1705557",
+      "nome": "Combinado",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1705607",
+      "nome": "ConceiÃ§Ã£o do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1706001",
+      "nome": "Couto MagalhÃ£es",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1706100",
+      "nome": "CristalÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1706258",
+      "nome": "CrixÃ¡s do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1706506",
+      "nome": "DarcinÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707009",
+      "nome": "DianÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707108",
+      "nome": "DivinÃ³polis do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707207",
+      "nome": "Dois IrmÃ£os do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707306",
+      "nome": "DuerÃ©",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707405",
+      "nome": "Esperantina",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707553",
+      "nome": "FÃ¡tima",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707652",
+      "nome": "FigueirÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1707702",
+      "nome": "FiladÃ©lfia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1708205",
+      "nome": "Formoso do Araguaia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1708254",
+      "nome": "TabocÃ£o",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1708304",
+      "nome": "Goianorte",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1709005",
+      "nome": "Goiatins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1709302",
+      "nome": "GuaraÃ­",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1709500",
+      "nome": "Gurupi",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1709807",
+      "nome": "Ipueiras",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1710508",
+      "nome": "ItacajÃ¡",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1710706",
+      "nome": "Itaguatins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1710904",
+      "nome": "Itapiratins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1711100",
+      "nome": "ItaporÃ£ do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1711506",
+      "nome": "JaÃº do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1711803",
+      "nome": "Juarina",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1711902",
+      "nome": "Lagoa da ConfusÃ£o",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1711951",
+      "nome": "Lagoa do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1712009",
+      "nome": "Lajeado",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1712157",
+      "nome": "Lavandeira",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1712405",
+      "nome": "Lizarda",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1712454",
+      "nome": "LuzinÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1712504",
+      "nome": "MarianÃ³polis do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1712702",
+      "nome": "Mateiros",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1712801",
+      "nome": "MaurilÃ¢ndia do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1713205",
+      "nome": "Miracema do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1713304",
+      "nome": "Miranorte",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1713601",
+      "nome": "Monte do Carmo",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1713700",
+      "nome": "Monte Santo do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1713809",
+      "nome": "Palmeiras do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1713957",
+      "nome": "MuricilÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1714203",
+      "nome": "Natividade",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1714302",
+      "nome": "NazarÃ©",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1714880",
+      "nome": "Nova Olinda",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1715002",
+      "nome": "Nova RosalÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1715101",
+      "nome": "Novo Acordo",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1715150",
+      "nome": "Novo Alegre",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1715259",
+      "nome": "Novo Jardim",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1715507",
+      "nome": "Oliveira de FÃ¡tima",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1715705",
+      "nome": "Palmeirante",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1715754",
+      "nome": "PalmeirÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1716109",
+      "nome": "ParaÃ­so do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1716208",
+      "nome": "ParanÃ£",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1716307",
+      "nome": "Pau D'Arco",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1716505",
+      "nome": "Pedro Afonso",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1716604",
+      "nome": "Peixe",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1716653",
+      "nome": "Pequizeiro",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1716703",
+      "nome": "ColmÃ©ia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1717008",
+      "nome": "Pindorama do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1717206",
+      "nome": "PiraquÃª",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1717503",
+      "nome": "Pium",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1717800",
+      "nome": "Ponte Alta do Bom Jesus",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1717909",
+      "nome": "Ponte Alta do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718006",
+      "nome": "Porto Alegre do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718204",
+      "nome": "Porto Nacional",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718303",
+      "nome": "Praia Norte",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718402",
+      "nome": "Presidente Kennedy",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718451",
+      "nome": "Pugmil",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718501",
+      "nome": "RecursolÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718550",
+      "nome": "Riachinho",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718659",
+      "nome": "Rio da ConceiÃ§Ã£o",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718709",
+      "nome": "Rio dos Bois",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718758",
+      "nome": "Rio Sono",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718808",
+      "nome": "Sampaio",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718840",
+      "nome": "SandolÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718865",
+      "nome": "Santa FÃ© do Araguaia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718881",
+      "nome": "Santa Maria do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718899",
+      "nome": "Santa Rita do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1718907",
+      "nome": "Santa Rosa do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1719004",
+      "nome": "Santa Tereza do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720002",
+      "nome": "Santa Terezinha do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720101",
+      "nome": "SÃ£o Bento do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720150",
+      "nome": "SÃ£o FÃ©lix do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720200",
+      "nome": "SÃ£o Miguel do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720259",
+      "nome": "SÃ£o Salvador do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720309",
+      "nome": "SÃ£o SebastiÃ£o do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720499",
+      "nome": "SÃ£o ValÃ©rio",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720655",
+      "nome": "SilvanÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720804",
+      "nome": "SÃ­tio Novo do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720853",
+      "nome": "Sucupira",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720903",
+      "nome": "Taguatinga",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720937",
+      "nome": "Taipas do Tocantins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1720978",
+      "nome": "TalismÃ£",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1721000",
+      "nome": "Palmas",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1721109",
+      "nome": "TocantÃ­nia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1721208",
+      "nome": "TocantinÃ³polis",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1721257",
+      "nome": "Tupirama",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1721307",
+      "nome": "Tupiratins",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1722081",
+      "nome": "WanderlÃ¢ndia",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1722107",
+      "nome": "XambioÃ¡",
+      "uf": "TO",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

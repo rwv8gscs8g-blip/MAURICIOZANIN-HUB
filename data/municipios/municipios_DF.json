@@ -1,0 +1,13 @@
+{
+  "uf": "DF",
+  "fonte": "IBGE Malha 2023",
+  "total": 1,
+  "municipios": [
+    {
+      "ibgeId": "5300108",
+      "nome": "BrasÃ­lia",
+      "uf": "DF",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

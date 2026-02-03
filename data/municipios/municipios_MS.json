@@ -1,0 +1,481 @@
+{
+  "uf": "MS",
+  "fonte": "IBGE Malha 2023",
+  "total": 79,
+  "municipios": [
+    {
+      "ibgeId": "5000203",
+      "nome": "Ãgua Clara",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5000252",
+      "nome": "AlcinÃ³polis",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5000609",
+      "nome": "Amambai",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5000708",
+      "nome": "AnastÃ¡cio",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5000807",
+      "nome": "AnaurilÃ¢ndia",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5000856",
+      "nome": "AngÃ©lica",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5000906",
+      "nome": "AntÃ´nio JoÃ£o",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5001003",
+      "nome": "Aparecida do Taboado",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5001102",
+      "nome": "Aquidauana",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5001243",
+      "nome": "Aral Moreira",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5001508",
+      "nome": "Bandeirantes",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5001904",
+      "nome": "Bataguassu",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002001",
+      "nome": "BatayporÃ£",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002100",
+      "nome": "Bela Vista",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002159",
+      "nome": "Bodoquena",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002209",
+      "nome": "Bonito",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002308",
+      "nome": "BrasilÃ¢ndia",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002407",
+      "nome": "CaarapÃ³",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002605",
+      "nome": "CamapuÃ£",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002704",
+      "nome": "Campo Grande",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002803",
+      "nome": "Caracol",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002902",
+      "nome": "CassilÃ¢ndia",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5002951",
+      "nome": "ChapadÃ£o do Sul",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003108",
+      "nome": "Corguinho",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003157",
+      "nome": "Coronel Sapucaia",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003207",
+      "nome": "CorumbÃ¡",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003256",
+      "nome": "Costa Rica",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003306",
+      "nome": "Coxim",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003454",
+      "nome": "DeodÃ¡polis",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003488",
+      "nome": "Dois IrmÃ£os do Buriti",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003504",
+      "nome": "Douradina",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003702",
+      "nome": "Dourados",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003751",
+      "nome": "Eldorado",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003801",
+      "nome": "FÃ¡tima do Sul",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5003900",
+      "nome": "FigueirÃ£o",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004007",
+      "nome": "GlÃ³ria de Dourados",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004106",
+      "nome": "Guia Lopes da Laguna",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004304",
+      "nome": "Iguatemi",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004403",
+      "nome": "InocÃªncia",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004502",
+      "nome": "ItaporÃ£",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004601",
+      "nome": "ItaquiraÃ­",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004700",
+      "nome": "Ivinhema",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004809",
+      "nome": "JaporÃ£",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5004908",
+      "nome": "Jaraguari",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005004",
+      "nome": "Jardim",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005103",
+      "nome": "JateÃ­",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005152",
+      "nome": "Juti",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005202",
+      "nome": "LadÃ¡rio",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005251",
+      "nome": "Laguna CarapÃ£",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005400",
+      "nome": "Maracaju",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005608",
+      "nome": "Miranda",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005681",
+      "nome": "Mundo Novo",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005707",
+      "nome": "NaviraÃ­",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5005806",
+      "nome": "Nioaque",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006002",
+      "nome": "Nova Alvorada do Sul",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006200",
+      "nome": "Nova Andradina",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006259",
+      "nome": "Novo Horizonte do Sul",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006275",
+      "nome": "ParaÃ­so das Ãguas",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006309",
+      "nome": "ParanaÃ­ba",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006358",
+      "nome": "Paranhos",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006408",
+      "nome": "Pedro Gomes",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006606",
+      "nome": "Ponta PorÃ£",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5006903",
+      "nome": "Porto Murtinho",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007109",
+      "nome": "Ribas do Rio Pardo",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007208",
+      "nome": "Rio Brilhante",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007307",
+      "nome": "Rio Negro",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007406",
+      "nome": "Rio Verde de Mato Grosso",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007505",
+      "nome": "Rochedo",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007554",
+      "nome": "Santa Rita do Pardo",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007695",
+      "nome": "SÃ£o Gabriel do Oeste",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007703",
+      "nome": "Sete Quedas",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007802",
+      "nome": "SelvÃ­ria",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007901",
+      "nome": "SidrolÃ¢ndia",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007935",
+      "nome": "Sonora",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007950",
+      "nome": "Tacuru",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5007976",
+      "nome": "Taquarussu",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5008008",
+      "nome": "Terenos",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5008305",
+      "nome": "TrÃªs Lagoas",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5008404",
+      "nome": "Vicentina",
+      "uf": "MS",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

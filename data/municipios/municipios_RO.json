@@ -1,0 +1,319 @@
+{
+  "uf": "RO",
+  "fonte": "IBGE Malha 2023",
+  "total": 52,
+  "municipios": [
+    {
+      "ibgeId": "1100015",
+      "nome": "Alta Floresta D'Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100023",
+      "nome": "Ariquemes",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100031",
+      "nome": "Cabixi",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100049",
+      "nome": "Cacoal",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100056",
+      "nome": "Cerejeiras",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100064",
+      "nome": "Colorado do Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100072",
+      "nome": "Corumbiara",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100080",
+      "nome": "Costa Marques",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100098",
+      "nome": "EspigÃ£o D'Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100106",
+      "nome": "GuajarÃ¡-Mirim",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100114",
+      "nome": "Jaru",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100122",
+      "nome": "Ji-ParanÃ¡",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100130",
+      "nome": "Machadinho D'Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100148",
+      "nome": "Nova BrasilÃ¢ndia D'Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100155",
+      "nome": "Ouro Preto do Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100189",
+      "nome": "Pimenta Bueno",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100205",
+      "nome": "Porto Velho",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100254",
+      "nome": "Presidente MÃ©dici",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100262",
+      "nome": "Rio Crespo",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100288",
+      "nome": "Rolim de Moura",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100296",
+      "nome": "Santa Luzia D'Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100304",
+      "nome": "Vilhena",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100320",
+      "nome": "SÃ£o Miguel do GuaporÃ©",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100338",
+      "nome": "Nova MamorÃ©",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100346",
+      "nome": "Alvorada D'Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100379",
+      "nome": "Alto Alegre dos Parecis",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100403",
+      "nome": "Alto ParaÃ­so",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100452",
+      "nome": "Buritis",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100502",
+      "nome": "Novo Horizonte do Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100601",
+      "nome": "CacaulÃ¢ndia",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100700",
+      "nome": "Campo Novo de RondÃ´nia",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100809",
+      "nome": "Candeias do Jamari",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100908",
+      "nome": "Castanheiras",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100924",
+      "nome": "Chupinguaia",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1100940",
+      "nome": "Cujubim",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101005",
+      "nome": "Governador Jorge Teixeira",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101104",
+      "nome": "ItapuÃ£ do Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101203",
+      "nome": "Ministro Andreazza",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101302",
+      "nome": "Mirante da Serra",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101401",
+      "nome": "Monte Negro",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101435",
+      "nome": "Nova UniÃ£o",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101450",
+      "nome": "Parecis",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101468",
+      "nome": "Pimenteiras do Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101476",
+      "nome": "Primavera de RondÃ´nia",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101484",
+      "nome": "SÃ£o Felipe D'Oeste",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101492",
+      "nome": "SÃ£o Francisco do GuaporÃ©",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101500",
+      "nome": "Seringueiras",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101559",
+      "nome": "TeixeirÃ³polis",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101609",
+      "nome": "Theobroma",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101708",
+      "nome": "UrupÃ¡",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101757",
+      "nome": "Vale do Anari",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1101807",
+      "nome": "Vale do ParaÃ­so",
+      "uf": "RO",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

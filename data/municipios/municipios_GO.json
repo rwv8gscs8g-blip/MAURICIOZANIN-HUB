@@ -1,0 +1,1483 @@
+{
+  "uf": "GO",
+  "fonte": "IBGE Malha 2023",
+  "total": 246,
+  "municipios": [
+    {
+      "ibgeId": "5200050",
+      "nome": "Abadia de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200100",
+      "nome": "AbadiÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200134",
+      "nome": "AcreÃºna",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200159",
+      "nome": "AdelÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200175",
+      "nome": "Ãgua Fria de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200209",
+      "nome": "Ãgua Limpa",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200258",
+      "nome": "Ãguas Lindas de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200308",
+      "nome": "AlexÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200506",
+      "nome": "AloÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200555",
+      "nome": "Alto Horizonte",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200605",
+      "nome": "Alto ParaÃ­so de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200803",
+      "nome": "Alvorada do Norte",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200829",
+      "nome": "Amaralina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200852",
+      "nome": "Americano do Brasil",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5200902",
+      "nome": "AmorinÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201108",
+      "nome": "AnÃ¡polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201207",
+      "nome": "Anhanguera",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201306",
+      "nome": "Anicuns",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201405",
+      "nome": "Aparecida de GoiÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201454",
+      "nome": "Aparecida do Rio Doce",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201504",
+      "nome": "AporÃ©",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201603",
+      "nome": "AraÃ§u",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201702",
+      "nome": "AragarÃ§as",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5201801",
+      "nome": "AragoiÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5202155",
+      "nome": "Araguapaz",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5202353",
+      "nome": "ArenÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5202502",
+      "nome": "AruanÃ£",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5202601",
+      "nome": "AurilÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5202809",
+      "nome": "AvelinÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203104",
+      "nome": "Baliza",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203203",
+      "nome": "Barro Alto",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203302",
+      "nome": "Bela Vista de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203401",
+      "nome": "Bom Jardim de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203500",
+      "nome": "Bom Jesus de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203559",
+      "nome": "BonfinÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203575",
+      "nome": "BonÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203609",
+      "nome": "Brazabrantes",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203807",
+      "nome": "BritÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203906",
+      "nome": "Buriti Alegre",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203939",
+      "nome": "Buriti de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5203962",
+      "nome": "BuritinÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204003",
+      "nome": "Cabeceiras",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204102",
+      "nome": "Cachoeira Alta",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204201",
+      "nome": "Cachoeira de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204250",
+      "nome": "Cachoeira Dourada",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204300",
+      "nome": "CaÃ§u",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204409",
+      "nome": "CaiapÃ´nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204508",
+      "nome": "Caldas Novas",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204557",
+      "nome": "Caldazinha",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204607",
+      "nome": "Campestre de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204656",
+      "nome": "CampinaÃ§u",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204706",
+      "nome": "Campinorte",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204805",
+      "nome": "Campo Alegre de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204854",
+      "nome": "Campo Limpo de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204904",
+      "nome": "Campos Belos",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5204953",
+      "nome": "Campos Verdes",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205000",
+      "nome": "Carmo do Rio Verde",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205059",
+      "nome": "CastelÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205109",
+      "nome": "CatalÃ£o",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205208",
+      "nome": "CaturaÃ­",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205307",
+      "nome": "Cavalcante",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205406",
+      "nome": "Ceres",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205455",
+      "nome": "Cezarina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205471",
+      "nome": "ChapadÃ£o do CÃ©u",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205497",
+      "nome": "Cidade Ocidental",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205513",
+      "nome": "Cocalzinho de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205521",
+      "nome": "Colinas do Sul",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205703",
+      "nome": "CÃ³rrego do Ouro",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205802",
+      "nome": "CorumbÃ¡ de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5205901",
+      "nome": "CorumbaÃ­ba",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206206",
+      "nome": "Cristalina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206305",
+      "nome": "CristianÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206404",
+      "nome": "CrixÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206503",
+      "nome": "CromÃ­nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206602",
+      "nome": "Cumari",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206701",
+      "nome": "DamianÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206800",
+      "nome": "DamolÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5206909",
+      "nome": "DavinÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207105",
+      "nome": "Diorama",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207253",
+      "nome": "DoverlÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207352",
+      "nome": "Edealina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207402",
+      "nome": "EdÃ©ia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207501",
+      "nome": "Estrela do Norte",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207535",
+      "nome": "Faina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207600",
+      "nome": "Fazenda Nova",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207808",
+      "nome": "FirminÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5207907",
+      "nome": "Flores de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208004",
+      "nome": "Formosa",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208103",
+      "nome": "Formoso",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208152",
+      "nome": "Gameleira de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208301",
+      "nome": "DivinÃ³polis de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208400",
+      "nome": "GoianÃ¡polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208509",
+      "nome": "Goiandira",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208608",
+      "nome": "GoianÃ©sia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208707",
+      "nome": "GoiÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208806",
+      "nome": "Goianira",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5208905",
+      "nome": "GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209101",
+      "nome": "Goiatuba",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209150",
+      "nome": "GouvelÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209200",
+      "nome": "GuapÃ³",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209291",
+      "nome": "GuaraÃ­ta",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209408",
+      "nome": "Guarani de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209457",
+      "nome": "Guarinos",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209606",
+      "nome": "HeitoraÃ­",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209705",
+      "nome": "HidrolÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209804",
+      "nome": "Hidrolina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209903",
+      "nome": "Iaciara",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209937",
+      "nome": "InaciolÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5209952",
+      "nome": "Indiara",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210000",
+      "nome": "Inhumas",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210109",
+      "nome": "Ipameri",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210158",
+      "nome": "Ipiranga de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210208",
+      "nome": "IporÃ¡",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210307",
+      "nome": "IsraelÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210406",
+      "nome": "ItaberaÃ­",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210562",
+      "nome": "Itaguari",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210604",
+      "nome": "Itaguaru",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210802",
+      "nome": "ItajÃ¡",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5210901",
+      "nome": "Itapaci",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211008",
+      "nome": "ItapirapuÃ£",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211206",
+      "nome": "Itapuranga",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211305",
+      "nome": "ItarumÃ£",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211404",
+      "nome": "ItauÃ§u",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211503",
+      "nome": "Itumbiara",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211602",
+      "nome": "IvolÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211701",
+      "nome": "Jandaia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211800",
+      "nome": "JaraguÃ¡",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5211909",
+      "nome": "JataÃ­",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212006",
+      "nome": "Jaupaci",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212055",
+      "nome": "JesÃºpolis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212105",
+      "nome": "JoviÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212204",
+      "nome": "Jussara",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212253",
+      "nome": "Lagoa Santa",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212303",
+      "nome": "Leopoldo de BulhÃµes",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212501",
+      "nome": "LuziÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212600",
+      "nome": "Mairipotaba",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212709",
+      "nome": "MambaÃ­",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212808",
+      "nome": "Mara Rosa",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212907",
+      "nome": "MarzagÃ£o",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5212956",
+      "nome": "MatrinchÃ£",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213004",
+      "nome": "MaurilÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213053",
+      "nome": "Mimoso de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213087",
+      "nome": "MinaÃ§u",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213103",
+      "nome": "Mineiros",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213400",
+      "nome": "MoiporÃ¡",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213509",
+      "nome": "Monte Alegre de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213707",
+      "nome": "Montes Claros de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213756",
+      "nome": "Montividiu",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213772",
+      "nome": "Montividiu do Norte",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213806",
+      "nome": "Morrinhos",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213855",
+      "nome": "Morro Agudo de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5213905",
+      "nome": "MossÃ¢medes",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214002",
+      "nome": "MozarlÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214051",
+      "nome": "Mundo Novo",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214101",
+      "nome": "MutunÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214408",
+      "nome": "NazÃ¡rio",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214507",
+      "nome": "NerÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214606",
+      "nome": "NiquelÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214705",
+      "nome": "Nova AmÃ©rica",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214804",
+      "nome": "Nova Aurora",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214838",
+      "nome": "Nova CrixÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214861",
+      "nome": "Nova GlÃ³ria",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214879",
+      "nome": "Nova IguaÃ§u de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5214903",
+      "nome": "Nova Roma",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215009",
+      "nome": "Nova Veneza",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215207",
+      "nome": "Novo Brasil",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215231",
+      "nome": "Novo Gama",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215256",
+      "nome": "Novo Planalto",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215306",
+      "nome": "Orizona",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215405",
+      "nome": "Ouro Verde de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215504",
+      "nome": "Ouvidor",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215603",
+      "nome": "Padre Bernardo",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215652",
+      "nome": "Palestina de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215702",
+      "nome": "Palmeiras de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215801",
+      "nome": "Palmelo",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5215900",
+      "nome": "PalminÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5216007",
+      "nome": "PanamÃ¡",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5216304",
+      "nome": "Paranaiguara",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5216403",
+      "nome": "ParaÃºna",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5216452",
+      "nome": "PerolÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5216809",
+      "nome": "Petrolina de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5216908",
+      "nome": "Pilar de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5217104",
+      "nome": "Piracanjuba",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5217203",
+      "nome": "Piranhas",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5217302",
+      "nome": "PirenÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5217401",
+      "nome": "Pires do Rio",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5217609",
+      "nome": "Planaltina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5217708",
+      "nome": "Pontalina",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218003",
+      "nome": "Porangatu",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218052",
+      "nome": "PorteirÃ£o",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218102",
+      "nome": "PortelÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218300",
+      "nome": "Posse",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218391",
+      "nome": "Professor Jamil",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218508",
+      "nome": "QuirinÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218607",
+      "nome": "Rialma",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218706",
+      "nome": "RianÃ¡polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218789",
+      "nome": "Rio Quente",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218805",
+      "nome": "Rio Verde",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5218904",
+      "nome": "Rubiataba",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219001",
+      "nome": "SanclerlÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219100",
+      "nome": "Santa BÃ¡rbara de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219209",
+      "nome": "Santa Cruz de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219258",
+      "nome": "Santa FÃ© de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219308",
+      "nome": "Santa Helena de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219357",
+      "nome": "Santa Isabel",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219407",
+      "nome": "Santa Rita do Araguaia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219456",
+      "nome": "Santa Rita do Novo Destino",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219506",
+      "nome": "Santa Rosa de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219605",
+      "nome": "Santa Tereza de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219704",
+      "nome": "Santa Terezinha de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219712",
+      "nome": "Santo AntÃ´nio da Barra",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219738",
+      "nome": "Santo AntÃ´nio de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219753",
+      "nome": "Santo AntÃ´nio do Descoberto",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219803",
+      "nome": "SÃ£o Domingos",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5219902",
+      "nome": "SÃ£o Francisco de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220009",
+      "nome": "SÃ£o JoÃ£o d'AlianÃ§a",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220058",
+      "nome": "SÃ£o JoÃ£o da ParaÃºna",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220108",
+      "nome": "SÃ£o LuÃ­s de Montes Belos",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220157",
+      "nome": "SÃ£o Luiz do Norte",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220207",
+      "nome": "SÃ£o Miguel do Araguaia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220264",
+      "nome": "SÃ£o Miguel do Passa Quatro",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220280",
+      "nome": "SÃ£o PatrÃ­cio",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220405",
+      "nome": "SÃ£o SimÃ£o",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220454",
+      "nome": "Senador Canedo",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220504",
+      "nome": "SerranÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220603",
+      "nome": "SilvÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220686",
+      "nome": "SimolÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5220702",
+      "nome": "SÃ­tio d'Abadia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221007",
+      "nome": "Taquaral de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221080",
+      "nome": "Teresina de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221197",
+      "nome": "TerezÃ³polis de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221304",
+      "nome": "TrÃªs Ranchos",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221403",
+      "nome": "Trindade",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221452",
+      "nome": "Trombas",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221502",
+      "nome": "TurvÃ¢nia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221551",
+      "nome": "TurvelÃ¢ndia",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221577",
+      "nome": "Uirapuru",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221601",
+      "nome": "UruaÃ§u",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221700",
+      "nome": "Uruana",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221809",
+      "nome": "UrutaÃ­",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221858",
+      "nome": "ValparaÃ­so de GoiÃ¡s",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5221908",
+      "nome": "VarjÃ£o",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5222005",
+      "nome": "VianÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5222054",
+      "nome": "VicentinÃ³polis",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5222203",
+      "nome": "Vila Boa",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "5222302",
+      "nome": "Vila PropÃ­cio",
+      "uf": "GO",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

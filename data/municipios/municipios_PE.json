@@ -1,0 +1,1117 @@
+{
+  "uf": "PE",
+  "fonte": "IBGE Malha 2023",
+  "total": 185,
+  "municipios": [
+    {
+      "ibgeId": "2600054",
+      "nome": "Abreu e Lima",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600104",
+      "nome": "Afogados da Ingazeira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600203",
+      "nome": "AfrÃ¢nio",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600302",
+      "nome": "Agrestina",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600401",
+      "nome": "Ãgua Preta",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600500",
+      "nome": "Ãguas Belas",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600609",
+      "nome": "Alagoinha",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600708",
+      "nome": "AlianÃ§a",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600807",
+      "nome": "Altinho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2600906",
+      "nome": "Amaraji",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601003",
+      "nome": "Angelim",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601052",
+      "nome": "AraÃ§oiaba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601102",
+      "nome": "Araripina",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601201",
+      "nome": "Arcoverde",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601300",
+      "nome": "Barra de Guabiraba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601409",
+      "nome": "Barreiros",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601508",
+      "nome": "BelÃ©m de Maria",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601607",
+      "nome": "BelÃ©m do SÃ£o Francisco",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601706",
+      "nome": "Belo Jardim",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601805",
+      "nome": "BetÃ¢nia",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2601904",
+      "nome": "Bezerros",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602001",
+      "nome": "BodocÃ³",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602100",
+      "nome": "Bom Conselho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602209",
+      "nome": "Bom Jardim",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602308",
+      "nome": "Bonito",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602407",
+      "nome": "BrejÃ£o",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602506",
+      "nome": "Brejinho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602605",
+      "nome": "Brejo da Madre de Deus",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602704",
+      "nome": "Buenos Aires",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602803",
+      "nome": "BuÃ­que",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2602902",
+      "nome": "Cabo de Santo Agostinho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603009",
+      "nome": "CabrobÃ³",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603108",
+      "nome": "Cachoeirinha",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603207",
+      "nome": "CaetÃ©s",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603306",
+      "nome": "CalÃ§ado",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603405",
+      "nome": "Calumbi",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603454",
+      "nome": "Camaragibe",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603504",
+      "nome": "Camocim de SÃ£o FÃ©lix",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603603",
+      "nome": "Camutanga",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603702",
+      "nome": "Canhotinho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603801",
+      "nome": "Capoeiras",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603900",
+      "nome": "CarnaÃ­ba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2603926",
+      "nome": "Carnaubeira da Penha",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604007",
+      "nome": "Carpina",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604106",
+      "nome": "Caruaru",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604155",
+      "nome": "Casinhas",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604205",
+      "nome": "Catende",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604304",
+      "nome": "Cedro",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604403",
+      "nome": "ChÃ£ de Alegria",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604502",
+      "nome": "ChÃ£ Grande",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604601",
+      "nome": "Condado",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604700",
+      "nome": "Correntes",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604809",
+      "nome": "CortÃªs",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2604908",
+      "nome": "Cumaru",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605004",
+      "nome": "Cupira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605103",
+      "nome": "CustÃ³dia",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605152",
+      "nome": "Dormentes",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605202",
+      "nome": "Escada",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605301",
+      "nome": "Exu",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605400",
+      "nome": "Feira Nova",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605459",
+      "nome": "Fernando de Noronha",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605509",
+      "nome": "Ferreiros",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605608",
+      "nome": "Flores",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605707",
+      "nome": "Floresta",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605806",
+      "nome": "Frei Miguelinho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2605905",
+      "nome": "Gameleira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606002",
+      "nome": "Garanhuns",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606101",
+      "nome": "GlÃ³ria do GoitÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606200",
+      "nome": "Goiana",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606309",
+      "nome": "Granito",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606408",
+      "nome": "GravatÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606507",
+      "nome": "Iati",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606606",
+      "nome": "Ibimirim",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606705",
+      "nome": "Ibirajuba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606804",
+      "nome": "Igarassu",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2606903",
+      "nome": "Iguaracy",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607000",
+      "nome": "InajÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607109",
+      "nome": "Ingazeira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607208",
+      "nome": "Ipojuca",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607307",
+      "nome": "Ipubi",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607406",
+      "nome": "Itacuruba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607505",
+      "nome": "ItaÃ­ba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607604",
+      "nome": "Ilha de ItamaracÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607653",
+      "nome": "ItambÃ©",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607703",
+      "nome": "Itapetim",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607752",
+      "nome": "Itapissuma",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607802",
+      "nome": "Itaquitinga",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607901",
+      "nome": "JaboatÃ£o dos Guararapes",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2607950",
+      "nome": "Jaqueira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608008",
+      "nome": "JataÃºba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608057",
+      "nome": "JatobÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608107",
+      "nome": "JoÃ£o Alfredo",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608206",
+      "nome": "Joaquim Nabuco",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608255",
+      "nome": "Jucati",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608305",
+      "nome": "Jupi",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608404",
+      "nome": "Jurema",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608453",
+      "nome": "Lagoa do Carro",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608503",
+      "nome": "Lagoa de Itaenga",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608602",
+      "nome": "Lagoa do Ouro",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608701",
+      "nome": "Lagoa dos Gatos",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608750",
+      "nome": "Lagoa Grande",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608800",
+      "nome": "Lajedo",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2608909",
+      "nome": "Limoeiro",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609006",
+      "nome": "Macaparana",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609105",
+      "nome": "Machados",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609154",
+      "nome": "Manari",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609204",
+      "nome": "Maraial",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609303",
+      "nome": "Mirandiba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609402",
+      "nome": "Moreno",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609501",
+      "nome": "NazarÃ© da Mata",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609600",
+      "nome": "Olinda",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609709",
+      "nome": "OrobÃ³",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609808",
+      "nome": "OrocÃ³",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2609907",
+      "nome": "Ouricuri",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610004",
+      "nome": "Palmares",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610103",
+      "nome": "Palmeirina",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610202",
+      "nome": "Panelas",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610301",
+      "nome": "Paranatama",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610400",
+      "nome": "Parnamirim",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610509",
+      "nome": "Passira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610608",
+      "nome": "Paudalho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610707",
+      "nome": "Paulista",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610806",
+      "nome": "Pedra",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2610905",
+      "nome": "Pesqueira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611002",
+      "nome": "PetrolÃ¢ndia",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611101",
+      "nome": "Petrolina",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611200",
+      "nome": "PoÃ§Ã£o",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611309",
+      "nome": "Pombos",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611408",
+      "nome": "Primavera",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611507",
+      "nome": "QuipapÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611533",
+      "nome": "Quixaba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611606",
+      "nome": "Recife",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611705",
+      "nome": "Riacho das Almas",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611804",
+      "nome": "RibeirÃ£o",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2611903",
+      "nome": "Rio Formoso",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612000",
+      "nome": "SairÃ©",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612109",
+      "nome": "Salgadinho",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612208",
+      "nome": "Salgueiro",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612307",
+      "nome": "SaloÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612406",
+      "nome": "SanharÃ³",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612455",
+      "nome": "Santa Cruz",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612471",
+      "nome": "Santa Cruz da Baixa Verde",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612505",
+      "nome": "Santa Cruz do Capibaribe",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612554",
+      "nome": "Santa Filomena",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612604",
+      "nome": "Santa Maria da Boa Vista",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612703",
+      "nome": "Santa Maria do CambucÃ¡",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612802",
+      "nome": "Santa Terezinha",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2612901",
+      "nome": "SÃ£o Benedito do Sul",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613008",
+      "nome": "SÃ£o Bento do Una",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613107",
+      "nome": "SÃ£o Caitano",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613206",
+      "nome": "SÃ£o JoÃ£o",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613305",
+      "nome": "SÃ£o Joaquim do Monte",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613404",
+      "nome": "SÃ£o JosÃ© da Coroa Grande",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613503",
+      "nome": "SÃ£o JosÃ© do Belmonte",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613602",
+      "nome": "SÃ£o JosÃ© do Egito",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613701",
+      "nome": "SÃ£o LourenÃ§o da Mata",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613800",
+      "nome": "SÃ£o Vicente FÃ©rrer",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2613909",
+      "nome": "Serra Talhada",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614006",
+      "nome": "Serrita",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614105",
+      "nome": "SertÃ¢nia",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614204",
+      "nome": "SirinhaÃ©m",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614303",
+      "nome": "MoreilÃ¢ndia",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614402",
+      "nome": "SolidÃ£o",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614501",
+      "nome": "Surubim",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614600",
+      "nome": "Tabira",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614709",
+      "nome": "TacaimbÃ³",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614808",
+      "nome": "Tacaratu",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2614857",
+      "nome": "TamandarÃ©",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615003",
+      "nome": "Taquaritinga do Norte",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615102",
+      "nome": "Terezinha",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615201",
+      "nome": "Terra Nova",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615300",
+      "nome": "TimbaÃºba",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615409",
+      "nome": "Toritama",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615508",
+      "nome": "TracunhaÃ©m",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615607",
+      "nome": "Trindade",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615706",
+      "nome": "Triunfo",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615805",
+      "nome": "Tupanatinga",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2615904",
+      "nome": "Tuparetama",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2616001",
+      "nome": "Venturosa",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2616100",
+      "nome": "Verdejante",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2616183",
+      "nome": "Vertente do LÃ©rio",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2616209",
+      "nome": "Vertentes",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2616308",
+      "nome": "VicÃªncia",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2616407",
+      "nome": "VitÃ³ria de Santo AntÃ£o",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2616506",
+      "nome": "XexÃ©u",
+      "uf": "PE",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

@@ -1,0 +1,2401 @@
+{
+  "uf": "PR",
+  "fonte": "IBGE Malha 2023",
+  "total": 399,
+  "municipios": [
+    {
+      "ibgeId": "4100103",
+      "nome": "AbatiÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100202",
+      "nome": "AdrianÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100301",
+      "nome": "Agudos do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100400",
+      "nome": "Almirante TamandarÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100459",
+      "nome": "Altamira do ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100509",
+      "nome": "AltÃ´nia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100608",
+      "nome": "Alto ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100707",
+      "nome": "Alto Piquiri",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100806",
+      "nome": "Alvorada do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4100905",
+      "nome": "AmaporÃ£",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101002",
+      "nome": "AmpÃ©re",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101051",
+      "nome": "Anahy",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101101",
+      "nome": "AndirÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101150",
+      "nome": "Ãngulo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101200",
+      "nome": "Antonina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101309",
+      "nome": "AntÃ´nio Olinto",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101408",
+      "nome": "Apucarana",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101507",
+      "nome": "Arapongas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101606",
+      "nome": "Arapoti",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101655",
+      "nome": "ArapuÃ£",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101705",
+      "nome": "Araruna",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101804",
+      "nome": "AraucÃ¡ria",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101853",
+      "nome": "Ariranha do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4101903",
+      "nome": "AssaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102000",
+      "nome": "Assis Chateaubriand",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102109",
+      "nome": "Astorga",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102208",
+      "nome": "Atalaia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102307",
+      "nome": "Balsa Nova",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102406",
+      "nome": "Bandeirantes",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102505",
+      "nome": "Barbosa Ferraz",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102604",
+      "nome": "BarracÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102703",
+      "nome": "Barra do JacarÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102752",
+      "nome": "Bela Vista da Caroba",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102802",
+      "nome": "Bela Vista do ParaÃ­so",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4102901",
+      "nome": "Bituruna",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103008",
+      "nome": "Boa EsperanÃ§a",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103024",
+      "nome": "Boa EsperanÃ§a do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103040",
+      "nome": "Boa Ventura de SÃ£o Roque",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103057",
+      "nome": "Boa Vista da Aparecida",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103107",
+      "nome": "BocaiÃºva do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103156",
+      "nome": "Bom Jesus do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103206",
+      "nome": "Bom Sucesso",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103222",
+      "nome": "Bom Sucesso do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103305",
+      "nome": "BorrazÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103354",
+      "nome": "Braganey",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103370",
+      "nome": "BrasilÃ¢ndia do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103404",
+      "nome": "Cafeara",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103453",
+      "nome": "CafelÃ¢ndia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103479",
+      "nome": "Cafezal do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103503",
+      "nome": "CalifÃ³rnia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103602",
+      "nome": "CambarÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103701",
+      "nome": "CambÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103800",
+      "nome": "Cambira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103909",
+      "nome": "Campina da Lagoa",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4103958",
+      "nome": "Campina do SimÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104006",
+      "nome": "Campina Grande do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104055",
+      "nome": "Campo Bonito",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104105",
+      "nome": "Campo do Tenente",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104204",
+      "nome": "Campo Largo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104253",
+      "nome": "Campo Magro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104303",
+      "nome": "Campo MourÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104402",
+      "nome": "CÃ¢ndido de Abreu",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104428",
+      "nome": "CandÃ³i",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104451",
+      "nome": "Cantagalo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104501",
+      "nome": "Capanema",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104600",
+      "nome": "CapitÃ£o LeÃ´nidas Marques",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104659",
+      "nome": "CarambeÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104709",
+      "nome": "CarlÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104808",
+      "nome": "Cascavel",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4104907",
+      "nome": "Castro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105003",
+      "nome": "Catanduvas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105102",
+      "nome": "CentenÃ¡rio do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105201",
+      "nome": "Cerro Azul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105300",
+      "nome": "CÃ©u Azul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105409",
+      "nome": "Chopinzinho",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105508",
+      "nome": "Cianorte",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105607",
+      "nome": "Cidade GaÃºcha",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105706",
+      "nome": "ClevelÃ¢ndia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105805",
+      "nome": "Colombo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4105904",
+      "nome": "Colorado",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106001",
+      "nome": "Congonhinhas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106100",
+      "nome": "Conselheiro Mairinck",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106209",
+      "nome": "Contenda",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106308",
+      "nome": "CorbÃ©lia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106407",
+      "nome": "CornÃ©lio ProcÃ³pio",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106456",
+      "nome": "Coronel Domingos Soares",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106506",
+      "nome": "Coronel Vivida",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106555",
+      "nome": "CorumbataÃ­ do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106571",
+      "nome": "Cruzeiro do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106605",
+      "nome": "Cruzeiro do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106704",
+      "nome": "Cruzeiro do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106803",
+      "nome": "Cruz Machado",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106852",
+      "nome": "Cruzmaltina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4106902",
+      "nome": "Curitiba",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107009",
+      "nome": "CuriÃºva",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107108",
+      "nome": "Diamante do Norte",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107124",
+      "nome": "Diamante do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107157",
+      "nome": "Diamante D'Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107207",
+      "nome": "Dois Vizinhos",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107256",
+      "nome": "Douradina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107306",
+      "nome": "Doutor Camargo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107405",
+      "nome": "EnÃ©as Marques",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107504",
+      "nome": "Engenheiro BeltrÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107520",
+      "nome": "EsperanÃ§a Nova",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107538",
+      "nome": "Entre Rios do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107546",
+      "nome": "EspigÃ£o Alto do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107553",
+      "nome": "Farol",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107603",
+      "nome": "Faxinal",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107652",
+      "nome": "Fazenda Rio Grande",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107702",
+      "nome": "FÃªnix",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107736",
+      "nome": "Fernandes Pinheiro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107751",
+      "nome": "Figueira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107801",
+      "nome": "FloraÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107850",
+      "nome": "Flor da Serra do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4107900",
+      "nome": "Floresta",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108007",
+      "nome": "FlorestÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108106",
+      "nome": "FlÃ³rida",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108205",
+      "nome": "Formosa do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108304",
+      "nome": "Foz do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108320",
+      "nome": "Francisco Alves",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108403",
+      "nome": "Francisco BeltrÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108452",
+      "nome": "Foz do JordÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108502",
+      "nome": "General Carneiro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108551",
+      "nome": "Godoy Moreira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108601",
+      "nome": "GoioerÃª",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108650",
+      "nome": "Goioxim",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108700",
+      "nome": "Grandes Rios",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108809",
+      "nome": "GuaÃ­ra",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108908",
+      "nome": "GuairaÃ§Ã¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4108957",
+      "nome": "Guamiranga",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109005",
+      "nome": "Guapirama",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109104",
+      "nome": "Guaporema",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109203",
+      "nome": "Guaraci",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109302",
+      "nome": "GuaraniaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109401",
+      "nome": "Guarapuava",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109500",
+      "nome": "GuaraqueÃ§aba",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109609",
+      "nome": "Guaratuba",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109658",
+      "nome": "HonÃ³rio Serpa",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109708",
+      "nome": "Ibaiti",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109757",
+      "nome": "Ibema",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109807",
+      "nome": "IbiporÃ£",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4109906",
+      "nome": "IcaraÃ­ma",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110003",
+      "nome": "IguaraÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110052",
+      "nome": "Iguatu",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110078",
+      "nome": "ImbaÃº",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110102",
+      "nome": "Imbituva",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110201",
+      "nome": "InÃ¡cio Martins",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110300",
+      "nome": "InajÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110409",
+      "nome": "IndianÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110508",
+      "nome": "Ipiranga",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110607",
+      "nome": "IporÃ£",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110656",
+      "nome": "Iracema do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110706",
+      "nome": "Irati",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110805",
+      "nome": "Iretama",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110904",
+      "nome": "ItaguajÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4110953",
+      "nome": "ItaipulÃ¢ndia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111001",
+      "nome": "ItambaracÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111100",
+      "nome": "ItambÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111209",
+      "nome": "Itapejara d'Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111258",
+      "nome": "ItaperuÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111308",
+      "nome": "ItaÃºna do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111407",
+      "nome": "IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111506",
+      "nome": "IvaiporÃ£",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111555",
+      "nome": "IvatÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111605",
+      "nome": "Ivatuba",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111704",
+      "nome": "Jaboti",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111803",
+      "nome": "Jacarezinho",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4111902",
+      "nome": "JaguapitÃ£",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112009",
+      "nome": "JaguariaÃ­va",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112108",
+      "nome": "Jandaia do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112207",
+      "nome": "JaniÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112306",
+      "nome": "Japira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112405",
+      "nome": "JapurÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112504",
+      "nome": "Jardim Alegre",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112603",
+      "nome": "Jardim Olinda",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112702",
+      "nome": "Jataizinho",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112751",
+      "nome": "JesuÃ­tas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112801",
+      "nome": "Joaquim TÃ¡vora",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112900",
+      "nome": "JundiaÃ­ do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4112959",
+      "nome": "Juranda",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113007",
+      "nome": "Jussara",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113106",
+      "nome": "KalorÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113205",
+      "nome": "Lapa",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113254",
+      "nome": "Laranjal",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113304",
+      "nome": "Laranjeiras do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113403",
+      "nome": "LeÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113429",
+      "nome": "LidianÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113452",
+      "nome": "Lindoeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113502",
+      "nome": "Loanda",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113601",
+      "nome": "Lobato",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113700",
+      "nome": "Londrina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113734",
+      "nome": "Luiziana",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113759",
+      "nome": "Lunardelli",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113809",
+      "nome": "LupionÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4113908",
+      "nome": "Mallet",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114005",
+      "nome": "MamborÃª",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114104",
+      "nome": "MandaguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114203",
+      "nome": "Mandaguari",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114302",
+      "nome": "Mandirituba",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114351",
+      "nome": "ManfrinÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114401",
+      "nome": "Mangueirinha",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114500",
+      "nome": "Manoel Ribas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114609",
+      "nome": "Marechal CÃ¢ndido Rondon",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114708",
+      "nome": "Maria Helena",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114807",
+      "nome": "Marialva",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4114906",
+      "nome": "MarilÃ¢ndia do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115002",
+      "nome": "Marilena",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115101",
+      "nome": "Mariluz",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115200",
+      "nome": "MaringÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115309",
+      "nome": "MariÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115358",
+      "nome": "MaripÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115408",
+      "nome": "Marmeleiro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115457",
+      "nome": "Marquinho",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115507",
+      "nome": "Marumbi",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115606",
+      "nome": "MatelÃ¢ndia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115705",
+      "nome": "Matinhos",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115739",
+      "nome": "Mato Rico",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115754",
+      "nome": "MauÃ¡ da Serra",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115804",
+      "nome": "Medianeira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115853",
+      "nome": "Mercedes",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4115903",
+      "nome": "Mirador",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116000",
+      "nome": "Miraselva",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116059",
+      "nome": "Missal",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116109",
+      "nome": "Moreira Sales",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116208",
+      "nome": "Morretes",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116307",
+      "nome": "Munhoz de Melo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116406",
+      "nome": "Nossa Senhora das GraÃ§as",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116505",
+      "nome": "Nova AlianÃ§a do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116604",
+      "nome": "Nova AmÃ©rica da Colina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116703",
+      "nome": "Nova Aurora",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116802",
+      "nome": "Nova Cantu",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116901",
+      "nome": "Nova EsperanÃ§a",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4116950",
+      "nome": "Nova EsperanÃ§a do Sudoeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117008",
+      "nome": "Nova FÃ¡tima",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117057",
+      "nome": "Nova Laranjeiras",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117107",
+      "nome": "Nova Londrina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117206",
+      "nome": "Nova OlÃ­mpia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117214",
+      "nome": "Nova Santa BÃ¡rbara",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117222",
+      "nome": "Nova Santa Rosa",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117255",
+      "nome": "Nova Prata do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117271",
+      "nome": "Nova Tebas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117297",
+      "nome": "Novo Itacolomi",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117305",
+      "nome": "Ortigueira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117404",
+      "nome": "Ourizona",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117453",
+      "nome": "Ouro Verde do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117503",
+      "nome": "PaiÃ§andu",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117602",
+      "nome": "Palmas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117701",
+      "nome": "Palmeira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117800",
+      "nome": "Palmital",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4117909",
+      "nome": "Palotina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118006",
+      "nome": "ParaÃ­so do Norte",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118105",
+      "nome": "Paranacity",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118204",
+      "nome": "ParanaguÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118303",
+      "nome": "Paranapoema",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118402",
+      "nome": "ParanavaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118451",
+      "nome": "Pato Bragado",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118501",
+      "nome": "Pato Branco",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118600",
+      "nome": "Paula Freitas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118709",
+      "nome": "Paulo Frontin",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118808",
+      "nome": "Peabiru",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118857",
+      "nome": "Perobal",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4118907",
+      "nome": "PÃ©rola",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119004",
+      "nome": "PÃ©rola d'Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119103",
+      "nome": "PiÃªn",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119152",
+      "nome": "Pinhais",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119202",
+      "nome": "PinhalÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119251",
+      "nome": "Pinhal de SÃ£o Bento",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119301",
+      "nome": "PinhÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119400",
+      "nome": "PiraÃ­ do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119509",
+      "nome": "Piraquara",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119608",
+      "nome": "Pitanga",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119657",
+      "nome": "Pitangueiras",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119707",
+      "nome": "Planaltina do ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119806",
+      "nome": "Planalto",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119905",
+      "nome": "Ponta Grossa",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4119954",
+      "nome": "Pontal do ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120002",
+      "nome": "Porecatu",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120101",
+      "nome": "Porto Amazonas",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120150",
+      "nome": "Porto Barreiro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120200",
+      "nome": "Porto Rico",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120309",
+      "nome": "Porto VitÃ³ria",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120333",
+      "nome": "Prado Ferreira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120358",
+      "nome": "Pranchita",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120408",
+      "nome": "Presidente Castelo Branco",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120507",
+      "nome": "Primeiro de Maio",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120606",
+      "nome": "PrudentÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120655",
+      "nome": "Quarto CentenÃ¡rio",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120705",
+      "nome": "QuatiguÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120804",
+      "nome": "Quatro Barras",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120853",
+      "nome": "Quatro Pontes",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4120903",
+      "nome": "Quedas do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121000",
+      "nome": "QuerÃªncia do Norte",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121109",
+      "nome": "Quinta do Sol",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121208",
+      "nome": "Quitandinha",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121257",
+      "nome": "RamilÃ¢ndia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121307",
+      "nome": "Rancho Alegre",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121356",
+      "nome": "Rancho Alegre D'Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121406",
+      "nome": "Realeza",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121505",
+      "nome": "RebouÃ§as",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121604",
+      "nome": "RenascenÃ§a",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121703",
+      "nome": "Reserva",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121752",
+      "nome": "Reserva do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121802",
+      "nome": "RibeirÃ£o Claro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4121901",
+      "nome": "RibeirÃ£o do Pinhal",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122008",
+      "nome": "Rio Azul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122107",
+      "nome": "Rio Bom",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122156",
+      "nome": "Rio Bonito do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122172",
+      "nome": "Rio Branco do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122206",
+      "nome": "Rio Branco do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122305",
+      "nome": "Rio Negro",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122404",
+      "nome": "RolÃ¢ndia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122503",
+      "nome": "Roncador",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122602",
+      "nome": "Rondon",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122651",
+      "nome": "RosÃ¡rio do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122701",
+      "nome": "SabÃ¡udia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122800",
+      "nome": "Salgado Filho",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4122909",
+      "nome": "Salto do ItararÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123006",
+      "nome": "Salto do Lontra",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123105",
+      "nome": "Santa AmÃ©lia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123204",
+      "nome": "Santa CecÃ­lia do PavÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123303",
+      "nome": "Santa Cruz de Monte Castelo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123402",
+      "nome": "Santa FÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123501",
+      "nome": "Santa Helena",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123600",
+      "nome": "Santa InÃªs",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123709",
+      "nome": "Santa Isabel do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123808",
+      "nome": "Santa Izabel do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123824",
+      "nome": "Santa LÃºcia",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123857",
+      "nome": "Santa Maria do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123907",
+      "nome": "Santa Mariana",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4123956",
+      "nome": "Santa MÃ´nica",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124004",
+      "nome": "Santana do ItararÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124020",
+      "nome": "Santa Tereza do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124053",
+      "nome": "Santa Terezinha de Itaipu",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124103",
+      "nome": "Santo AntÃ´nio da Platina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124202",
+      "nome": "Santo AntÃ´nio do CaiuÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124301",
+      "nome": "Santo AntÃ´nio do ParaÃ­so",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124400",
+      "nome": "Santo AntÃ´nio do Sudoeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124509",
+      "nome": "Santo InÃ¡cio",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124608",
+      "nome": "SÃ£o Carlos do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124707",
+      "nome": "SÃ£o JerÃ´nimo da Serra",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124806",
+      "nome": "SÃ£o JoÃ£o",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4124905",
+      "nome": "SÃ£o JoÃ£o do CaiuÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125001",
+      "nome": "SÃ£o JoÃ£o do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125100",
+      "nome": "SÃ£o JoÃ£o do Triunfo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125209",
+      "nome": "SÃ£o Jorge d'Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125308",
+      "nome": "SÃ£o Jorge do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125357",
+      "nome": "SÃ£o Jorge do PatrocÃ­nio",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125407",
+      "nome": "SÃ£o JosÃ© da Boa Vista",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125456",
+      "nome": "SÃ£o JosÃ© das Palmeiras",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125506",
+      "nome": "SÃ£o JosÃ© dos Pinhais",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125555",
+      "nome": "SÃ£o Manoel do ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125605",
+      "nome": "SÃ£o Mateus do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125704",
+      "nome": "SÃ£o Miguel do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125753",
+      "nome": "SÃ£o Pedro do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125803",
+      "nome": "SÃ£o Pedro do IvaÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4125902",
+      "nome": "SÃ£o Pedro do ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126009",
+      "nome": "SÃ£o SebastiÃ£o da Amoreira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126108",
+      "nome": "SÃ£o TomÃ©",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126207",
+      "nome": "Sapopema",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126256",
+      "nome": "Sarandi",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126272",
+      "nome": "Saudade do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126306",
+      "nome": "SengÃ©s",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126355",
+      "nome": "SerranÃ³polis do IguaÃ§u",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126405",
+      "nome": "Sertaneja",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126504",
+      "nome": "SertanÃ³polis",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126603",
+      "nome": "Siqueira Campos",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126652",
+      "nome": "Sulina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126678",
+      "nome": "Tamarana",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126702",
+      "nome": "Tamboara",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126801",
+      "nome": "Tapejara",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4126900",
+      "nome": "Tapira",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127007",
+      "nome": "Teixeira Soares",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127106",
+      "nome": "TelÃªmaco Borba",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127205",
+      "nome": "Terra Boa",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127304",
+      "nome": "Terra Rica",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127403",
+      "nome": "Terra Roxa",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127502",
+      "nome": "Tibagi",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127601",
+      "nome": "Tijucas do Sul",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127700",
+      "nome": "Toledo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127809",
+      "nome": "Tomazina",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127858",
+      "nome": "TrÃªs Barras do ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127882",
+      "nome": "Tunas do ParanÃ¡",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127908",
+      "nome": "Tuneiras do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127957",
+      "nome": "TupÃ£ssi",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4127965",
+      "nome": "Turvo",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128005",
+      "nome": "UbiratÃ£",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128104",
+      "nome": "Umuarama",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128203",
+      "nome": "UniÃ£o da VitÃ³ria",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128302",
+      "nome": "Uniflor",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128401",
+      "nome": "UraÃ­",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128500",
+      "nome": "Wenceslau Braz",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128534",
+      "nome": "Ventania",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128559",
+      "nome": "Vera Cruz do Oeste",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128609",
+      "nome": "VerÃª",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128625",
+      "nome": "Alto ParaÃ­so",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128633",
+      "nome": "Doutor Ulysses",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128658",
+      "nome": "Virmond",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128708",
+      "nome": "Vitorino",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4128807",
+      "nome": "XambrÃª",
+      "uf": "PR",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

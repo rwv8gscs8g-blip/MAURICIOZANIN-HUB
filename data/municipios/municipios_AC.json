@@ -1,0 +1,139 @@
+{
+  "uf": "AC",
+  "fonte": "IBGE Malha 2023",
+  "total": 22,
+  "municipios": [
+    {
+      "ibgeId": "1200013",
+      "nome": "AcrelÃ¢ndia",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200054",
+      "nome": "Assis Brasil",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200104",
+      "nome": "BrasilÃ©ia",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200138",
+      "nome": "Bujari",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200179",
+      "nome": "Capixaba",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200203",
+      "nome": "Cruzeiro do Sul",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200252",
+      "nome": "EpitaciolÃ¢ndia",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200302",
+      "nome": "FeijÃ³",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200328",
+      "nome": "JordÃ£o",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200336",
+      "nome": "MÃ¢ncio Lima",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200344",
+      "nome": "Manoel Urbano",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200351",
+      "nome": "Marechal Thaumaturgo",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200385",
+      "nome": "PlÃ¡cido de Castro",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200393",
+      "nome": "Porto Walter",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200401",
+      "nome": "Rio Branco",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200427",
+      "nome": "Rodrigues Alves",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200435",
+      "nome": "Santa Rosa do Purus",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200450",
+      "nome": "Senador Guiomard",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200500",
+      "nome": "Sena Madureira",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200609",
+      "nome": "TarauacÃ¡",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200708",
+      "nome": "Xapuri",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1200807",
+      "nome": "Porto Acre",
+      "uf": "AC",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

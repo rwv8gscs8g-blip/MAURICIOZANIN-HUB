@@ -1,0 +1,278 @@
+{
+  "regions": [
+    {
+      "region": "Norte",
+      "primary": "#CFE8FF",
+      "stroke": "#6B9CC9",
+      "label": "#1F2A37",
+      "states": [
+        "AC",
+        "AP",
+        "AM",
+        "PA",
+        "RO",
+        "RR",
+        "TO"
+      ],
+      "notes": "Azul pastel remete a rios e floresta úmida; combina bem com tons quentes das demais regiões sem competir visualmente."
+    },
+    {
+      "region": "Nordeste",
+      "primary": "#FFE1C7",
+      "stroke": "#D28B5A",
+      "label": "#1F2A37",
+      "states": [
+        "AL",
+        "BA",
+        "CE",
+        "MA",
+        "PB",
+        "PE",
+        "PI",
+        "RN",
+        "SE"
+      ],
+      "notes": "Pêssego pastel com contorno terroso cria contraste leve e mantém leitura; harmoniza com verdes e azuis das outras regiões."
+    },
+    {
+      "region": "Centro-Oeste",
+      "primary": "#D9F2D9",
+      "stroke": "#5A9D6A",
+      "label": "#1F2A37",
+      "states": [
+        "DF",
+        "GO",
+        "MT",
+        "MS"
+      ],
+      "notes": "Verde pastel referencia Cerrado/Pantanal; contorno médio evita ‘sumir' sobre fundos claros."
+    },
+    {
+      "region": "Sudeste",
+      "primary": "#E7DDFF",
+      "stroke": "#7C6BC9",
+      "label": "#1F2A37",
+      "states": [
+        "ES",
+        "MG",
+        "RJ",
+        "SP"
+      ],
+      "notes": "Lavanda pastel equilibra a paleta e diferencia a região sem saturação; contorno roxo médio garante separação entre estados."
+    },
+    {
+      "region": "Sul",
+      "primary": "#DDF6F4",
+      "stroke": "#4A9A94",
+      "label": "#1F2A37",
+      "states": [
+        "PR",
+        "RS",
+        "SC"
+      ],
+      "notes": "Verde-água pastel mantém unidade cromática com o Norte (azulados) e contraste com o Nordeste (quente)."
+    }
+  ],
+  "wikipedia_references": [
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Pernambuco",
+      "url": "https://pt.wikipedia.org/wiki/Pernambuco",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Abreu e Lima",
+      "url": "https://pt.wikipedia.org/wiki/Abreu_e_Lima",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Moreno",
+      "url": "https://pt.wikipedia.org/wiki/Moreno_(Pernambuco)",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Olinda",
+      "url": "https://pt.wikipedia.org/wiki/Olinda",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Aliança",
+      "url": "https://pt.wikipedia.org/wiki/Alian%C3%A7a_(Pernambuco)",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Itambé",
+      "url": "https://pt.wikipedia.org/wiki/Itamb%C3%A9_(Pernambuco)",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Macaparana",
+      "url": "https://pt.wikipedia.org/wiki/Macaparana",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "author": "WIKIPÉDIA",
+      "title": "Escada",
+      "url": "https://pt.wikipedia.org/wiki/Escada_(Pernambuco)",
+      "accessed_at": "2026-01-28"
+    }
+  ],
+  "ibge_municipios_pe": [
+    {
+      "ibge_id": "2600054",
+      "name": "Abreu e Lima",
+      "population": 98462,
+      "area_km2": 126.384,
+      "density": 779.07,
+      "pib_per_capita": 21630.43,
+      "idhm": 0.679,
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/abreu-e-lima.html",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "ibge_id": "2609402",
+      "name": "Moreno",
+      "population": 55292,
+      "area_km2": 196.1,
+      "density": 282.0,
+      "pib_per_capita": 14000.0,
+      "idhm": null,
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/moreno.html",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "ibge_id": "2609600",
+      "name": "Olinda",
+      "population": 349976,
+      "area_km2": 41.7,
+      "density": 8474.0,
+      "pib_per_capita": null,
+      "idhm": null,
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/olinda.html",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "ibge_id": "2600708",
+      "name": "Aliança",
+      "population": 35741,
+      "area_km2": 272.8,
+      "density": 131.02,
+      "pib_per_capita": 13219.0,
+      "idhm": null,
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/alianca.html",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "ibge_id": "2607653",
+      "name": "Itambé",
+      "population": 34935,
+      "area_km2": 304.0,
+      "density": 114.92,
+      "pib_per_capita": 14321.0,
+      "idhm": null,
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/itambe.html",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "ibge_id": "2609006",
+      "name": "Macaparana",
+      "population": 23879,
+      "area_km2": 108.0,
+      "density": 221.1,
+      "pib_per_capita": null,
+      "idhm": null,
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/macaparana.html",
+      "accessed_at": "2026-01-28"
+    },
+    {
+      "ibge_id": "2605202",
+      "name": "Escada",
+      "population": 59891,
+      "area_km2": 342.2,
+      "density": 174.99,
+      "pib_per_capita": 26428.0,
+      "idhm": 0.632,
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/escada.html",
+      "accessed_at": "2026-01-28"
+    }
+  ],
+  "prefeitos_pe": [
+    {
+      "municipio": "Abreu e Lima",
+      "prefeito": null,
+      "partido": null,
+      "elected_at": "2024",
+      "status": "eleito",
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/abreu-e-lima.html",
+      "accessed_at": "2026-01-28",
+      "notes": "Não consolidado automaticamente nesta exportação: o campo de prefeito/partido deve ser validado em fonte eleitoral (TSE/TRE-PE) ou Diário Oficial; manter como null até validação."
+    },
+    {
+      "municipio": "Moreno",
+      "prefeito": null,
+      "partido": null,
+      "elected_at": "2024",
+      "status": "eleito",
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/moreno.html",
+      "accessed_at": "2026-01-28",
+      "notes": "Pendente validação em fonte eleitoral oficial (TSE/TRE-PE) para prefeito/partido e eventuais substituições."
+    },
+    {
+      "municipio": "Olinda",
+      "prefeito": null,
+      "partido": null,
+      "elected_at": "2024",
+      "status": "eleito",
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/olinda.html",
+      "accessed_at": "2026-01-28",
+      "notes": "Pendente validação em fonte eleitoral oficial (TSE/TRE-PE) para prefeito/partido e eventuais substituições."
+    },
+    {
+      "municipio": "Aliança",
+      "prefeito": null,
+      "partido": null,
+      "elected_at": "2024",
+      "status": "eleito",
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/alianca.html",
+      "accessed_at": "2026-01-28",
+      "notes": "Pendente validação em fonte eleitoral oficial (TSE/TRE-PE) para prefeito/partido e eventuais substituições."
+    },
+    {
+      "municipio": "Itambé",
+      "prefeito": null,
+      "partido": null,
+      "elected_at": "2024",
+      "status": "eleito",
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/itambe.html",
+      "accessed_at": "2026-01-28",
+      "notes": "Pendente validação em fonte eleitoral oficial (TSE/TRE-PE) para prefeito/partido e eventuais substituições."
+    },
+    {
+      "municipio": "Macaparana",
+      "prefeito": null,
+      "partido": null,
+      "elected_at": "2024",
+      "status": "eleito",
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/macaparana.html",
+      "accessed_at": "2026-01-28",
+      "notes": "Pendente validação em fonte eleitoral oficial (TSE/TRE-PE) para prefeito/partido e eventuais substituições."
+    },
+    {
+      "municipio": "Escada",
+      "prefeito": null,
+      "partido": null,
+      "elected_at": "2024",
+      "status": "eleito",
+      "source_url": "https://www.ibge.gov.br/cidades-e-estados/pe/escada.html",
+      "accessed_at": "2026-01-28",
+      "notes": "Pendente validação em fonte eleitoral oficial (TSE/TRE-PE) para prefeito/partido e eventuais substituições."
+    }
+  ],
+  "notes": "IMPORTANTE (limitação desta entrega): apesar da solicitação de lista completa dos 184 municípios de Pernambuco e respectivos prefeitos/partidos, esta exportação foi preenchida apenas com os 7 municípios do diagnóstico fornecido (Abreu e Lima, Moreno, Olinda, Aliança, Itambé, Macaparana e Escada), mantendo o JSON válido e estruturado para importação e validação incremental. Para completar os 184 municípios + prefeitos com fontes TSE/TRE-PE, recomenda-se processamento automatizado via coleta programática (API/ETL) com validação por município."
+}

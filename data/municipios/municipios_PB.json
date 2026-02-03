@@ -1,0 +1,1345 @@
+{
+  "uf": "PB",
+  "fonte": "IBGE Malha 2023",
+  "total": 223,
+  "municipios": [
+    {
+      "ibgeId": "2500106",
+      "nome": "Ãgua Branca",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500205",
+      "nome": "Aguiar",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500304",
+      "nome": "Alagoa Grande",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500403",
+      "nome": "Alagoa Nova",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500502",
+      "nome": "Alagoinha",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500536",
+      "nome": "Alcantil",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500577",
+      "nome": "AlgodÃ£o de JandaÃ­ra",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500601",
+      "nome": "Alhandra",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500700",
+      "nome": "SÃ£o JoÃ£o do Rio do Peixe",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500734",
+      "nome": "Amparo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500775",
+      "nome": "Aparecida",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500809",
+      "nome": "AraÃ§agi",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2500908",
+      "nome": "Arara",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501005",
+      "nome": "Araruna",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501104",
+      "nome": "Areia",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501153",
+      "nome": "Areia de BaraÃºnas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501203",
+      "nome": "Areial",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501302",
+      "nome": "Aroeiras",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501351",
+      "nome": "AssunÃ§Ã£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501401",
+      "nome": "BaÃ­a da TraiÃ§Ã£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501500",
+      "nome": "Bananeiras",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501534",
+      "nome": "BaraÃºna",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501575",
+      "nome": "Barra de Santana",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501609",
+      "nome": "Barra de Santa Rosa",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501708",
+      "nome": "Barra de SÃ£o Miguel",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501807",
+      "nome": "Bayeux",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2501906",
+      "nome": "BelÃ©m",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502003",
+      "nome": "BelÃ©m do Brejo do Cruz",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502052",
+      "nome": "Bernardino Batista",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502102",
+      "nome": "Boa Ventura",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502151",
+      "nome": "Boa Vista",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502201",
+      "nome": "Bom Jesus",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502300",
+      "nome": "Bom Sucesso",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502409",
+      "nome": "Bonito de Santa FÃ©",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502508",
+      "nome": "BoqueirÃ£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502607",
+      "nome": "Igaracy",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502706",
+      "nome": "Borborema",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502805",
+      "nome": "Brejo do Cruz",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2502904",
+      "nome": "Brejo dos Santos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503001",
+      "nome": "CaaporÃ£",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503100",
+      "nome": "Cabaceiras",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503209",
+      "nome": "Cabedelo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503308",
+      "nome": "Cachoeira dos Ãndios",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503407",
+      "nome": "Cacimba de Areia",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503506",
+      "nome": "Cacimba de Dentro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503555",
+      "nome": "Cacimbas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503605",
+      "nome": "CaiÃ§ara",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503704",
+      "nome": "Cajazeiras",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503753",
+      "nome": "Cajazeirinhas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503803",
+      "nome": "Caldas BrandÃ£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2503902",
+      "nome": "CamalaÃº",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504009",
+      "nome": "Campina Grande",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504033",
+      "nome": "Capim",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504074",
+      "nome": "CaraÃºbas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504108",
+      "nome": "Carrapateira",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504157",
+      "nome": "Casserengue",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504207",
+      "nome": "Catingueira",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504306",
+      "nome": "CatolÃ© do Rocha",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504355",
+      "nome": "CaturitÃ©",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504405",
+      "nome": "ConceiÃ§Ã£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504504",
+      "nome": "Condado",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504603",
+      "nome": "Conde",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504702",
+      "nome": "Congo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504801",
+      "nome": "Coremas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504850",
+      "nome": "Coxixola",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2504900",
+      "nome": "Cruz do EspÃ­rito Santo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505006",
+      "nome": "Cubati",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505105",
+      "nome": "CuitÃ©",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505204",
+      "nome": "Cuitegi",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505238",
+      "nome": "CuitÃ© de Mamanguape",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505279",
+      "nome": "Curral de Cima",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505303",
+      "nome": "Curral Velho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505352",
+      "nome": "DamiÃ£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505402",
+      "nome": "Desterro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505501",
+      "nome": "Vista Serrana",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505600",
+      "nome": "Diamante",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505709",
+      "nome": "Dona InÃªs",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505808",
+      "nome": "Duas Estradas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2505907",
+      "nome": "Emas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506004",
+      "nome": "EsperanÃ§a",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506103",
+      "nome": "Fagundes",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506202",
+      "nome": "Frei Martinho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506251",
+      "nome": "Gado Bravo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506301",
+      "nome": "Guarabira",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506400",
+      "nome": "GurinhÃ©m",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506509",
+      "nome": "GurjÃ£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506608",
+      "nome": "Ibiara",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506707",
+      "nome": "Imaculada",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506806",
+      "nome": "IngÃ¡",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2506905",
+      "nome": "Itabaiana",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507002",
+      "nome": "Itaporanga",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507101",
+      "nome": "Itapororoca",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507200",
+      "nome": "Itatuba",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507309",
+      "nome": "JacaraÃº",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507408",
+      "nome": "JericÃ³",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507507",
+      "nome": "JoÃ£o Pessoa",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507606",
+      "nome": "Juarez TÃ¡vora",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507705",
+      "nome": "Juazeirinho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507804",
+      "nome": "Junco do SeridÃ³",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2507903",
+      "nome": "Juripiranga",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508000",
+      "nome": "Juru",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508109",
+      "nome": "Lagoa",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508208",
+      "nome": "Lagoa de Dentro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508307",
+      "nome": "Lagoa Seca",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508406",
+      "nome": "Lastro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508505",
+      "nome": "Livramento",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508554",
+      "nome": "Logradouro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508604",
+      "nome": "Lucena",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508703",
+      "nome": "MÃ£e d'Ãgua",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508802",
+      "nome": "Malta",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2508901",
+      "nome": "Mamanguape",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509008",
+      "nome": "ManaÃ­ra",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509057",
+      "nome": "MarcaÃ§Ã£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509107",
+      "nome": "Mari",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509156",
+      "nome": "MarizÃ³polis",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509206",
+      "nome": "Massaranduba",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509305",
+      "nome": "Mataraca",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509339",
+      "nome": "Matinhas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509370",
+      "nome": "Mato Grosso",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509396",
+      "nome": "MaturÃ©ia",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509404",
+      "nome": "Mogeiro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509503",
+      "nome": "Montadas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509602",
+      "nome": "Monte Horebe",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509701",
+      "nome": "Monteiro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509800",
+      "nome": "Mulungu",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2509909",
+      "nome": "Natuba",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510006",
+      "nome": "Nazarezinho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510105",
+      "nome": "Nova Floresta",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510204",
+      "nome": "Nova Olinda",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510303",
+      "nome": "Nova Palmeira",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510402",
+      "nome": "Olho d'Ãgua",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510501",
+      "nome": "Olivedos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510600",
+      "nome": "Ouro Velho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510659",
+      "nome": "Parari",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510709",
+      "nome": "Passagem",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510808",
+      "nome": "Patos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2510907",
+      "nome": "Paulista",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511004",
+      "nome": "Pedra Branca",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511103",
+      "nome": "Pedra Lavrada",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511202",
+      "nome": "Pedras de Fogo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511301",
+      "nome": "PiancÃ³",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511400",
+      "nome": "PicuÃ­",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511509",
+      "nome": "Pilar",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511608",
+      "nome": "PilÃµes",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511707",
+      "nome": "PilÃµezinhos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511806",
+      "nome": "Pirpirituba",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2511905",
+      "nome": "Pitimbu",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512002",
+      "nome": "Pocinhos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512036",
+      "nome": "PoÃ§o Dantas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512077",
+      "nome": "PoÃ§o de JosÃ© de Moura",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512101",
+      "nome": "Pombal",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512200",
+      "nome": "Prata",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512309",
+      "nome": "Princesa Isabel",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512408",
+      "nome": "PuxinanÃ£",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512507",
+      "nome": "Queimadas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512606",
+      "nome": "Quixaba",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512705",
+      "nome": "RemÃ­gio",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512721",
+      "nome": "Pedro RÃ©gis",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512747",
+      "nome": "RiachÃ£o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512754",
+      "nome": "RiachÃ£o do Bacamarte",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512762",
+      "nome": "RiachÃ£o do PoÃ§o",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512788",
+      "nome": "Riacho de Santo AntÃ´nio",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512804",
+      "nome": "Riacho dos Cavalos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2512903",
+      "nome": "Rio Tinto",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513000",
+      "nome": "Salgadinho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513109",
+      "nome": "Salgado de SÃ£o FÃ©lix",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513158",
+      "nome": "Santa CecÃ­lia",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513208",
+      "nome": "Santa Cruz",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513307",
+      "nome": "Santa Helena",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513356",
+      "nome": "Santa InÃªs",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513406",
+      "nome": "Santa Luzia",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513505",
+      "nome": "Santana de Mangueira",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513604",
+      "nome": "Santana dos Garrotes",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513653",
+      "nome": "Joca Claudino",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513703",
+      "nome": "Santa Rita",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513802",
+      "nome": "Santa Teresinha",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513851",
+      "nome": "Santo AndrÃ©",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513901",
+      "nome": "SÃ£o Bento",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513927",
+      "nome": "SÃ£o Bentinho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513943",
+      "nome": "SÃ£o Domingos do Cariri",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513968",
+      "nome": "SÃ£o Domingos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2513984",
+      "nome": "SÃ£o Francisco",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514008",
+      "nome": "SÃ£o JoÃ£o do Cariri",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514107",
+      "nome": "SÃ£o JoÃ£o do Tigre",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514206",
+      "nome": "SÃ£o JosÃ© da Lagoa Tapada",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514305",
+      "nome": "SÃ£o JosÃ© de Caiana",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514404",
+      "nome": "SÃ£o JosÃ© de Espinharas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514453",
+      "nome": "SÃ£o JosÃ© dos Ramos",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514503",
+      "nome": "SÃ£o JosÃ© de Piranhas",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514552",
+      "nome": "SÃ£o JosÃ© de Princesa",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514602",
+      "nome": "SÃ£o JosÃ© do Bonfim",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514651",
+      "nome": "SÃ£o JosÃ© do Brejo do Cruz",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514701",
+      "nome": "SÃ£o JosÃ© do Sabugi",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514800",
+      "nome": "SÃ£o JosÃ© dos Cordeiros",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2514909",
+      "nome": "SÃ£o Mamede",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515005",
+      "nome": "SÃ£o Miguel de Taipu",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515104",
+      "nome": "SÃ£o SebastiÃ£o de Lagoa de RoÃ§a",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515203",
+      "nome": "SÃ£o SebastiÃ£o do Umbuzeiro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515302",
+      "nome": "SapÃ©",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515401",
+      "nome": "SÃ£o Vicente do SeridÃ³",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515500",
+      "nome": "Serra Branca",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515609",
+      "nome": "Serra da Raiz",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515708",
+      "nome": "Serra Grande",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515807",
+      "nome": "Serra Redonda",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515906",
+      "nome": "Serraria",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515930",
+      "nome": "SertÃ£ozinho",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2515971",
+      "nome": "Sobrado",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516003",
+      "nome": "SolÃ¢nea",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516102",
+      "nome": "Soledade",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516151",
+      "nome": "SossÃªgo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516201",
+      "nome": "Sousa",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516300",
+      "nome": "SumÃ©",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516409",
+      "nome": "Tacima",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516508",
+      "nome": "TaperoÃ¡",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516607",
+      "nome": "Tavares",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516706",
+      "nome": "Teixeira",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516755",
+      "nome": "TenÃ³rio",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516805",
+      "nome": "Triunfo",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2516904",
+      "nome": "UiraÃºna",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2517001",
+      "nome": "Umbuzeiro",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2517100",
+      "nome": "VÃ¡rzea",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2517209",
+      "nome": "VieirÃ³polis",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2517407",
+      "nome": "ZabelÃª",
+      "uf": "PB",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

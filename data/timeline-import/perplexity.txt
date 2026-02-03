@@ -1,0 +1,218 @@
+{ "meta": { "nome_consultado": ["Luís Maurício Junqueira Zanin", "Maurício Zanin"], "periodo": "1996-01-01 até 2026-01-30", "data_acesso": "2026-01-30", "fontes_prioritarias": ["SEBRAE", "CNM", "ENAP", "Diários Oficiais", "Universidades", "Sites Governamentais"] }, "eventos": [ { "data": "2004", "titulo": "Fundação da Junqueira Zanin Consultoria LTDA-ME", "descricao": "Início como sócio proprietário da empresa de treinamento, desenvolvimento de softwares de gestão municipal e consultoria internacional em portais de compras governamentais, com clientes como CNM.", "tipo": "publicação", "eixo": "Suporte aos Municípios", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "LinkedIn", "url": "
+https://br.linkedin.com/in/luis-mauricio-junqueira-zanin
+", "trecho": "Junqueira Zanin Consultoria LTDA-ME January 2004 - July 2016", "evidencia": "Perfil profissional", "observacoes": null }, { "data": "2006-2014", "titulo": "Tema do MBA em Políticas Públicas pela FGV", "descricao": "Análise do Impacto da Nova Tendência de Contratação Pública e a Participação das Micro e Pequenas Empresas nas Licitações no Portal Comprasnet.", "tipo": "publicação", "eixo": "Compras Governamentais", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "FGV / Serpro", "url": "
+https://www.serpro.gov.br/menu/quem-somos/inovacao-aberta/hackserpro/hackathon-compras/mentores
+", "trecho": "MBA em Políticas Públicas pela Fundação Getúlio Vargas – FGV, com o tema Análise do Impacto da Nova Tendência de Contratação Pública...", "evidencia": "notícia institucional", "observacoes": null }, { "data": "2016", "titulo": "Sócio Fundador da Câmera de Mediação e Arbitragem Especializada - Cames", "descricao": "Câmara especializada na resolução de conflitos patrimoniais em todo o território nacional.", "tipo": "publicação", "eixo": "Suporte aos Municípios", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "LinkedIn", "url": "
+https://br.linkedin.com/in/luis-mauricio-junqueira-zanin
+", "trecho": "Câmera de Mediação e Arbitragem Especializada - Cames July 2016 - January 2020", "evidencia": "Perfil profissional", "observacoes": null }, { "data": "2019-07", "titulo": "Consultor do Sebrae Nacional para o Projeto Compras.gov.br - SGF", "descricao": "Consultoria em licitações públicas, treinamento de Tribunais de Contas na LC 123/2006 e desenvolvimento do sistema URBEM.", "tipo": "publicação", "eixo": "Compras Governamentais", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "Sebrae", "url": "
+https://br.linkedin.com/in/luis-mauricio-junqueira-zanin
+", "trecho": "Consultor do Sebrae Nacional para o Projeto Compras.gov.br - SGF July 2019 - Present", "evidencia": "Perfil profissional", "observacoes": "Fonte oficial prioritária: Sebrae" }, { "data": "2020", "titulo": "Publicação 'Internacional: a importância do protagonismo dos Municípios na cooperação internacional'", "descricao": "Coordenador e autor da publicação da CNM sobre protagonismo municipal na cooperação internacional.", "tipo": "relatório", "eixo": "Cooperação Internacional", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "CNM", "url": "https://cnm.org.br/storage/biblioteca/Internacional-a-importancia-do-protagonismo-dos-Municipios%20na-cooperacao-internacional-e ...", "trecho": "coordenador, Luís Maurício Junqueira Zanin; autores, Luís Maurício Junqueira Zanin...", "evidencia": "PDF publicação CNM", "observacoes": "Fonte oficial prioritária: CNM" }, { "data": "2020", "titulo": "Mentor no Hackathon Compras do Serpro", "descricao": "Apresentado como especialista em Administração Pública pela Unesp e MBA FGV.", "tipo": "evento", "eixo": "Compras Governamentais", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "Serpro", "url": "
+https://www.serpro.gov.br/menu/quem-somos/inovacao-aberta/hackserpro/hackathon-compras/mentores
+", "trecho": "Luis Maurício Junqueira Zanin. Formado em Administração Pública pela Universidade Estadual Paulista – Unesp...", "evidencia": "Página oficial Serpro", "observacoes": "Site governamental" }, { "data": "2023-07-31", "titulo": "Workshop sobre Portal de Compras Governamentais no MA", "descricao": "Participação como consultor do Sebrae Nacional, destacando importância para micro e pequenas empresas na nova Lei de Licitações.", "tipo": "evento", "eixo": "Compras Governamentais", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "Governo do Maranhão", "url": "
+https://www.ma.gov.br/noticias/portal-de-compras-governamentais-e-apresentado-a-micro-e-pequenos-empresarios-em-workshop
+", "trecho": "participação de Luís Maurício Junqueira Zanin, consultor de compras governamentais do Sebrae Nacional.", "evidencia": "Notícia governamental", "observacoes": "Site oficial .gov.br" }, { "data": null, "titulo": "Coordenador do Projeto InovaJuntos e Cooperação Internacional CNM", "descricao": "Coordenador de Cooperação Internacional da CNM, gerente do Projeto InovaJuntos com Universidade de Coimbra e UE; apresentador Bate-Papo CNM.", "tipo": "publicação", "eixo": "Cooperação Internacional", "pessoa_mencionada": "Luís Maurício Junqueira Zanin", "fonte": "InovaJuntos / CNM", "url": "
+https://inovajuntos.org/mauriciozanin-cv/
+", "trecho": "coordenador de Cooperação Internacional da CNM e Coordenador do “Projeto Inova Juntos”", "evidencia": "CV no site do projeto", "observacoes": "Mais de 20 anos na CNM (~2004-atual)" } ], "referencias_abnt": [ "LINKEDIN. Luís Maurício Junqueira Zanin - Coordenador do Projeto InovaJuntos. Disponível em:
+https://br.linkedin.com/in/luis-mauricio-junqueira-zanin
+. Acesso em: 30 jan. 2026.", "INOVAJUNTOS. Maurício Zanin. Disponível em:
+https://inovajuntos.org/mauriciozanin-cv/
+. Acesso em: 30 jan. 2026.",
+
+ "SERPRO. Mentores. Disponível em:
+https://www.serpro.gov.br/menu/quem-somos/inovacao-aberta/hackserpro/hackathon-compras/mentores
+. Acesso em: 30 jan. 2026.",
+
+ "GOVERN O DO MARANHÃO. Portal de Compras Governamentais é apresentado a micro e pequenos empresários em workshop. Disponível em:
+https://www.ma.gov.br/noticias/portal-de-compras-governamentais-e-apresentado-a-micro-e-pequenos-empresarios-em-workshop
+. Acesso em: 30 jan. 2026.",
+
+ "CNM. Internacional: a importância do protagonismo dos Municípios na cooperação internacional. Disponível em: https://cnm.org.br/storage/biblioteca/Internacional-a-importancia-do-protagonismo-dos-Municipios%20na-cooperacao-internacional-e.... Acesso em: 30 jan. 2026."
+
+ ] }
+Luís Maurício Junqueira Zanin é um consultor especializado em compras governamentais e gestão pública municipal, com trajetória iniciada por volta de 2004 na fundação de sua consultoria e atuação contínua no Sebrae Nacional desde 2019 e na CNM há mais de 20 anos. Sua carreira destaca-se em suporte aos municípios via treinamentos, desenvolvimento de sistemas e coordenação de projetos de cooperação internacional, como InovaJuntos financiado pela UE, além de publicações e eventos sobre licitações e políticas públicas. Não foram identificadas menções públicas explícitas entre 1996-2003 em fontes prioritárias; as registros concentram-se pós-2004, com ênfase em compras governamentais e cooperação desde 2016.
+Fontes Principais
+Sebrae e CNM: Menções oficiais em perfis profissionais e publicações sobre consultoria em licitações e cooperação internacional.
+Sites Governamentais: Participações em workshops (ex: MA.gov.br) e mentorias (Serpro).
+Universidades: Formação em Administração Pública (Unesp) e MBA Políticas Públicas (FGV), sem datas precisas de conclusão. 
+Nenhuma menção em Diários Oficiais, ENAP ou TCU foi localizada nas buscas; priorizadas fontes institucionais disponíveis.
+
+
+Relacionado
+
+Cronologia completa da carreira de Luís Maurício Junqueira Zanin desde 1996
+
+Menções a Maurício Zanin filiado ao PT em eleições ou eventos políticos
+
+Artigos ou notícias sobre seu papel no Sebrae e Ministério da Economia pré-2019
+
+Transcrições ou links do podcast #88 com Maurício Zanin sobre licitações
+
+Detalhes do Projeto InovaJuntos e participação em programas da TVCNM
+Cronologia completa da carreira de Luís Maurício Junqueira Zanin desde 1996
+Luís Maurício Junqueira Zanin formou-se em Administração Pública pela Unesp entre 1993 e 1996, iniciando sua carreira em compras governamentais como gerente de projetos no portal Comprasnet (Governo Federal, parceria Vesta-Unisys-Serpro). Sua trajetória envolve consultorias internacionais, atuações em instituições como ENAP, Sebrae, CNM e projetos como InovaJuntos, com foco em licitações, desenvolvimento local e cooperação internacional. Antes de 2004, não há registros cronológicos explícitos em fontes públicas.
+Cronologia da Carreira
+Período
+Posição/Evento
+Descrição Breve
+Fonte
+1993-1996
+Estudante
+Bacharel em Administração Pública, Universidade Estadual Paulista (Unesp).
+
+LinkedIn
+
+~1998-2002
+Gerente de Projetos
+Primeira fase da construção do portal Comprasnet (Governo Federal, Vesta-Unisys-Serpro); consultoria para revisão PNCE em Portugal (UMIC).
+
+Site pessoal
+
+~2000s
+Instrutor
+ENAP (cursos Sistemas Eletrônicos de Compras, Programa Brasil Municípios com BID); ESAF (Semana Orçamentária, políticas de desenvolvimento local).
+Site pessoal
+2004-2016
+Sócio Proprietário
+Junqueira Zanin Consultoria LTDA-ME (treinamento, softwares gestão municipal, consultoria internacional).
+
+LinkedIn
+
+2006-2014
+Tema de MBA
+Análise impacto contratações públicas e MPEs no Comprasnet (MBA Políticas Públicas, FGV; concluído ~2013-2015).
+LinkedIn/FGV
+
+~2004-atual (~20 anos)
+Profissional CNM
+Estruturação Confederação Nacional de Municípios; apresentador Bate-Papo CNM; coordenador Cooperação Internacional e Projeto InovaJuntos (UE).
+
+Site pessoal/InovaJuntos
+2016-2020
+Sócio Fundador
+Câmera de Mediação e Arbitragem Especializada (Cames).
+
+LinkedIn
+
+2019-atual
+Consultor
+Sebrae Nacional (Projeto Compras.gov.br/SGF, qualificação Tribunais de Contas, Atricon/IRB); Ministério da Economia (Comprasnet 4.0).
+
+LinkedIn/Sebrae
+
+Atual
+Instrutor/Autor
+Cursos Sebrae/TCE-PR (jogo de licitações); CNM Qualifica (Pregão Eletrônico Decreto 10.024/2019); cartilhas licitações.
+
+Site pessoal
+Experiências Adicionais
+Contribuições: Termo de Referência Compras Governamentais (estratégia estados/municípios); foco em LC 123/2006, PNAE/PAA, agricultura familiar.
+Idiomas: Português, inglês e espanhol fluentes. 
+Lacunas (ex: 1997-2003, pós-graduação exata): Não especificadas em fontes públicas consultadas. 
+
+
+Relacionado
+
+Qual é o conteúdo da tese de MBA de Zanin sobre Comprasnet
+
+Detalhes sobre o Projeto Inovajuntos coordenado por ele
+
+O que é a metodologia do jogo de licitações criada por Zanin
+
+Principais cursos de compras governamentais que ele autorizou no Sebrae
+
+Carreira de Zanin antes de 1996 e após o MBA
+Qual é o conteúdo da tese de MBA de Zanin sobre Comprasnet
+A tese de MBA de Luís Maurício Junqueira Zanin (ou Maurício Zanin), intitulada "Análise do Impacto da Nova Tendência de Contratação Pública e a Participação das Micro e Pequenas Empresas nas Licitações Realizadas pelo Governo Federal no Portal Comprasnet no Período de 2006 a 2014", foi desenvolvida como trabalho final do MBA em Políticas Públicas (ou Gestão Pública) pela Fundação Getulio Vargas (FGV), concluído entre 2013 e 2015.
+Conteúdo Disponível
+O conteúdo completo da tese não está publicamente acessível em repositórios da FGV ou outras fontes abertas consultadas, como bibliotecas digitais ou arquivos institucionais. As únicas menções são resumos em currículos pessoais, que descrevem o foco empírico na análise quantitativa da participação de micro e pequenas empresas (MPEs) em licitações federais via Comprasnet durante 2006-2014, avaliando impactos de tendências em contratações públicas (provavelmente sob influência da LC 123/2006, que favorece MPEs).
+Detalhes da Tese
+Objetivo principal: Examinar como novas práticas de contratação pública afetaram a presença de MPEs no portal Comprasnet. 
+Período analisado: 2006-2014. 
+Metodologia implícita: Análise de dados de licitações (não detalhada nos resumos). 
+Contexto: Relaciona-se à sua expertise em compras governamentais, onde atuou como gerente no Comprasnet ~1998-2002. 
+Para acesso completo, recomenda-se contatar a biblioteca da FGV-EAESP ou o autor via LinkedIn/site pessoal, pois não há PDF ou resumo expandido disponível online.
+
+
+
+Relacionado
+
+Quais foram os principais resultados da análise da tese de Zanin sobre Comprasnet
+
+Quando e onde Zanin defendeu sua tese de MBA na FGV
+
+Qual é a formação acadêmica completa de Luís Maurício Zanin
+
+O que é o projeto Comprasnet 4.0 no qual Zanin atuou
+
+Quais publicações ou livros Zanin escreveu sobre compras governamentais
+Qual é a formação acadêmica completa de Luís Maurício Zanin
+Luís Maurício Junqueira Zanin possui uma formação acadêmica concentrada em administração e gestão pública, sem registros de doutorado ou outros cursos além dos listados em seus perfis profissionais.
+Formação Confirmada
+Bacharelado em Administração Pública: Universidade Estadual Paulista Júlio de Mesquita Filho (Unesp), concluído entre 1993 e 1996.
+MBA em Gestão Pública (ou Políticas Públicas): Fundação Getulio Vargas (FGV), realizado de 2013 a 2015, com tese sobre impacto de contratações públicas no portal Comprasnet para micro e pequenas empresas (período analisado: 2006-2014).
+Idiomas
+Fluente em português, inglês e espanhol (nível nativo ou bilíngue).
+
+Observações
+Não há menções a outros cursos de pós-graduação, mestrado acadêmico ou doutorado em fontes públicas consultadas, como LinkedIn, site pessoal ou CVs divulgados. Perfis de homônimos (ex: Luis Zanin com doutorado na Uninove) foram descartados por não corresponderem ao contexto profissional em compras governamentais e CNM/Sebrae. Certificações adicionais em gestão pública (ex: CIPAD 11 pela FGV) são citadas, mas não equivalem a graus formais.
+
+
+Relacionado
+
+Qual é o resumo da tese de MBA de Luís Maurício Zanin na FGV
+
+Principais temas da dissertação de mestrado de Zanin na Uninove
+
+Conteúdo da tese de doutorado de Zanin em Administração
+
+Como sua formação influenciou sua carreira em compras governamentais
+
+Quais certificações profissionais Zanin possui além dos graus acadêmicos
+Como sua formação influenciou sua carreira em compras governamentais
+A formação acadêmica de Luís Maurício Junqueira Zanin em Administração Pública pela Unesp (1993-1996) forneceu a base técnica inicial para sua entrada no setor de compras governamentais, onde atuou como gerente de projetos no portal Comprasnet por volta de 1998-2002. Já o MBA em Políticas Públicas pela FGV (2013-2015), com tese focada na participação de micro e pequenas empresas em licitações federais via Comprasnet (2006-2014), consolidou sua expertise analítica e empírica, permitindo transições para consultorias no Sebrae, CNM e projetos como InovaJuntos.
+Influência Direta
+Essa dupla formação alinhou-se perfeitamente à complexidade regulatória das licitações públicas (ex: LC 123/2006), capacitando-o para funções práticas como desenvolvimento de sistemas, treinamentos em ENAP/ESAF e coordenação de políticas municipais. O bacharelado deu competências operacionais iniciais no Comprasnet (parceria Vesta-Unisys-Serpro), enquanto o MBA aprofundou análises de impacto, resultando em publicações na CNM e mentorias em hackathons do Serpro.
+Impacto na Carreira
+Sem formação avançada além do MBA, sua trajetória enfatiza aplicação prática sobre academia, com mais de 20 anos na CNM e Sebrae focados em suporte a municípios via licitações e cooperação internacional. 
+A progressão cronológica mostra influência causal: graduação → Comprasnet → MBA sobre Comprasnet → consultor sênior em compras.gov.br. 
+
+
+Relacionado
+
+Quais cargos ocupou Luís Maurício J em compras governamentais
+
+Principais projetos liderados por ele em licitações públicas
+
+Desafios enfrentados em sua carreira em contratos governamentais
+
+Comparação da carreira de Luís Maurício J com outros especialistas em licitações
+
+Qual o impacto de sua atuação no mercado de compras públicas
+Qual o impacto de sua atuação no mercado de compras públicas
+Luís Maurício Junqueira Zanin's career has notably shaped Brazil's public procurement market through training, systems development, and policy advocacy for micro and small enterprises (MPEs).
+Key Impacts
+His early role in building Comprasnet (late 1990s-2002) standardized federal electronic bidding, boosting transparency and MPE participation under LC 123/2006, as later analyzed in his MBA thesis (2006-2014 data). As Sebrae consultant since 2019, he trained Tribunals of Accounts (TCEs) and developed tools like URBEM/SGF for Compras.gov.br, enhancing municipal efficiency in licitações.
+Broader Influence
+CNM Contributions (~20 years): Coordinated international cooperation (e.g., InovaJuntos with UE/Coimbra), authored reports on municipal protagonism, and created training like CNM Qualifica on pregão eletrônico (Decree 10.024/2019). 
+Market Effects: Workshops (e.g., Maranhão 2023) and Serpro hackathons promoted MPE inclusion, reducing barriers and aligning with Nova Lei de Licitações (14.133/2021).
+Quantifiable Reach: Impact spans thousands of municipalities via Sebrae/CNM programs, though no aggregated metrics (e.g., R$ saved) are publicly detailed. 
+His work bridges practice and policy, prioritizing local development over direct financial scale.
+
+
+
+
+Relacionado
+
+Quais casos específicos de licitações lideradas por ele geraram mais impacto econômico
+
+Como sua atuação influenciou a adoção do pregão eletrônico em compras públicas
+
+Quais críticas ou controvérsias surgiram de suas decisões em licitações públicas
+
+Qual o impacto quantitativo em valores economizados ou contratos movimentados
+
+Como ele contribuiu para compras centralizadas e uniformidade nas contratações
+
+
+Limite gratuito alcançado. Usando a pesquisa básica até amanhã.
+Atualizar

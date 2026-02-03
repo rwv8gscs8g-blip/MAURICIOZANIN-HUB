@@ -1,0 +1,1777 @@
+{
+  "uf": "SC",
+  "fonte": "IBGE Malha 2023",
+  "total": 295,
+  "municipios": [
+    {
+      "ibgeId": "4200051",
+      "nome": "Abdon Batista",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200101",
+      "nome": "Abelardo Luz",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200200",
+      "nome": "AgrolÃ¢ndia",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200309",
+      "nome": "AgronÃ´mica",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200408",
+      "nome": "Ãgua Doce",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200507",
+      "nome": "Ãguas de ChapecÃ³",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200556",
+      "nome": "Ãguas Frias",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200606",
+      "nome": "Ãguas Mornas",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200705",
+      "nome": "Alfredo Wagner",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200754",
+      "nome": "Alto Bela Vista",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200804",
+      "nome": "Anchieta",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4200903",
+      "nome": "Angelina",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201000",
+      "nome": "Anita Garibaldi",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201109",
+      "nome": "AnitÃ¡polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201208",
+      "nome": "AntÃ´nio Carlos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201257",
+      "nome": "ApiÃºna",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201273",
+      "nome": "ArabutÃ£",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201307",
+      "nome": "Araquari",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201406",
+      "nome": "AraranguÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201505",
+      "nome": "ArmazÃ©m",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201604",
+      "nome": "Arroio Trinta",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201653",
+      "nome": "Arvoredo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201703",
+      "nome": "Ascurra",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201802",
+      "nome": "Atalanta",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201901",
+      "nome": "Aurora",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4201950",
+      "nome": "BalneÃ¡rio Arroio do Silva",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202008",
+      "nome": "BalneÃ¡rio CamboriÃº",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202057",
+      "nome": "BalneÃ¡rio Barra do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202073",
+      "nome": "BalneÃ¡rio Gaivota",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202081",
+      "nome": "Bandeirante",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202099",
+      "nome": "Barra Bonita",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202107",
+      "nome": "Barra Velha",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202131",
+      "nome": "Bela Vista do Toldo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202156",
+      "nome": "Belmonte",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202206",
+      "nome": "Benedito Novo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202305",
+      "nome": "BiguaÃ§u",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202404",
+      "nome": "Blumenau",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202438",
+      "nome": "Bocaina do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202453",
+      "nome": "Bombinhas",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202503",
+      "nome": "Bom Jardim da Serra",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202537",
+      "nome": "Bom Jesus",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202578",
+      "nome": "Bom Jesus do Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202602",
+      "nome": "Bom Retiro",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202701",
+      "nome": "BotuverÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202800",
+      "nome": "BraÃ§o do Norte",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202859",
+      "nome": "BraÃ§o do Trombudo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202875",
+      "nome": "BrunÃ³polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4202909",
+      "nome": "Brusque",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203006",
+      "nome": "CaÃ§ador",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203105",
+      "nome": "Caibi",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203154",
+      "nome": "Calmon",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203204",
+      "nome": "CamboriÃº",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203253",
+      "nome": "CapÃ£o Alto",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203303",
+      "nome": "Campo Alegre",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203402",
+      "nome": "Campo Belo do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203501",
+      "nome": "Campo ErÃª",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203600",
+      "nome": "Campos Novos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203709",
+      "nome": "Canelinha",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203808",
+      "nome": "Canoinhas",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203907",
+      "nome": "Capinzal",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4203956",
+      "nome": "Capivari de Baixo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204004",
+      "nome": "Catanduvas",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204103",
+      "nome": "Caxambu do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204152",
+      "nome": "Celso Ramos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204178",
+      "nome": "Cerro Negro",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204194",
+      "nome": "ChapadÃ£o do Lageado",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204202",
+      "nome": "ChapecÃ³",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204251",
+      "nome": "Cocal do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204301",
+      "nome": "ConcÃ³rdia",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204350",
+      "nome": "Cordilheira Alta",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204400",
+      "nome": "Coronel Freitas",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204459",
+      "nome": "Coronel Martins",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204509",
+      "nome": "CorupÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204558",
+      "nome": "Correia Pinto",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204608",
+      "nome": "CriciÃºma",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204707",
+      "nome": "Cunha PorÃ£",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204756",
+      "nome": "CunhataÃ­",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204806",
+      "nome": "Curitibanos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4204905",
+      "nome": "Descanso",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205001",
+      "nome": "DionÃ­sio Cerqueira",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205100",
+      "nome": "Dona Emma",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205159",
+      "nome": "Doutor Pedrinho",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205175",
+      "nome": "Entre Rios",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205191",
+      "nome": "Ermo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205209",
+      "nome": "Erval Velho",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205308",
+      "nome": "Faxinal dos Guedes",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205357",
+      "nome": "Flor do SertÃ£o",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205407",
+      "nome": "FlorianÃ³polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205431",
+      "nome": "Formosa do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205456",
+      "nome": "Forquilhinha",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205506",
+      "nome": "Fraiburgo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205555",
+      "nome": "Frei RogÃ©rio",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205605",
+      "nome": "GalvÃ£o",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205704",
+      "nome": "Garopaba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205803",
+      "nome": "Garuva",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4205902",
+      "nome": "Gaspar",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206009",
+      "nome": "Governador Celso Ramos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206108",
+      "nome": "GrÃ£o-ParÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206207",
+      "nome": "Gravatal",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206306",
+      "nome": "Guabiruba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206405",
+      "nome": "Guaraciaba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206504",
+      "nome": "Guaramirim",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206603",
+      "nome": "GuarujÃ¡ do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206652",
+      "nome": "GuatambÃº",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206702",
+      "nome": "Herval d'Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206751",
+      "nome": "Ibiam",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206801",
+      "nome": "IbicarÃ©",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4206900",
+      "nome": "Ibirama",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207007",
+      "nome": "IÃ§ara",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207106",
+      "nome": "Ilhota",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207205",
+      "nome": "ImaruÃ­",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207304",
+      "nome": "Imbituba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207403",
+      "nome": "Imbuia",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207502",
+      "nome": "Indaial",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207577",
+      "nome": "IomerÃª",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207601",
+      "nome": "Ipira",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207650",
+      "nome": "IporÃ£ do Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207684",
+      "nome": "IpuaÃ§u",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207700",
+      "nome": "Ipumirim",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207759",
+      "nome": "Iraceminha",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207809",
+      "nome": "Irani",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207858",
+      "nome": "Irati",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4207908",
+      "nome": "IrineÃ³polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208005",
+      "nome": "ItÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208104",
+      "nome": "ItaiÃ³polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208203",
+      "nome": "ItajaÃ­",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208302",
+      "nome": "Itapema",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208401",
+      "nome": "Itapiranga",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208450",
+      "nome": "ItapoÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208500",
+      "nome": "Ituporanga",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208609",
+      "nome": "JaborÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208708",
+      "nome": "Jacinto Machado",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208807",
+      "nome": "Jaguaruna",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208906",
+      "nome": "JaraguÃ¡ do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4208955",
+      "nome": "JardinÃ³polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209003",
+      "nome": "JoaÃ§aba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209102",
+      "nome": "Joinville",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209151",
+      "nome": "JosÃ© Boiteux",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209177",
+      "nome": "JupiÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209201",
+      "nome": "LacerdÃ³polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209300",
+      "nome": "Lages",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209409",
+      "nome": "Laguna",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209458",
+      "nome": "Lajeado Grande",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209508",
+      "nome": "Laurentino",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209607",
+      "nome": "Lauro MÃ¼ller",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209706",
+      "nome": "Lebon RÃ©gis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209805",
+      "nome": "Leoberto Leal",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209854",
+      "nome": "LindÃ³ia do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4209904",
+      "nome": "Lontras",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210001",
+      "nome": "Luiz Alves",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210035",
+      "nome": "Luzerna",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210050",
+      "nome": "Macieira",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210100",
+      "nome": "Mafra",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210209",
+      "nome": "Major Gercino",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210308",
+      "nome": "Major Vieira",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210407",
+      "nome": "MaracajÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210506",
+      "nome": "Maravilha",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210555",
+      "nome": "Marema",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210605",
+      "nome": "Massaranduba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210704",
+      "nome": "Matos Costa",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210803",
+      "nome": "Meleiro",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210852",
+      "nome": "Mirim Doce",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4210902",
+      "nome": "Modelo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211009",
+      "nome": "MondaÃ­",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211058",
+      "nome": "Monte Carlo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211108",
+      "nome": "Monte Castelo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211207",
+      "nome": "Morro da FumaÃ§a",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211256",
+      "nome": "Morro Grande",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211306",
+      "nome": "Navegantes",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211405",
+      "nome": "Nova Erechim",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211454",
+      "nome": "Nova Itaberaba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211504",
+      "nome": "Nova Trento",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211603",
+      "nome": "Nova Veneza",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211652",
+      "nome": "Novo Horizonte",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211702",
+      "nome": "Orleans",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211751",
+      "nome": "OtacÃ­lio Costa",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211801",
+      "nome": "Ouro",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211850",
+      "nome": "Ouro Verde",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211876",
+      "nome": "Paial",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211892",
+      "nome": "Painel",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4211900",
+      "nome": "PalhoÃ§a",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212007",
+      "nome": "Palma Sola",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212056",
+      "nome": "Palmeira",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212106",
+      "nome": "Palmitos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212205",
+      "nome": "Papanduva",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212239",
+      "nome": "ParaÃ­so",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212254",
+      "nome": "Passo de Torres",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212270",
+      "nome": "Passos Maia",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212304",
+      "nome": "Paulo Lopes",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212403",
+      "nome": "Pedras Grandes",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212502",
+      "nome": "Penha",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212601",
+      "nome": "Peritiba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212650",
+      "nome": "Pescaria Brava",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212700",
+      "nome": "PetrolÃ¢ndia",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212809",
+      "nome": "BalneÃ¡rio PiÃ§arras",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4212908",
+      "nome": "Pinhalzinho",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213005",
+      "nome": "Pinheiro Preto",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213104",
+      "nome": "Piratuba",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213153",
+      "nome": "Planalto Alegre",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213203",
+      "nome": "Pomerode",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213302",
+      "nome": "Ponte Alta",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213351",
+      "nome": "Ponte Alta do Norte",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213401",
+      "nome": "Ponte Serrada",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213500",
+      "nome": "Porto Belo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213609",
+      "nome": "Porto UniÃ£o",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213708",
+      "nome": "Pouso Redondo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213807",
+      "nome": "Praia Grande",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4213906",
+      "nome": "Presidente Castello Branco",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214003",
+      "nome": "Presidente GetÃºlio",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214102",
+      "nome": "Presidente Nereu",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214151",
+      "nome": "Princesa",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214201",
+      "nome": "Quilombo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214300",
+      "nome": "Rancho Queimado",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214409",
+      "nome": "Rio das Antas",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214508",
+      "nome": "Rio do Campo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214607",
+      "nome": "Rio do Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214706",
+      "nome": "Rio dos Cedros",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214805",
+      "nome": "Rio do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4214904",
+      "nome": "Rio Fortuna",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215000",
+      "nome": "Rio Negrinho",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215059",
+      "nome": "Rio Rufino",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215075",
+      "nome": "Riqueza",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215109",
+      "nome": "Rodeio",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215208",
+      "nome": "RomelÃ¢ndia",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215307",
+      "nome": "Salete",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215356",
+      "nome": "Saltinho",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215406",
+      "nome": "Salto Veloso",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215455",
+      "nome": "SangÃ£o",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215505",
+      "nome": "Santa CecÃ­lia",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215554",
+      "nome": "Santa Helena",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215604",
+      "nome": "Santa Rosa de Lima",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215653",
+      "nome": "Santa Rosa do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215679",
+      "nome": "Santa Terezinha",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215687",
+      "nome": "Santa Terezinha do Progresso",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215695",
+      "nome": "Santiago do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215703",
+      "nome": "Santo Amaro da Imperatriz",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215752",
+      "nome": "SÃ£o Bernardino",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215802",
+      "nome": "SÃ£o Bento do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4215901",
+      "nome": "SÃ£o BonifÃ¡cio",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216008",
+      "nome": "SÃ£o Carlos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216057",
+      "nome": "SÃ£o CristÃ³vÃ£o do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216107",
+      "nome": "SÃ£o Domingos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216206",
+      "nome": "SÃ£o Francisco do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216255",
+      "nome": "SÃ£o JoÃ£o do Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216305",
+      "nome": "SÃ£o JoÃ£o Batista",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216354",
+      "nome": "SÃ£o JoÃ£o do ItaperiÃº",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216404",
+      "nome": "SÃ£o JoÃ£o do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216503",
+      "nome": "SÃ£o Joaquim",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216602",
+      "nome": "SÃ£o JosÃ©",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216701",
+      "nome": "SÃ£o JosÃ© do Cedro",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216800",
+      "nome": "SÃ£o JosÃ© do Cerrito",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4216909",
+      "nome": "SÃ£o LourenÃ§o do Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217006",
+      "nome": "SÃ£o Ludgero",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217105",
+      "nome": "SÃ£o Martinho",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217154",
+      "nome": "SÃ£o Miguel da Boa Vista",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217204",
+      "nome": "SÃ£o Miguel do Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217253",
+      "nome": "SÃ£o Pedro de AlcÃ¢ntara",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217303",
+      "nome": "Saudades",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217402",
+      "nome": "Schroeder",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217501",
+      "nome": "Seara",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217550",
+      "nome": "Serra Alta",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217600",
+      "nome": "SiderÃ³polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217709",
+      "nome": "Sombrio",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217758",
+      "nome": "Sul Brasil",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217808",
+      "nome": "TaiÃ³",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217907",
+      "nome": "TangarÃ¡",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4217956",
+      "nome": "Tigrinhos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218004",
+      "nome": "Tijucas",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218103",
+      "nome": "TimbÃ© do Sul",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218202",
+      "nome": "TimbÃ³",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218251",
+      "nome": "TimbÃ³ Grande",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218301",
+      "nome": "TrÃªs Barras",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218350",
+      "nome": "Treviso",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218400",
+      "nome": "Treze de Maio",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218509",
+      "nome": "Treze TÃ­lias",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218608",
+      "nome": "Trombudo Central",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218707",
+      "nome": "TubarÃ£o",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218756",
+      "nome": "TunÃ¡polis",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218806",
+      "nome": "Turvo",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218855",
+      "nome": "UniÃ£o do Oeste",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218905",
+      "nome": "Urubici",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4218954",
+      "nome": "Urupema",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219002",
+      "nome": "Urussanga",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219101",
+      "nome": "VargeÃ£o",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219150",
+      "nome": "Vargem",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219176",
+      "nome": "Vargem Bonita",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219200",
+      "nome": "Vidal Ramos",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219309",
+      "nome": "Videira",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219358",
+      "nome": "Vitor Meireles",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219408",
+      "nome": "Witmarsum",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219507",
+      "nome": "XanxerÃª",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219606",
+      "nome": "Xavantina",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219705",
+      "nome": "Xaxim",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4219853",
+      "nome": "ZortÃ©a",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "4220000",
+      "nome": "BalneÃ¡rio RincÃ£o",
+      "uf": "SC",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

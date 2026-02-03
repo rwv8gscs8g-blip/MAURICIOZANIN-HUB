@@ -1,0 +1,5125 @@
+{
+  "uf": "MG",
+  "fonte": "IBGE Malha 2023",
+  "total": 853,
+  "municipios": [
+    {
+      "ibgeId": "3100104",
+      "nome": "Abadia dos Dourados",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100203",
+      "nome": "AbaetÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100302",
+      "nome": "Abre Campo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100401",
+      "nome": "Acaiaca",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100500",
+      "nome": "AÃ§ucena",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100609",
+      "nome": "Ãgua Boa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100708",
+      "nome": "Ãgua Comprida",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100807",
+      "nome": "Aguanil",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3100906",
+      "nome": "Ãguas Formosas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101003",
+      "nome": "Ãguas Vermelhas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101102",
+      "nome": "AimorÃ©s",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101201",
+      "nome": "Aiuruoca",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101300",
+      "nome": "Alagoa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101409",
+      "nome": "Albertina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101508",
+      "nome": "AlÃ©m ParaÃ­ba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101607",
+      "nome": "Alfenas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101631",
+      "nome": "Alfredo Vasconcelos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101706",
+      "nome": "Almenara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101805",
+      "nome": "Alpercata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3101904",
+      "nome": "AlpinÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102001",
+      "nome": "Alterosa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102050",
+      "nome": "Alto CaparaÃ³",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102100",
+      "nome": "Alto Rio Doce",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102209",
+      "nome": "Alvarenga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102308",
+      "nome": "AlvinÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102407",
+      "nome": "Alvorada de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102506",
+      "nome": "Amparo do Serra",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102605",
+      "nome": "Andradas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102704",
+      "nome": "Cachoeira de PajeÃº",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102803",
+      "nome": "AndrelÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102852",
+      "nome": "AngelÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3102902",
+      "nome": "AntÃ´nio Carlos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103009",
+      "nome": "AntÃ´nio Dias",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103108",
+      "nome": "AntÃ´nio Prado de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103207",
+      "nome": "AraÃ§aÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103306",
+      "nome": "Aracitaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103405",
+      "nome": "AraÃ§uaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103504",
+      "nome": "Araguari",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103603",
+      "nome": "Arantina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103702",
+      "nome": "Araponga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103751",
+      "nome": "AraporÃ£",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103801",
+      "nome": "ArapuÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3103900",
+      "nome": "AraÃºjos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104007",
+      "nome": "AraxÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104106",
+      "nome": "Arceburgo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104205",
+      "nome": "Arcos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104304",
+      "nome": "Areado",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104403",
+      "nome": "Argirita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104452",
+      "nome": "Aricanduva",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104502",
+      "nome": "Arinos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104601",
+      "nome": "Astolfo Dutra",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104700",
+      "nome": "AtalÃ©ia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104809",
+      "nome": "Augusto de Lima",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3104908",
+      "nome": "Baependi",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105004",
+      "nome": "Baldim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105103",
+      "nome": "BambuÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105202",
+      "nome": "Bandeira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105301",
+      "nome": "Bandeira do Sul",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105400",
+      "nome": "BarÃ£o de Cocais",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105509",
+      "nome": "BarÃ£o do Monte Alto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105608",
+      "nome": "Barbacena",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105707",
+      "nome": "Barra Longa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3105905",
+      "nome": "Barroso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106002",
+      "nome": "Bela Vista de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106101",
+      "nome": "Belmiro Braga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106200",
+      "nome": "Belo Horizonte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106309",
+      "nome": "Belo Oriente",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106408",
+      "nome": "Belo Vale",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106507",
+      "nome": "Berilo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106606",
+      "nome": "BertÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106655",
+      "nome": "Berizal",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106705",
+      "nome": "Betim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106804",
+      "nome": "Bias Fortes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3106903",
+      "nome": "Bicas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107000",
+      "nome": "Biquinhas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107109",
+      "nome": "Boa EsperanÃ§a",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107208",
+      "nome": "Bocaina de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107307",
+      "nome": "BocaiÃºva",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107406",
+      "nome": "Bom Despacho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107505",
+      "nome": "Bom Jardim de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107604",
+      "nome": "Bom Jesus da Penha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107703",
+      "nome": "Bom Jesus do Amparo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107802",
+      "nome": "Bom Jesus do Galho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3107901",
+      "nome": "Bom Repouso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108008",
+      "nome": "Bom Sucesso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108107",
+      "nome": "Bonfim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108206",
+      "nome": "BonfinÃ³polis de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108255",
+      "nome": "Bonito de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108305",
+      "nome": "Borda da Mata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108404",
+      "nome": "Botelhos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108503",
+      "nome": "Botumirim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108552",
+      "nome": "BrasilÃ¢ndia de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108602",
+      "nome": "BrasÃ­lia de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108701",
+      "nome": "BrÃ¡s Pires",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108800",
+      "nome": "BraÃºnas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3108909",
+      "nome": "BrazÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109006",
+      "nome": "Brumadinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109105",
+      "nome": "Bueno BrandÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109204",
+      "nome": "BuenÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109253",
+      "nome": "Bugre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109303",
+      "nome": "Buritis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109402",
+      "nome": "Buritizeiro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109451",
+      "nome": "Cabeceira Grande",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109501",
+      "nome": "Cabo Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109600",
+      "nome": "Cachoeira da Prata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109709",
+      "nome": "Cachoeira de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109808",
+      "nome": "Cachoeira Dourada",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3109907",
+      "nome": "CaetanÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110004",
+      "nome": "CaetÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110103",
+      "nome": "Caiana",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110202",
+      "nome": "Cajuri",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110301",
+      "nome": "Caldas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110400",
+      "nome": "Camacho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110509",
+      "nome": "Camanducaia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110608",
+      "nome": "CambuÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110707",
+      "nome": "Cambuquira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110806",
+      "nome": "CampanÃ¡rio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3110905",
+      "nome": "Campanha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111002",
+      "nome": "Campestre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111101",
+      "nome": "Campina Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111150",
+      "nome": "Campo Azul",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111200",
+      "nome": "Campo Belo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111309",
+      "nome": "Campo do Meio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111408",
+      "nome": "Campo Florido",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111507",
+      "nome": "Campos Altos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111606",
+      "nome": "Campos Gerais",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111705",
+      "nome": "CanaÃ£",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111804",
+      "nome": "CanÃ¡polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3111903",
+      "nome": "Cana Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112000",
+      "nome": "Candeias",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112059",
+      "nome": "Cantagalo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112109",
+      "nome": "CaparaÃ³",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112208",
+      "nome": "Capela Nova",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112307",
+      "nome": "Capelinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112406",
+      "nome": "Capetinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112505",
+      "nome": "Capim Branco",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112604",
+      "nome": "CapinÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112653",
+      "nome": "CapitÃ£o Andrade",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112703",
+      "nome": "CapitÃ£o EnÃ©as",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112802",
+      "nome": "CapitÃ³lio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3112901",
+      "nome": "Caputira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113008",
+      "nome": "CaraÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113107",
+      "nome": "CaranaÃ­ba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113206",
+      "nome": "CarandaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113305",
+      "nome": "Carangola",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113404",
+      "nome": "Caratinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113503",
+      "nome": "Carbonita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113602",
+      "nome": "CareaÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113701",
+      "nome": "Carlos Chagas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113800",
+      "nome": "CarmÃ©sia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3113909",
+      "nome": "Carmo da Cachoeira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114006",
+      "nome": "Carmo da Mata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114105",
+      "nome": "Carmo de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114204",
+      "nome": "Carmo do Cajuru",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114303",
+      "nome": "Carmo do ParanaÃ­ba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114402",
+      "nome": "Carmo do Rio Claro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114501",
+      "nome": "CarmÃ³polis de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114550",
+      "nome": "Carneirinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114600",
+      "nome": "Carrancas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114709",
+      "nome": "CarvalhÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114808",
+      "nome": "Carvalhos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3114907",
+      "nome": "Casa Grande",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115003",
+      "nome": "Cascalho Rico",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115102",
+      "nome": "CÃ¡ssia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115201",
+      "nome": "ConceiÃ§Ã£o da Barra de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115300",
+      "nome": "Cataguases",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115359",
+      "nome": "Catas Altas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115409",
+      "nome": "Catas Altas da Noruega",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115458",
+      "nome": "Catuji",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115474",
+      "nome": "Catuti",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115508",
+      "nome": "Caxambu",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115607",
+      "nome": "Cedro do AbaetÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115706",
+      "nome": "Central de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115805",
+      "nome": "Centralina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3115904",
+      "nome": "ChÃ¡cara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116001",
+      "nome": "ChalÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116100",
+      "nome": "Chapada do Norte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116159",
+      "nome": "Chapada GaÃºcha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116209",
+      "nome": "Chiador",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116308",
+      "nome": "CipotÃ¢nea",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116407",
+      "nome": "Claraval",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116506",
+      "nome": "Claro dos PoÃ§Ãµes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116605",
+      "nome": "ClÃ¡udio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116704",
+      "nome": "Coimbra",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116803",
+      "nome": "Coluna",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3116902",
+      "nome": "Comendador Gomes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117009",
+      "nome": "Comercinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117108",
+      "nome": "ConceiÃ§Ã£o da Aparecida",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117207",
+      "nome": "ConceiÃ§Ã£o das Pedras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117306",
+      "nome": "ConceiÃ§Ã£o das Alagoas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117405",
+      "nome": "ConceiÃ§Ã£o de Ipanema",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117504",
+      "nome": "ConceiÃ§Ã£o do Mato Dentro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117603",
+      "nome": "ConceiÃ§Ã£o do ParÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117702",
+      "nome": "ConceiÃ§Ã£o do Rio Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117801",
+      "nome": "ConceiÃ§Ã£o dos Ouros",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117836",
+      "nome": "CÃ´nego Marinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117876",
+      "nome": "Confins",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3117900",
+      "nome": "Congonhal",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118007",
+      "nome": "Congonhas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118106",
+      "nome": "Congonhas do Norte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118205",
+      "nome": "Conquista",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118304",
+      "nome": "Conselheiro Lafaiete",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118403",
+      "nome": "Conselheiro Pena",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118502",
+      "nome": "ConsolaÃ§Ã£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118601",
+      "nome": "Contagem",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118700",
+      "nome": "Coqueiral",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118809",
+      "nome": "CoraÃ§Ã£o de Jesus",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3118908",
+      "nome": "Cordisburgo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119005",
+      "nome": "CordislÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119104",
+      "nome": "Corinto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119203",
+      "nome": "Coroaci",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119302",
+      "nome": "Coromandel",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119401",
+      "nome": "Coronel Fabriciano",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119500",
+      "nome": "Coronel Murta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119609",
+      "nome": "Coronel Pacheco",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119708",
+      "nome": "Coronel Xavier Chaves",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119807",
+      "nome": "CÃ³rrego Danta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119906",
+      "nome": "CÃ³rrego do Bom Jesus",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3119955",
+      "nome": "CÃ³rrego Fundo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120003",
+      "nome": "CÃ³rrego Novo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120102",
+      "nome": "Couto de MagalhÃ£es de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120151",
+      "nome": "CrisÃ³lita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120201",
+      "nome": "Cristais",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120300",
+      "nome": "CristÃ¡lia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120409",
+      "nome": "Cristiano Otoni",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120508",
+      "nome": "Cristina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120607",
+      "nome": "CrucilÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120706",
+      "nome": "Cruzeiro da Fortaleza",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120805",
+      "nome": "CruzÃ­lia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120839",
+      "nome": "Cuparaque",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120870",
+      "nome": "Curral de Dentro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3120904",
+      "nome": "Curvelo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121001",
+      "nome": "Datas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121100",
+      "nome": "Delfim Moreira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121209",
+      "nome": "DelfinÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121258",
+      "nome": "Delta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121308",
+      "nome": "Descoberto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121407",
+      "nome": "Desterro de Entre Rios",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121506",
+      "nome": "Desterro do Melo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121605",
+      "nome": "Diamantina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121704",
+      "nome": "Diogo de Vasconcelos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121803",
+      "nome": "DionÃ­sio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3121902",
+      "nome": "DivinÃ©sia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122009",
+      "nome": "Divino",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122108",
+      "nome": "Divino das Laranjeiras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122207",
+      "nome": "DivinolÃ¢ndia de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122306",
+      "nome": "DivinÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122355",
+      "nome": "Divisa Alegre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122405",
+      "nome": "Divisa Nova",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122454",
+      "nome": "DivisÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122470",
+      "nome": "Dom Bosco",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122504",
+      "nome": "Dom Cavati",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122603",
+      "nome": "Dom Joaquim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122702",
+      "nome": "Dom SilvÃ©rio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122801",
+      "nome": "Dom ViÃ§oso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3122900",
+      "nome": "Dona EuzÃ©bia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123007",
+      "nome": "Dores de Campos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123106",
+      "nome": "Dores de GuanhÃ£es",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123205",
+      "nome": "Dores do IndaiÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123304",
+      "nome": "Dores do Turvo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123403",
+      "nome": "DoresÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123502",
+      "nome": "Douradoquara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123528",
+      "nome": "DurandÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123601",
+      "nome": "ElÃ³i Mendes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123700",
+      "nome": "Engenheiro Caldas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123809",
+      "nome": "Engenheiro Navarro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123858",
+      "nome": "Entre Folhas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3123908",
+      "nome": "Entre Rios de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124005",
+      "nome": "ErvÃ¡lia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124104",
+      "nome": "Esmeraldas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124203",
+      "nome": "Espera Feliz",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124302",
+      "nome": "Espinosa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124401",
+      "nome": "EspÃ­rito Santo do Dourado",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124500",
+      "nome": "Estiva",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124609",
+      "nome": "Estrela Dalva",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124708",
+      "nome": "Estrela do IndaiÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124807",
+      "nome": "Estrela do Sul",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3124906",
+      "nome": "EugenÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125002",
+      "nome": "Ewbank da CÃ¢mara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125101",
+      "nome": "Extrema",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125200",
+      "nome": "Fama",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125309",
+      "nome": "Faria Lemos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125408",
+      "nome": "FelÃ­cio dos Santos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125507",
+      "nome": "SÃ£o GonÃ§alo do Rio Preto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125606",
+      "nome": "Felisburgo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125705",
+      "nome": "FelixlÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125804",
+      "nome": "Fernandes Tourinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125903",
+      "nome": "Ferros",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3125952",
+      "nome": "Fervedouro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126000",
+      "nome": "Florestal",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126109",
+      "nome": "Formiga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126208",
+      "nome": "Formoso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126307",
+      "nome": "Fortaleza de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126406",
+      "nome": "Fortuna de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126505",
+      "nome": "Francisco BadarÃ³",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126604",
+      "nome": "Francisco Dumont",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126703",
+      "nome": "Francisco SÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126752",
+      "nome": "FranciscÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126802",
+      "nome": "Frei Gaspar",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126901",
+      "nome": "Frei InocÃªncio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3126950",
+      "nome": "Frei Lagonegro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127008",
+      "nome": "Fronteira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127057",
+      "nome": "Fronteira dos Vales",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127073",
+      "nome": "Fruta de Leite",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127107",
+      "nome": "Frutal",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127206",
+      "nome": "FunilÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127305",
+      "nome": "GalilÃ©ia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127339",
+      "nome": "Gameleiras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127354",
+      "nome": "GlaucilÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127370",
+      "nome": "Goiabeira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127388",
+      "nome": "GoianÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127404",
+      "nome": "GonÃ§alves",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127503",
+      "nome": "Gonzaga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127602",
+      "nome": "Gouveia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127701",
+      "nome": "Governador Valadares",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127800",
+      "nome": "GrÃ£o Mogol",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3127909",
+      "nome": "Grupiara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128006",
+      "nome": "GuanhÃ£es",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128105",
+      "nome": "GuapÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128204",
+      "nome": "Guaraciaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128253",
+      "nome": "Guaraciama",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128303",
+      "nome": "GuaranÃ©sia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128402",
+      "nome": "Guarani",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128501",
+      "nome": "GuararÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128600",
+      "nome": "Guarda-Mor",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128709",
+      "nome": "GuaxupÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128808",
+      "nome": "Guidoval",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3128907",
+      "nome": "GuimarÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129004",
+      "nome": "Guiricema",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129103",
+      "nome": "GurinhatÃ£",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129202",
+      "nome": "Heliodora",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129301",
+      "nome": "Iapu",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129400",
+      "nome": "Ibertioga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129509",
+      "nome": "IbiÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129608",
+      "nome": "IbiaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129657",
+      "nome": "Ibiracatu",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129707",
+      "nome": "Ibiraci",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129806",
+      "nome": "IbiritÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3129905",
+      "nome": "IbitiÃºra de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130002",
+      "nome": "Ibituruna",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130051",
+      "nome": "IcaraÃ­ de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130101",
+      "nome": "IgarapÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130200",
+      "nome": "Igaratinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130309",
+      "nome": "Iguatama",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130408",
+      "nome": "Ijaci",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130507",
+      "nome": "IlicÃ­nea",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130556",
+      "nome": "ImbÃ© de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130606",
+      "nome": "Inconfidentes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130655",
+      "nome": "Indaiabira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130705",
+      "nome": "IndianÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130804",
+      "nome": "IngaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3130903",
+      "nome": "Inhapim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131000",
+      "nome": "InhaÃºma",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131109",
+      "nome": "Inimutaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131158",
+      "nome": "Ipaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131208",
+      "nome": "Ipanema",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131307",
+      "nome": "Ipatinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131406",
+      "nome": "IpiaÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131505",
+      "nome": "IpuiÃºna",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131604",
+      "nome": "IraÃ­ de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131703",
+      "nome": "Itabira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131802",
+      "nome": "Itabirinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3131901",
+      "nome": "Itabirito",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132008",
+      "nome": "Itacambira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132107",
+      "nome": "Itacarambi",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132206",
+      "nome": "Itaguara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132305",
+      "nome": "ItaipÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132404",
+      "nome": "ItajubÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132503",
+      "nome": "Itamarandiba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132602",
+      "nome": "Itamarati de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132701",
+      "nome": "Itambacuri",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132800",
+      "nome": "ItambÃ© do Mato Dentro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3132909",
+      "nome": "Itamogi",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133006",
+      "nome": "Itamonte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133105",
+      "nome": "Itanhandu",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133204",
+      "nome": "Itanhomi",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133303",
+      "nome": "Itaobim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133402",
+      "nome": "Itapagipe",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133501",
+      "nome": "Itapecerica",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133600",
+      "nome": "Itapeva",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133709",
+      "nome": "ItatiaiuÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133758",
+      "nome": "ItaÃº de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133808",
+      "nome": "ItaÃºna",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3133907",
+      "nome": "Itaverava",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134004",
+      "nome": "Itinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134103",
+      "nome": "Itueta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134202",
+      "nome": "Ituiutaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134301",
+      "nome": "Itumirim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134400",
+      "nome": "Iturama",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134509",
+      "nome": "Itutinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134608",
+      "nome": "Jaboticatubas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134707",
+      "nome": "Jacinto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134806",
+      "nome": "JacuÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3134905",
+      "nome": "Jacutinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135001",
+      "nome": "JaguaraÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135050",
+      "nome": "JaÃ­ba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135076",
+      "nome": "Jampruca",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135100",
+      "nome": "JanaÃºba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135209",
+      "nome": "JanuÃ¡ria",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135308",
+      "nome": "JaparaÃ­ba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135357",
+      "nome": "Japonvar",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135407",
+      "nome": "Jeceaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135456",
+      "nome": "Jenipapo de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135506",
+      "nome": "Jequeri",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135605",
+      "nome": "JequitaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135704",
+      "nome": "JequitibÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135803",
+      "nome": "Jequitinhonha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3135902",
+      "nome": "JesuÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136009",
+      "nome": "JoaÃ­ma",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136108",
+      "nome": "JoanÃ©sia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136207",
+      "nome": "JoÃ£o Monlevade",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136306",
+      "nome": "JoÃ£o Pinheiro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136405",
+      "nome": "Joaquim FelÃ­cio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136504",
+      "nome": "JordÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136520",
+      "nome": "JosÃ© GonÃ§alves de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136553",
+      "nome": "JosÃ© Raydan",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136579",
+      "nome": "JosenÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136603",
+      "nome": "Nova UniÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136652",
+      "nome": "Juatuba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136702",
+      "nome": "Juiz de Fora",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136801",
+      "nome": "Juramento",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136900",
+      "nome": "Juruaia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3136959",
+      "nome": "JuvenÃ­lia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137007",
+      "nome": "Ladainha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137106",
+      "nome": "Lagamar",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137205",
+      "nome": "Lagoa da Prata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137304",
+      "nome": "Lagoa dos Patos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137403",
+      "nome": "Lagoa Dourada",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137502",
+      "nome": "Lagoa Formosa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137536",
+      "nome": "Lagoa Grande",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137601",
+      "nome": "Lagoa Santa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137700",
+      "nome": "Lajinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137809",
+      "nome": "Lambari",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3137908",
+      "nome": "Lamim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138005",
+      "nome": "Laranjal",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138104",
+      "nome": "Lassance",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138203",
+      "nome": "Lavras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138302",
+      "nome": "Leandro Ferreira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138351",
+      "nome": "Leme do Prado",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138401",
+      "nome": "Leopoldina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138500",
+      "nome": "Liberdade",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138609",
+      "nome": "Lima Duarte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138625",
+      "nome": "Limeira do Oeste",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138658",
+      "nome": "Lontra",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138674",
+      "nome": "Luisburgo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138682",
+      "nome": "LuislÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138708",
+      "nome": "LuminÃ¡rias",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138807",
+      "nome": "Luz",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3138906",
+      "nome": "Machacalis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139003",
+      "nome": "Machado",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139102",
+      "nome": "Madre de Deus de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139201",
+      "nome": "Malacacheta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139250",
+      "nome": "Mamonas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139300",
+      "nome": "Manga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139409",
+      "nome": "ManhuaÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139508",
+      "nome": "Manhumirim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139607",
+      "nome": "Mantena",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139706",
+      "nome": "Maravilhas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139805",
+      "nome": "Mar de Espanha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3139904",
+      "nome": "Maria da FÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140001",
+      "nome": "Mariana",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140100",
+      "nome": "Marilac",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140159",
+      "nome": "MÃ¡rio Campos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140209",
+      "nome": "MaripÃ¡ de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140308",
+      "nome": "MarliÃ©ria",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140407",
+      "nome": "MarmelÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140506",
+      "nome": "Martinho Campos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140530",
+      "nome": "Martins Soares",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140555",
+      "nome": "Mata Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140605",
+      "nome": "MaterlÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140704",
+      "nome": "Mateus Leme",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140803",
+      "nome": "Matias Barbosa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140852",
+      "nome": "Matias Cardoso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3140902",
+      "nome": "MatipÃ³",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141009",
+      "nome": "Mato Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141108",
+      "nome": "Matozinhos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141207",
+      "nome": "Matutina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141306",
+      "nome": "Medeiros",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141405",
+      "nome": "Medina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141504",
+      "nome": "Mendes Pimentel",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141603",
+      "nome": "MercÃªs",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141702",
+      "nome": "Mesquita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141801",
+      "nome": "Minas Novas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3141900",
+      "nome": "Minduri",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142007",
+      "nome": "Mirabela",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142106",
+      "nome": "Miradouro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142205",
+      "nome": "MiraÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142254",
+      "nome": "MiravÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142304",
+      "nome": "Moeda",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142403",
+      "nome": "Moema",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142502",
+      "nome": "Monjolos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142601",
+      "nome": "Monsenhor Paulo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142700",
+      "nome": "MontalvÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142809",
+      "nome": "Monte Alegre de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3142908",
+      "nome": "Monte Azul",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143005",
+      "nome": "Monte Belo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143104",
+      "nome": "Monte Carmelo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143153",
+      "nome": "Monte Formoso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143203",
+      "nome": "Monte Santo de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143302",
+      "nome": "Montes Claros",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143401",
+      "nome": "Monte SiÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143450",
+      "nome": "Montezuma",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143500",
+      "nome": "Morada Nova de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143609",
+      "nome": "Morro da GarÃ§a",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143708",
+      "nome": "Morro do Pilar",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143807",
+      "nome": "Munhoz",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3143906",
+      "nome": "MuriaÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144003",
+      "nome": "Mutum",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144102",
+      "nome": "Muzambinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144201",
+      "nome": "Nacip Raydan",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144300",
+      "nome": "Nanuque",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144359",
+      "nome": "Naque",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144375",
+      "nome": "NatalÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144409",
+      "nome": "NatÃ©rcia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144508",
+      "nome": "Nazareno",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144607",
+      "nome": "Nepomuceno",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144656",
+      "nome": "Ninheira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144672",
+      "nome": "Nova BelÃ©m",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144706",
+      "nome": "Nova Era",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144805",
+      "nome": "Nova Lima",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3144904",
+      "nome": "Nova MÃ³dica",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145000",
+      "nome": "Nova Ponte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145059",
+      "nome": "Nova Porteirinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145109",
+      "nome": "Nova Resende",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145208",
+      "nome": "Nova Serrana",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145307",
+      "nome": "Novo Cruzeiro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145356",
+      "nome": "Novo Oriente de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145372",
+      "nome": "Novorizonte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145406",
+      "nome": "Olaria",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145455",
+      "nome": "Olhos-d'Ãgua",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145505",
+      "nome": "OlÃ­mpio Noronha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145604",
+      "nome": "Oliveira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145703",
+      "nome": "Oliveira Fortes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145802",
+      "nome": "OnÃ§a de Pitangui",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145851",
+      "nome": "OratÃ³rios",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145877",
+      "nome": "OrizÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3145901",
+      "nome": "Ouro Branco",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146008",
+      "nome": "Ouro Fino",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146107",
+      "nome": "Ouro Preto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146206",
+      "nome": "Ouro Verde de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146255",
+      "nome": "Padre Carvalho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146305",
+      "nome": "Padre ParaÃ­so",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146404",
+      "nome": "Paineiras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146503",
+      "nome": "Pains",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146552",
+      "nome": "Pai Pedro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146602",
+      "nome": "Paiva",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146701",
+      "nome": "Palma",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146750",
+      "nome": "PalmÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3146909",
+      "nome": "Papagaios",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147006",
+      "nome": "Paracatu",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147105",
+      "nome": "ParÃ¡ de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147204",
+      "nome": "ParaguaÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147303",
+      "nome": "ParaisÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147402",
+      "nome": "Paraopeba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147501",
+      "nome": "PassabÃ©m",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147600",
+      "nome": "Passa Quatro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147709",
+      "nome": "Passa Tempo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147808",
+      "nome": "Passa Vinte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147907",
+      "nome": "Passos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3147956",
+      "nome": "Patis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148004",
+      "nome": "Patos de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148103",
+      "nome": "PatrocÃ­nio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148202",
+      "nome": "PatrocÃ­nio do MuriaÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148301",
+      "nome": "Paula CÃ¢ndido",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148400",
+      "nome": "Paulistas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148509",
+      "nome": "PavÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148608",
+      "nome": "PeÃ§anha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148707",
+      "nome": "Pedra Azul",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148756",
+      "nome": "Pedra Bonita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148806",
+      "nome": "Pedra do Anta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3148905",
+      "nome": "Pedra do IndaiÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149002",
+      "nome": "Pedra Dourada",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149101",
+      "nome": "Pedralva",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149150",
+      "nome": "Pedras de Maria da Cruz",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149200",
+      "nome": "PedrinÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149309",
+      "nome": "Pedro Leopoldo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149408",
+      "nome": "Pedro Teixeira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149507",
+      "nome": "Pequeri",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149606",
+      "nome": "Pequi",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149705",
+      "nome": "PerdigÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149804",
+      "nome": "Perdizes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149903",
+      "nome": "PerdÃµes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3149952",
+      "nome": "Periquito",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150000",
+      "nome": "Pescador",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150109",
+      "nome": "Piau",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150158",
+      "nome": "Piedade de Caratinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150208",
+      "nome": "Piedade de Ponte Nova",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150307",
+      "nome": "Piedade do Rio Grande",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150406",
+      "nome": "Piedade dos Gerais",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150505",
+      "nome": "Pimenta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150539",
+      "nome": "Pingo-d'Ãgua",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150570",
+      "nome": "PintÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150604",
+      "nome": "Piracema",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150703",
+      "nome": "Pirajuba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150802",
+      "nome": "Piranga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3150901",
+      "nome": "PiranguÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151008",
+      "nome": "Piranguinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151107",
+      "nome": "Pirapetinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151206",
+      "nome": "Pirapora",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151305",
+      "nome": "PiraÃºba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151404",
+      "nome": "Pitangui",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151503",
+      "nome": "Piumhi",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151602",
+      "nome": "Planura",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151701",
+      "nome": "PoÃ§o Fundo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151800",
+      "nome": "PoÃ§os de Caldas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3151909",
+      "nome": "Pocrane",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152006",
+      "nome": "PompÃ©u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152105",
+      "nome": "Ponte Nova",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152131",
+      "nome": "Ponto Chique",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152170",
+      "nome": "Ponto dos Volantes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152204",
+      "nome": "Porteirinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152303",
+      "nome": "Porto Firme",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152402",
+      "nome": "PotÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152501",
+      "nome": "Pouso Alegre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152600",
+      "nome": "Pouso Alto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152709",
+      "nome": "Prados",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152808",
+      "nome": "Prata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3152907",
+      "nome": "PratÃ¡polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153004",
+      "nome": "Pratinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153103",
+      "nome": "Presidente Bernardes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153202",
+      "nome": "Presidente Juscelino",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153301",
+      "nome": "Presidente Kubitschek",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153400",
+      "nome": "Presidente OlegÃ¡rio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153509",
+      "nome": "Alto JequitibÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153608",
+      "nome": "Prudente de Morais",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153707",
+      "nome": "Quartel Geral",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153806",
+      "nome": "Queluzito",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3153905",
+      "nome": "Raposos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154002",
+      "nome": "Raul Soares",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154101",
+      "nome": "Recreio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154150",
+      "nome": "Reduto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154200",
+      "nome": "Resende Costa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154309",
+      "nome": "Resplendor",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154408",
+      "nome": "Ressaquinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154457",
+      "nome": "Riachinho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154507",
+      "nome": "Riacho dos Machados",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154606",
+      "nome": "RibeirÃ£o das Neves",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154705",
+      "nome": "RibeirÃ£o Vermelho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154804",
+      "nome": "Rio Acima",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3154903",
+      "nome": "Rio Casca",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155009",
+      "nome": "Rio Doce",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155108",
+      "nome": "Rio do Prado",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155207",
+      "nome": "Rio Espera",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155306",
+      "nome": "Rio Manso",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155405",
+      "nome": "Rio Novo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155504",
+      "nome": "Rio ParanaÃ­ba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155603",
+      "nome": "Rio Pardo de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155702",
+      "nome": "Rio Piracicaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155801",
+      "nome": "Rio Pomba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3155900",
+      "nome": "Rio Preto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156007",
+      "nome": "Rio Vermelho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156106",
+      "nome": "RitÃ¡polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156205",
+      "nome": "Rochedo de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156304",
+      "nome": "Rodeiro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156403",
+      "nome": "Romaria",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156452",
+      "nome": "RosÃ¡rio da Limeira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156502",
+      "nome": "Rubelita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156601",
+      "nome": "Rubim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156700",
+      "nome": "SabarÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156809",
+      "nome": "SabinÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3156908",
+      "nome": "Sacramento",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157005",
+      "nome": "Salinas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157104",
+      "nome": "Salto da Divisa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157203",
+      "nome": "Santa BÃ¡rbara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157252",
+      "nome": "Santa BÃ¡rbara do Leste",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157278",
+      "nome": "Santa BÃ¡rbara do Monte Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157302",
+      "nome": "Santa BÃ¡rbara do TugÃºrio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157336",
+      "nome": "Santa Cruz de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157377",
+      "nome": "Santa Cruz de Salinas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157401",
+      "nome": "Santa Cruz do Escalvado",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157500",
+      "nome": "Santa EfigÃªnia de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157609",
+      "nome": "Santa FÃ© de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157658",
+      "nome": "Santa Helena de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157708",
+      "nome": "Santa Juliana",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157807",
+      "nome": "Santa Luzia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3157906",
+      "nome": "Santa Margarida",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158003",
+      "nome": "Santa Maria de Itabira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158102",
+      "nome": "Santa Maria do Salto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158201",
+      "nome": "Santa Maria do SuaÃ§uÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158300",
+      "nome": "Santana da Vargem",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158409",
+      "nome": "Santana de Cataguases",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158508",
+      "nome": "Santana de Pirapama",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158607",
+      "nome": "Santana do Deserto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158706",
+      "nome": "Santana do GarambÃ©u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158805",
+      "nome": "Santana do JacarÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158904",
+      "nome": "Santana do ManhuaÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3158953",
+      "nome": "Santana do ParaÃ­so",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159001",
+      "nome": "Santana do Riacho",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159100",
+      "nome": "Santana dos Montes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159209",
+      "nome": "Santa Rita de Caldas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159308",
+      "nome": "Santa Rita de Jacutinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159357",
+      "nome": "Santa Rita de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159407",
+      "nome": "Santa Rita de Ibitipoca",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159506",
+      "nome": "Santa Rita do Itueto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159605",
+      "nome": "Santa Rita do SapucaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159704",
+      "nome": "Santa Rosa da Serra",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159803",
+      "nome": "Santa VitÃ³ria",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3159902",
+      "nome": "Santo AntÃ´nio do Amparo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160009",
+      "nome": "Santo AntÃ´nio do Aventureiro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160108",
+      "nome": "Santo AntÃ´nio do Grama",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160207",
+      "nome": "Santo AntÃ´nio do ItambÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160306",
+      "nome": "Santo AntÃ´nio do Jacinto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160405",
+      "nome": "Santo AntÃ´nio do Monte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160454",
+      "nome": "Santo AntÃ´nio do Retiro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160504",
+      "nome": "Santo AntÃ´nio do Rio Abaixo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160603",
+      "nome": "Santo HipÃ³lito",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160702",
+      "nome": "Santos Dumont",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160801",
+      "nome": "SÃ£o Bento Abade",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160900",
+      "nome": "SÃ£o BrÃ¡s do SuaÃ§uÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3160959",
+      "nome": "SÃ£o Domingos das Dores",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161007",
+      "nome": "SÃ£o Domingos do Prata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161056",
+      "nome": "SÃ£o FÃ©lix de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161106",
+      "nome": "SÃ£o Francisco",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161205",
+      "nome": "SÃ£o Francisco de Paula",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161304",
+      "nome": "SÃ£o Francisco de Sales",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161403",
+      "nome": "SÃ£o Francisco do GlÃ³ria",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161502",
+      "nome": "SÃ£o Geraldo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161601",
+      "nome": "SÃ£o Geraldo da Piedade",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161650",
+      "nome": "SÃ£o Geraldo do Baixio",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161700",
+      "nome": "SÃ£o GonÃ§alo do AbaetÃ©",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161809",
+      "nome": "SÃ£o GonÃ§alo do ParÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3161908",
+      "nome": "SÃ£o GonÃ§alo do Rio Abaixo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162005",
+      "nome": "SÃ£o GonÃ§alo do SapucaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162104",
+      "nome": "SÃ£o Gotardo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162203",
+      "nome": "SÃ£o JoÃ£o Batista do GlÃ³ria",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162252",
+      "nome": "SÃ£o JoÃ£o da Lagoa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162302",
+      "nome": "SÃ£o JoÃ£o da Mata",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162401",
+      "nome": "SÃ£o JoÃ£o da Ponte",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162450",
+      "nome": "SÃ£o JoÃ£o das MissÃµes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162500",
+      "nome": "SÃ£o JoÃ£o del Rei",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162559",
+      "nome": "SÃ£o JoÃ£o do ManhuaÃ§u",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162575",
+      "nome": "SÃ£o JoÃ£o do Manteninha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162609",
+      "nome": "SÃ£o JoÃ£o do Oriente",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162658",
+      "nome": "SÃ£o JoÃ£o do PacuÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162708",
+      "nome": "SÃ£o JoÃ£o do ParaÃ­so",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162807",
+      "nome": "SÃ£o JoÃ£o Evangelista",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162906",
+      "nome": "SÃ£o JoÃ£o Nepomuceno",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162922",
+      "nome": "SÃ£o Joaquim de Bicas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162948",
+      "nome": "SÃ£o JosÃ© da Barra",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3162955",
+      "nome": "SÃ£o JosÃ© da Lapa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163003",
+      "nome": "SÃ£o JosÃ© da Safira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163102",
+      "nome": "SÃ£o JosÃ© da Varginha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163201",
+      "nome": "SÃ£o JosÃ© do Alegre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163300",
+      "nome": "SÃ£o JosÃ© do Divino",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163409",
+      "nome": "SÃ£o JosÃ© do Goiabal",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163508",
+      "nome": "SÃ£o JosÃ© do Jacuri",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163607",
+      "nome": "SÃ£o JosÃ© do Mantimento",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163706",
+      "nome": "SÃ£o LourenÃ§o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163805",
+      "nome": "SÃ£o Miguel do Anta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3163904",
+      "nome": "SÃ£o Pedro da UniÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164001",
+      "nome": "SÃ£o Pedro dos Ferros",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164100",
+      "nome": "SÃ£o Pedro do SuaÃ§uÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164209",
+      "nome": "SÃ£o RomÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164308",
+      "nome": "SÃ£o Roque de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164407",
+      "nome": "SÃ£o SebastiÃ£o da Bela Vista",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164431",
+      "nome": "SÃ£o SebastiÃ£o da Vargem Alegre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164472",
+      "nome": "SÃ£o SebastiÃ£o do Anta",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164506",
+      "nome": "SÃ£o SebastiÃ£o do MaranhÃ£o",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164605",
+      "nome": "SÃ£o SebastiÃ£o do Oeste",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164704",
+      "nome": "SÃ£o SebastiÃ£o do ParaÃ­so",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164803",
+      "nome": "SÃ£o SebastiÃ£o do Rio Preto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3164902",
+      "nome": "SÃ£o SebastiÃ£o do Rio Verde",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165008",
+      "nome": "SÃ£o Tiago",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165107",
+      "nome": "SÃ£o TomÃ¡s de Aquino",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165206",
+      "nome": "SÃ£o TomÃ© das Letras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165305",
+      "nome": "SÃ£o Vicente de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165404",
+      "nome": "SapucaÃ­-Mirim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165503",
+      "nome": "SardoÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165537",
+      "nome": "Sarzedo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165552",
+      "nome": "Setubinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165560",
+      "nome": "Sem-Peixe",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165578",
+      "nome": "Senador Amaral",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165602",
+      "nome": "Senador Cortes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165701",
+      "nome": "Senador Firmino",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165800",
+      "nome": "Senador JosÃ© Bento",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3165909",
+      "nome": "Senador Modestino GonÃ§alves",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166006",
+      "nome": "Senhora de Oliveira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166105",
+      "nome": "Senhora do Porto",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166204",
+      "nome": "Senhora dos RemÃ©dios",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166303",
+      "nome": "Sericita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166402",
+      "nome": "Seritinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166501",
+      "nome": "Serra Azul de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166600",
+      "nome": "Serra da Saudade",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166709",
+      "nome": "Serra dos AimorÃ©s",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166808",
+      "nome": "Serra do Salitre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166907",
+      "nome": "Serrania",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3166956",
+      "nome": "SerranÃ³polis de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167004",
+      "nome": "Serranos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167103",
+      "nome": "Serro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167202",
+      "nome": "Sete Lagoas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167301",
+      "nome": "SilveirÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167400",
+      "nome": "SilvianÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167509",
+      "nome": "SimÃ£o Pereira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167608",
+      "nome": "SimonÃ©sia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167707",
+      "nome": "SobrÃ¡lia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167806",
+      "nome": "Soledade de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3167905",
+      "nome": "Tabuleiro",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168002",
+      "nome": "Taiobeiras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168051",
+      "nome": "Taparuba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168101",
+      "nome": "Tapira",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168200",
+      "nome": "TapiraÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168309",
+      "nome": "TaquaraÃ§u de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168408",
+      "nome": "Tarumirim",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168507",
+      "nome": "Teixeiras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168606",
+      "nome": "TeÃ³filo Otoni",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168705",
+      "nome": "TimÃ³teo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168804",
+      "nome": "Tiradentes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3168903",
+      "nome": "Tiros",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169000",
+      "nome": "Tocantins",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169059",
+      "nome": "Tocos do Moji",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169109",
+      "nome": "Toledo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169208",
+      "nome": "Tombos",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169307",
+      "nome": "TrÃªs CoraÃ§Ãµes",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169356",
+      "nome": "TrÃªs Marias",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169406",
+      "nome": "TrÃªs Pontas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169505",
+      "nome": "Tumiritinga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169604",
+      "nome": "Tupaciguara",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169703",
+      "nome": "Turmalina",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169802",
+      "nome": "TurvolÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3169901",
+      "nome": "UbÃ¡",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170008",
+      "nome": "UbaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170057",
+      "nome": "Ubaporanga",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170107",
+      "nome": "Uberaba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170206",
+      "nome": "UberlÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170305",
+      "nome": "Umburatiba",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170404",
+      "nome": "UnaÃ­",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170438",
+      "nome": "UniÃ£o de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170479",
+      "nome": "Uruana de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170503",
+      "nome": "UrucÃ¢nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170529",
+      "nome": "Urucuia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170578",
+      "nome": "Vargem Alegre",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170602",
+      "nome": "Vargem Bonita",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170651",
+      "nome": "Vargem Grande do Rio Pardo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170701",
+      "nome": "Varginha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170750",
+      "nome": "VarjÃ£o de Minas",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170800",
+      "nome": "VÃ¡rzea da Palma",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3170909",
+      "nome": "VarzelÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171006",
+      "nome": "Vazante",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171030",
+      "nome": "VerdelÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171071",
+      "nome": "Veredinha",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171105",
+      "nome": "VerÃ­ssimo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171154",
+      "nome": "Vermelho Novo",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171204",
+      "nome": "Vespasiano",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171303",
+      "nome": "ViÃ§osa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171402",
+      "nome": "Vieiras",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171501",
+      "nome": "Mathias Lobato",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171600",
+      "nome": "Virgem da Lapa",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171709",
+      "nome": "VirgÃ­nia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171808",
+      "nome": "VirginÃ³polis",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3171907",
+      "nome": "VirgolÃ¢ndia",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3172004",
+      "nome": "Visconde do Rio Branco",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3172103",
+      "nome": "Volta Grande",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "3172202",
+      "nome": "Wenceslau Braz",
+      "uf": "MG",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

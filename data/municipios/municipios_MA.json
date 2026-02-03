@@ -1,0 +1,1309 @@
+{
+  "uf": "MA",
+  "fonte": "IBGE Malha 2023",
+  "total": 217,
+  "municipios": [
+    {
+      "ibgeId": "2100055",
+      "nome": "AÃ§ailÃ¢ndia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100105",
+      "nome": "Afonso Cunha",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100154",
+      "nome": "Ãgua Doce do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100204",
+      "nome": "AlcÃ¢ntara",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100303",
+      "nome": "Aldeias Altas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100402",
+      "nome": "Altamira do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100436",
+      "nome": "Alto Alegre do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100477",
+      "nome": "Alto Alegre do PindarÃ©",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100501",
+      "nome": "Alto ParnaÃ­ba",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100550",
+      "nome": "AmapÃ¡ do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100600",
+      "nome": "Amarante do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100709",
+      "nome": "Anajatuba",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100808",
+      "nome": "Anapurus",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100832",
+      "nome": "Apicum-AÃ§u",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100873",
+      "nome": "AraguanÃ£",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100907",
+      "nome": "Araioses",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2100956",
+      "nome": "Arame",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101004",
+      "nome": "Arari",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101103",
+      "nome": "AxixÃ¡",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101202",
+      "nome": "Bacabal",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101251",
+      "nome": "Bacabeira",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101301",
+      "nome": "Bacuri",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101350",
+      "nome": "Bacurituba",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101400",
+      "nome": "Balsas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101509",
+      "nome": "BarÃ£o de GrajaÃº",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101608",
+      "nome": "Barra do Corda",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101707",
+      "nome": "Barreirinhas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101731",
+      "nome": "BelÃ¡gua",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101772",
+      "nome": "Bela Vista do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101806",
+      "nome": "Benedito Leite",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101905",
+      "nome": "BequimÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101939",
+      "nome": "Bernardo do Mearim",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2101970",
+      "nome": "Boa Vista do Gurupi",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102002",
+      "nome": "Bom Jardim",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102036",
+      "nome": "Bom Jesus das Selvas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102077",
+      "nome": "Bom Lugar",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102101",
+      "nome": "Brejo",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102150",
+      "nome": "Brejo de Areia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102200",
+      "nome": "Buriti",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102309",
+      "nome": "Buriti Bravo",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102325",
+      "nome": "Buriticupu",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102358",
+      "nome": "Buritirana",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102374",
+      "nome": "Cachoeira Grande",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102408",
+      "nome": "CajapiÃ³",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102507",
+      "nome": "Cajari",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102556",
+      "nome": "Campestre do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102606",
+      "nome": "CÃ¢ndido Mendes",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102705",
+      "nome": "Cantanhede",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102754",
+      "nome": "Capinzal do Norte",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102804",
+      "nome": "Carolina",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2102903",
+      "nome": "Carutapera",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103000",
+      "nome": "Caxias",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103109",
+      "nome": "Cedral",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103125",
+      "nome": "Central do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103158",
+      "nome": "Centro do Guilherme",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103174",
+      "nome": "Centro Novo do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103208",
+      "nome": "Chapadinha",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103257",
+      "nome": "CidelÃ¢ndia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103307",
+      "nome": "CodÃ³",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103406",
+      "nome": "Coelho Neto",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103505",
+      "nome": "Colinas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103554",
+      "nome": "ConceiÃ§Ã£o do Lago-AÃ§u",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103604",
+      "nome": "CoroatÃ¡",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103703",
+      "nome": "Cururupu",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103752",
+      "nome": "DavinÃ³polis",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103802",
+      "nome": "Dom Pedro",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2103901",
+      "nome": "Duque Bacelar",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104008",
+      "nome": "EsperantinÃ³polis",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104057",
+      "nome": "Estreito",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104073",
+      "nome": "Feira Nova do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104081",
+      "nome": "Fernando FalcÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104099",
+      "nome": "Formosa da Serra Negra",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104107",
+      "nome": "Fortaleza dos Nogueiras",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104206",
+      "nome": "Fortuna",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104305",
+      "nome": "Godofredo Viana",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104404",
+      "nome": "GonÃ§alves Dias",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104503",
+      "nome": "Governador Archer",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104552",
+      "nome": "Governador Edison LobÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104602",
+      "nome": "Governador EugÃªnio Barros",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104628",
+      "nome": "Governador Luiz Rocha",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104651",
+      "nome": "Governador Newton Bello",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104677",
+      "nome": "Governador Nunes Freire",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104701",
+      "nome": "GraÃ§a Aranha",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104800",
+      "nome": "GrajaÃº",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2104909",
+      "nome": "GuimarÃ£es",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105005",
+      "nome": "Humberto de Campos",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105104",
+      "nome": "Icatu",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105153",
+      "nome": "IgarapÃ© do Meio",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105203",
+      "nome": "IgarapÃ© Grande",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105302",
+      "nome": "Imperatriz",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105351",
+      "nome": "Itaipava do GrajaÃº",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105401",
+      "nome": "Itapecuru Mirim",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105427",
+      "nome": "Itinga do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105450",
+      "nome": "JatobÃ¡",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105476",
+      "nome": "Jenipapo dos Vieiras",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105500",
+      "nome": "JoÃ£o Lisboa",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105609",
+      "nome": "JoselÃ¢ndia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105658",
+      "nome": "Junco do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105708",
+      "nome": "Lago da Pedra",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105807",
+      "nome": "Lago do Junco",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105906",
+      "nome": "Lago Verde",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105922",
+      "nome": "Lagoa do Mato",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105948",
+      "nome": "Lago dos Rodrigues",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105963",
+      "nome": "Lagoa Grande do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2105989",
+      "nome": "Lajeado Novo",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106003",
+      "nome": "Lima Campos",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106102",
+      "nome": "Loreto",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106201",
+      "nome": "LuÃ­s Domingues",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106300",
+      "nome": "MagalhÃ£es de Almeida",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106326",
+      "nome": "MaracaÃ§umÃ©",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106359",
+      "nome": "MarajÃ¡ do Sena",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106375",
+      "nome": "MaranhÃ£ozinho",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106409",
+      "nome": "Mata Roma",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106508",
+      "nome": "Matinha",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106607",
+      "nome": "MatÃµes",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106631",
+      "nome": "MatÃµes do Norte",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106672",
+      "nome": "Milagres do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106706",
+      "nome": "Mirador",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106755",
+      "nome": "Miranda do Norte",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106805",
+      "nome": "Mirinzal",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2106904",
+      "nome": "MonÃ§Ã£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107001",
+      "nome": "Montes Altos",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107100",
+      "nome": "Morros",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107209",
+      "nome": "Nina Rodrigues",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107258",
+      "nome": "Nova Colinas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107308",
+      "nome": "Nova Iorque",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107357",
+      "nome": "Nova Olinda do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107407",
+      "nome": "Olho d'Ãgua das CunhÃ£s",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107456",
+      "nome": "Olinda Nova do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107506",
+      "nome": "PaÃ§o do Lumiar",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107605",
+      "nome": "PalmeirÃ¢ndia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107704",
+      "nome": "Paraibano",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107803",
+      "nome": "Parnarama",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2107902",
+      "nome": "Passagem Franca",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108009",
+      "nome": "Pastos Bons",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108058",
+      "nome": "Paulino Neves",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108108",
+      "nome": "Paulo Ramos",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108207",
+      "nome": "Pedreiras",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108256",
+      "nome": "Pedro do RosÃ¡rio",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108306",
+      "nome": "Penalva",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108405",
+      "nome": "Peri Mirim",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108454",
+      "nome": "PeritorÃ³",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108504",
+      "nome": "PindarÃ©-Mirim",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108603",
+      "nome": "Pinheiro",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108702",
+      "nome": "Pio XII",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108801",
+      "nome": "Pirapemas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2108900",
+      "nome": "PoÃ§Ã£o de Pedras",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109007",
+      "nome": "Porto Franco",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109056",
+      "nome": "Porto Rico do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109106",
+      "nome": "Presidente Dutra",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109205",
+      "nome": "Presidente Juscelino",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109239",
+      "nome": "Presidente MÃ©dici",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109270",
+      "nome": "Presidente Sarney",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109304",
+      "nome": "Presidente Vargas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109403",
+      "nome": "Primeira Cruz",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109452",
+      "nome": "Raposa",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109502",
+      "nome": "RiachÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109551",
+      "nome": "Ribamar Fiquene",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109601",
+      "nome": "RosÃ¡rio",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109700",
+      "nome": "SambaÃ­ba",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109759",
+      "nome": "Santa Filomena do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109809",
+      "nome": "Santa Helena",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2109908",
+      "nome": "Santa InÃªs",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110005",
+      "nome": "Santa Luzia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110039",
+      "nome": "Santa Luzia do ParuÃ¡",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110104",
+      "nome": "Santa QuitÃ©ria do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110203",
+      "nome": "Santa Rita",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110237",
+      "nome": "Santana do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110278",
+      "nome": "Santo Amaro do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110302",
+      "nome": "Santo AntÃ´nio dos Lopes",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110401",
+      "nome": "SÃ£o Benedito do Rio Preto",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110500",
+      "nome": "SÃ£o Bento",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110609",
+      "nome": "SÃ£o Bernardo",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110658",
+      "nome": "SÃ£o Domingos do AzeitÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110708",
+      "nome": "SÃ£o Domingos do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110807",
+      "nome": "SÃ£o FÃ©lix de Balsas",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110856",
+      "nome": "SÃ£o Francisco do BrejÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2110906",
+      "nome": "SÃ£o Francisco do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111003",
+      "nome": "SÃ£o JoÃ£o Batista",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111029",
+      "nome": "SÃ£o JoÃ£o do CarÃº",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111052",
+      "nome": "SÃ£o JoÃ£o do ParaÃ­so",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111078",
+      "nome": "SÃ£o JoÃ£o do Soter",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111102",
+      "nome": "SÃ£o JoÃ£o dos Patos",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111201",
+      "nome": "SÃ£o JosÃ© de Ribamar",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111250",
+      "nome": "SÃ£o JosÃ© dos BasÃ­lios",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111300",
+      "nome": "SÃ£o LuÃ­s",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111409",
+      "nome": "SÃ£o LuÃ­s Gonzaga do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111508",
+      "nome": "SÃ£o Mateus do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111532",
+      "nome": "SÃ£o Pedro da Ãgua Branca",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111573",
+      "nome": "SÃ£o Pedro dos Crentes",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111607",
+      "nome": "SÃ£o Raimundo das Mangabeiras",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111631",
+      "nome": "SÃ£o Raimundo do Doca Bezerra",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111672",
+      "nome": "SÃ£o Roberto",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111706",
+      "nome": "SÃ£o Vicente Ferrer",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111722",
+      "nome": "Satubinha",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111748",
+      "nome": "Senador Alexandre Costa",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111763",
+      "nome": "Senador La Rocque",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111789",
+      "nome": "Serrano do MaranhÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111805",
+      "nome": "SÃ­tio Novo",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111904",
+      "nome": "Sucupira do Norte",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2111953",
+      "nome": "Sucupira do RiachÃ£o",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112001",
+      "nome": "Tasso Fragoso",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112100",
+      "nome": "Timbiras",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112209",
+      "nome": "Timon",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112233",
+      "nome": "Trizidela do Vale",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112274",
+      "nome": "TufilÃ¢ndia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112308",
+      "nome": "Tuntum",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112407",
+      "nome": "TuriaÃ§u",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112456",
+      "nome": "TurilÃ¢ndia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112506",
+      "nome": "TutÃ³ia",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112605",
+      "nome": "Urbano Santos",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112704",
+      "nome": "Vargem Grande",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112803",
+      "nome": "Viana",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112852",
+      "nome": "Vila Nova dos MartÃ­rios",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2112902",
+      "nome": "VitÃ³ria do Mearim",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2113009",
+      "nome": "Vitorino Freire",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2114007",
+      "nome": "ZÃ© Doca",
+      "uf": "MA",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

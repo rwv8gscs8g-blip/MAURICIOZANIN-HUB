@@ -1,0 +1,502 @@
+{
+  "retrieved": [
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/01banner.jpg",
+      "localPath": "/inovajuntos/site-assets/full/01banner.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/banner_cronograma_2023.png",
+      "localPath": "/inovajuntos/site-assets/full/banner_cronograma_2023.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/banner_linha_do_tempo.png",
+      "localPath": "/inovajuntos/site-assets/full/banner_linha_do_tempo.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/banner_nau.png",
+      "localPath": "/inovajuntos/site-assets/full/banner_nau.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/banner_ods.png",
+      "localPath": "/inovajuntos/site-assets/full/banner_ods.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/br-flag-icon.svg",
+      "localPath": "/inovajuntos/site-assets/full/br-flag-icon.svg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/brazil.png",
+      "localPath": "/inovajuntos/site-assets/full/brazil.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cluster1.png",
+      "localPath": "/inovajuntos/site-assets/full/cluster1.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cluster2.png",
+      "localPath": "/inovajuntos/site-assets/full/cluster2.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cluster3.png",
+      "localPath": "/inovajuntos/site-assets/full/cluster3.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cluster4.png",
+      "localPath": "/inovajuntos/site-assets/full/cluster4.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_biblioteca.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_biblioteca.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_consorcios.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_consorcios.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_crack.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_crack.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_idms.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_idms.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_lixoes.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_lixoes.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_mandala.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_mandala.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_portal.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_portal.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/cnm_univercidades.png",
+      "localPath": "/inovajuntos/site-assets/full/cnm_univercidades.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/concept-cluster-1.jpg",
+      "localPath": "/inovajuntos/site-assets/full/concept-cluster-1.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/concept-cluster-2.jpg",
+      "localPath": "/inovajuntos/site-assets/full/concept-cluster-2.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/concept-cluster-3.jpg",
+      "localPath": "/inovajuntos/site-assets/full/concept-cluster-3.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/concept-cluster-4.jpg",
+      "localPath": "/inovajuntos/site-assets/full/concept-cluster-4.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_fabiana.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_fabiana.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_giovanni.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_giovanni.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_joaopedro.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_joaopedro.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_lorenna.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_lorenna.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_marvelis.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_marvelis.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_nelson.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_nelson.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_rafael.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_rafael.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_rhaellyse.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_rhaellyse.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_thais.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_thais.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/equipe_zanin.jpg",
+      "localPath": "/inovajuntos/site-assets/full/equipe_zanin.jpg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/inovajuntos-h-white.png",
+      "localPath": "/inovajuntos/site-assets/full/inovajuntos-h-white.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/logos.png",
+      "localPath": "/inovajuntos/site-assets/full/logos.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods1.png",
+      "localPath": "/inovajuntos/site-assets/full/ods1.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods10.png",
+      "localPath": "/inovajuntos/site-assets/full/ods10.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods11.png",
+      "localPath": "/inovajuntos/site-assets/full/ods11.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods12.png",
+      "localPath": "/inovajuntos/site-assets/full/ods12.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods13.png",
+      "localPath": "/inovajuntos/site-assets/full/ods13.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods14.png",
+      "localPath": "/inovajuntos/site-assets/full/ods14.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods15.png",
+      "localPath": "/inovajuntos/site-assets/full/ods15.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods16.png",
+      "localPath": "/inovajuntos/site-assets/full/ods16.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods17.png",
+      "localPath": "/inovajuntos/site-assets/full/ods17.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods2.png",
+      "localPath": "/inovajuntos/site-assets/full/ods2.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods3.png",
+      "localPath": "/inovajuntos/site-assets/full/ods3.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods4.png",
+      "localPath": "/inovajuntos/site-assets/full/ods4.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods5.png",
+      "localPath": "/inovajuntos/site-assets/full/ods5.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods6.png",
+      "localPath": "/inovajuntos/site-assets/full/ods6.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods7.png",
+      "localPath": "/inovajuntos/site-assets/full/ods7.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods8.png",
+      "localPath": "/inovajuntos/site-assets/full/ods8.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/ods9.png",
+      "localPath": "/inovajuntos/site-assets/full/ods9.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/parceria_ces.png",
+      "localPath": "/inovajuntos/site-assets/full/parceria_ces.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/parceria_cnm.png",
+      "localPath": "/inovajuntos/site-assets/full/parceria_cnm.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/parceria_ueuropeia.png",
+      "localPath": "/inovajuntos/site-assets/full/parceria_ueuropeia.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/portugal.png",
+      "localPath": "/inovajuntos/site-assets/full/portugal.png"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/pt-flag-icon.svg",
+      "localPath": "/inovajuntos/site-assets/full/pt-flag-icon.svg"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/superbanner-materiais.jpg",
+      "localPath": "/inovajuntos/site-assets/full/superbanner-materiais.jpg"
+    }
+  ],
+  "failed": [
+    {
+      "url": "http://www.inovajuntos.cnm.org.br/wp-content/uploads/2021/04/cropped-logo2-1-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/04/cropped-cropped-cropped-cropped-WhatsApp-Image-2021-03-25-at-16.17.28-1.jpeg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/Foto_Lorena.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/Foto_Rhaellyse.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/Foto_Zanin.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/Sao-Bento.jpeg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/Taquaritinga.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-818-870-320-1-marcioniliosouza.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Aiuaba.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-CIF.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-CISAMVI-Capa-scaled-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-CISGA.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Campo-Magro.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Feliz-Deserto.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Goias.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Itajai-Foz-do-Rio-Itajai-Acu-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Juazeiro-do-Norte.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Restinga-Seca-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Rio-Grande-2-1_Easy-Resize.com-2.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Rio-Verde.jpeg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Santare´m.jpg",
+      "reason": "'ascii' codec can't encode character '\\xb4' in position 47: ordinal not in range(128)"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Taruma-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-Viana-ES-1-scaled-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-carnauba.jpeg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-crato-ce.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-cropped-cropped-cropped-cropped-image-017-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-cropped-cropped-cropped-image-011.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-cropped-cropped-image-010.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-cropped-image-007.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-cropped-image-014.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-cropped-image-015-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-cropped-image-016.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-image-006-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-image-008-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-image-012.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-cropped-marvelis.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-fff.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-image-009.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-image-013.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/05/cropped-lateral_6.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/06/cropped-Alegretti.jpeg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/06/cropped-adriana-giroletti.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/06/cropped-nelson.jpeg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/07/Design-sem-nome-11.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/07/Design-sem-nome-8-1.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/07/Design-sem-nome-8.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/07/Design-sem-nome-9.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-13.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-14.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-15.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-16.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-17.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-18.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-19.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-20.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-21.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-28.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-29.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-7.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/08/Design-sem-nome-8.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/09/DJI_0003-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/10/Design-sem-nome-1.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/10/Design-sem-nome-2.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2021/10/Design-sem-nome.png",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.cnm.org.br/wp-content/uploads/2022/02/maxresdefault-1.jpg",
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://inovajuntos.org/wp-content/themes/inovajuntos/images/-flag-icon.svg",
+      "reason": "HTTP Error 500: Internal Server Error"
+    }
+  ]
+}

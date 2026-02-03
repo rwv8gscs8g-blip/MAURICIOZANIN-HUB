@@ -1,0 +1,97 @@
+{
+  "uf": "RR",
+  "fonte": "IBGE Malha 2023",
+  "total": 15,
+  "municipios": [
+    {
+      "ibgeId": "1400027",
+      "nome": "Amajari",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400050",
+      "nome": "Alto Alegre",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400100",
+      "nome": "Boa Vista",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400159",
+      "nome": "Bonfim",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400175",
+      "nome": "CantÃ¡",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400209",
+      "nome": "CaracaraÃ­",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400233",
+      "nome": "Caroebe",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400282",
+      "nome": "Iracema",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400308",
+      "nome": "MucajaÃ­",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400407",
+      "nome": "Normandia",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400456",
+      "nome": "Pacaraima",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400472",
+      "nome": "RorainÃ³polis",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400506",
+      "nome": "SÃ£o JoÃ£o da Baliza",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400605",
+      "nome": "SÃ£o Luiz",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1400704",
+      "nome": "UiramutÃ£",
+      "uf": "RR",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

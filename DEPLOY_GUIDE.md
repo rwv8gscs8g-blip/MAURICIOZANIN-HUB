@@ -109,22 +109,23 @@ O Vercel configura SSL automaticamente via Let's Encrypt. Aguarde alguns minutos
 3. Copie a connection string
 4. Adicione como `DATABASE_URL` no Vercel
 
-### 3.2. Executar Migrations
+### 3.2. Prisma (MVP): db push
 
-Após o primeiro deploy, execute as migrations:
+Neste MVP, usamos **db push** (sem migrations) para evoluir o schema com menor fricção.
+Antes do primeiro uso em cada ambiente (Dev/Preview/Prod), rode o comando apontando para o `DATABASE_URL` correto.
 
 ```bash
-# Via Vercel CLI
-vercel env pull .env.local
-npx prisma migrate deploy
+# Exemplo (rodar localmente apontando para o banco do ambiente)
+DATABASE_URL="postgresql://..." npm run prisma:dbpush
 ```
 
-Ou configure um script de build no Vercel:
+⚠️ Evite rodar `db push` automaticamente no build do Vercel.
+Prefira aplicar schema conscientemente (por ambiente) para reduzir risco operacional.
 
 ```json
 {
   "scripts": {
-    "postbuild": "prisma migrate deploy"
+    "postbuild": "prisma generate"
   }
 }
 ```

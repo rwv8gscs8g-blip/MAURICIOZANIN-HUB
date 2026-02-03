@@ -43,5 +43,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+
 # prisma
 /prisma/migrations
+
+# large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.tar.gz
+

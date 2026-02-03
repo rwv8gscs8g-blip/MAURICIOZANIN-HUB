@@ -1,0 +1,103 @@
+{
+  "uf": "AP",
+  "fonte": "IBGE Malha 2023",
+  "total": 16,
+  "municipios": [
+    {
+      "ibgeId": "1600055",
+      "nome": "Serra do Navio",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600105",
+      "nome": "AmapÃ¡",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600154",
+      "nome": "Pedra Branca do Amapari",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600204",
+      "nome": "CalÃ§oene",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600212",
+      "nome": "Cutias",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600238",
+      "nome": "Ferreira Gomes",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600253",
+      "nome": "Itaubal",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600279",
+      "nome": "Laranjal do Jari",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600303",
+      "nome": "MacapÃ¡",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600402",
+      "nome": "MazagÃ£o",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600501",
+      "nome": "Oiapoque",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600535",
+      "nome": "Porto Grande",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600550",
+      "nome": "PracuÃºba",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600600",
+      "nome": "Santana",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600709",
+      "nome": "Tartarugalzinho",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "1600808",
+      "nome": "VitÃ³ria do Jari",
+      "uf": "AP",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}

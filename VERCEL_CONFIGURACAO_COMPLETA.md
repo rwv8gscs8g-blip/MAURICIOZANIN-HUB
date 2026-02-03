@@ -173,18 +173,19 @@ No Vercel, vá em **Settings → General**:
 
 Como estamos usando Prisma, configure:
 
-1. **Adicione script de post-build** no `package.json`:
+1. **Post-build (recomendado no MVP): apenas `prisma generate`**
 
 ```json
 {
   "scripts": {
-    "postbuild": "prisma generate && prisma migrate deploy"
+    "postbuild": "prisma generate"
   }
 }
 ```
 
-2. **Ou configure no Vercel**:
-   - Build Command: `npm run build && npx prisma generate && npx prisma migrate deploy`
+2. **Importante (MVP)**:
+   - Evite `prisma db push` dentro do build do Vercel.
+   - Aplique `db push` manualmente por ambiente (com `DATABASE_URL` correto) para reduzir risco.
 
 ### 4.3. Environment-Specific Config
 
@@ -326,7 +327,7 @@ vercel env ls
 Após configurar o Vercel:
 
 1. ✅ Configurar DNS do domínio
-2. ✅ Executar migrations do Prisma
+2. ✅ Aplicar schema (MVP) via `npm run prisma:dbpush` por ambiente
 3. ✅ Validar todas as funcionalidades
 4. ✅ Configurar monitoramento
 5. ✅ Documentar processo de deploy

@@ -1,0 +1,619 @@
+{
+  "uf": "AL",
+  "fonte": "IBGE Malha 2023",
+  "total": 102,
+  "municipios": [
+    {
+      "ibgeId": "2700102",
+      "nome": "Ãgua Branca",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700201",
+      "nome": "Anadia",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700300",
+      "nome": "Arapiraca",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700409",
+      "nome": "Atalaia",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700508",
+      "nome": "Barra de Santo AntÃ´nio",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700607",
+      "nome": "Barra de SÃ£o Miguel",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700706",
+      "nome": "Batalha",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700805",
+      "nome": "BelÃ©m",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2700904",
+      "nome": "Belo Monte",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701001",
+      "nome": "Boca da Mata",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701100",
+      "nome": "Branquinha",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701209",
+      "nome": "Cacimbinhas",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701308",
+      "nome": "Cajueiro",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701357",
+      "nome": "Campestre",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701407",
+      "nome": "Campo Alegre",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701506",
+      "nome": "Campo Grande",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701605",
+      "nome": "Canapi",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701704",
+      "nome": "Capela",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701803",
+      "nome": "Carneiros",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2701902",
+      "nome": "ChÃ£ Preta",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702009",
+      "nome": "CoitÃ© do NÃ³ia",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702108",
+      "nome": "ColÃ´nia Leopoldina",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702207",
+      "nome": "Coqueiro Seco",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702306",
+      "nome": "Coruripe",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702355",
+      "nome": "CraÃ­bas",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702405",
+      "nome": "Delmiro Gouveia",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702504",
+      "nome": "Dois Riachos",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702553",
+      "nome": "Estrela de Alagoas",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702603",
+      "nome": "Feira Grande",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702702",
+      "nome": "Feliz Deserto",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702801",
+      "nome": "Flexeiras",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2702900",
+      "nome": "Girau do Ponciano",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703007",
+      "nome": "Ibateguara",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703106",
+      "nome": "Igaci",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703205",
+      "nome": "Igreja Nova",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703304",
+      "nome": "Inhapi",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703403",
+      "nome": "JacarÃ© dos Homens",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703502",
+      "nome": "JacuÃ­pe",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703601",
+      "nome": "Japaratinga",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703700",
+      "nome": "Jaramataia",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703759",
+      "nome": "JequiÃ¡ da Praia",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703809",
+      "nome": "Joaquim Gomes",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2703908",
+      "nome": "JundiÃ¡",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704005",
+      "nome": "Junqueiro",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704104",
+      "nome": "Lagoa da Canoa",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704203",
+      "nome": "Limoeiro de Anadia",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704302",
+      "nome": "MaceiÃ³",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704401",
+      "nome": "Major Isidoro",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704500",
+      "nome": "Maragogi",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704609",
+      "nome": "Maravilha",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704708",
+      "nome": "Marechal Deodoro",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704807",
+      "nome": "Maribondo",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2704906",
+      "nome": "Mar Vermelho",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705002",
+      "nome": "Mata Grande",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705101",
+      "nome": "Matriz de Camaragibe",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705200",
+      "nome": "Messias",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705309",
+      "nome": "Minador do NegrÃ£o",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705408",
+      "nome": "MonteirÃ³polis",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705507",
+      "nome": "Murici",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705606",
+      "nome": "Novo Lino",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705705",
+      "nome": "Olho d'Ãgua das Flores",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705804",
+      "nome": "Olho d'Ãgua do Casado",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2705903",
+      "nome": "Olho d'Ãgua Grande",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706000",
+      "nome": "OlivenÃ§a",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706109",
+      "nome": "Ouro Branco",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706208",
+      "nome": "Palestina",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706307",
+      "nome": "Palmeira dos Ãndios",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706406",
+      "nome": "PÃ£o de AÃ§Ãºcar",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706422",
+      "nome": "Pariconha",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706448",
+      "nome": "Paripueira",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706505",
+      "nome": "Passo de Camaragibe",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706604",
+      "nome": "Paulo Jacinto",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706703",
+      "nome": "Penedo",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706802",
+      "nome": "PiaÃ§abuÃ§u",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2706901",
+      "nome": "Pilar",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707008",
+      "nome": "Pindoba",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707107",
+      "nome": "Piranhas",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707206",
+      "nome": "PoÃ§o das Trincheiras",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707305",
+      "nome": "Porto Calvo",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707404",
+      "nome": "Porto de Pedras",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707503",
+      "nome": "Porto Real do ColÃ©gio",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707602",
+      "nome": "Quebrangulo",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707701",
+      "nome": "Rio Largo",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707800",
+      "nome": "Roteiro",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2707909",
+      "nome": "Santa Luzia do Norte",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708006",
+      "nome": "Santana do Ipanema",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708105",
+      "nome": "Santana do MundaÃº",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708204",
+      "nome": "SÃ£o BrÃ¡s",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708303",
+      "nome": "SÃ£o JosÃ© da Laje",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708402",
+      "nome": "SÃ£o JosÃ© da Tapera",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708501",
+      "nome": "SÃ£o LuÃ­s do Quitunde",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708600",
+      "nome": "SÃ£o Miguel dos Campos",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708709",
+      "nome": "SÃ£o Miguel dos Milagres",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708808",
+      "nome": "SÃ£o SebastiÃ£o",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708907",
+      "nome": "Satuba",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2708956",
+      "nome": "Senador Rui Palmeira",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2709004",
+      "nome": "Tanque d'Arca",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2709103",
+      "nome": "Taquarana",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2709152",
+      "nome": "TeotÃ´nio Vilela",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2709202",
+      "nome": "Traipu",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2709301",
+      "nome": "UniÃ£o dos Palmares",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    },
+    {
+      "ibgeId": "2709400",
+      "nome": "ViÃ§osa",
+      "uf": "AL",
+      "fonte": "IBGE Malha 2023"
+    }
+  ]
+}
