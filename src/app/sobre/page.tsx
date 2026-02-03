@@ -109,16 +109,18 @@ export default function SobrePage() {
       <style jsx global>{`
         @media print {
           @page {
-            margin-top: 15mm;
-            margin-bottom: 15mm;
+            margin-top: 25mm;
+            margin-bottom: 25mm;
+            margin-left: 15mm;
+            margin-right: 15mm;
           }
           body {
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
           }
           .print-safe-area {
-            padding-top: 5mm;
-            padding-bottom: 5mm;
+            padding-top: 10mm;
+            padding-bottom: 10mm;
           }
         }
       `}</style>
