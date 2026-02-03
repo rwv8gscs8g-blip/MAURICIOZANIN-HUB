@@ -105,33 +105,61 @@
 }
 
 @media print {
-  :root {
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #ffffff;
+  @page {
+    margin: 2cm;
+    size: A4;
   }
 
   body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     background: #ffffff;
+    color: #000000;
   }
 
-  .print-hidden {
+  /* Hide navigation, footer, and interactive elements */
+  nav, footer, .no-print, button, .video-container, .print-hidden {
     display: none !important;
+  }
+
+  /* Ensure text is black and readable */
+  p, h1, h2, h3, h4, li {
+    color: #000000 !important;
+    text-shadow: none !important;
+  }
+
+  /* Expand containers */
+  .container-fluid, .reading-column {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .citation-box {
+    border: 1px solid #000;
+    break-inside: avoid;
+  }
+
+  /* Force background printing for specific elements if needed */
+  .print-bg {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .print-only {
     display: block !important;
   }
 
-  .print-section {
-    break-inside: avoid;
-    page-break-inside: avoid;
+  /* Break pages logically */
+  h1, h2 {
+    page-break-after: avoid;
   }
-
-  .print-card {
-    border: 1px solid #e2e8f0;
-    box-shadow: none !important;
+  
+  .break-inside-avoid {
+    page-break-inside: avoid;
   }
 }
 
