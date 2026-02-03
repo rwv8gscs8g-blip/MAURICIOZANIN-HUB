@@ -51,9 +51,20 @@
 }
 
 @media print {
-  * {
-    -webkit-print-color-adjust: exact !important;
+  @page {
+    margin: 20mm;
+    /* Safe margin for browser header/footer */
+    size: auto;
+  }
+
+  body {
     print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
   }
 }
 
