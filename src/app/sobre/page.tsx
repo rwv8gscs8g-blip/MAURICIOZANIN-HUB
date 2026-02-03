@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { CitationBox } from "@/components/citation/CitationBox";
 import { YouTubePlaylist } from "@/components/youtube/YouTubePlaylist";
@@ -60,42 +60,19 @@ export default function SobrePage() {
 
   const currentBio = activeTab === "compras" ? bioCompras : bioInternacional;
 
+  // Atualiza o título da página para que o cabeçalho da impressão fique correto
+  useEffect(() => {
+    document.title = `Sobre | ${currentBio.name} - ${currentBio.title}`;
+  }, [currentBio]);
+
   return (
     <>
       <JsonLd type="person" />
       <div className="min-h-screen bg-white py-16 print:py-0 print:m-0">
         <div className="container-fluid print:p-0 print:max-w-none">
 
-          {/* Print Header (Photo + Name) */}
-          <div className="mb-12 text-center print:mb-6 print:text-left print:flex print:items-start print:gap-6">
-            {/* Foto pequena no currículo (Visível na impressão e tela) */}
-            <div className="hidden print:block w-24 h-32 relative flex-shrink-0 border border-gray-200">
-              {/* Placeholder para foto - usando uma das profissionais se disponivel ou fallback */}
-              <img
-                src={professionalPhotos[0]?.src || "/images/avatar-placeholder.jpg"}
-                alt="Maurício Zanin"
-                className="object-cover w-full h-full grayscale"
-              />
-            </div>
-
-            <div className="flex-grow">
-              <h1 className="text-fluid-3xl font-bold text-[#0F172A] mb-2 tracking-tight print:text-2xl print:mb-1">
-                {currentBio.name}
-              </h1>
-              <p className="text-fluid-lg text-[#64748B] print:text-black font-semibold print:text-lg">
-                {currentBio.title}
-              </p>
-              {/* Summary only for International or if needed for Compras summary view */}
-              <div className="mt-6 text-[#64748B] max-w-4xl mx-auto leading-relaxed print:text-black text-justify print:mt-3 print:text-sm">
-                {currentBio.summary.split('\n').map((paragraph, index) => (
-                  paragraph.trim() && <p key={index} className="mb-2">{paragraph.trim()}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-
           {/* Controls (No Print) */}
-          <div className="no-print flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
+          <div className="no-print flex flex-col md:flex-row items-center justify-between gap-4 mb-8 border-b border-slate-100 pb-6 print:hidden">
             <div className="flex p-1 bg-slate-100 rounded-lg">
               <button
                 onClick={() => setActiveTab("compras")}
@@ -132,6 +109,40 @@ export default function SobrePage() {
             </button>
           </div>
 
+          {/* Header Section (Magazine Style) */}
+          <div className="mb-12 print:mb-6 flex flex-col md:flex-row gap-8 md:gap-12 items-start animate-in fade-in slide-in-from-bottom-4 duration-700">
+            {/* Foto Profissional (Magazine Cover Style) */}
+            <div className="w-full md:w-1/3 lg:w-1/4 flex-shrink-0 relative group">
+              <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-2xl skew-y-1 hover:skew-y-0 transition-transform duration-500 bg-white border-4 border-white/50 ring-1 ring-slate-900/5">
+                <img
+                  src={professionalPhotos[0]?.src || "/images/avatar-placeholder.jpg"}
+                  alt="Maurício Zanin"
+                  className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform duration-700"
+                />
+              </div>
+              {/* Decorative Element */}
+              <div className="absolute -z-10 top-4 -right-4 w-full h-full bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-xl blur-xl" />
+            </div>
+
+            <div className="flex-grow pt-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F172A] mb-4 tracking-tighter print:text-2xl print:mb-1 leading-[1.1]">
+                {currentBio.name}
+              </h1>
+              <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-purple-600 mb-6 rounded-full" />
+
+              <p className="text-xl md:text-2xl text-[#64748B] print:text-black font-semibold print:text-lg mb-8 leading-snug">
+                {currentBio.title}
+              </p>
+
+              {/* Summary */}
+              <div className="text-slate-600 text-lg leading-relaxed text-justify print:text-sm print:leading-normal border-l-4 border-slate-200 pl-6">
+                {currentBio.summary.split('\n').map((paragraph, index) => (
+                  paragraph.trim() && <p key={index} className="mb-3 last:mb-0">{paragraph.trim()}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Print Selection Modal */}
           {showPrintModal && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 no-print backdrop-blur-sm p-4">
@@ -166,7 +177,7 @@ export default function SobrePage() {
           <div className="hidden print:flex mb-6 border-b border-gray-300 pb-4 justify-between items-center text-sm">
             <div className="flex gap-4">
               <div className="flex items-center gap-1">
-                <Mail className="w-3 h-3" /> mauriciozanin@me.com
+                <Mail className="w-3 h-3" /> mauriciozanin@gmail.com
               </div>
               <div className="flex items-center gap-1">
                 <Phone className="w-3 h-3" /> +55 61 98132-1000
@@ -240,21 +251,32 @@ export default function SobrePage() {
 
                   {/* Experiência Internacional */}
                   <div className="print:break-inside-avoid">
-                    <SectionTitle color="bg-purple-600">Experiência Internacional em Cooperação</SectionTitle>
+                    <SectionTitle color="bg-purple-600">Experiência Internacional em Cooperação e Diplomacia Pública</SectionTitle>
 
                     <ExperienceItem
                       role="Coordenador Geral - Projeto InovaJuntos (2019-2024)"
                       org="Confederação Nacional de Municípios (CNM) | Financiamento: União Europeia"
                     >
                       <p className="mb-3 italic">Coordenei durante 4 anos um dos maiores projetos de cooperação descentralizada entre Brasil, Portugal e América Latina, envolvendo 19 municípios brasileiros, 12 municípios portugueses e 15 municípios latino-americanos.</p>
+
                       <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2 print:text-black">Principais Responsabilidades e Resultados:</h4>
-                      <ul className="list-disc pl-5 space-y-1 text-sm">
-                        <li><strong>Gestão de Consórcio Internacional:</strong> Articulação entre CNM (Brasil) e Centro de Estudos Sociais da Universidade de Coimbra.</li>
-                        <li><strong>Coordenação de Equipes Multiculturais:</strong> Liderança de equipes técnicas distribuídas em 3 continentes.</li>
-                        <li><strong>Diplomacia Pública:</strong> Promoção de diálogo contínuo entre governos locais, nacionais e organismos multilaterais.</li>
-                        <li><strong>Implementação de Agendas Globais:</strong> Incorporação dos ODS e da Nova Agenda Urbana em políticas locais.</li>
-                        <li><strong>Monitoramento e Avaliação:</strong> Gestão de logframe, indicadores de impacto e sistema OPSYS da UE.</li>
-                        <li><strong>Impactos:</strong> 18 espaços de inovação, 19 diagnósticos vocacionais, Rede InovaJuntos criada.</li>
+                      <ul className="list-disc pl-5 space-y-2 text-sm mb-4">
+                        <li><strong>Gestão de Consórcio Internacional:</strong> Articulação entre CNM (Brasil) e Centro de Estudos Sociais da Universidade de Coimbra (Portugal), garantindo coerência metodológica, cumprimento de marcos contratuais e governança multinível.</li>
+                        <li><strong>Coordenação de Equipes Multiculturais:</strong> Liderança de equipes técnicas distribuídas em 3 continentes, assegurando alinhamento estratégico, padronização de processos e integração operacional.</li>
+                        <li><strong>Diplomacia Pública e Articulação Institucional:</strong> Promoção de diálogo contínuo entre governos locais, nacionais e organismos multilaterais, incluindo participação em eventos da União Europeia, ONU-Habitat e encontros ministeriais, com representantes de agentes de cooperação e articulação do SubGrupo 18 do Mercosul.</li>
+                        <li><strong>Implementação de Agendas Globais:</strong> Incorporação dos ODS e da Nova Agenda Urbana em políticas locais através de diagnósticos vocacionais participativos, capacitações técnicas e criação de espaços de inovação municipal.</li>
+                        <li><strong>Monitoramento e Avaliação:</strong> Gestão de logframe, indicadores de impacto e sistema OPSYS da UE, com aprovação em auditorias independentes (ROM - Results-Oriented Monitoring).</li>
+                        <li><strong>Transferência de Tecnologia e Conhecimento:</strong> Realização de 4 missões técnicas internacionais, 7 capacitações presenciais, mais de 100 encontros virtuais e publicação de 3 volumes de boas práticas.</li>
+                        <li><strong>Construção de Acordos de Cooperação:</strong> Facilitação de 43 termos de intenção e múltiplos acordos bilaterais de cooperação técnica entre municípios de diferentes países.</li>
+                      </ul>
+
+                      <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2 print:text-black">Impactos Mensuráveis:</h4>
+                      <ul className="list-disc pl-5 space-y-1 text-sm bg-slate-50 p-3 rounded-lg border border-slate-100 print:bg-white print:border-none print:p-0">
+                        <li>18 espaços de inovação constituídos e equipados</li>
+                        <li>19 diagnósticos vocacionais participativos realizados</li>
+                        <li>Mais de 200 boas práticas documentadas e disponibilizadas</li>
+                        <li>Criação da Rede InovaJuntos para sustentabilidade pós-projeto</li>
+                        <li>Reconhecimento internacional como modelo de cooperação descentralizada</li>
                       </ul>
                     </ExperienceItem>
 
@@ -263,98 +285,174 @@ export default function SobrePage() {
                       org="Organismos Multilaterais e Cooperação Técnica Internacional (2002-2024)"
                     >
                       <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                        <li><strong>Portugal:</strong> Consultoria à Presidência do Conselho de Ministros para validação do Plano Nacional de Compras Eletrônicas.</li>
-                        <li><strong>América Latina:</strong> Missões técnicas em El Salvador, Guatemala, México, Chile e Bolívia.</li>
-                        <li><strong>Europa:</strong> Orador em fóruns da União Europeia (Lisbon Information Society Forum, Smart City Expo Barcelona).</li>
-                        <li><strong>Organismos:</strong> Colaboração com OEA, BID e PNUD.</li>
+                        <li><strong>Portugal:</strong> Consultoria à Presidência do Conselho de Ministros para validação do Plano Nacional de Compras Eletrônicas (PNCE) e implantação de sistemas de compras governamentais junto à UMIC.</li>
+                        <li><strong>América Latina:</strong> Missões técnicas em El Salvador, Guatemala, México, Chile e Bolívia para implementação de sistemas de compras governamentais e transferência de conhecimento brasileiro.</li>
+                        <li><strong>Europa:</strong> Participação como orador em fóruns da União Europeia, incluindo Lisbon Information Society Forum, Smart City Expo Barcelona e EU-Latin America & Caribbean Forum.</li>
+                        <li><strong>Organismos Internacionais:</strong> Colaboração com Organização dos Estados Americanos (OEA), Banco Interamericano de Desenvolvimento (BID) e Programa das Nações Unidas para o Desenvolvimento (PNUD).</li>
                       </ul>
                     </ExperienceItem>
                   </div>
 
                   {/* Experiência Governança */}
                   <div className="print:break-inside-avoid">
-                    <SectionTitle color="bg-purple-600">Experiência em Governança e Políticas Públicas</SectionTitle>
+                    <SectionTitle color="bg-purple-600">Experiência em Governança, Compliance e Políticas Públicas</SectionTitle>
 
                     <ExperienceItem
-                      role="Diretor de Projetos (2006-2015)"
-                      org="Confederação Nacional de Municípios"
+                      role="Diretor de Projetos - Confederação Nacional de Municípios (2006-2025)"
+                      org="Gestão de Projetos Tecnológicos e Fortalecimento Institucional"
                     >
-                      <p className="text-sm">Desenvolvimento e coordenação de projetos estratégicos de modernização administrativa municipal e articulação com órgãos de controle.</p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
+                        <li>Desenvolvimento e coordenação de projetos estratégicos de modernização administrativa municipal. Apresentador do programa da TV CNM - Bate Papo com a CNM. Criador e organizador da Rede de Agentes Municipalistas.</li>
+                        <li>Articulação com Presidência da República, Ministérios e Itamaraty em ações de cooperação Internacional. Representante do SubGrupo 18 do Mercosul para definição de políticas de Integração Transfronteiriça e discussão do impacto do Acordo de Mercado Comum Brasil-União Europeia.</li>
+                        <li>Atuação com órgãos de controle, tribunais de contas e ministérios públicos para garantir conformidade e transparência de ações para Municípios.</li>
+                        <li>Elaboração de Cartilhas, estudos técnicos e material de qualificação de equipes multidisciplinares. Articulação e Participação da Elaboração dos eventos Marcha a Brasília em Defesa dos Municípios.</li>
+                        <li>Criação de políticas públicas multisetoriais de integridade e governança em municípios de diferentes portes.</li>
+                      </ul>
                     </ExperienceItem>
 
                     <ExperienceItem
-                      role="Consultor SEBRAE Nacional (2006-2015)"
-                      org="Unidade de Políticas Públicas"
+
+                      role="Consultor SEBRAE Nacional (2006-2026)"
+                      org="Unidade de Políticas Públicas - Estratégia Nacional de Compras Governamentais"
                     >
-                      <p className="text-sm">Desenho da Política Nacional de Compras Públicas do SEBRAE e capacitação de multiplicadores em 17 estados.</p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
+                        <li>Desenho da Política Nacional de Compras Públicas do SEBRAE e distribuição de metodologias para todos os SEBRAEs estaduais. Atuação em conjunto com a Unidade De Desenvolvimento Territorial.</li>
+                        <li>Elaboração de programas estaduais de compras governamentais.</li>
+                        <li>Criação de cursos oficiais para compradores públicos e fornecedores, com foco em desenvolvimento local e inclusão de micro e pequenas empresas. Consultor técnico do das melhorias do portal Compras.gov.br e do Portal Nacional de Contratações Públicas - PNCP</li>
+                        <li>Capacitação de multiplicadores em compras governamentais em todos estados brasileiros.</li>
+                      </ul>
                     </ExperienceItem>
 
                     <ExperienceItem
-                      role="Instrutor e Conteudista (2005-2013)"
-                      org="Escola Nacional de Administração Pública (ENAP)"
+                      role="Instrutor e Conteudista - Escola Nacional de Administração Pública (ENAP)"
+                      org="Cursos de Sistemas Eletrônicos de Compras e Programa Brasil Municípios (2005-2013)"
                     >
-                      <p className="text-sm">Formação de gestores públicos em logística de suprimentos, licitações sustentáveis e políticas públicas aplicadas.</p>
+                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
+                        <li>Desenvolvimento de conteúdo técnico sobre evolução das compras governamentais no Brasil e no mundo.</li>
+                        <li>Formação de gestores públicos em logística de suprimentos, licitações sustentáveis e políticas públicas aplicadas.</li>
+                        <li>Parceria com Banco Interamericano de Desenvolvimento (BID) para programa de capacitação municipal.</li>
+                      </ul>
                     </ExperienceItem>
                   </div>
 
                   {/* Competências */}
                   <div className="print:break-inside-avoid">
                     <SectionTitle color="bg-purple-600">Competências Técnicas Destacadas</SectionTitle>
-                    <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-sm print:text-xs">
+                    <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-sm print:text-xs">
                       <div>
-                        <strong className="block text-slate-900 print:text-black mb-1">Gestão de Projetos Internacionais</strong>
-                        <p className="text-slate-600 print:text-black">Coordenação de consórcios, Equipes remotas, Compliance UE, Sistemas M&A.</p>
+                        <strong className="block text-slate-900 print:text-black mb-2 text-base">Gestão de Projetos Internacionais</strong>
+                        <ul className="list-disc pl-4 space-y-1 text-slate-600 print:text-black">
+                          <li>Coordenação de consórcios multinacionais</li>
+                          <li>Gestão de equipes remotas e multiculturais</li>
+                          <li>Monitoramento de logframe e sistemas de M&A</li>
+                          <li>Compliance com normas da União Europeia</li>
+                          <li>Elaboração de relatórios técnicos e financeiros</li>
+                          <li>Relacionamento com auditores e avaliadores independentes</li>
+                        </ul>
                       </div>
                       <div>
-                        <strong className="block text-slate-900 print:text-black mb-1">Diplomacia Pública</strong>
-                        <p className="text-slate-600 print:text-black">Redes de cooperação, Diálogos multinível, Mediação público-privada.</p>
+                        <strong className="block text-slate-900 print:text-black mb-2 text-base">Diplomacia Pública e Articulação Institucional</strong>
+                        <ul className="list-disc pl-4 space-y-1 text-slate-600 print:text-black">
+                          <li>Construção de redes de cooperação internacional</li>
+                          <li>Facilitação de diálogos multinível (local-nacional-internacional)</li>
+                          <li>Mediação entre atores públicos, privados e sociedade civil</li>
+                          <li>Representação institucional em fóruns internacionais</li>
+                          <li>Negociação de acordos de cooperação técnica</li>
+                        </ul>
                       </div>
                       <div>
-                        <strong className="block text-slate-900 print:text-black mb-1">Desenvolvimento Territorial</strong>
-                        <p className="text-slate-600 print:text-black">Diagnósticos participativos, ODS/NAU, Cocriação.</p>
+                        <strong className="block text-slate-900 print:text-black mb-2 text-base">Desenvolvimento Territorial e Inovação</strong>
+                        <ul className="list-disc pl-4 space-y-1 text-slate-600 print:text-black">
+                          <li>Diagnósticos participativos e planejamento estratégico local</li>
+                          <li>Implementação de agendas globais (ODS, NAU)</li>
+                          <li>Metodologias de cocriação e participação cidadã</li>
+                          <li>Transferência de tecnologia e boas práticas</li>
+                          <li>Criação de observatórios e plataformas de conhecimento</li>
+                        </ul>
                       </div>
                       <div>
-                        <strong className="block text-slate-900 print:text-black mb-1">Compras Públicas Sustentáveis</strong>
-                        <p className="text-slate-600 print:text-black">Leis 8.666/14.133, Pregão eletrônico, Inclusão produtiva.</p>
+                        <strong className="block text-slate-900 print:text-black mb-2 text-base">Compras Públicas Sustentáveis</strong>
+                        <ul className="list-disc pl-4 space-y-1 text-slate-600 print:text-black">
+                          <li>Especialista em Lei 8.666/93, Lei 10.520/02 e Lei 14.133/21</li>
+                          <li>Pregão eletrônico e sistemas de compras governamentais</li>
+                          <li>Inclusão produtiva e desenvolvimento local via compras públicas</li>
+                          <li>Compliance e integridade em licitações</li>
+                          <li>Formação de gestores e capacitação técnica</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
 
                   {/* Produção Técnica */}
                   <div className="print:break-inside-avoid">
-                    <SectionTitle color="bg-purple-600">Produção Técnica e Publicações (Seleção)</SectionTitle>
-                    <div className="space-y-2">
-                      <PublicationItem title="Compras governamentais com a aplicação dos benefícios para as micro e pequenas empresas" publisher="Sebrae, 2009" />
-                      <PublicationItem title="Compras governamentais: como vender para a administração pública sem risco" publisher="SEBRAE, 2009" />
-                      <PublicationItem title="Tecnologia e Modernização Administrativa" publisher="CNM, 2008" />
-                      <PublicationItem title="Atuação Internacional Municipal" publisher="CNM, 2008" />
+                    <SectionTitle color="bg-purple-600">Produção Técnica e Publicações Relevantes</SectionTitle>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-bold text-slate-900 mb-2 tex-sm print:text-black">Livros e Manuais (Seleção)</h4>
+                        <div className="space-y-2">
+                          <PublicationItem
+                            title="Relatório Técnico Final - Projeto InovaJuntos (2019-2024)"
+                            publisher="Brasília: CNM, União Europeia, 2025. (Documento Oficial Assinado)"
+                            url="/inovajuntos/relatorio-final/RelatorioTecnicoFinalInovajuntos-MenorResolucao_assinado.pdf"
+                            highlight={true}
+                          />
+                          <PublicationItem title="Compras governamentais com a aplicação dos benefícios para as micro e pequenas empresas: guia do educador" publisher="Brasília: Sebrae, 2009, 368 p." />
+                          <PublicationItem title="Compras governamentais: como vender para a administração pública sem risco: guia do educador" publisher="Brasília: SEBRAE, 2009. 308 p. (em coautoria com Noelma Silva)" />
+                          <PublicationItem title="Tecnologia e Modernização Administrativa: do Governo Eletrônico à Governança Conectada" publisher="Brasília: CNM, 2008, 104 p." />
+                          <PublicationItem title="Cartilha do Fornecedor: Compras públicas governamentais: seu novo canal de negócios" publisher="Brasília: CNM, Sebrae, 2008 (em coautoria com Cláudio Pereira Barreto)" />
+                          <PublicationItem title="Atuação Internacional Municipal: Estratégias para Gestores Municipais Projetarem Mundialmente sua Cidade" publisher="Brasília: CNM, 2008, 128 p." />
+                        </div>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 mb-2 tex-sm print:text-black">Outras Publicações</h4>
+                        <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600 print:text-black">
+                          <li>Múltiplas apostilas e materiais didáticos para ENAP, SEBRAE e CNM</li>
+                          <li>Artigos técnicos sobre compras governamentais e modernização administrativa</li>
+                          <li>Coletâneas sobre Objetivos de Desenvolvimento do Milênio (ODM) e políticas municipais</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Idiomas e Apresentações */}
-                  <div className="grid md:grid-cols-2 gap-8 print:break-inside-avoid">
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-3">Idiomas</h3>
-                      <ul className="space-y-1 text-sm">
-                        <li className="flex justify-between border-b border-slate-100 pb-1">
-                          <span className="print:text-black">Português</span> <span className="font-semibold text-slate-900 print:text-black">Nativo</span>
-                        </li>
-                        <li className="flex justify-between border-b border-slate-100 pb-1">
-                          <span className="print:text-black">Espanhol</span> <span className="font-semibold text-slate-900 print:text-black">Fluente</span>
-                        </li>
-                        <li className="flex justify-between border-b border-slate-100 pb-1">
-                          <span>Inglês</span> <span className="font-semibold text-slate-900 print:text-black">Fluente</span>
-                        </li>
-                      </ul>
+                  {/* Experiência em Comunicação */}
+                  <div className="print:break-inside-avoid">
+                    <SectionTitle color="bg-purple-600">Experiência em Comunicação e Disseminação</SectionTitle>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h4 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-2">Apresentações Internacionais (Seleção)</h4>
+                        <ul className="list-disc pl-5 space-y-1 text-sm text-slate-700 print:text-black">
+                          <li>IV Encontro Iberoamericano de Cidades Digitais (México, 2003)</li>
+                          <li>Microsoft Leaders Summit (Seattle, EUA, 2003)</li>
+                          <li>Lisbon Information Society Forum (Portugal, 2003)</li>
+                          <li>OEA - Fórum de Melhores Práticas (videoconferência pan-americana, 2004)</li>
+                          <li>Smart City Expo World Congress (Barcelona, 2022)</li>
+                          <li>First Global Meeting of Partners (Bruxelas, 2023)</li>
+                          <li>EU-Latin America & Caribbean Forum (Bruxelas, 2023)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-2">Capacitação e Formação</h4>
+                        <ul className="list-disc pl-5 space-y-1 text-sm text-slate-700 print:text-black">
+                          <li>Mais de 100 seminários e capacitações presenciais realizados em 17 estados brasileiros</li>
+                          <li>Treinamentos internacionais em Guatemala, El Salvador, México e Portugal</li>
+                          <li>Desenvolvimento de metodologias pedagógicas inovadoras (jogos de licitação, workshops participativos)</li>
+                          <li>Criação de plataformas de ensino à distância e conteúdos multimídia</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-3">Apresentações (Seleção)</h3>
-                      <ul className="text-sm list-disc pl-5 space-y-1 text-slate-700 print:text-black">
-                        <li>Smart City Expo World Congress (Barcelona, 2022)</li>
-                        <li>EU-Latin America & Caribbean Forum (Bruxelas, 2023)</li>
-                        <li>First Global Meeting of Partners (Bruxelas, 2023)</li>
-                        <li>Lisbon Information Society Forum (Portugal, 2003)</li>
-                      </ul>
+                  </div>
+
+                  <div className="print:break-inside-avoid">
+                    <SectionTitle color="bg-purple-600">Diferenciais para Projetos de Diplomacia Pública da UE</SectionTitle>
+                    <div className="grid md:grid-cols-2 gap-3">
+                      <CheckItem>Experiência comprovada em coordenação de projetos financiados pela UE com múltiplos parceiros internacionais</CheckItem>
+                      <CheckItem>Capacidade de articulação entre diferentes níveis de governo e culturas organizacionais</CheckItem>
+                      <CheckItem>Expertise em governança multinível e cooperação descentralizada</CheckItem>
+                      <CheckItem>Histórico de compliance com sistemas de monitoramento e auditoria da UE</CheckItem>
+                      <CheckItem>Habilidade para traduzir objetivos estratégicos em resultados operacionais mensuráveis</CheckItem>
+                      <CheckItem>Experiência em gestão de equipes remotas e coordenação de consórcios internacionais</CheckItem>
+                      <CheckItem>Conhecimento profundo das realidades administrativa, política e cultural de Brasil, Portugal e América Latina</CheckItem>
+                      <CheckItem>Rede consolidada de contatos institucionais em organismos multilaterais e governos locais</CheckItem>
                     </div>
                   </div>
                 </motion.div>
@@ -420,11 +518,49 @@ function ExperienceItem({ role, org, children }: { role: string, org: string, ch
   );
 }
 
-function PublicationItem({ title, publisher }: { title: string, publisher: string }) {
+function PublicationItem({ title, publisher, url, highlight }: { title: string, publisher: string, url?: string, highlight?: boolean }) {
   return (
-    <div className="mb-2 print:mb-1">
-      <p className="font-bold text-slate-800 text-sm print:text-black print:text-xs">{title}</p>
-      <p className="text-xs text-slate-500 print:text-black print:text-[10px]">{publisher}</p>
+    <div className={cn(
+      "mb-2 print:mb-1",
+      highlight && "bg-amber-50 border-l-4 border-amber-400 p-3 rounded-r-md my-4 shadow-sm print:border-black print:bg-transparent print:p-0 print:border-l-0 print:my-1"
+    )}>
+      {url ? (
+        <a href={url} target="_blank" rel="noopener noreferrer" className="group block">
+          <p className={cn(
+            "font-bold text-slate-800 text-sm print:text-black print:text-xs transition-colors flex items-center gap-1",
+            !highlight && "group-hover:text-blue-700",
+            highlight && "text-slate-900 text-base"
+          )}>
+            {title}
+            {highlight && (
+              <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-amber-100 text-amber-800 print:hidden">
+                DESTAQUE 2025
+              </span>
+            )}
+            <span className={cn(
+              "text-[10px] px-1 rounded border print:hidden opacity-0 group-hover:opacity-100 transition-opacity",
+              highlight ? "text-amber-700 bg-amber-100 border-amber-200" : "text-blue-600 bg-blue-50 border-blue-100"
+            )}>PDF</span>
+          </p>
+          <p className="text-xs text-slate-500 print:text-black print:text-[10px] group-hover:text-slate-700">{publisher}</p>
+        </a>
+      ) : (
+        <>
+          <p className="font-bold text-slate-800 text-sm print:text-black print:text-xs">{title}</p>
+          <p className="text-xs text-slate-500 print:text-black print:text-[10px]">{publisher}</p>
+        </>
+      )}
     </div>
   )
 }
+
+function CheckItem({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-start gap-2 text-sm text-slate-700 print:text-black">
+      <span className="text-green-600 font-bold print:text-black">✓</span>
+      <span>{children}</span>
+    </div>
+  )
+}
+
+

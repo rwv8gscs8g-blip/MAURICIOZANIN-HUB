@@ -2,55 +2,26 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { ProfessionalGallery } from "@/components/gallery/ProfessionalGallery";
 import { professionalPhotos } from "@/data/professional-photos";
 
 export function HeroSection() {
-  // Usar a primeira foto da galeria
-  const mainPhoto = professionalPhotos[0];
-  const [heroSrc, setHeroSrc] = useState(mainPhoto?.src || "/images/placeholder.svg");
-  const fallbackSrc = "/images/placeholder.svg";
-
-  useEffect(() => {
-    setHeroSrc(mainPhoto?.src || fallbackSrc);
-  }, [mainPhoto]);
-
   return (
     <section className="relative bg-[#FAFAFA] py-24 md:py-32 overflow-hidden">
       <div className="container-fluid">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Foto Profissional com Máscara de Gradiente */}
+          {/* Foto Profissional / Carrossel */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative"
           >
-            <div className="relative w-full aspect-[4/5] max-w-md mx-auto rounded-2xl overflow-hidden bg-slate-200 shadow-lg">
-              {mainPhoto ? (
-                <div className="relative w-full h-full">
-                  {/* Imagem de fundo */}
-                  <img
-                    src={heroSrc}
-                    alt={mainPhoto.alt}
-                    className="absolute inset-0 w-full h-full object-cover"
-                    loading="eager"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      if (target.src.includes(fallbackSrc)) return;
-                      target.src = fallbackSrc;
-                    }}
-                  />
-                  {/* Gradiente de fundo (fallback) */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-slate-200 via-slate-100 to-transparent opacity-0 pointer-events-none" />
-                  {/* Overlay de gradiente superior */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent pointer-events-none" />
-                </div>
-              ) : (
-                <div className="w-full h-full bg-slate-200 flex items-center justify-center">
-                  <span className="text-slate-400 text-sm">Foto Profissional</span>
-                </div>
-              )}
+            <div className="max-w-md mx-auto shadow-2xl rounded-lg overflow-hidden">
+              <ProfessionalGallery
+                photos={professionalPhotos}
+                autoPlayInterval={3000}
+              />
             </div>
           </motion.div>
 
