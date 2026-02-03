@@ -45,47 +45,9 @@ export function YouTubePlaylist({
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    // Mock de vídeos (em produção, buscar da API do YouTube ou do banco)
     if (!propVideos && !playlistId) {
-      const mockVideos: YouTubeVideo[] = [
-        {
-          id: "1",
-          videoId: "dQw4w9WgXcQ",
-          title: "Programa CNM: Nova Lei de Licitações - Impactos para Municípios",
-          description: "Análise completa sobre os impactos da Lei 14.133/2021",
-          publishedAt: "2023-11-20",
-          thumbnailUrl: getYouTubeThumbnail("dQw4w9WgXcQ"),
-          duration: "30:15",
-        },
-        {
-          id: "2",
-          videoId: "dQw4w9WgXcQ",
-          title: "Cooperação Intermunicipal e Consórcios Públicos",
-          description: "Série de programas sobre cooperação intermunicipal",
-          publishedAt: "2020-05-20",
-          thumbnailUrl: getYouTubeThumbnail("dQw4w9WgXcQ"),
-          duration: "45:30",
-        },
-        {
-          id: "3",
-          videoId: "dQw4w9WgXcQ",
-          title: "Workshop: Compras Públicas Sustentáveis",
-          description: "Workshop sobre compras públicas sustentáveis",
-          publishedAt: "2019-08-15",
-          thumbnailUrl: getYouTubeThumbnail("dQw4w9WgXcQ"),
-          duration: "25:45",
-        },
-      ];
-
-      // Ordenar por data (mais recente primeiro)
-      const sortedVideos = mockVideos.sort((a, b) => {
-        return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
-      });
-
-      setTimeout(() => {
-        setVideos(sortedVideos);
-        setLoading(false);
-      }, 500);
+      setVideos([]);
+      setLoading(false);
     }
   }, [playlistId, propVideos]);
 
@@ -125,6 +87,14 @@ export function YouTubePlaylist({
     return (
       <div className="text-center text-[#64748B] py-12">
         Carregando vídeos...
+      </div>
+    );
+  }
+
+  if (!loading && displayVideos.length === 0) {
+    return (
+      <div className="text-center text-[#64748B] py-12">
+        Vídeos em consolidação. Em breve, publicaremos os registros oficiais.
       </div>
     );
   }

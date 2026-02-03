@@ -2,17 +2,7 @@
 
 import { ComplianceStatus } from "@/components/reports/ComplianceStatus";
 
-// Mock de dados de análise
-const mockComplianceData = {
-  overall: 72,
-  categories: [
-    { name: "Processos Licitatórios", score: 85 },
-    { name: "Documentação", score: 70 },
-    { name: "Conformidade Legal", score: 65 },
-    { name: "Gestão de Contratos", score: 68 },
-    { name: "Transparência", score: 75 },
-  ],
-};
+const complianceData = null;
 
 export default function RelatoriosPage() {
   return (
@@ -25,7 +15,13 @@ export default function RelatoriosPage() {
           <p className="text-fluid-base text-[#64748B] mb-12 leading-[1.7]">
             Análise detalhada de conformidade com a Lei 14.133/2021
           </p>
-          <ComplianceStatus data={mockComplianceData} />
+          {complianceData ? (
+            <ComplianceStatus data={complianceData} />
+          ) : (
+            <div className="border border-[#E2E8F0] bg-white p-8 text-fluid-base text-[#64748B]">
+              Relatórios em consolidação. Em breve, publicaremos as análises oficiais.
+            </div>
+          )}
         </div>
       </div>
     </div>

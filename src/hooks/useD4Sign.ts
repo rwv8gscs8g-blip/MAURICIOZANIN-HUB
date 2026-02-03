@@ -28,33 +28,8 @@ export function useD4Sign(documentKey?: string) {
       return;
     }
 
-    // Mock de status de assinatura de contrato
-    const mockStatus: DocumentStatus = {
-      id: "1",
-      documentKey: documentKey,
-      status: "pending",
-      signers: [
-        {
-          name: "João Silva",
-          email: "joao@example.com",
-          status: "signed",
-          signedAt: new Date(Date.now() - 86400000).toISOString(),
-        },
-        {
-          name: "Maria Santos",
-          email: "maria@example.com",
-          status: "pending",
-        },
-      ],
-      createdAt: new Date(Date.now() - 172800000).toISOString(),
-      expiresAt: new Date(Date.now() + 604800000).toISOString(), // 7 dias
-    };
-
-    // Simular delay de API
-    setTimeout(() => {
-      setDocumentStatus(mockStatus);
-      setLoading(false);
-    }, 500);
+    setDocumentStatus(null);
+    setLoading(false);
   }, [documentKey]);
 
   return {
@@ -62,10 +37,7 @@ export function useD4Sign(documentKey?: string) {
     loading,
     refetch: () => {
       setLoading(true);
-      // Re-executar o fetch
-      setTimeout(() => {
-        setLoading(false);
-      }, 500);
+      setLoading(false);
     },
   };
 }

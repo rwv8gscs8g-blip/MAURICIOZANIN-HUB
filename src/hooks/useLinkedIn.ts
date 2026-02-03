@@ -45,38 +45,7 @@ export function useLinkedIn() {
           }))
         );
       } else {
-        // Fallback para dados mock se API não retornar dados
-        const mockPosts: LinkedInPost[] = [
-          {
-            id: "1",
-            content:
-              "Acabei de participar de um workshop internacional sobre compras públicas sustentáveis. A troca de experiências com especialistas europeus foi enriquecedora e reforça a importância da cooperação internacional em governança pública.",
-            publishedAt: new Date(Date.now() - 2 * 86400000).toISOString(),
-            likes: 45,
-            comments: 12,
-            shares: 8,
-          },
-          {
-            id: "2",
-            content:
-              "A Rede Inovajuntos alcançou mais de 200 municípios! 🎉\n\nÉ gratificante ver como a cooperação intermunicipal está transformando a gestão pública no Brasil. Juntos, estamos construindo um futuro mais inovador e eficiente.",
-            publishedAt: new Date(Date.now() - 5 * 86400000).toISOString(),
-            likes: 128,
-            comments: 34,
-            shares: 21,
-          },
-          {
-            id: "3",
-            content:
-              "Nova cartilha do Sebrae sobre Compras Públicas para Pequenos Negócios está disponível!\n\nEste material é essencial para empresas que querem participar de licitações públicas de forma estratégica e conforme a Lei 14.133/2021.",
-            linkUrl: "/compartilhe",
-            publishedAt: new Date(Date.now() - 10 * 86400000).toISOString(),
-            likes: 89,
-            comments: 18,
-            shares: 15,
-          },
-        ];
-        setPosts(mockPosts);
+        setPosts([]);
       }
     } catch (err) {
       console.error("Erro ao buscar posts do LinkedIn:", err);

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Materiais Compartilhados | Maurício Zanin",
+  title: "Compartilhe | Maurício Zanin",
   description:
-    "Acesse cartilhas, templates, planilhas e materiais exclusivos sobre compras públicas, governança e Lei 14.133/2021.",
+    "Materiais gratuitos para download e compartilhamento, com citações prontas e conteúdos de apoio.",
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "Materiais Compartilhados | Maurício Zanin",
-    description: "Recursos exclusivos sobre governança e compras públicas",
+    title: "Compartilhe | Maurício Zanin",
+    description:
+      "Materiais gratuitos para download e compartilhamento, com citações prontas e conteúdos de apoio.",
     type: "website",
   },
 };

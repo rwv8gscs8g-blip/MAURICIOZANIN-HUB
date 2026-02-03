@@ -1,0 +1,9 @@
+# https://inovajuntos.org/sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://inovajuntos.org/wp-sitemap-index.xsl" ?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://inovajuntos.org/wp-sitemap-posts-page-1.xml</loc></sitemap><sitemap><loc>https://inovajuntos.org/wp-sitemap-users-1.xml</loc></sitemap></sitemapindex>
+
+
+# https://inovajuntos.org/sitemap_index.xml
+
+

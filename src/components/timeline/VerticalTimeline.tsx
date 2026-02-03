@@ -12,7 +12,8 @@ interface TimelineEvent {
   category?: string;
   location?: string;
   link?: string;
-  type: "publication" | "event" | "milestone";
+  url?: string;
+  type: string;
 }
 
 interface VerticalTimelineProps {
@@ -88,9 +89,9 @@ export function VerticalTimeline({ events }: VerticalTimelineProps) {
                         <span>{event.location}</span>
                       </div>
                     )}
-                    {event.link && (
+                    {(event.link || event.url) && (
                       <a
-                        href={event.link}
+                        href={event.link || event.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-[#1E3A8A] hover:text-[#1E3A8A]/80 transition-colors"

@@ -20,6 +20,7 @@ interface TimelineEvent {
   thumbnailUrl?: string;
   duration?: number;
   location?: string;
+  axis?: string;
 }
 
 interface MultimediaTimelineProps {
@@ -44,10 +45,16 @@ const typeLabels = {
 
 export function MultimediaTimeline({ events }: MultimediaTimelineProps) {
   const [filter, setFilter] = useState<EventType>("all");
+  const [axisFilter, setAxisFilter] = useState<string>("all");
+
+  const axisOptions = Array.from(
+    new Set(events.map((event) => event.axis).filter(Boolean))
+  ) as string[];
 
   const filteredEvents = events.filter((event) => {
-    if (filter === "all") return true;
-    return event.type === filter;
+    const matchesType = filter === "all" || event.type === filter;
+    const matchesAxis = axisFilter === "all" || event.axis === axisFilter;
+    return matchesType && matchesAxis;
   });
 
   // Separar eventos por tipo para renderização diferente
@@ -56,6 +63,36 @@ export function MultimediaTimeline({ events }: MultimediaTimelineProps) {
 
   return (
     <div>
+      {axisOptions.length > 0 && (
+        <div className="flex flex-wrap gap-3 mb-8">
+          <button
+            onClick={() => setAxisFilter("all")}
+            className={cn(
+              "flex items-center gap-2 px-5 py-2.5 text-fluid-sm font-medium transition-colors border",
+              axisFilter === "all"
+                ? "bg-[#0F172A] text-white border-[#0F172A]"
+                : "bg-white text-[#64748B] border-[#E2E8F0] hover:border-[#0F172A] hover:text-[#0F172A]"
+            )}
+          >
+            Todos os eixos
+          </button>
+          {axisOptions.map((axis) => (
+            <button
+              key={axis}
+              onClick={() => setAxisFilter(axis)}
+              className={cn(
+                "flex items-center gap-2 px-5 py-2.5 text-fluid-sm font-medium transition-colors border",
+                axisFilter === axis
+                  ? "bg-[#0F172A] text-white border-[#0F172A]"
+                  : "bg-white text-[#64748B] border-[#E2E8F0] hover:border-[#0F172A] hover:text-[#0F172A]"
+              )}
+            >
+              {axis}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* Filtros */}
       <div className="flex flex-wrap gap-3 mb-12">
         <button

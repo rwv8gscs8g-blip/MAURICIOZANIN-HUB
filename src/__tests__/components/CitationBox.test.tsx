@@ -14,8 +14,8 @@ describe('CitationBox', () => {
       />
     )
 
-    // Verifica se o componente renderiza (procura por elementos comuns)
-    expect(screen.getByText(/ABNT|APA|BibTeX/)).toBeInTheDocument()
+    // Verifica se o componente renderiza
+    expect(screen.getByText('Como Citar')).toBeInTheDocument()
   })
 
   it('displays all citation formats', () => {
@@ -32,6 +32,6 @@ describe('CitationBox', () => {
 
     expect(screen.getByText(/ABNT/)).toBeInTheDocument()
     expect(screen.getByText(/APA/)).toBeInTheDocument()
-    expect(screen.getByText(/BibTeX/)).toBeInTheDocument()
+    expect(screen.getByText(/BIBTEX/i)).toBeInTheDocument()
   })
 })

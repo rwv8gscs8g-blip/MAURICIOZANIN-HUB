@@ -27,7 +27,7 @@ describe('SobrePage', () => {
 
   it('displays formation section', () => {
     render(<SobrePage />)
-    expect(screen.getByText('Formação e Atuação')).toBeInTheDocument()
+    expect(screen.getByText(/Formação e Atuação/)).toBeInTheDocument()
     expect(screen.getByText(/Administração Pública/)).toBeInTheDocument()
     expect(screen.getByText(/Unesp/)).toBeInTheDocument()
     expect(screen.getByText(/FGV/)).toBeInTheDocument()
@@ -36,7 +36,7 @@ describe('SobrePage', () => {
   it('displays professional activity', () => {
     render(<SobrePage />)
     expect(screen.getByText(/Sebrae Nacional/)).toBeInTheDocument()
-    expect(screen.getByText(/Compras.gov.br/)).toBeInTheDocument()
+    expect(screen.getAllByText(/Compras\.gov\.br/).length).toBeGreaterThan(0)
   })
 
   it('displays control bodies section', () => {

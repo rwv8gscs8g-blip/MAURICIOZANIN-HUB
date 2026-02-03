@@ -1,13 +1,17 @@
 "use client";
 
-import { useState } from "react";
-import { Download, FileText, File, FileSpreadsheet, Presentation, BookOpen, FileArchive, FileType } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import {
+  Download,
+  FileText,
+  File,
+  FileSpreadsheet,
+  Presentation,
+  FileArchive,
+  FileType,
+} from "lucide-react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import { kitComprasZaninResources } from "@/data/kit-compras-zanin";
-import type { KitResource } from "@/data/kit-compras-zanin";
-
-import Link from "next/link";
 
 const getFileIcon = (type: string) => {
   switch (type) {
@@ -29,6 +33,25 @@ const getFileIcon = (type: string) => {
 };
 
 export default function CompartilhePage() {
+  const [tab, setTab] = useState("COMPRAS_GOVERNAMENTAIS");
+  const [sharedProducts, setSharedProducts] = useState<any[]>([]);
+  const tabs = [
+    { key: "COMPRAS_GOVERNAMENTAIS", label: "Compras Gov. e Governança" },
+    { key: "COOPERACAO_INTERNACIONAL", label: "Cooperação Internacional" },
+    { key: "SUPORTE_MUNICIPIOS", label: "Suporte aos Municípios" },
+    { key: "DESENVOLVIMENTO_SOFTWARE", label: "Desenvolvimento de Software" },
+  ];
+
+  useEffect(() => {
+    fetch("/api/compartilhe/products")
+      .then((res) => res.json())
+      .then((data) => setSharedProducts(data.products || []))
+      .catch(() => setSharedProducts([]));
+  }, []);
+
+  const filteredProducts = useMemo(() => {
+    return sharedProducts.filter((product) => product.hub === tab);
+  }, [sharedProducts, tab]);
 
   return (
     <div className="min-h-screen bg-[#FAFAFA] py-16">
@@ -48,6 +71,85 @@ export default function CompartilhePage() {
                 Acesse recursos exclusivos sobre governança e compras públicas
               </p>
             </motion.div>
+
+            <div className="mb-10">
+              <div className="flex flex-wrap gap-3">
+                {tabs.map((item) => (
+                  <button
+                    key={item.key}
+                    onClick={() => setTab(item.key)}
+                    className={`px-4 py-2 text-sm border ${
+                      tab === item.key
+                        ? "border-[#1E3A8A] bg-[#1E3A8A] text-white"
+                        : "border-[#E2E8F0] text-[#0F172A]"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mb-6"
+              >
+                <h2 className="text-fluid-2xl font-bold text-[#0F172A] mb-2 tracking-tight">
+                  Compartilhe — {tabs.find((t) => t.key === tab)?.label}
+                </h2>
+                <p className="text-fluid-base text-[#64748B]">
+                  Materiais públicos selecionados por hub.
+                </p>
+              </motion.div>
+
+              {filteredProducts.length === 0 ? (
+                <div className="bg-white border border-[#E2E8F0] p-6 text-sm text-[#64748B]">
+                  Nenhum material publicado neste hub ainda.
+                </div>
+              ) : (
+                <div className="grid md:grid-cols-2 gap-6">
+                  {filteredProducts.map((product: any) => (
+                    <div
+                      key={product.id}
+                      className="bg-white border border-[#E2E8F0] p-6 rounded-lg"
+                    >
+                      <div className="text-xs text-[#64748B] mb-1">
+                        {product.client?.name || "Cliente"}
+                        {product.year ? ` • ${product.year}` : ""}
+                      </div>
+                      <h3 className="text-fluid-lg font-semibold text-[#0F172A] mb-3">
+                        {product.name}
+                      </h3>
+                      {product.description && (
+                        <p className="text-fluid-sm text-[#64748B] mb-4">
+                          {product.description}
+                        </p>
+                      )}
+                      <div className="flex flex-wrap gap-3">
+                        <a
+                          href={`/produtos/${product.slug}`}
+                          className="px-3 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-xs"
+                        >
+                          Ver produto
+                        </a>
+                        {product.fileUrl && (
+                          <a
+                            href={product.fileUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="px-3 py-2 bg-[#1E3A8A] text-white text-xs"
+                          >
+                            Baixar
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {/* Kit Compras Zanin - Sebrae */}
             <div className="mb-12">

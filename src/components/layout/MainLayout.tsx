@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Building2, FileText, Share2, BarChart3, Calendar, Newspaper } from "lucide-react";
 import { useAccessTracking } from "@/hooks/useAccessTracking";
 import { VersionFooter } from "./VersionFooter";
+import { useEffect, useState } from "react";
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -14,22 +15,62 @@ interface MainLayoutProps {
 export function MainLayout({ children }: MainLayoutProps) {
   const pathname = usePathname();
   useAccessTracking(); // Rastrear acessos
+  const [session, setSession] = useState<{ user?: { role?: string } } | null>(null);
+  const [sessionLoading, setSessionLoading] = useState(true);
 
-  const navigation = [
+  useEffect(() => {
+    let active = true;
+    fetch("/api/auth/session")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!active) return;
+        setSession(data);
+        setSessionLoading(false);
+      })
+      .catch(() => {
+        if (!active) return;
+        setSession(null);
+        setSessionLoading(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const publicNavigation = [
     { name: "Início", href: "/", icon: Building2 },
+    { name: "Compartilhe", href: "/compartilhe", icon: Share2 },
     { name: "Sobre", href: "/sobre", icon: FileText },
-    { name: "Trajetória", href: "/trajetoria", icon: FileText },
-    { name: "Projetos", href: "/projetos", icon: FileText },
+    { name: "Rede Inovajuntos", href: "/inovajuntos", icon: Share2 },
+    { name: "Clientes", href: "/clientes", icon: Building2 },
+    { name: "Produtos", href: "/produtos", icon: FileText },
     { name: "Publicações", href: "/publicacoes", icon: FileText },
     { name: "Na Mídia", href: "/midia", icon: Newspaper },
-    { name: "Compartilhe", href: "/compartilhe", icon: Share2 },
-    { name: "Relatórios", href: "/relatorios", icon: BarChart3 },
     { name: "Agenda", href: "/agenda", icon: Calendar },
   ];
+
+  const privateNavigation = [
+    ...publicNavigation,
+    { name: "Linha do Tempo", href: "/trajetoria", icon: FileText },
+    { name: "Projetos", href: "/projetos", icon: FileText },
+    { name: "Hubs", href: "/hubs", icon: Building2 },
+    { name: "Relatórios", href: "/relatorios", icon: BarChart3 },
+  ];
+
+  const navigation = session?.user ? privateNavigation : publicNavigation;
+  const adminNavigation =
+    session?.user?.role === "ADMIN"
+      ? [{ name: "Admin", href: "/admin", icon: Building2 }, ...navigation]
+      : navigation;
+  const hideChrome =
+    pathname?.startsWith("/clientes/sebrae") ||
+    pathname?.startsWith("/diagnostico") ||
+    pathname?.startsWith("/sala");
 
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
+      {!hideChrome && (
       <header className="bg-white border-b border-[#E2E8F0]">
         <div className="container-fluid">
           <div className="flex items-center justify-between py-4">
@@ -44,7 +85,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             </Link>
 
             <nav className="hidden md:flex items-center space-x-1">
-              {navigation.map((item) => {
+              {adminNavigation.map((item) => {
                 const Icon = item.icon;
                 const isActive = pathname === item.href;
                 return (
@@ -64,14 +105,46 @@ export function MainLayout({ children }: MainLayoutProps) {
                 );
               })}
             </nav>
+
+            <div className="hidden md:flex items-center gap-2">
+              {sessionLoading ? null : session?.user ? (
+                <>
+                  <Link
+                    href="/dashboard"
+                    className="px-4 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-fluid-sm hover:bg-[#F8FAFF] transition-colors rounded-md"
+                  >
+                    Painel
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      await fetch("/api/auth/logout", { method: "POST" });
+                      window.location.href = "/";
+                    }}
+                    className="px-4 py-2 bg-[#1E3A8A] text-white text-fluid-sm rounded-md"
+                  >
+                    Sair
+                  </button>
+                </>
+              ) : (
+                <Link
+                  href="/auth/login"
+                  className="px-4 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-fluid-sm hover:bg-[#F8FAFF] transition-colors rounded-md"
+                >
+                  Acessar
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </header>
+      )}
 
       {/* Main Content */}
       <main className="flex-1">{children}</main>
 
       {/* Footer */}
+      {!hideChrome && (
       <footer className="bg-[#FAFAFA] border-t border-[#E2E8F0] py-12 mt-auto">
         <div className="container-fluid">
           <div className="text-center">
@@ -85,6 +158,7 @@ export function MainLayout({ children }: MainLayoutProps) {
           </div>
         </div>
       </footer>
+      )}
     </div>
   );
 }

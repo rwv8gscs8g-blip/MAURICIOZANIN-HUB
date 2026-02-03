@@ -20,6 +20,7 @@ export function ProfessionalGallery({
   photos,
   autoPlayInterval = 5000,
 }: ProfessionalGalleryProps) {
+  const fallbackSrc = "/images/placeholder.svg";
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
@@ -73,13 +74,6 @@ export function ProfessionalGallery({
     }
   };
 
-  useEffect(() => {
-    console.log("ProfessionalGallery - Fotos carregadas:", photos.length);
-    if (photos.length > 0) {
-      console.log("Primeira foto:", photos[0].src);
-    }
-  }, [photos]);
-
   if (photos.length === 0) {
     return (
       <div className="bg-slate-200 aspect-[3/4] flex items-center justify-center rounded-lg">
@@ -118,8 +112,9 @@ export function ProfessionalGallery({
               loading={currentIndex === 0 ? "eager" : "lazy"}
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                console.error("Erro ao carregar imagem:", currentPhoto.src);
+                if (!target.src.includes(fallbackSrc)) {
+                  target.src = fallbackSrc;
+                }
               }}
             />
           </motion.div>
@@ -211,7 +206,9 @@ export function ProfessionalGallery({
                 loading="lazy"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
+                  if (!target.src.includes(fallbackSrc)) {
+                    target.src = fallbackSrc;
+                  }
                 }}
               />
             </button>

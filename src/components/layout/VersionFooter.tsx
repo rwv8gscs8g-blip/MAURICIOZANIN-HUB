@@ -1,9 +1,24 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { getVersionInfo, formatBuildDate } from "@/lib/version";
 
 export function VersionFooter() {
-  const versionInfo = getVersionInfo();
+  const [versionInfo, setVersionInfo] = useState<ReturnType<typeof getVersionInfo> | null>(null);
+
+  useEffect(() => {
+    setVersionInfo(getVersionInfo());
+  }, []);
+
+  if (!versionInfo) {
+    return (
+      <div className="mt-4 pt-4 border-t border-[#E2E8F0]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-fluid-xs text-[#94A3B8]">
+          <span>Carregando versão...</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mt-4 pt-4 border-t border-[#E2E8F0]">

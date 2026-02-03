@@ -1,0 +1,32 @@
+/* Print-friendly styles for Diagnóstico (MVP) */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-card {
+    border: 1px solid #CBD5E1 !important;
+    box-shadow: none !important;
+  }
+
+  a[href]:after {
+    content: "" !important;
+  }
+}
+

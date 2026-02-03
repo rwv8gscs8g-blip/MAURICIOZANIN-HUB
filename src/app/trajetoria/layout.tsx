@@ -1,28 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Trajetória Profissional | Maurício Zanin - Estrategista de Compras Públicas",
+  title: "Linha do Tempo | Maurício Zanin",
   description:
-    "Linha do tempo completa da trajetória profissional de Maurício Zanin, incluindo vídeos da CNM, publicações, projetos da Rede Inovajuntos e eventos em governança pública. História de mais de 15 anos transformando a gestão pública.",
-  keywords: [
-    "Maurício Zanin",
-    "Trajetória profissional",
-    "Compras públicas",
-    "Rede Inovajuntos",
-    "CNM",
-    "Governança pública",
-    "Cooperação internacional",
-  ],
+    "Linha do tempo com registros, publicações e ações nas três áreas do hub: cooperação internacional, compras governamentais e suporte aos municípios.",
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "Trajetória Profissional | Maurício Zanin",
+    title: "Linha do Tempo | Maurício Zanin",
     description:
-      "História completa da carreira em governança e compras públicas, incluindo vídeos, publicações e projetos.",
+      "Linha do tempo com registros, publicações e ações nas três áreas do hub: cooperação internacional, compras governamentais e suporte aos municípios.",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Trajetória Profissional | Maurício Zanin",
-    description: "História completa da carreira em governança e compras públicas",
   },
 };
 

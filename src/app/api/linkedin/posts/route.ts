@@ -17,20 +17,10 @@ export async function GET(request: NextRequest) {
     const orgId = process.env.LINKEDIN_ORG_ID;
 
     if (!accessToken) {
-      // Modo de desenvolvimento: retornar dados mock
-      console.warn("LINKEDIN_ACCESS_TOKEN não configurado, retornando dados mock");
+      console.warn("LINKEDIN_ACCESS_TOKEN não configurado");
       return NextResponse.json({
-        posts: [
-          {
-            id: "mock-1",
-            content: "Acabei de participar de um workshop internacional sobre compras públicas sustentáveis. A troca de experiências com especialistas europeus foi enriquecedora.",
-            publishedAt: new Date(Date.now() - 2 * 86400000).toISOString(),
-            likes: 45,
-            comments: 12,
-            shares: 8,
-          },
-        ],
-        total: 1,
+        posts: [],
+        total: 0,
       });
     }
 

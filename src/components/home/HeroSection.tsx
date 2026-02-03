@@ -1,19 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import { professionalPhotos } from "@/data/professional-photos";
 
 export function HeroSection() {
   // Usar a primeira foto da galeria
   const mainPhoto = professionalPhotos[0];
+  const [heroSrc, setHeroSrc] = useState(mainPhoto?.src || "/images/placeholder.svg");
+  const fallbackSrc = "/images/placeholder.svg";
 
   useEffect(() => {
-    if (mainPhoto) {
-      console.log("HeroSection - Foto principal:", mainPhoto.src);
-    } else {
-      console.warn("HeroSection - Nenhuma foto encontrada");
-    }
+    setHeroSrc(mainPhoto?.src || fallbackSrc);
   }, [mainPhoto]);
 
   return (
@@ -32,17 +31,14 @@ export function HeroSection() {
                 <div className="relative w-full h-full">
                   {/* Imagem de fundo */}
                   <img
-                    src={mainPhoto.src}
+                    src={heroSrc}
                     alt={mainPhoto.alt}
                     className="absolute inset-0 w-full h-full object-cover"
                     loading="eager"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      console.error("Erro ao carregar imagem:", mainPhoto.src);
-                    }}
-                    onLoad={() => {
-                      console.log("HeroSection - Imagem carregada com sucesso:", mainPhoto.src);
+                      if (target.src.includes(fallbackSrc)) return;
+                      target.src = fallbackSrc;
                     }}
                   />
                   {/* Gradiente de fundo (fallback) */}
@@ -76,6 +72,21 @@ export function HeroSection() {
               Transformando a gestão pública através de consultoria especializada,
               alinhada com a Lei 14.133/2021 e as melhores práticas de governança.
             </p>
+
+            <div className="flex flex-wrap gap-3 pt-2">
+              <Link
+                href="/auth/login"
+                className="px-5 py-2.5 bg-[#1E3A8A] text-white text-fluid-sm font-medium border border-[#1E3A8A] hover:bg-[#1E3A8A]/90 transition-colors"
+              >
+                Acessar sistema
+              </Link>
+              <Link
+                href="/auth/cadastro"
+                className="px-5 py-2.5 bg-white text-[#1E3A8A] text-fluid-sm font-medium border border-[#1E3A8A] hover:bg-[#F8FAFF] transition-colors"
+              >
+                Cadastre-se
+              </Link>
+            </div>
 
             <div className="pt-4">
               <div className="flex flex-wrap gap-6 text-fluid-sm text-[#64748B]">

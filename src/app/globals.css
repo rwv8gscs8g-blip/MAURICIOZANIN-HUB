@@ -23,6 +23,17 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  input,
+  select,
+  textarea {
+    border-radius: 0.5rem;
+  }
+
+  button,
+  a[class*="px-"][class*="py-"] {
+    border-radius: 0.5rem;
+  }
 }
 
 @layer utilities {
@@ -91,4 +102,39 @@
   .text-serif {
     font-family: var(--font-serif);
   }
+}
+
+@media print {
+  :root {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #ffffff;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: #ffffff;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-card {
+    border: 1px solid #e2e8f0;
+    box-shadow: none !important;
+  }
+}
+
+.print-only {
+  display: none;
 }

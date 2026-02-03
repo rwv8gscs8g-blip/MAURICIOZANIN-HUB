@@ -24,7 +24,7 @@ export default function AgendaPage() {
             Agenda
           </h1>
           <p className="text-fluid-base text-[#64748B] mb-12 leading-[1.7]">
-            Suas reuniões e eventos agendados
+            Agenda em consolidação para publicação das próximas ações
           </p>
 
           {meetings.length === 0 ? (

@@ -1,27 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShoppingCart, MapPin, Handshake } from "lucide-react";
+import { ShoppingCart, MapPin, Handshake, Code2 } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const pillars = [
   {
-    title: "Compras Governamentais",
+    title: "Cooperação Internacional",
     description:
-      "Consultoria especializada em processos licitatórios, conformidade com a Lei 14.133/2021 e otimização de compras públicas.",
-    icon: ShoppingCart,
-  },
-  {
-    title: "Municípios",
-    description:
-      "Apoio técnico para gestão municipal, planejamento estratégico e implementação de políticas públicas eficientes.",
-    icon: MapPin,
-  },
-  {
-    title: "Cooperação",
-    description:
-      "Fomento à cooperação intermunicipal, consórcios públicos e parcerias estratégicas para desenvolvimento regional.",
+      "Atuação internacional, cooperação descentralizada e Rede Inovajuntos integrada ao eixo.",
     icon: Handshake,
+    href: "/hubs/cooperacao-internacional",
+  },
+  {
+    title: "Compras Governamentais e Governança",
+    description:
+      "Consultoria especializada em processos licitatórios, conformidade com a Lei 14.133/2021 e eficiência nas compras públicas.",
+    icon: ShoppingCart,
+    href: "/hubs/compras-governamentais-governanca",
+  },
+  {
+    title: "Suporte a Municípios",
+    description:
+      "Apoio técnico para gestão municipal, planejamento e implementação de políticas públicas.",
+    icon: MapPin,
+    href: "/hubs/suporte-aos-municipios",
+  },
+  {
+    title: "Desenvolvimento de Software",
+    description:
+      "Plataformas, sistemas e soluções digitais para governança, compras e gestão municipal.",
+    icon: Code2,
+    href: "/hubs/desenvolvimento-software",
   },
 ];
 
@@ -39,15 +50,15 @@ export function TriplePillar() {
           className="text-center mb-16"
         >
           <h2 className="text-fluid-3xl font-bold text-[#0F172A] mb-4 tracking-tight">
-            Os Três Pilares da Consultoria
+            Eixos do Hub
           </h2>
           <p className="text-fluid-base text-[#64748B] max-w-2xl mx-auto leading-[1.8]">
-            Nossa abordagem integrada garante resultados eficazes em todas as
-            dimensões da gestão pública.
+            O hub integra as principais frentes de atuação para consolidar autoridade
+            e dar visibilidade ao histórico e às novas ações.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             const isHovered = hoveredIndex === index;
@@ -63,21 +74,23 @@ export function TriplePillar() {
                 onHoverEnd={() => setHoveredIndex(null)}
                 className="group"
               >
-                <div className="border border-[#E2E8F0] bg-transparent p-8 transition-all duration-300 ease-out hover:-translate-y-1">
-                  <div className="mb-6">
-                    <Icon
-                      className={`h-8 w-8 text-[#64748B] transition-colors duration-300 ${
-                        isHovered ? "text-[#1E3A8A]" : ""
-                      }`}
-                    />
+                <Link href={pillar.href} className="block">
+                  <div className="border border-[#E2E8F0] bg-transparent p-8 transition-all duration-300 ease-out hover:-translate-y-1">
+                    <div className="mb-6">
+                      <Icon
+                        className={`h-8 w-8 text-[#64748B] transition-colors duration-300 ${
+                          isHovered ? "text-[#1E3A8A]" : ""
+                        }`}
+                      />
+                    </div>
+                    <h3 className="text-fluid-xl font-bold text-[#0F172A] mb-4 tracking-tight">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-fluid-base text-[#64748B] leading-[1.8]">
+                      {pillar.description}
+                    </p>
                   </div>
-                  <h3 className="text-fluid-xl font-bold text-[#0F172A] mb-4 tracking-tight">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-fluid-base text-[#64748B] leading-[1.8]">
-                    {pillar.description}
-                  </p>
-                </div>
+                </Link>
               </motion.div>
             );
           })}

@@ -44,66 +44,72 @@ export function LinkedInFeed({ posts, maxPosts = 3 }: LinkedInFeedProps) {
       </div>
 
       <div className="space-y-4">
-        {displayPosts.map((post, index) => (
-          <motion.article
-            key={post.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
-            className="bg-white border border-[#E2E8F0] p-6 hover:-translate-y-1 transition-all duration-300"
-          >
-            <div className="flex items-start justify-between mb-4">
-              <time className="text-fluid-xs text-[#64748B]">
-                {format(new Date(post.publishedAt), "dd/MM/yyyy")}
-              </time>
-            </div>
-
-            <p className="text-fluid-base text-[#0F172A] leading-[1.8] mb-4 whitespace-pre-line">
-              {post.content}
-            </p>
-
-            {post.imageUrl && (
-              <div className="mb-4 rounded-lg overflow-hidden bg-slate-100">
-                <img
-                  src={post.imageUrl}
-                  alt="Post image"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+        {displayPosts.length === 0 ? (
+          <div className="bg-white border border-[#E2E8F0] p-6 text-fluid-sm text-[#64748B]">
+            Publicações em consolidação. Em breve, os posts oficiais estarão disponíveis.
+          </div>
+        ) : (
+          displayPosts.map((post, index) => (
+            <motion.article
+              key={post.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="bg-white border border-[#E2E8F0] p-6 hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <time className="text-fluid-xs text-[#64748B]">
+                  {format(new Date(post.publishedAt), "dd/MM/yyyy")}
+                </time>
               </div>
-            )}
 
-            {post.linkUrl && (
-              <a
-                href={post.linkUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mb-4 p-3 bg-slate-50 border border-[#E2E8F0] rounded-lg hover:bg-slate-100 transition-colors"
-              >
-                <span className="text-fluid-sm text-[#1E3A8A] flex items-center gap-2">
-                  <ExternalLink className="h-4 w-4" />
-                  Ver link compartilhado
-                </span>
-              </a>
-            )}
+              <p className="text-fluid-base text-[#0F172A] leading-[1.8] mb-4 whitespace-pre-line">
+                {post.content}
+              </p>
 
-            <div className="flex items-center gap-6 text-fluid-sm text-[#64748B] pt-4 border-t border-[#E2E8F0]">
-              <div className="flex items-center gap-2">
-                <Heart className="h-4 w-4" />
-                <span>{post.likes}</span>
+              {post.imageUrl && (
+                <div className="mb-4 rounded-lg overflow-hidden bg-slate-100">
+                  <img
+                    src={post.imageUrl}
+                    alt="Post image"
+                    className="w-full h-auto"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+
+              {post.linkUrl && (
+                <a
+                  href={post.linkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mb-4 p-3 bg-slate-50 border border-[#E2E8F0] rounded-lg hover:bg-slate-100 transition-colors"
+                >
+                  <span className="text-fluid-sm text-[#1E3A8A] flex items-center gap-2">
+                    <ExternalLink className="h-4 w-4" />
+                    Ver link compartilhado
+                  </span>
+                </a>
+              )}
+
+              <div className="flex items-center gap-6 text-fluid-sm text-[#64748B] pt-4 border-t border-[#E2E8F0]">
+                <div className="flex items-center gap-2">
+                  <Heart className="h-4 w-4" />
+                  <span>{post.likes}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MessageCircle className="h-4 w-4" />
+                  <span>{post.comments}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Share2 className="h-4 w-4" />
+                  <span>{post.shares}</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <MessageCircle className="h-4 w-4" />
-                <span>{post.comments}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Share2 className="h-4 w-4" />
-                <span>{post.shares}</span>
-              </div>
-            </div>
-          </motion.article>
-        ))}
+            </motion.article>
+          ))
+        )}
       </div>
     </div>
   );

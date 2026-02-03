@@ -1,7 +1,8 @@
-import { Person, ScholarlyArticle, Organization } from "schema-dts";
+import { Person, ScholarlyArticle, Organization, WithContext } from "schema-dts";
 
 // Schema.org para Person (Maurício Zanin) - Otimizado para Knowledge Graph
-export const personSchema: Person = {
+export const personSchema: WithContext<Person> = {
+  "@context": "https://schema.org",
   "@type": "Person",
   "@id": "https://mauriciozanin.com.br/#person",
   name: "Luís Maurício Junqueira Zanin",
@@ -44,7 +45,7 @@ export const personSchema: Person = {
       name: "Brasil",
     },
   },
-} as Person;
+};
 
 // Schema.org para ScholarlyArticle
 export function createScholarlyArticleSchema({
@@ -61,8 +62,9 @@ export function createScholarlyArticleSchema({
   publisher: string;
   datePublished: string;
   url: string;
-}): ScholarlyArticle {
+}): WithContext<ScholarlyArticle> {
   return {
+    "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     headline: title,
     description: description,
@@ -80,7 +82,8 @@ export function createScholarlyArticleSchema({
 }
 
 // Schema.org para Organization (Rede Inovajuntos)
-export const inovajuntosSchema: Organization = {
+export const inovajuntosSchema: WithContext<Organization> = {
+  "@context": "https://schema.org",
   "@type": "Organization",
   name: "Rede Inovajuntos",
   description:

@@ -14,14 +14,12 @@ export async function POST(request: NextRequest) {
     // );
     // const data = await response.json();
 
-    const mockResults = [
-      {
-        title: "Especialista em Compras Públicas lança nova cartilha",
-        snippet: "Luís Maurício Junqueira Zanin, reconhecido especialista...",
-        link: "https://example.com/noticia1",
-        source: "Folha de S.Paulo",
-      },
-    ];
+    const mockResults: Array<{
+      title: string;
+      snippet: string;
+      link: string;
+      source: string;
+    }> = [];
 
     // Salvar no banco de dados:
     // for (const result of mockResults) {
