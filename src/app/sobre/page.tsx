@@ -143,12 +143,12 @@ export default function SobrePage() {
               </h1>
               <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-purple-600 mb-6 rounded-full" />
 
-              <p className="text-xl md:text-2xl text-[#64748B] print:text-black font-semibold print:text-lg mb-8 leading-snug">
+              <p className="text-xl md:text-2xl text-[#64748B] font-semibold print:text-lg mb-8 leading-snug print:text-black">
                 {currentBio.title}
               </p>
 
               {/* Summary */}
-              <div className="text-slate-600 text-lg leading-relaxed text-justify print:text-sm print:leading-normal border-l-4 border-slate-200 pl-6">
+              <div className="text-slate-600 text-lg leading-relaxed text-justify print:text-sm print:leading-normal border-l-4 border-slate-200 pl-6 print:text-black">
                 {currentBio.summary.split('\n').map((paragraph, index) => (
                   paragraph.trim() && <p key={index} className="mb-3 last:mb-0">{paragraph.trim()}</p>
                 ))}
@@ -259,7 +259,7 @@ export default function SobrePage() {
                         </div>
 
                         <div className="mt-4">
-                          <h4 className="font-bold text-[#1E3A8A] text-lg print:text-black mb-2">Idiomas</h4>
+                          <h4 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Idiomas</h4>
                           <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-slate-700 print:text-black">
                             <li><strong>Português:</strong> Nativo</li>
                             <li><strong>Espanhol:</strong> Fluente (2º idioma)</li>
@@ -286,7 +286,7 @@ export default function SobrePage() {
                       <p className="mb-3 italic">Coordenei durante 4 anos um dos maiores projetos de cooperação descentralizada entre Brasil, Portugal e América Latina, envolvendo 19 municípios brasileiros, 12 municípios portugueses e 15 municípios latino-americanos.</p>
 
                       <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2 print:text-black">Principais Responsabilidades e Resultados:</h4>
-                      <ul className="list-disc pl-5 space-y-2 text-sm mb-4">
+                      <ul className="list-disc pl-5 space-y-2 text-sm mb-4 print:text-black">
                         <li><strong>Gestão de Consórcio Internacional:</strong> Articulação entre CNM (Brasil) e Centro de Estudos Sociais da Universidade de Coimbra (Portugal), garantindo coerência metodológica, cumprimento de marcos contratuais e governança multinível.</li>
                         <li><strong>Coordenação de Equipes Multiculturais:</strong> Liderança de equipes técnicas distribuídas em 3 continentes, assegurando alinhamento estratégico, padronização de processos e integração operacional.</li>
                         <li><strong>Diplomacia Pública e Articulação Institucional:</strong> Promoção de diálogo contínuo entre governos locais, nacionais e organismos multilaterais, incluindo participação em eventos da União Europeia, ONU-Habitat e encontros ministeriais, com representantes de agentes de cooperação e articulação do SubGrupo 18 do Mercosul.</li>
@@ -297,7 +297,7 @@ export default function SobrePage() {
                       </ul>
 
                       <h4 className="font-semibold text-sm uppercase text-slate-500 mb-2 print:text-black">Impactos Mensuráveis:</h4>
-                      <ul className="list-disc pl-5 space-y-1 text-sm bg-slate-50 p-3 rounded-lg border border-slate-100 print:bg-white print:border-none print:p-0">
+                      <ul className="list-disc pl-5 space-y-1 text-sm bg-slate-50 p-3 rounded-lg border border-slate-100 print:bg-white print:border-none print:p-0 print:text-black">
                         <li>18 espaços de inovação constituídos e equipados</li>
                         <li>19 diagnósticos vocacionais participativos realizados</li>
                         <li>Mais de 200 boas práticas documentadas e disponibilizadas</li>
@@ -310,7 +310,7 @@ export default function SobrePage() {
                       role="Consultor Internacional em Governança e Compras Públicas"
                       org="Organismos Multilaterais e Cooperação Técnica Internacional (2002-2026)"
                     >
-                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
+                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm print:text-black">
                         <li><strong>Portugal:</strong> Consultoria à Presidência do Conselho de Ministros para validação do Plano Nacional de Compras Eletrônicas (PNCE) e implantação de sistemas de compras governamentais junto à UMIC.</li>
                         <li><strong>América Latina:</strong> Missões técnicas em El Salvador, Guatemala, México, Argentina e outros países, para implementação de sistemas de compras governamentais e transferência de conhecimento brasileiro.</li>
                         <li><strong>Europa:</strong> Participação como orador em fóruns da União Europeia, incluindo Lisbon Information Society Forum, Smart City Expo Barcelona e EU-Latin America & Caribbean Forum.</li>
@@ -341,7 +341,7 @@ export default function SobrePage() {
                       role="Consultor SEBRAE Nacional (2006-2026)"
                       org="Unidade de Políticas Públicas - Estratégia Nacional de Compras Governamentais"
                     >
-                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
+                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm print:text-black">
                         <li>Desenho da Política Nacional de Compras Públicas do SEBRAE e distribuição de metodologias para todos os SEBRAEs estaduais. Atuação em conjunto com a Unidade De Desenvolvimento Territorial.</li>
                         <li>Elaboração de programas estaduais de compras governamentais.</li>
                         <li>Criação de cursos oficiais para compradores públicos e fornecedores, com foco em desenvolvimento local e inclusão de micro e pequenas empresas. Consultor técnico do das melhorias do portal Compras.gov.br e do Portal Nacional de Contratações Públicas - PNCP</li>
@@ -353,7 +353,7 @@ export default function SobrePage() {
                       role="Instrutor e Conteudista - Escola Nacional de Administração Pública (ENAP)"
                       org="Cursos de Sistemas Eletrônicos de Compras e Programa Brasil Municípios (2005-2013)"
                     >
-                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
+                      <ul className="list-disc pl-5 mt-2 space-y-1 text-sm print:text-black">
                         <li>Desenvolvimento de conteúdo técnico sobre evolução das compras governamentais no Brasil e no mundo.</li>
                         <li>Formação de gestores públicos em logística de suprimentos, licitações sustentáveis e políticas públicas aplicadas.</li>
                         <li>Parceria com Banco Interamericano de Desenvolvimento (BID) para programa de capacitação municipal.</li>
@@ -532,7 +532,7 @@ function SectionTitle({ children, color }: { children: React.ReactNode, color: s
   return (
     <h2 className="text-xl font-bold text-[#0F172A] mb-4 tracking-tight flex items-center gap-3 print:mb-2 print:text-lg print:border-b print:pb-1">
       <span className={cn("w-8 h-1 rounded-full block", color)}></span>
-      <span>{children}</span>
+      <span className="print:text-black">{children}</span>
     </h2>
   );
 }
@@ -540,9 +540,9 @@ function SectionTitle({ children, color }: { children: React.ReactNode, color: s
 function ExperienceItem({ role, org, children }: { role: string, org: string, children?: React.ReactNode }) {
   return (
     <div className="mb-6 print:mb-4">
-      <h3 className="font-bold text-[#1E3A8A] text-lg leading-tight print:text-base">{role}</h3>
-      <div className="text-slate-600 font-medium mb-2 print:text-sm">{org}</div>
-      <div className="text-slate-700 leading-relaxed text-sm print:text-xs print:leading-normal">
+      <h3 className="font-bold text-[#1E3A8A] text-lg leading-tight print:text-base print:text-black">{role}</h3>
+      <div className="text-slate-600 font-medium mb-2 print:text-sm print:text-black">{org}</div>
+      <div className="text-slate-700 leading-relaxed text-sm print:text-xs print:leading-normal print:text-black">
         {children}
       </div>
     </div>
@@ -558,7 +558,7 @@ function PublicationItem({ title, publisher, url, highlight }: { title: string, 
       {url ? (
         <a href={url} target="_blank" rel="noopener noreferrer" className="group block">
           <p className={cn(
-            "font-bold text-slate-800 text-sm transition-colors flex items-center gap-1",
+            "font-bold text-slate-800 text-sm transition-colors flex items-center gap-1 print:text-black",
             !highlight && "group-hover:text-blue-700",
             highlight && "text-slate-900 text-base"
           )}>
@@ -573,12 +573,12 @@ function PublicationItem({ title, publisher, url, highlight }: { title: string, 
               highlight ? "text-amber-700 bg-amber-100 border-amber-200" : "text-blue-600 bg-blue-50 border-blue-100"
             )}>PDF</span>
           </p>
-          <p className="text-xs text-slate-500 group-hover:text-slate-700">{publisher}</p>
+          <p className="text-xs text-slate-500 group-hover:text-slate-700 print:text-black">{publisher}</p>
         </a>
       ) : (
         <>
-          <p className="font-bold text-slate-800 text-sm">{title}</p>
-          <p className="text-xs text-slate-500">{publisher}</p>
+          <p className="font-bold text-slate-800 text-sm print:text-black">{title}</p>
+          <p className="text-xs text-slate-500 print:text-black">{publisher}</p>
         </>
       )}
     </div>
@@ -587,8 +587,8 @@ function PublicationItem({ title, publisher, url, highlight }: { title: string, 
 
 function CheckItem({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-start gap-2 text-sm text-slate-700">
-      <span className="text-green-600 font-bold">✓</span>
+    <div className="flex items-start gap-2 text-sm text-slate-700 print:text-black">
+      <span className="text-green-600 font-bold print:text-green-600">✓</span>
       <span>{children}</span>
     </div>
   )
