@@ -3,208 +3,156 @@
 import { useEffect, useState } from "react";
 import { VerticalTimeline } from "@/components/timeline/VerticalTimeline";
 import { motion } from "framer-motion";
-import { BookOpen, FileText, Globe, Filter } from "lucide-react";
+import { BookOpen, FileText, Globe, Filter, Newspaper, RefreshCw, LayoutGrid } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type CategoryFilter = "all" | "CARTILHA_SEBRAE" | "ARTIGO_TECNICO" | "PROJETO_INTERNACIONAL";
+type FilterType = "all" | "news" | "updates" | "publications";
 
-interface PublicationItem {
+interface UnifiedItem {
   id: string;
   date: string;
   title: string;
   description?: string;
   category: string;
+  type: "publication" | "timeline";
   hub?: string;
   link?: string;
-  location?: string;
-  type: "publication" | "event";
 }
 
 export default function PublicacoesPage() {
-  const [filter, setFilter] = useState<CategoryFilter>("all");
-  const [publications, setPublications] = useState<PublicationItem[]>([]);
+  const [activeFilter, setActiveFilter] = useState<FilterType>("all");
+  const [items, setItems] = useState<UnifiedItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     fetch("/api/publicacoes")
       .then((res) => res.json())
       .then((data) => {
-        const items = (data.items || []).map((item: any) => ({
-          id: item.id,
-          date: item.dateOriginal,
-          title: item.title,
-          description: item.description || undefined,
-          category: item.category === "CARTILHA_SEBRAE"
-            ? "Cartilha Sebrae"
-            : item.category === "ARTIGO_TECNICO"
-            ? "Artigo Técnico"
-            : item.category === "PROJETO_INTERNACIONAL"
-            ? "Projeto Internacional"
-            : "Outros",
-          hub: item.hub || "SEM_HUB",
-          link: item.link || undefined,
-          type: "publication",
-        }));
-        setPublications(items);
+        setItems(data.items || []);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch((err) => {
+        console.error(err);
+        setLoading(false);
+      });
   }, []);
 
-  useEffect(() => {
-    fetch("/api/auth/session")
-      .then((res) => res.json())
-      .then((data) => setIsClient(data?.user?.role === "CLIENTE"))
-      .catch(() => setIsClient(false));
-  }, []);
-
-  const filteredPublications = publications.filter((pub) => {
-    if (filter === "all") return true;
-    const categoryMap: Record<string, CategoryFilter> = {
-      "Cartilha Sebrae": "CARTILHA_SEBRAE",
-      "Artigo Técnico": "ARTIGO_TECNICO",
-      "Projeto Internacional": "PROJETO_INTERNACIONAL",
-    };
-    return categoryMap[pub.category] === filter;
+  const filteredItems = items.filter((item) => {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "publications") return item.type === "publication" || item.category === "Cartilhas" || item.category === "Artigos";
+    if (activeFilter === "news") return item.category === "Notícias";
+    if (activeFilter === "updates") return item.category === "Atualizações" || item.type === "timeline";
+    return true;
   });
 
   const filters = [
-    { value: "all" as CategoryFilter, label: "Todos", icon: Filter },
-    {
-      value: "CARTILHA_SEBRAE" as CategoryFilter,
-      label: "Cartilhas Sebrae",
-      icon: BookOpen,
-    },
-    {
-      value: "ARTIGO_TECNICO" as CategoryFilter,
-      label: "Artigos Técnicos",
-      icon: FileText,
-    },
-    {
-      value: "PROJETO_INTERNACIONAL" as CategoryFilter,
-      label: "Projetos Internacionais",
-      icon: Globe,
-    },
-  ];
-
-  const hubLabels: Record<string, string> = {
-    COOPERACAO_INTERNACIONAL: "Cooperação Internacional",
-    COMPRAS_GOVERNAMENTAIS: "Compras Governamentais e Governança",
-    SUPORTE_MUNICIPIOS: "Suporte aos Municípios",
-    DESENVOLVIMENTO_SOFTWARE: "Desenvolvimento de Software",
-    SEM_HUB: "Sem hub definido",
-  };
-
-  const byHub = filteredPublications.reduce<Record<string, PublicationItem[]>>((acc, item) => {
-    const key = item.hub || "SEM_HUB";
-    acc[key] = acc[key] || [];
-    acc[key].push(item);
-    return acc;
-  }, {});
+    { id: "all", label: "Todas", icon: LayoutGrid },
+    { id: "news", label: "Notícias", icon: Newspaper },
+    { id: "updates", label: "Atualizações", icon: RefreshCw },
+    { id: "publications", label: "Publicações", icon: BookOpen },
+  ] as const;
 
   return (
     <div className="min-h-screen bg-[#FAFAFA] py-16">
       <div className="container-fluid">
-        {isClient && (
-          <div className="mb-4 text-xs text-[#64748B]">
-            <a href="/dashboard" className="text-[#1E3A8A] hover:underline">
-              Área do cliente
-            </a>
-            <span className="mx-2">/</span>
-            <span>Publicações</span>
-          </div>
-        )}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="mb-12"
         >
           <h1 className="text-fluid-3xl font-bold text-[#0F172A] mb-4 tracking-tight">
-            Publicações e Linha do Tempo
+            Publicações e Atualizações
           </h1>
           <p className="text-fluid-base text-[#64748B] leading-[1.7] max-w-2xl">
-            Trajetória profissional e acadêmica, incluindo publicações, projetos
-            e eventos que marcaram a evolução da Rede Inovajuntos.
+            Acompanhe a trajetória, notícias e materiais técnicos produzidos.
           </p>
         </motion.div>
 
         {/* Filtros */}
-        {publications.length > 0 && (
-          <div className="mb-12 flex flex-wrap gap-3">
-            {filters.map((filterOption) => {
-              const Icon = filterOption.icon;
-              const isActive = filter === filterOption.value;
-              return (
-                <button
-                  key={filterOption.value}
-                  onClick={() => setFilter(filterOption.value)}
-                  className={cn(
-                    "flex items-center gap-2 px-5 py-2.5 text-fluid-sm font-medium transition-all border",
-                    isActive
-                      ? "bg-[#1E3A8A] text-white border-[#1E3A8A]"
-                      : "bg-white text-[#64748B] border-[#E2E8F0] hover:border-[#1E3A8A] hover:text-[#1E3A8A]"
-                  )}
-                >
-                  <Icon className="h-4 w-4" />
-                  <span>{filterOption.label}</span>
-                </button>
-              );
-            })}
-          </div>
-        )}
+        <div className="mb-10 flex flex-wrap gap-2">
+          {filters.map((f) => {
+            const Icon = f.icon;
+            const isActive = activeFilter === f.id;
+            return (
+              <button
+                key={f.id}
+                onClick={() => setActiveFilter(f.id as FilterType)}
+                className={cn(
+                  "flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors",
+                  isActive
+                    ? "bg-blue-900 text-white shadow-md relative" // Removed ring to avoid clutter
+                    : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
+                )}
+              >
+                {isActive && (
+                  <motion.span layoutId="active-pill" className="absolute inset-0 bg-blue-900 rounded-full -z-10" />
+                )}
+                <Icon className="w-4 h-4" />
+                <span className="relative z-10">{f.label}</span>
+              </button>
+            )
+          })}
+        </div>
 
-        {/* Timeline */}
-        <div className="space-y-8">
-          {loading ? (
-            <div className="bg-white border border-[#E2E8F0] p-8 md:p-12">
-              <p className="text-fluid-base text-[#64748B]">Carregando publicações...</p>
-            </div>
-          ) : filteredPublications.length === 0 ? (
-            <div className="bg-white border border-[#E2E8F0] p-8 md:p-12">
-              <p className="text-fluid-base text-[#64748B]">
-                Publicações em consolidação. Em breve, os registros oficiais estarão disponíveis.
-              </p>
-            </div>
-          ) : (
-            Object.entries(byHub).map(([hubKey, items]) => {
-              const grouped = items.reduce<Record<string, PublicationItem[]>>((acc, item) => {
-                const year = item.date ? item.date.slice(0, 4) : "Sem ano";
-                acc[year] = acc[year] || [];
-                acc[year].push(item);
-                return acc;
-              }, {});
-
-              const years = Object.keys(grouped).sort((a, b) => {
-                if (a === "Sem ano") return 1;
-                if (b === "Sem ano") return -1;
-                return Number(b) - Number(a);
-              });
-
-              return (
-                <section key={hubKey} className="space-y-6">
-                  <div className="flex items-center justify-between">
-                    <h2 className="text-fluid-xl font-semibold text-[#0F172A]">
-                      {hubLabels[hubKey] || hubKey}
-                    </h2>
-                    <span className="text-xs text-[#64748B]">
-                      {items.length} itens
-                    </span>
-                  </div>
-                  {years.map((year) => (
-                    <div key={`${hubKey}-${year}`} className="bg-white border border-[#E2E8F0] p-8 md:p-12">
-                      <h3 className="text-fluid-lg font-semibold text-[#0F172A] mb-6">
-                        {year}
-                      </h3>
-                      <VerticalTimeline events={grouped[year]} />
+        {/* Conteúdo */}
+        {loading ? (
+          <div className="py-20 text-center text-slate-400 animate-pulse">Carregando conteúdo...</div>
+        ) : (
+          <div className="space-y-12">
+            {Object.entries(groupByYear(filteredItems)).map(([year, groupItems]) => (
+              <div key={year} className="bg-white border border-slate-200 rounded-lg p-6 md:p-8">
+                <h2 className="text-2xl font-bold text-slate-800 mb-6 border-b border-slate-100 pb-2">
+                  {year}
+                </h2>
+                <div className="space-y-6">
+                  {groupItems.map((item) => (
+                    <div key={item.id} className="group flex gap-4 items-start">
+                      <div className="mt-1.5 flex-shrink-0 w-2 h-2 rounded-full bg-blue-500 group-hover:bg-blue-600 transition-colors" />
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                          <span>{new Date(item.date).toLocaleDateString('pt-BR')}</span>
+                          <span>•</span>
+                          <span className={cn(
+                            "px-1.5 py-0.5 rounded",
+                            item.type === 'publication' ? "bg-purple-100 text-purple-700" : "bg-blue-100 text-blue-700"
+                          )}>
+                            {item.category || (item.type === 'publication' ? 'Publicação' : 'Atualização')}
+                          </span>
+                        </div>
+                        <h3 className="text-lg font-semibold text-slate-900 group-hover:text-blue-700 transition-colors">
+                          <a href={item.link || '#'} target={item.link ? "_blank" : undefined} className="focus:outline-none">
+                            {item.title}
+                            {item.link && <span className="ml-2 inline-block text-blue-400">↗</span>}
+                          </a>
+                        </h3>
+                        {item.description && (
+                          <p className="text-slate-600 max-w-3xl text-sm leading-relaxed">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   ))}
-                </section>
-              );
-            })
-          )}
-        </div>
+                </div>
+              </div>
+            ))}
+            {filteredItems.length === 0 && (
+              <div className="text-center py-12 text-slate-500">
+                Nenhum item encontrado neste filtro.
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
+}
+
+function groupByYear(items: UnifiedItem[]) {
+  return items.reduce((acc, item) => {
+    const year = new Date(item.date).getFullYear() || "Antigos";
+    if (!acc[year]) acc[year] = [];
+    acc[year].push(item);
+    return acc;
+  }, {} as Record<string, UnifiedItem[]>);
 }
