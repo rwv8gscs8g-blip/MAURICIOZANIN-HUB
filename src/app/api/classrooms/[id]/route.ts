@@ -4,6 +4,8 @@ import { extractRequestInfo } from "@/lib/classroom";
 import { logAudit } from "@/lib/audit";
 import { requireApiAuth } from "@/lib/api-guard";
 
+export const dynamic = "force-dynamic";
+
 const ALLOWED_ROLES = ["ADMIN", "SUPERCONSULTOR", "CONSULTOR"] as const;
 const ALLOWED_STATUS = ["PREPARACAO", "ATIVA", "ENCERRADA", "CANCELADA"] as const;
 

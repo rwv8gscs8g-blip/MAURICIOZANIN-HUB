@@ -42,7 +42,7 @@ export async function GET() {
     description: "Tese completa de MBA em Políticas Públicas pela Fundação Getúlio Vargas.",
     category: "Publicação",
     type: "publication",
-    hub: "MAURICIOZANIN-HUB",
+    hub: "COMPRAS_GOVERNAMENTAIS",
     link: "/zanin-fgv-final.pdf",
   });
 
