@@ -343,7 +343,7 @@ export default function SobrePage() {
                           <span className="print:text-black">Espanhol</span> <span className="font-semibold text-slate-900 print:text-black">Fluente</span>
                         </li>
                         <li className="flex justify-between border-b border-slate-100 pb-1">
-                          <span className="print:text-black">Inglês</span> <span className="font-semibold text-slate-900 print:text-black">Intermediário</span>
+                          <span>Inglês</span> <span className="font-semibold text-slate-900 print:text-black">Fluente</span>
                         </li>
                       </ul>
                     </div>
