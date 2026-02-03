@@ -3,11 +3,9 @@
   "devCommand": "npm run dev",
   "installCommand": "npm ci",
   "framework": "nextjs",
-  "regions": ["gru1"],
-  "env": {
-    "DATABASE_URL": "@database_url",
-    "NEXT_PUBLIC_SITE_URL": "https://mauriciozanin.com.br"
-  },
+  "regions": [
+    "gru1"
+  ],
   "headers": [
     {
       "source": "/(.*)",
