@@ -582,6 +582,14 @@ function SobreContent() {
                             <div className="text-slate-500 text-sm print:text-black">
                               Universidad Estatal Paulista (UNESP)
                             </div>
+                            <div className="mt-4">
+                              <h4 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Idiomas</h4>
+                              <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-slate-700 print:text-black">
+                                <li><strong>Portugués:</strong> Nativo</li>
+                                <li><strong>Español:</strong> Fluido (2º idioma)</li>
+                                <li><strong>Inglés:</strong> Fluido (3º idioma)</li>
+                              </ul>
+                            </div>
                           </div>
                           <div>
                             <p className="font-bold text-slate-900 print:text-black">MBA en Políticas Públicas</p>
@@ -761,23 +769,7 @@ function SobreContent() {
                         </div>
                       </div>
 
-                      <div className="print:break-inside-avoid">
-                        <SectionTitle color="bg-purple-600">Idiomas</SectionTitle>
-                        <div className="grid grid-cols-3 gap-4">
-                          <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 print:border-none print:p-0">
-                            <span className="block font-bold text-[#1E3A8A] print:text-black">Portugués</span>
-                            <span className="text-slate-600 print:text-black text-sm">Nativo</span>
-                          </div>
-                          <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 print:border-none print:p-0">
-                            <span className="block font-bold text-[#1E3A8A] print:text-black">Español</span>
-                            <span className="text-slate-600 print:text-black text-sm">Fluido</span>
-                          </div>
-                          <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 print:border-none print:p-0">
-                            <span className="block font-bold text-[#1E3A8A] print:text-black">Inglés</span>
-                            <span className="text-slate-600 print:text-black text-sm">Intermedio</span>
-                          </div>
-                        </div>
-                      </div>
+
 
                       <div className="print:break-inside-avoid">
                         <SectionTitle color="bg-purple-600">Diferenciales para Projetos de Diplomacia Pública da UE</SectionTitle>
@@ -807,6 +799,14 @@ function SobreContent() {
                             </div>
                             <div className="text-slate-500 text-sm print:text-black">
                               São Paulo State University (UNESP)
+                            </div>
+                            <div className="mt-4">
+                              <h4 className="font-bold text-[#1E3A8A] text-lg mb-2 print:text-black">Languages</h4>
+                              <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-slate-700 print:text-black">
+                                <li><strong>Portuguese:</strong> Native</li>
+                                <li><strong>Spanish:</strong> Fluent (2nd language)</li>
+                                <li><strong>English:</strong> Fluent (3rd language)</li>
+                              </ul>
                             </div>
                           </div>
                           <div>
@@ -985,23 +985,7 @@ function SobreContent() {
                         </div>
                       </div>
 
-                      <div className="print:break-inside-avoid">
-                        <SectionTitle color="bg-purple-600">Languages</SectionTitle>
-                        <div className="grid grid-cols-3 gap-4">
-                          <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 print:border-none print:p-0">
-                            <span className="block font-bold text-[#1E3A8A] print:text-black">Portuguese</span>
-                            <span className="text-slate-600 print:text-black text-sm">Native</span>
-                          </div>
-                          <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 print:border-none print:p-0">
-                            <span className="block font-bold text-[#1E3A8A] print:text-black">Spanish</span>
-                            <span className="text-slate-600 print:text-black text-sm">Fluent</span>
-                          </div>
-                          <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 print:border-none print:p-0">
-                            <span className="block font-bold text-[#1E3A8A] print:text-black">English</span>
-                            <span className="text-slate-600 print:text-black text-sm">Intermediate</span>
-                          </div>
-                        </div>
-                      </div>
+
 
                       <div className="print:break-inside-avoid">
                         <SectionTitle color="bg-purple-600">Distinctive Values for EU Public Diplomacy Projects</SectionTitle>
