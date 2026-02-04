@@ -73,7 +73,7 @@ export default function PublicacoesPage() {
                 Acesse o documento completo com os resultados, impactos e boas práticas consolidadas do projeto de cooperação internacional.
               </p>
               <a
-                href="/inovajuntos/relatorios/(2024)Relatório de ações - InovaJuntos - Google Docs.pdf"
+                href="https://mauriciozanin.com/inovajuntos/relatorio-final/RelatorioTecnicoFinalInovajuntos-MenorResolucao_assinado.pdf"
                 target="_blank"
                 className="inline-flex items-center gap-2 bg-white text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
               >

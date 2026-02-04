@@ -7,6 +7,7 @@ import fs from "fs";
 import path from "path";
 import { ImageLightboxGallery } from "@/components/ui/ImageLightboxGallery";
 import { verifyAccess } from "@/lib/auth-guard";
+import { listFolder, getPublicUrl } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 
@@ -67,38 +68,74 @@ export default async function ProdutoDetalhePage({
     });
     const projectAccess = product.projectId
       ? await verifyAccess({
-          resource: "project",
-          id: product.projectId,
-          minRole: "VIEWER",
-        })
+        resource: "project",
+        id: product.projectId,
+        minRole: "VIEWER",
+      })
       : false;
-    canView = clientAccess || projectAccess;
+    canView = canView || clientAccess || projectAccess;
   }
 
   const publicRoot = path.join(process.cwd(), "public");
-  const coverUrl =
+  // Nova lógica via R2 (prioritária)
+  const r2Folder = `products/${product.slug}`;
+  let galleryKeys: string[] = [];
+  try {
+    galleryKeys = await listFolder(r2Folder);
+  } catch (err) {
+    console.warn("Failed to list R2 folder", err);
+  }
+
+  // Filtrar imagens da galeria (page-*.jpg) e capa (cover.jpg)
+  const r2GalleryImages = galleryKeys
+    .filter(key => key.match(/page-\d+\.jpg$/))
+    .sort((a, b) => {
+      const numA = parseInt(a.match(/page-(\d+)\.jpg$/)?.[1] || "0");
+      const numB = parseInt(b.match(/page-(\d+)\.jpg$/)?.[1] || "0");
+      return numA - numB;
+    })
+    .map(key => ({
+      src: getPublicUrl(key),
+      alt: `Página ${key.match(/page-(\d+)/)?.[1]}`
+    }));
+
+  const r2CoverKey = galleryKeys.find(key => key.endsWith("cover.jpg"));
+  const r2CoverUrl = r2CoverKey ? getPublicUrl(r2CoverKey) : null;
+
+  // Fallback (sistema antigo de arquivos locais, mantido por compatibilidade se R2 falhar ou estiver vazio)
+  const localCoverUrl =
     product.fileUrl && product.fileUrl.toLowerCase().endsWith(".pdf")
       ? product.fileUrl.replace(/\.pdf$/i, "-cover.jpg")
       : null;
-  const coverPath = coverUrl ? path.join(publicRoot, coverUrl.replace(/^\//, "")) : null;
-  const hasCover = coverPath ? fs.existsSync(coverPath) : false;
-  const galleryDir = product.fileUrl
-    ? path.join(
-        publicRoot,
-        path.dirname(product.fileUrl.replace(/^\//, "")),
-        product.slug
-      )
-    : null;
-  const galleryImages =
-    galleryDir && fs.existsSync(galleryDir)
-      ? fs
-          .readdirSync(galleryDir)
-          .filter((file) => /\.(png|jpe?g|webp)$/i.test(file))
-          .map((file) => ({
-            src: `${path.dirname(product.fileUrl || "")}/${product.slug}/${file}`,
-            alt: `Página ${file}`,
-          }))
-      : [];
+  const localCoverPath = localCoverUrl ? path.join(publicRoot, localCoverUrl.replace(/^\//, "")) : null;
+  const hasLocalCover = localCoverPath ? fs.existsSync(localCoverPath) : false;
+
+  // Decisão final
+  const coverUrl = r2CoverUrl || (hasLocalCover ? localCoverUrl : null);
+  const hasCover = !!coverUrl;
+
+  // Gallery final
+  const galleryImages = r2GalleryImages.length > 0 ? r2GalleryImages : [];
+
+  // Se não tem galeria no R2, tenta local (código legado)
+  if (galleryImages.length === 0 && product.fileUrl) {
+    const galleryDir = path.join(
+      publicRoot,
+      path.dirname(product.fileUrl.replace(/^\//, "")),
+      product.slug
+    );
+    if (galleryDir && fs.existsSync(galleryDir)) {
+      const localFiles = fs.readdirSync(galleryDir)
+        .filter((file) => /\.(png|jpe?g|webp)$/i.test(file))
+        .map((file) => ({
+          src: `${path.dirname(product.fileUrl || "")}/${product.slug}/${file}`,
+          alt: `Página ${file}`,
+        }));
+      if (localFiles.length > 0) {
+        galleryImages.push(...localFiles);
+      }
+    }
+  }
 
   if (!canView) {
     return (
@@ -132,22 +169,22 @@ export default async function ProdutoDetalhePage({
     product.hub === "COOPERACAO_INTERNACIONAL"
       ? "cooperacao-internacional"
       : product.hub === "COMPRAS_GOVERNAMENTAIS"
-      ? "compras-governamentais-governanca"
-      : product.hub === "SUPORTE_MUNICIPIOS"
-      ? "suporte-aos-municipios"
-      : product.hub === "DESENVOLVIMENTO_SOFTWARE"
-      ? "desenvolvimento-software"
-      : null;
+        ? "compras-governamentais-governanca"
+        : product.hub === "SUPORTE_MUNICIPIOS"
+          ? "suporte-aos-municipios"
+          : product.hub === "DESENVOLVIMENTO_SOFTWARE"
+            ? "desenvolvimento-software"
+            : null;
   const hubLabel =
     product.hub === "COOPERACAO_INTERNACIONAL"
       ? "Cooperação Internacional"
       : product.hub === "COMPRAS_GOVERNAMENTAIS"
-      ? "Compras Governamentais e Governança"
-      : product.hub === "SUPORTE_MUNICIPIOS"
-      ? "Suporte aos Municípios"
-      : product.hub === "DESENVOLVIMENTO_SOFTWARE"
-      ? "Desenvolvimento de Software"
-      : null;
+        ? "Compras Governamentais e Governança"
+        : product.hub === "SUPORTE_MUNICIPIOS"
+          ? "Suporte aos Municípios"
+          : product.hub === "DESENVOLVIMENTO_SOFTWARE"
+            ? "Desenvolvimento de Software"
+            : null;
 
   return (
     <div className="min-h-screen bg-[#FAFAFA] py-16">
@@ -198,12 +235,12 @@ export default async function ProdutoDetalhePage({
             {product.hub === "COOPERACAO_INTERNACIONAL"
               ? "Cooperação Internacional"
               : product.hub === "COMPRAS_GOVERNAMENTAIS"
-              ? "Compras Governamentais e Governança"
-              : product.hub === "SUPORTE_MUNICIPIOS"
-              ? "Suporte aos Municípios"
-              : product.hub === "DESENVOLVIMENTO_SOFTWARE"
-              ? "Desenvolvimento de Software"
-              : "Sem hub definido"}
+                ? "Compras Governamentais e Governança"
+                : product.hub === "SUPORTE_MUNICIPIOS"
+                  ? "Suporte aos Municípios"
+                  : product.hub === "DESENVOLVIMENTO_SOFTWARE"
+                    ? "Desenvolvimento de Software"
+                    : "Sem hub definido"}
           </div>
         )}
 

@@ -284,6 +284,45 @@ export default function AdminProdutosPage() {
     }
   };
 
+  const handleProcessPdf = async (id: string) => {
+    if (!confirm("Deseja processar o PDF para gerar imagens (capa e galeria) no R2? Isso pode levar alguns segundos.")) return;
+    try {
+      const res = await fetch(`/api/admin/products/${id}/process-pdf`, { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Erro ao processar PDF");
+      alert(`Sucesso! ${data.message} Capa: ${data.coverUrl}`);
+      fetchAll(); // Recarregar para ver se algo mudou (opcional, já que imagens não aparecem no admin list, mas garante frescor)
+    } catch (err: any) {
+      alert(`Erro: ${err.message}`);
+    }
+  };
+
+
+
+  const handleBulkImport = async () => {
+    if (!confirm("Isso processará TODOS os PDFs na pasta 'entrada'. Certifique-se de que os nomes dos arquivos correspondem aos slugs dos produtos.")) return;
+    try {
+      setLoading(true);
+      const res = await fetch("/api/admin/products/scan-entrada", { method: "POST" });
+      const data = await res.json();
+      setLoading(false);
+      if (!res.ok) throw new Error(data.error || "Erro no processamento");
+
+      const successCount = data.results.filter((r: any) => r.status === "success").length;
+      const errors = data.results.filter((r: any) => r.status === "error");
+
+      let msg = `Processamento concluído!\nSucesso: ${successCount}\nErros: ${errors.length}`;
+      if (errors.length > 0) {
+        msg += "\n\nFalhas:\n" + errors.map((e: any) => `${e.file}: ${e.message}`).join("\n");
+      }
+      alert(msg);
+      fetchAll();
+    } catch (err: any) {
+      setLoading(false);
+      alert(`Erro crítico: ${err.message}`);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#FAFAFA] py-12">
       <div className="container-fluid">
@@ -292,9 +331,18 @@ export default function AdminProdutosPage() {
             ← Voltar à administração
           </a>
         </div>
-        <h1 className="text-fluid-2xl font-bold text-[#0F172A] mb-2">
-          Produtos e Atestados
-        </h1>
+        <div className="flex items-center justify-between mb-2">
+          <h1 className="text-fluid-2xl font-bold text-[#0F172A]">
+            Produtos e Atestados
+          </h1>
+          <button
+            onClick={handleBulkImport}
+            disabled={loading}
+            className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 text-sm font-semibold transition-colors disabled:opacity-50"
+          >
+            🔄 Processar Pasta "Entrada"
+          </button>
+        </div>
         <p className="text-fluid-sm text-[#64748B] mb-6">
           Cadastre atestados de capacidade técnica para um ou mais produtos.
         </p>
@@ -461,8 +509,8 @@ export default function AdminProdutosPage() {
                       {product.timeline && (
                         <span
                           className={`px-2 py-1 border text-xs ${product.timeline.visibility === "PUBLICO" && product.timeline.approved
-                              ? "border-emerald-500 text-emerald-600"
-                              : "border-amber-500 text-amber-600"
+                            ? "border-emerald-500 text-emerald-600"
+                            : "border-amber-500 text-amber-600"
                             }`}
                         >
                           {product.timeline.approved
@@ -672,10 +720,10 @@ export default function AdminProdutosPage() {
                           fetchAll();
                         }}
                         className={`text-xs underline ${product.timeline &&
-                            product.timeline.approved &&
-                            product.timeline.visibility === "PUBLICO"
-                            ? "text-rose-600"
-                            : "text-slate-400 cursor-not-allowed"
+                          product.timeline.approved &&
+                          product.timeline.visibility === "PUBLICO"
+                          ? "text-rose-600"
+                          : "text-slate-400 cursor-not-allowed"
                           }`}
                         disabled={
                           !(
@@ -723,6 +771,12 @@ export default function AdminProdutosPage() {
                       >
                         Visualizar produto
                       </a>
+                      <button
+                        onClick={() => handleProcessPdf(product.id)}
+                        className="text-xs text-[#EA580C] underline hover:text-[#C2410C]"
+                      >
+                        Processar PDF
+                      </button>
                       {product.fileUrl ? (
                         <a
                           className="text-xs text-[#1D4ED8] underline"
