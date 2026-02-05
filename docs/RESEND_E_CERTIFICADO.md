@@ -37,23 +37,31 @@ O fluxo "Esqueci minha senha" **já está implementado**. Para funcionar em prod
 
 O login por certificado (.pfx) **já existe** na aba "Certificado" da tela de login. Para funcionar, o usuário precisa ter o **thumbprint** do certificado vinculado ao seu cadastro.
 
-### Opção A: Vincular certificado via script (sem precisar entrar no admin)
+### Pasta de certificados
 
-Execute localmente apontando para a base de **produção**:
+Coloque o arquivo .pfx na pasta `.certs/` (não é commitada). Ex: `.certs/meu-certificado.pfx`.
+
+### Vincular certificado via script (três ambientes)
+
+O script aceita `ENV=dev|preview|production` para apontar ao banco correto:
 
 ```bash
 cd /Users/macbookpro/Projetos/MAURICIOZANIN-HUB
 source scripts/carregar-env.sh
-export DATABASE_URL="$DATABASE_URL_PRODUCTION"
 
-# Vincular certificado ao seu usuário
-USER_EMAIL="mauriciozanin@gmail.com" \
-CERT_FILE="/caminho/para/seu-certificado.pfx" \
-CERT_PASSWORD="senha_do_certificado" \
-node scripts/link-certificate-admin.js
+# Dev (localhost)
+USER_EMAIL="mauriciozanin@gmail.com" CERT_FILE=".certs/meu-certificado.pfx" CERT_PASSWORD="xxx" ENV=dev npm run admin:link-cert
+
+# Preview (Vercel Preview)
+USER_EMAIL="mauriciozanin@gmail.com" CERT_FILE=".certs/meu-certificado.pfx" CERT_PASSWORD="xxx" ENV=preview npm run admin:link-cert
+
+# Production (Vercel Production)
+USER_EMAIL="mauriciozanin@gmail.com" CERT_FILE=".certs/meu-certificado.pfx" CERT_PASSWORD="xxx" ENV=production npm run admin:link-cert
 ```
 
-O script extrai o thumbprint do .pfx e grava no usuário. Depois, basta usar a aba **Certificado** no login: envie o arquivo e a senha.
+Ou use os atalhos: `npm run admin:link-cert:dev`, `admin:link-cert:preview`, `admin:link-cert:prod` (defina USER_EMAIL, CERT_FILE, CERT_PASSWORD).
+
+O script extrai o thumbprint do .pfx e grava no usuário. Depois, use a aba **Certificado** na tela de login: envie o arquivo e a senha.
 
 ### Opção B: Vincular pelo painel admin (quando já tiver acesso)
 

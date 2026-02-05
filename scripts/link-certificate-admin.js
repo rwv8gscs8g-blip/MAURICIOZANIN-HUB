@@ -1,15 +1,61 @@
 /* eslint-disable no-console */
 /**
  * Vincula um certificado digital (.pfx) ao usuário pelo e-mail.
- * Uso: USER_EMAIL=... CERT_FILE=/path/to/cert.pfx CERT_PASSWORD=... node scripts/link-certificate-admin.js
- * Produção: DATABASE_URL=$DATABASE_URL_PRODUCTION
+ * Uso: USER_EMAIL=... CERT_FILE=.certs/cert.pfx CERT_PASSWORD=... ENV=dev|preview|production node scripts/link-certificate-admin.js
+ *
+ * ENV define o banco:
+ *   dev     -> DATABASE_URL
+ *   preview -> DATABASE_URL_PREVIEW
+ *   production -> DATABASE_URL_PRODUCTION
  */
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 const forge = require("node-forge");
-const { PrismaClient } = require("@prisma/client");
 
+// Carregar .env.local e escolher banco por ENV
+function loadEnvLocal() {
+  const envPath = path.join(__dirname, "..", ".env.local");
+  if (!fs.existsSync(envPath)) return {};
+  const content = fs.readFileSync(envPath, "utf8");
+  const env = {};
+  const lines = content.split(/\r?\n/);
+  for (let i = 0; i < lines.length; i++) {
+    let trimmed = lines[i].replace(/\r$/, "").trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const eq = trimmed.indexOf("=");
+    if (eq === -1) continue;
+    const key = trimmed.slice(0, eq).trim();
+    let val = trimmed.slice(eq + 1).trim();
+    if (!val && i + 1 < lines.length) {
+      const next = lines[i + 1].replace(/\r$/, "").trim();
+      if (next && !next.startsWith("#") && !/^[A-Za-z_][A-Za-z0-9_]*\s*=/.test(next)) {
+        val = next;
+        i++;
+      }
+    }
+    if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'")))
+      val = val.slice(1, -1);
+    env[key] = val.trim();
+  }
+  return env;
+}
+Object.assign(process.env, loadEnvLocal());
+const env = (process.env.ENV || "dev").toLowerCase();
+const dbUrl =
+  env === "production"
+    ? process.env.DATABASE_URL_PRODUCTION
+    : env === "preview"
+      ? process.env.DATABASE_URL_PREVIEW
+      : process.env.DATABASE_URL;
+
+if (!dbUrl || dbUrl.length < 20) {
+  console.error(`DATABASE_URL para ENV=${env} não encontrado ou inválido no .env.local`);
+  process.exit(1);
+}
+process.env.DATABASE_URL = dbUrl;
+
+const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 function parseCertificate(buffer, password) {
@@ -47,15 +93,21 @@ async function main() {
 
   if (!email || !certPath || !certPassword) {
     console.error("Defina USER_EMAIL, CERT_FILE e CERT_PASSWORD.");
+    console.error("ENV=dev|preview|production (default: dev)");
     console.error(
-      "Exemplo: USER_EMAIL=user@mail.com CERT_FILE=./cert.pfx CERT_PASSWORD=xxx node scripts/link-certificate-admin.js"
+      "Exemplo: USER_EMAIL=user@mail.com CERT_FILE=.certs/cert.pfx CERT_PASSWORD=xxx ENV=production npm run admin:link-cert"
     );
     process.exit(1);
   }
 
-  const absPath = path.resolve(certPath);
+  // Resolver caminho: absoluto, relativo à raiz, ou em .certs/
+  const root = path.join(__dirname, "..");
+  let absPath = path.isAbsolute(certPath) ? certPath : path.join(root, certPath);
   if (!fs.existsSync(absPath)) {
-    console.error("Arquivo não encontrado:", absPath);
+    absPath = path.join(root, ".certs", path.basename(certPath));
+  }
+  if (!fs.existsSync(absPath)) {
+    console.error("Arquivo não encontrado. Tente: .certs/seu-certificado.pfx");
     process.exit(1);
   }
 
@@ -84,10 +136,11 @@ async function main() {
   });
 
   console.log("Certificado vinculado com sucesso.");
+  console.log("  Ambiente:", env);
   console.log("  Usuário:", user.email);
   console.log("  Thumbprint:", certInfo.thumbprint);
   console.log("");
-  console.log("Agora use a aba Certificado na tela de login para entrar.");
+  console.log("Use a aba Certificado na tela de login para entrar.");
 }
 
 main()

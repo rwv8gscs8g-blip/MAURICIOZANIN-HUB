@@ -49,6 +49,10 @@ next-env.d.ts
 # prisma
 /prisma/migrations
 
+# certificados digitais (nunca commitar .pfx/.p12)
+.certs/*.pfx
+.certs/*.p12
+
 # large media files
 *.mp4
 *.mov
