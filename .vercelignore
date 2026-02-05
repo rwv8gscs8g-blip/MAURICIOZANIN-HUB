@@ -72,10 +72,11 @@ next-env.d.ts
 data/inovajuntos/Site-Inovajuntos-Produtos/57_Teaser/*.mp4
 
 # Pastas pesadas – arquivos devem estar no R2 (Cloudflare)
-entrada/
-data/
-coverage/
-playwright-report/
-.tmp/
-public/inovajuntos/clippings/
-public/resources/
+# Importante: prefixar com "/" para NÃO afetar `src/data/`
+/entrada/
+/data/
+/coverage/
+/playwright-report/
+/.tmp/
+/public/inovajuntos/clippings/
+/public/resources/
