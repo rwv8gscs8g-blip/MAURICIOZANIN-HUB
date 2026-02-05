@@ -3,6 +3,32 @@
 import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
+const PLACEHOLDER_SRC = "/images/placeholder.svg";
+
+function GalleryThumb({
+  img,
+  onClick,
+}: {
+  img: { src: string; alt?: string };
+  onClick: () => void;
+}) {
+  const [error, setError] = useState(false);
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="border border-[#E2E8F0] bg-white overflow-hidden"
+    >
+      <img
+        src={error ? PLACEHOLDER_SRC : img.src}
+        alt={img.alt || "Página"}
+        className="w-full h-40 object-contain"
+        onError={() => setError(true)}
+      />
+    </button>
+  );
+}
+
 type ImageItem = {
   src: string;
   alt?: string;
@@ -18,6 +44,7 @@ export function ImageLightboxGallery({
   downloadUrl?: string | null;
 }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [coverError, setCoverError] = useState(false);
 
   if (images.length === 0) return null;
 
@@ -68,22 +95,16 @@ export function ImageLightboxGallery({
           className="mb-4 w-full border border-[#E2E8F0] bg-white overflow-hidden"
         >
           <img
-            src={coverSrc}
+            src={coverError ? PLACEHOLDER_SRC : coverSrc}
             alt="Capa do documento"
             className="w-full max-h-[420px] object-contain"
+            onError={() => setCoverError(true)}
           />
         </button>
       )}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {images.map((img, index) => (
-          <button
-            key={img.src}
-            type="button"
-            onClick={() => open(index)}
-            className="border border-[#E2E8F0] bg-white overflow-hidden"
-          >
-            <img src={img.src} alt={img.alt || "Página"} className="w-full h-40 object-contain" />
-          </button>
+          <GalleryThumb key={`${img.src}-${index}`} img={img} onClick={() => open(index)} />
         ))}
       </div>
 

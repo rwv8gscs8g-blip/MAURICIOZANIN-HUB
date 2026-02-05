@@ -17,7 +17,13 @@ export async function GET() {
     return NextResponse.json({ clients });
   } catch (error) {
     console.error("admin clients list error", error);
-    return NextResponse.json({ error: "Acesso negado." }, { status: 403 });
+    const msg =
+      error instanceof Error && error.message.includes("login")
+        ? "Sessão expirada ou inexistente. Faça login novamente."
+        : error instanceof Error && error.message.includes("permissão")
+          ? "Apenas administradores podem acessar esta lista. Faça login como Admin."
+          : "Sessão expirada ou sem permissão. Faça login como Admin.";
+    return NextResponse.json({ error: msg }, { status: 403 });
   }
 }
 

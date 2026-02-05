@@ -6,16 +6,24 @@
 echo "🔍 Verificando Tokens Configurados..."
 echo ""
 
-ENV_FILE="/Users/macbookpro/Projetos/MAURICIOZANIN-HUB/.env.local"
+ROOT_DIR="/Users/macbookpro/Projetos/MAURICIOZANIN-HUB"
+ENV_BASE="$ROOT_DIR/.env"
+ENV_LOCAL="$ROOT_DIR/.env.local"
 
-if [ ! -f "$ENV_FILE" ]; then
-    echo "❌ Arquivo .env.local não encontrado"
-    echo "   Execute: bash CONFIGURAR_TOKENS.sh"
-    exit 1
+# Carregar primeiro .env (base) e depois .env.local (overrides), se existirem
+if [ -f "$ENV_BASE" ]; then
+    # shellcheck disable=SC1090
+    source "$ENV_BASE" 2>/dev/null
+else
+    echo "⚠️  Arquivo .env não encontrado em $ROOT_DIR"
 fi
 
-# Carregar variáveis
-source "$ENV_FILE" 2>/dev/null
+if [ -f "$ENV_LOCAL" ]; then
+    # shellcheck disable=SC1090
+    source "$ENV_LOCAL" 2>/dev/null
+else
+    echo "⚠️  Arquivo .env.local não encontrado em $ROOT_DIR (use CONFIGURAR_TOKENS.sh para criá-lo)"
+fi
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "📋 Status dos Tokens:"

@@ -4,6 +4,7 @@ import { getSession } from "@/lib/auth";
 import fs from "fs";
 import path from "path";
 import { Search } from "lucide-react";
+import { ProductCoverImage } from "@/components/products/ProductCoverImage";
 
 export const dynamic = "force-dynamic";
 
@@ -134,12 +135,14 @@ export default async function ProdutosPage({
   };
 
   const publicRoot = path.join(process.cwd(), "public");
-  const resolveCover = (fileUrl?: string | null) => {
-    if (!fileUrl) return null;
-    if (!fileUrl.toLowerCase().endsWith(".pdf")) return null;
+  /** Retorna { url, useProxy }: url para src da img; useProxy=true usa ProductCoverImage (fallback em 404). */
+  const resolveCover = (fileUrl?: string | null, slug?: string | null): { url: string; useProxy: boolean } | null => {
+    if (!fileUrl || !fileUrl.toLowerCase().endsWith(".pdf")) return null;
     const cover = fileUrl.replace(/\.pdf$/i, "-cover.jpg");
     const diskPath = path.join(publicRoot, cover.replace(/^\//, ""));
-    return fs.existsSync(diskPath) ? cover : null;
+    if (fs.existsSync(diskPath)) return { url: cover, useProxy: false };
+    if (slug) return { url: `/api/products/${slug}/cover`, useProxy: true };
+    return null;
   };
 
   return (
@@ -217,15 +220,27 @@ export default async function ProdutosPage({
                                 key={produto.id}
                                 className="bg-white border border-[#E2E8F0] p-5"
                               >
-                                {resolveCover(produto.fileUrl) && (
-                                  <div className="mb-3 overflow-hidden border border-[#E2E8F0] bg-slate-50">
-                                    <img
-                                      src={resolveCover(produto.fileUrl) as string}
-                                      alt={`Capa de ${produto.name}`}
-                                      className="w-full h-48 object-contain"
-                                    />
-                                  </div>
-                                )}
+                                {(() => {
+                                  const cover = resolveCover(produto.fileUrl, produto.slug);
+                                  if (!cover) return null;
+                                  return (
+                                    <div className="mb-3 overflow-hidden border border-[#E2E8F0] bg-slate-50">
+                                      {cover.useProxy ? (
+                                        <ProductCoverImage
+                                          slug={produto.slug}
+                                          alt={`Capa de ${produto.name}`}
+                                          className="w-full h-48 object-contain"
+                                        />
+                                      ) : (
+                                        <img
+                                          src={cover.url}
+                                          alt={`Capa de ${produto.name}`}
+                                          className="w-full h-48 object-contain"
+                                        />
+                                      )}
+                                    </div>
+                                  );
+                                })()}
                                 <div className="text-xs text-[#64748B] mb-2">
                                   {produto.client.name}
                                   {produto.clientUnit ? ` • ${produto.clientUnit.name}` : ""}

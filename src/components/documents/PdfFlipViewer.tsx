@@ -1,117 +1,77 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect } from "react";
 
 type PdfFlipViewerProps = {
   url: string;
   className?: string;
   height?: string;
+  /** URL para o link "Baixar PDF" (deve ser a mesma do proxy para funcionar sem login) */
+  downloadUrl?: string;
 };
 
-export function PdfFlipViewer({ url, className, height = "80vh" }: PdfFlipViewerProps) {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [pdfDoc, setPdfDoc] = useState<any>(null);
-  const [page, setPage] = useState(1);
-  const [pages, setPages] = useState(1);
-  const [scale, setScale] = useState(1.2);
-  const [loading, setLoading] = useState(true);
+/**
+ * Visualizador de PDF: iframe (navegador exibe o PDF quando suportado) + link de download.
+ * Evita dependência de pdfjs-dist e funciona em localhost e produção sem redirect para login.
+ */
+export function PdfFlipViewer({ url, className, height = "80vh", downloadUrl }: PdfFlipViewerProps) {
+  const [iframeError, setIframeError] = useState(false);
+  const [slowLoad, setSlowLoad] = useState(false);
+  const href = downloadUrl ?? url;
 
   useEffect(() => {
-    let cancelled = false;
-    setLoading(true);
-    setPage(1);
-    (async () => {
-      const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
-      if (!pdfjs.GlobalWorkerOptions.workerSrc) {
-        pdfjs.GlobalWorkerOptions.workerSrc =
-          "https://unpkg.com/pdfjs-dist@5.4.530/build/pdf.worker.min.mjs";
-      }
-      const encodedUrl = encodeURI(url);
-      const loadingTask = pdfjs.getDocument(encodedUrl);
-      const pdf = await loadingTask.promise;
-      if (cancelled) return;
-      setPdfDoc(pdf);
-      setPages(pdf.numPages || 1);
-      setLoading(false);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [url]);
-
-  useEffect(() => {
-    if (!pdfDoc || !canvasRef.current) return;
-    let cancelled = false;
-    (async () => {
-      const pageObj = await pdfDoc.getPage(page);
-      const viewport = pageObj.getViewport({ scale });
-      const canvas = canvasRef.current;
-      if (!canvas || cancelled) return;
-      const context = canvas.getContext("2d");
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
-      await pageObj.render({ canvasContext: context!, viewport }).promise;
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [pdfDoc, page, scale]);
-
-  const handlePrev = () => setPage((p) => Math.max(1, p - 1));
-  const handleNext = () => setPage((p) => Math.min(pages, p + 1));
+    if (!url || iframeError) return;
+    const t = setTimeout(() => setSlowLoad(true), 10000);
+    return () => clearTimeout(t);
+  }, [url, iframeError]);
 
   return (
     <div className={className}>
       <div className="flex flex-wrap items-center gap-3 mb-4">
-        <button
-          onClick={handlePrev}
-          className="px-3 py-2 border border-[#E2E8F0] text-sm text-[#0F172A] hover:bg-slate-50"
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-[#1E3A8A] font-medium underline hover:opacity-80"
         >
-          Página anterior
-        </button>
-        <button
-          onClick={handleNext}
-          className="px-3 py-2 border border-[#E2E8F0] text-sm text-[#0F172A] hover:bg-slate-50"
-        >
-          Próxima página
-        </button>
-        <label className="text-sm text-[#64748B] flex items-center gap-2">
-          Página
-          <input
-            type="number"
-            min={1}
-            max={pages}
-            value={page}
-            onChange={(e) => setPage(Number(e.target.value) || 1)}
-            className="w-20 border border-[#E2E8F0] px-2 py-1 text-sm"
-          />
-        </label>
-        <label className="text-sm text-[#64748B] flex items-center gap-2">
-          Zoom
-          <select
-            value={scale}
-            onChange={(e) => setScale(Number(e.target.value))}
-            className="border border-[#E2E8F0] px-2 py-1 text-sm"
-          >
-            {[0.8, 1, 1.2, 1.4, 1.6].map((value) => (
-              <option key={value} value={value}>
-                {Math.round(value * 100)}%
-              </option>
-            ))}
-          </select>
-        </label>
-        <div className="text-xs text-[#64748B]">{pages} páginas</div>
+          Baixar PDF
+        </a>
+        <span className="text-xs text-[#64748B]">
+          Use o link acima para abrir ou baixar o documento em outra aba.
+        </span>
       </div>
 
       <div
-        className="w-full bg-slate-50 border border-[#E2E8F0] overflow-auto flex items-center justify-center"
-        style={{ height }}
+        className="w-full bg-slate-50 border border-[#E2E8F0] overflow-auto flex flex-col items-center justify-center"
+        style={{ minHeight: height }}
       >
-        {loading ? (
-          <div className="text-sm text-[#64748B]">Carregando PDF...</div>
-        ) : (
-          <canvas ref={canvasRef} />
-        )}
+        {!iframeError ? (
+          <iframe
+            src={url}
+            title="Visualização do PDF"
+            className="w-full border-0 flex-1"
+            style={{ minHeight: height }}
+            onError={() => setIframeError(true)}
+          />
+        ) : null}
+        {iframeError ? (
+          <div className="p-6 text-center text-sm text-[#64748B]">
+            <p className="mb-2">O navegador não exibiu o PDF nesta página.</p>
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#1E3A8A] font-medium underline hover:opacity-80"
+            >
+              Abrir ou baixar PDF
+            </a>
+          </div>
+        ) : null}
+        {slowLoad && !iframeError ? (
+          <p className="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-3 py-2 mt-2 rounded">
+            Se o documento não carregou (ex.: em produção), use o link &quot;Baixar PDF&quot; acima para abrir em outra aba.
+          </p>
+        ) : null}
       </div>
     </div>
   );

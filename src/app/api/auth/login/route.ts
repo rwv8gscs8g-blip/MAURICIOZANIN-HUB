@@ -4,7 +4,7 @@ export const runtime = "nodejs";
 import { prisma } from "@/lib/prisma";
 import { login } from "@/lib/auth";
 import { logAudit } from "@/lib/audit";
-import bcrypt from "bcryptjs";
+import { verifyPassword } from "@/lib/password";
 
 export async function POST(request: NextRequest) {
   try {
@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Conta temporariamente bloqueada" }, { status: 423 });
     }
 
-    const valid = await bcrypt.compare(password, user.passwordHash);
+    const valid = await verifyPassword(password, user.passwordHash);
     if (!valid) {
       await prisma.user.update({
         where: { id: user.id },

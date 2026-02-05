@@ -5,12 +5,14 @@
 
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+cd "$ROOT_DIR"
+
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "🚀 DEPLOY - AMBIENTE PRODUCTION"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
-
-cd /Users/macbookpro/Projetos/MAURICIOZANIN-HUB
 
 # Carregar tokens
 source scripts/carregar-env.sh 2>/dev/null || true
@@ -18,7 +20,8 @@ source scripts/carregar-env.sh 2>/dev/null || true
 # Verificar se Vercel token está configurado
 if [ -z "$VERCEL_TOKEN" ]; then
   echo "❌ VERCEL_TOKEN não configurado!"
-  echo "   Execute: bash CONFIGURAR_TOKENS.sh"
+  echo "   Adicione no .env.local: VERCEL_TOKEN=seu_token (crie em https://vercel.com/account/tokens)"
+  echo "   Ou execute: bash CONFIGURAR_TOKENS.sh"
   exit 1
 fi
 
@@ -69,9 +72,9 @@ fi
 # Confirmação
 echo "⚠️  ATENÇÃO: Você está fazendo deploy em PRODUÇÃO!"
 echo "   Commit (build): $GIT_SHA"
-read -p "Deseja continuar? (digite 'sim' para confirmar): " confirmacao
-
-if [ "$confirmacao" != "sim" ]; then
+read -p "Deseja continuar? (sim/y ou n para cancelar): " confirmacao
+confirmacao=$(echo "$confirmacao" | tr '[:upper:]' '[:lower:]' | tr -d ' ')
+if [ "$confirmacao" != "sim" ] && [ "$confirmacao" != "y" ] && [ "$confirmacao" != "s" ]; then
   echo "❌ Deploy cancelado pelo usuário"
   exit 0
 fi

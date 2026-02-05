@@ -1,9 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
-export default function LoginPage() {
+function LoginForm() {
+  const searchParams = useSearchParams();
+  const next = searchParams.get("next") || "";
+  const reason = searchParams.get("reason") || "";
+  const denied = searchParams.get("denied") === "1";
+  const sessionExpired = reason === "session";
   const [tab, setTab] = useState<"magic" | "password" | "certificate">("magic");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,11 +48,12 @@ export default function LoginPage() {
     const data = await res.json().catch(() => null);
     const role = data?.user?.role;
     const clientSlug = data?.user?.clientOrganizationSlug;
-    if (role === "CLIENTE" && clientSlug) {
+    if (role === "CLIENTE" && clientSlug && !next) {
       window.location.href = `/clientes/${clientSlug}`;
       return;
     }
-    window.location.href = "/dashboard";
+    const redirectTo = next && next.startsWith("/") ? next : "/dashboard";
+    window.location.href = redirectTo;
   };
 
   const handleMagic = async (event: React.FormEvent) => {
@@ -137,7 +144,8 @@ export default function LoginPage() {
         setError(data?.error || "Erro ao fazer login.");
         return;
       }
-      window.location.href = "/dashboard";
+      const redirectTo = next && next.startsWith("/") ? next : "/dashboard";
+      window.location.href = redirectTo;
     } finally {
       setCertLoading(false);
     }
@@ -147,6 +155,16 @@ export default function LoginPage() {
     <div className="min-h-screen bg-[#FAFAFA] flex items-center justify-center p-6">
       <div className="w-full max-w-md bg-white border border-[#E2E8F0] p-8">
         <h1 className="text-fluid-2xl font-bold text-[#0F172A] mb-2">Acesso</h1>
+        {sessionExpired && (
+          <p className="text-fluid-sm text-amber-700 bg-amber-50 border border-amber-200 px-3 py-2 mb-4 rounded">
+            Sessão expirada ou sem permissão. Faça login novamente para continuar.
+          </p>
+        )}
+        {denied && !sessionExpired && (
+          <p className="text-fluid-sm text-amber-700 bg-amber-50 border border-amber-200 px-3 py-2 mb-4 rounded">
+            Acesso negado para seu perfil. Esta área é restrita a administradores.
+          </p>
+        )}
         <div className="flex gap-2 mb-4">
           <button
             type="button"
@@ -319,5 +337,19 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center bg-[#F8FAFC]">
+          <p className="text-[#64748B]">Carregando...</p>
+        </div>
+      }
+    >
+      <LoginForm />
+    </Suspense>
   );
 }

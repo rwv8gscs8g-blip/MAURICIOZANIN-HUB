@@ -7,8 +7,16 @@ echo "🔐 Configuração de Tokens para Automação"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 
+# Diretório do projeto (script na raiz ou em scripts/)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -f "$SCRIPT_DIR/package.json" ]; then
+  ROOT_DIR="$SCRIPT_DIR"
+else
+  ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+fi
+ENV_FILE="${ROOT_DIR}/.env.local"
+
 # Verificar se .env.local existe
-ENV_FILE="/Users/macbookpro/Projetos/MAURICIOZANIN-HUB/.env.local"
 
 if [ -f "$ENV_FILE" ]; then
     echo "⚠️  Arquivo .env.local já existe"

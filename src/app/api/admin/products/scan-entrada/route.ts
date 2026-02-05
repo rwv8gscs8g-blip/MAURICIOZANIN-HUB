@@ -12,6 +12,14 @@ export async function POST() {
     try {
         await requireAuth(["ADMIN"]);
 
+        // Scan de pasta local só disponível em ambiente local (Vercel não inclui entrada/)
+        if (process.env.VERCEL) {
+            return NextResponse.json(
+                { error: "Scan de pasta 'entrada' só disponível em ambiente local. Em produção, use a importação via R2 ou upload direto no admin." },
+                { status: 501 }
+            );
+        }
+
         const entradaDir = path.join(process.cwd(), "entrada");
         if (!fs.existsSync(entradaDir)) {
             fs.mkdirSync(entradaDir);

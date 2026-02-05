@@ -42,7 +42,7 @@ export function getVersionInfo(): VersionInfo {
 }
 
 /**
- * Formata data de build para exibição
+ * Formata data e hora de deploy para exibição (dd/mm/aaaa hh:mm)
  */
 export function formatBuildDate(dateString: string): string {
   try {
@@ -53,6 +53,7 @@ export function formatBuildDate(dateString: string): string {
       year: 'numeric',
       hour: '2-digit',
       minute: '2-digit',
+      second: '2-digit',
       timeZone: 'America/Sao_Paulo',
     }).format(date);
   } catch {

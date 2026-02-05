@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { requireAuth } from "@/lib/auth";
+import { requireAuth, isAuthError, getAuthErrorMessage } from "@/lib/auth";
 
 export const runtime = "nodejs";
 
@@ -38,6 +38,8 @@ export async function GET() {
     return NextResponse.json({ products: productsWithTimeline });
   } catch (error) {
     console.error("admin products list error", error);
-    return NextResponse.json({ error: "Acesso negado." }, { status: 403 });
+    const status = isAuthError(error) ? 403 : 500;
+    const message = isAuthError(error) ? getAuthErrorMessage(error) : "Erro ao carregar produtos.";
+    return NextResponse.json({ error: message }, { status });
   }
 }

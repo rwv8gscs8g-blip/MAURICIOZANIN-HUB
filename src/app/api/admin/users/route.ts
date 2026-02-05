@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
-import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/prisma";
-import { requireAuth } from "@/lib/auth";
+import { hashPassword } from "@/lib/password";
+import { requireAuth, isAuthError, getAuthErrorMessage } from "@/lib/auth";
 import { logAudit } from "@/lib/audit";
 
 export async function GET() {
@@ -30,7 +30,9 @@ export async function GET() {
     return NextResponse.json({ users });
   } catch (error) {
     console.error("admin users list error", error);
-    return NextResponse.json({ error: "Acesso negado." }, { status: 403 });
+    const status = isAuthError(error) ? 403 : 500;
+    const message = isAuthError(error) ? getAuthErrorMessage(error) : "Erro ao carregar usuários.";
+    return NextResponse.json({ error: message }, { status });
   }
 }
 
@@ -59,7 +61,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const passwordHash = certificateOnly ? null : await bcrypt.hash(password, 10);
+    const passwordHash = certificateOnly ? null : await hashPassword(password);
     const clientAccessApproved =
       role === "CLIENTE" ? Boolean(body.clientAccessApproved) : true;
 

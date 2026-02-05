@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
-import bcrypt from "bcryptjs";
 import { consumeAuthToken } from "@/lib/auth-tokens";
+import { hashPassword } from "@/lib/password";
 import { prisma } from "@/lib/prisma";
 import { logAudit } from "@/lib/audit";
 
@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Token inválido ou expirado." }, { status: 400 });
     }
 
-    const passwordHash = await bcrypt.hash(password, 10);
+    const passwordHash = await hashPassword(password);
     await prisma.user.update({
       where: { id: record.userId },
       data: { passwordHash, failedLoginAttempts: 0, lockedUntil: null },

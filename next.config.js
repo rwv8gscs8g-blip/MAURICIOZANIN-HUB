@@ -5,18 +5,24 @@ const nextConfig = {
     remotePatterns: [],
     unoptimized: false,
   },
-  experimental: {
-    outputFileTracingExcludes: {
-      '*': [
-        './data/inovajuntos/**/*',
-        './data/uploads/**/*',
-        './public/resources/**/*',
-        '**/*.mp4',
-        '**/*.mov',
-        '**/*.zip',
-        '**/*.pdf',
-      ],
-    },
+  outputFileTracingExcludes: {
+    '*': [
+      './entrada/**/*',
+      './data/**/*',
+      './.tmp/**/*',
+      './coverage/**/*',
+      './playwright-report/**/*',
+      './public/inovajuntos/**/*',
+      './public/resources/**/*',
+      '**/*.mp4',
+      '**/*.mov',
+      '**/*.zip',
+      '**/*.pdf',
+      '**/*.pptx',
+      '**/*.ppsx',
+      '**/*.xlsx',
+      '**/*.docx',
+    ],
   },
   // Carregar variáveis de ambiente do .env.build (gerado em pre-build.js)
   env: {

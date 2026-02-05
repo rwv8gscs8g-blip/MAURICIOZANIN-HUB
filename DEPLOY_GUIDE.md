@@ -4,6 +4,19 @@
 
 Este guia descreve o processo completo de deploy do site para produção com domínio customizado `mauriciozanin.com.br`.
 
+### Deploy rápido (para testar ajustes)
+
+- **Opção A – Script único (Preview + Produção):**  
+  `npm run deploy:full`  
+  Faz deploy em **Preview**, exibe o **link para teste (Preview)**; em seguida pergunta se deseja deploy em **Produção**. Ao final mostra os **dois links** (Preview e Produção). Use `npm run deploy:full -- --preview-only` para apenas Preview.
+- **Opção B – Git:** Dê push do branch (ex.: `main`) para o GitHub. Se o projeto Vercel estiver conectado ao repositório, o deploy de produção é disparado automaticamente a cada push na branch de produção.
+- **Opção C – Scripts separados:** Com `VERCEL_TOKEN` e env carregados:
+  1. `npm run deploy:preview` (gera build e link Preview)
+  2. `bash scripts/qa-signoff.sh` (após validar o preview)
+  3. `npm run deploy:prod` (confirme com `sim` quando solicitado)
+
+**Bases de dados:** Dev, Preview e Produção devem usar **bases diferentes**. Em **Vercel → Settings → Environment Variables** configure `DATABASE_URL` **separadamente** para **Preview** e para **Production**. No seu PC, `.env.local` é para **Dev**. Ver `docs/DATABASES_DEV_PREVIEW_PROD.md`.
+
 ## 📋 Pré-requisitos
 
 1. ✅ Conta no Vercel (https://vercel.com)

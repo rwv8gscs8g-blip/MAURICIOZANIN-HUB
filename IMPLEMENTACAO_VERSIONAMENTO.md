@@ -9,14 +9,15 @@ Sistema completo de versionamento semântico (V1.0.000) com 3 ambientes (DEV, PR
 ### 1. Sistema de Versionamento
 
 - **Formato:** `V{MAJOR}.{MINOR}.{PATCH}` (ex: V1.0.000)
-- **Incremento automático:** Patch incrementa a cada deploy em PREVIEW/PRODUCTION
-- **Build number:** Gerado automaticamente (6 dígitos do timestamp)
-- **Data de deploy:** Registrada automaticamente
+- **Incremento automático:** Patch (3 últimos dígitos) incrementa no início de cada deploy (Preview/Full)
+- **Garantia:** Mesma versão em Preview e Production = mesmo código rodando
+- **Build number:** Git SHA curto (mesmo commit entre ambientes)
 
 **Arquivos:**
 - `.version` - Versão atual (V1.0.000)
 - `scripts/version-manager.js` - Gerenciador de versão
-- `scripts/pre-build.js` - Script pré-build que incrementa versão
+- `scripts/pre-build.js` - Gera variáveis de build (não incrementa)
+- `docs/VERSIONAMENTO_DEPLOY.md` - Guia para IAs (regras obrigatórias)
 
 ### 2. Componente de Versão no Rodapé
 

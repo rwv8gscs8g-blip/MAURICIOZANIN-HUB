@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
-import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/prisma";
+import { hashPassword } from "@/lib/password";
 import { requireAuth } from "@/lib/auth";
 import { logAudit } from "@/lib/audit";
 
@@ -38,7 +38,7 @@ export async function PATCH(
           { status: 400 }
         );
       }
-      data.passwordHash = await bcrypt.hash(String(body.password), 10);
+      data.passwordHash = await hashPassword(String(body.password));
     }
 
     let hubs = Array.isArray(body.hubs) ? body.hubs : null;

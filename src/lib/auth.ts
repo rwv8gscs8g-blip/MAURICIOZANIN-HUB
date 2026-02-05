@@ -95,6 +95,30 @@ export async function requireAuth(allowedRoles: string[] = []) {
   return session;
 }
 
+/** Indica se o erro é de autenticação/autorização (sessão ou perfil). */
+export function isAuthError(error: unknown): boolean {
+  const msg = error instanceof Error ? error.message : String(error);
+  return (
+    msg.includes("Acesso negado") ||
+    msg.includes("login") ||
+    msg.includes("permissão") ||
+    msg.includes("autorizado")
+  );
+}
+
+/** Mensagem amigável para 403 (usado pelas APIs admin). */
+export function getAuthErrorMessage(error: unknown): string {
+  if (!isAuthError(error)) {
+    return error instanceof Error ? error.message : "Erro interno.";
+  }
+  const msg = error instanceof Error ? error.message : "";
+  if (msg.includes("faça login") || msg.includes("login"))
+    return "Sessão expirada ou inexistente. Faça login novamente.";
+  if (msg.includes("permissão") || msg.includes("perfil"))
+    return "Apenas administradores podem acessar. Faça login como Admin.";
+  return "Sessão expirada ou sem permissão. Faça login como Admin.";
+}
+
 export async function requireHubAccess(hub: string, allowedRoles: string[] = []) {
   const session = await requireAuth(allowedRoles);
   if (session.user.role === "ADMIN") return session;

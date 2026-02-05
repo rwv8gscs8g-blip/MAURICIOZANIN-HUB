@@ -27,6 +27,7 @@ async function getSession(request: NextRequest): Promise<SessionPayload | null> 
   }
 }
 
+/** Rotas protegidas por perfil. /admin e /api/admin exigem role ADMIN; as APIs ainda validam sessão no servidor (getSession + currentSessionId). */
 const gates = [
   {
     prefix: "/dashboard",
@@ -59,6 +60,12 @@ const isPublicPath = (pathname: string) => {
   if (pathname.startsWith("/images")) return true;
   if (pathname.startsWith("/resources")) return true;
   if (pathname.startsWith("/uploads")) return true;
+  // Proxy de PDF, capa e galeria dos produtos: público para visualização
+  if (pathname.startsWith("/api/products/")) {
+    if (pathname.endsWith("/pdf")) return true;
+    if (pathname.includes("/cover")) return true;
+    if (pathname.includes("/image/")) return true;
+  }
   const publicPrefixes = [
     "/",
     "/sobre",

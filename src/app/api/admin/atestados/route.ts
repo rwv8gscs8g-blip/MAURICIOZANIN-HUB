@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { requireAuth } from "@/lib/auth";
+import { requireAuth, isAuthError, getAuthErrorMessage } from "@/lib/auth";
 import { logAudit } from "@/lib/audit";
 
 export const runtime = "nodejs";
@@ -31,7 +31,9 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ atestados });
   } catch (error) {
     console.error("admin atestados list error", error);
-    return NextResponse.json({ error: "Acesso negado." }, { status: 403 });
+    const status = isAuthError(error) ? 403 : 500;
+    const message = isAuthError(error) ? getAuthErrorMessage(error) : "Erro ao carregar atestados.";
+    return NextResponse.json({ error: message }, { status });
   }
 }
 
@@ -85,6 +87,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: true, atestado });
   } catch (error) {
     console.error("admin atestados create error", error);
-    return NextResponse.json({ error: "Erro ao criar atestado" }, { status: 500 });
+    const status = isAuthError(error) ? 403 : 500;
+    const message = isAuthError(error) ? getAuthErrorMessage(error) : "Erro ao criar atestado.";
+    return NextResponse.json({ error: message }, { status });
   }
 }

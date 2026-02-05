@@ -3,9 +3,26 @@ import { prisma } from "@/lib/prisma";
 import { requireAuth } from "@/lib/auth";
 import { processPdf } from "@/lib/pdf-processor";
 import { fetchFile, uploadFile } from "@/lib/storage";
+import fs from "fs";
 import path from "path";
 
 export const runtime = "nodejs";
+
+/** Obtém o buffer do PDF: URL relativa (/resources/...) lê de public/; URL absoluta usa fetch. */
+async function getPdfBuffer(fileUrl: string): Promise<Buffer> {
+    const trimmed = fileUrl.trim();
+    if (trimmed.startsWith("/")) {
+        const publicPath = path.join(process.cwd(), "public", trimmed.replace(/^\//, ""));
+        if (!fs.existsSync(publicPath)) {
+            throw new Error(`Arquivo não encontrado no servidor: ${publicPath}`);
+        }
+        return fs.readFileSync(publicPath);
+    }
+    if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
+        return fetchFile(trimmed);
+    }
+    throw new Error(`URL do arquivo inválida: ${trimmed}`);
+}
 
 export async function POST(
     request: Request,
@@ -26,9 +43,9 @@ export async function POST(
             );
         }
 
-        // 1. Baixar PDF
-        console.log(`[ProcessPDF] Baixando ${product.fileUrl}...`);
-        const pdfBuffer = await fetchFile(product.fileUrl);
+        // 1. Obter PDF (relativo → public/; absoluto → fetch)
+        console.log(`[ProcessPDF] Lendo ${product.fileUrl}...`);
+        const pdfBuffer = await getPdfBuffer(product.fileUrl);
 
         // 2. Processar PDF -> Imagens
         console.log(`[ProcessPDF] Gerando imagens...`);

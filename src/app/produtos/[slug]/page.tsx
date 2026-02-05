@@ -6,8 +6,9 @@ import { PdfFlipViewer } from "@/components/documents/PdfFlipViewer";
 import fs from "fs";
 import path from "path";
 import { ImageLightboxGallery } from "@/components/ui/ImageLightboxGallery";
+import { ProductCoverImage } from "@/components/products/ProductCoverImage";
 import { verifyAccess } from "@/lib/auth-guard";
-import { listFolder, getPublicUrl } from "@/lib/storage";
+import { listFolder } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
 
@@ -87,22 +88,15 @@ export default async function ProdutoDetalhePage({
   }
 
   // Filtrar imagens da galeria (page-*.jpg) e capa (cover.jpg)
-  const r2GalleryImages = galleryKeys
+  const r2GalleryKeys = galleryKeys
     .filter(key => key.match(/page-\d+\.jpg$/))
     .sort((a, b) => {
       const numA = parseInt(a.match(/page-(\d+)\.jpg$/)?.[1] || "0");
       const numB = parseInt(b.match(/page-(\d+)\.jpg$/)?.[1] || "0");
       return numA - numB;
-    })
-    .map(key => ({
-      src: getPublicUrl(key),
-      alt: `Página ${key.match(/page-(\d+)/)?.[1]}`
-    }));
+    });
 
   const r2CoverKey = galleryKeys.find(key => key.endsWith("cover.jpg"));
-  const r2CoverUrl = r2CoverKey ? getPublicUrl(r2CoverKey) : null;
-
-  // Fallback (sistema antigo de arquivos locais, mantido por compatibilidade se R2 falhar ou estiver vazio)
   const localCoverUrl =
     product.fileUrl && product.fileUrl.toLowerCase().endsWith(".pdf")
       ? product.fileUrl.replace(/\.pdf$/i, "-cover.jpg")
@@ -110,12 +104,20 @@ export default async function ProdutoDetalhePage({
   const localCoverPath = localCoverUrl ? path.join(publicRoot, localCoverUrl.replace(/^\//, "")) : null;
   const hasLocalCover = localCoverPath ? fs.existsSync(localCoverPath) : false;
 
-  // Decisão final
-  const coverUrl = r2CoverUrl || (hasLocalCover ? localCoverUrl : null);
-  const hasCover = !!coverUrl;
+  // Sempre tentar proxy da capa quando há slug e fileUrl (em prod não há disco; R2 responde)
+  const hasCover = !!r2CoverKey || hasLocalCover || (!!product.slug && !!product.fileUrl);
+  const coverUrl = hasCover ? `/api/products/${product.slug}/cover` : null;
 
-  // Gallery final
-  const galleryImages = r2GalleryImages.length > 0 ? r2GalleryImages : [];
+  let galleryImages: { src: string; alt: string }[] =
+    r2GalleryKeys.length > 0
+      ? r2GalleryKeys.map((key) => {
+          const fileName = key.split("/").pop() || key;
+          return {
+            src: `/api/products/${product.slug}/image/${fileName}`,
+            alt: `Página ${key.match(/page-(\d+)/)?.[1] ?? fileName}`,
+          };
+        })
+      : [];
 
   // Se não tem galeria no R2, tenta local (código legado)
   if (galleryImages.length === 0 && product.fileUrl) {
@@ -132,7 +134,7 @@ export default async function ProdutoDetalhePage({
           alt: `Página ${file}`,
         }));
       if (localFiles.length > 0) {
-        galleryImages.push(...localFiles);
+        galleryImages = localFiles;
       }
     }
   }
@@ -244,7 +246,8 @@ export default async function ProdutoDetalhePage({
           </div>
         )}
 
-        {hasCover && coverUrl && (
+        {/* Capa só aparece aqui quando não há galeria; quando há galeria, a capa clicável fica na seção Visualização do documento */}
+        {hasCover && coverUrl && galleryImages.length === 0 && (
           <div className="mt-6 border border-[#E2E8F0] bg-white p-3">
             <img
               src={coverUrl}
@@ -278,7 +281,7 @@ export default async function ProdutoDetalhePage({
                 Visualização do documento
               </h2>
               <a
-                href={encodeURI(product.fileUrl)}
+                href={`/api/products/${product.slug}/pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-[#1E3A8A] hover:underline"
@@ -289,16 +292,31 @@ export default async function ProdutoDetalhePage({
             {galleryImages.length > 0 ? (
               <div className="mb-6">
                 <h3 className="text-sm font-semibold text-[#0F172A] mb-3">
-                  Leitura em galeria
+                  Leitura em galeria (clique na capa ou nas miniaturas para abrir o álbum)
                 </h3>
                 <ImageLightboxGallery
                   images={galleryImages}
                   coverSrc={hasCover ? coverUrl : null}
-                  downloadUrl={encodeURI(product.fileUrl)}
+                  downloadUrl={`/api/products/${product.slug}/pdf`}
                 />
               </div>
             ) : (
-              <PdfFlipViewer url={encodeURI(product.fileUrl)} height="80vh" />
+              <>
+                {hasCover && coverUrl && (
+                  <div className="mb-6 border border-[#E2E8F0] bg-slate-50 overflow-hidden">
+                    <ProductCoverImage
+                      slug={product.slug}
+                      alt={`Capa de ${product.name}`}
+                      className="w-full max-h-[420px] object-contain"
+                    />
+                  </div>
+                )}
+                <PdfFlipViewer
+                  url={`/api/products/${product.slug}/pdf`}
+                  downloadUrl={`/api/products/${product.slug}/pdf`}
+                  height="80vh"
+                />
+              </>
             )}
           </div>
         )}

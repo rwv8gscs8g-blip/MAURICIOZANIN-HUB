@@ -3,10 +3,12 @@
 # Script para executar comandos Vercel com token carregado
 # Uso: bash scripts/vercel-com-token.sh "comando vercel"
 
-ENV_FILE="/Users/macbookpro/Projetos/MAURICIOZANIN-HUB/.env.local"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+ENV_FILE="${ROOT_DIR}/.env.local"
 
 if [ ! -f "$ENV_FILE" ]; then
-    echo "❌ Arquivo .env.local não encontrado"
+    echo "❌ Arquivo .env.local não encontrado em $ROOT_DIR"
     exit 1
 fi
 

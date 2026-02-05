@@ -27,11 +27,15 @@
     "version:info": "node scripts/version-manager.js info",
     "prebuild": "node scripts/pre-build.js",
     "admin:create": "node scripts/create-admin.js",
+    "admin:reset-password": "node scripts/create-admin.js --reset-password",
+    "admin:check": "node scripts/check-admin-production.js",
+    "admin:link-cert": "node scripts/link-certificate-admin.js",
     "seed:clients": "node scripts/seed-clients-products.js",
     "convert:timeline": "bash scripts/convert-rtf-json.sh",
     "deploy:dev": "bash scripts/deploy-dev.sh",
     "deploy:preview": "bash scripts/deploy-preview.sh",
     "deploy:prod": "bash scripts/deploy-production.sh",
+    "deploy:full": "bash scripts/deploy-full.sh",
     "qa:signoff": "bash scripts/qa-signoff.sh",
     "qa": "npx playwright test"
   },
@@ -52,30 +56,33 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "resend": "^4.8.0",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20",
     "schema-dts": "^1.1.3",
     "tailwind-merge": "^2.6.0",
-    "uuid": "^9.0.1"
+    "tailwindcss": "^3.4.17",
+    "uuid": "^9.0.1",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/uuid": "^10.0.0",
+    "@types/node-forge": "^1.3.14",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
-    "@types/bcryptjs": "^2.4.6",
     "@types/jest": "^30.0.0",
-    "@types/node": "^22.10.2",
-    "@types/node-forge": "^1.3.14",
-    "@types/react": "^19.0.6",
-    "@types/react-dom": "^19.0.2",
-    "@types/uuid": "^10.0.0",
-    "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
     "eslint-config-next": "^15.1.0",
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
-    "postcss": "^8.4.49",
-    "prisma": "^6.1.0",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2"
+    "prisma": "^6.1.0"
+  },
+  "overrides": {
+    "tar": ">=7.5.3"
   }
 }

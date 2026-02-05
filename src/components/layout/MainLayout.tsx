@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 import { HeaderActions } from "./HeaderActions";
+import { SessionCountdown } from "./SessionCountdown";
 import { cn } from "@/lib/utils";
 import { Building2, FileText, Share2, BarChart3, Calendar, Newspaper } from "lucide-react";
 import { useAccessTracking } from "@/hooks/useAccessTracking";
@@ -109,6 +110,11 @@ export function MainLayout({ children }: MainLayoutProps) {
               </nav>
 
               <div className="hidden md:flex items-center gap-2">
+                {session?.user && (
+                  <Suspense fallback={null}>
+                    <SessionCountdown />
+                  </Suspense>
+                )}
                 <Suspense fallback={<div className="w-24 h-10 bg-slate-100 animate-pulse rounded-md" />}>
                   <HeaderActions session={session} sessionLoading={sessionLoading} />
                 </Suspense>

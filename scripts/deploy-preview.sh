@@ -5,12 +5,14 @@
 
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+cd "$ROOT_DIR"
+
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "🚀 DEPLOY - AMBIENTE PREVIEW"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
-
-cd /Users/macbookpro/Projetos/MAURICIOZANIN-HUB
 
 # Carregar tokens
 source scripts/carregar-env.sh 2>/dev/null || true
@@ -18,7 +20,8 @@ source scripts/carregar-env.sh 2>/dev/null || true
 # Verificar se Vercel token está configurado
 if [ -z "$VERCEL_TOKEN" ]; then
   echo "❌ VERCEL_TOKEN não configurado!"
-  echo "   Execute: bash CONFIGURAR_TOKENS.sh"
+  echo "   Adicione no .env.local: VERCEL_TOKEN=seu_token (crie em https://vercel.com/account/tokens)"
+  echo "   Ou execute: bash CONFIGURAR_TOKENS.sh"
   exit 1
 fi
 
@@ -28,7 +31,12 @@ export VERCEL_ENV=preview
 # Garantir AUTH_SECRET para o build (fallback se não estiver no .env.local)
 export AUTH_SECRET="${AUTH_SECRET:-build_secret_fallback_for_preview}"
 
-# Gerar variáveis de build (sem incrementar versão automaticamente)
+# Incrementar versão (patch) – garante identificador único por deploy
+DEPLOY_VERSION=$(node scripts/version-manager.js increment patch)
+echo "📌 Versão deste deploy: $DEPLOY_VERSION"
+echo ""
+
+# Gerar variáveis de build
 echo "📦 Gerando variáveis de build..."
 node scripts/pre-build.js
 

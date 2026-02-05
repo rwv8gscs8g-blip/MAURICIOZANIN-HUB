@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type ProductItem = {
   id: string;
@@ -29,12 +29,27 @@ type AtestadoItem = {
   products: { productId: string; product: { id: string; name: string } }[];
 };
 
+type ProjectItem = { id: string; name: string; slug: string; clientId: string };
+
 export default function AdminProdutosPage() {
   const [products, setProducts] = useState<ProductItem[]>([]);
   const [clients, setClients] = useState<{ id: string; name: string }[]>([]);
+  const [projects, setProjects] = useState<ProjectItem[]>([]);
   const [atestados, setAtestados] = useState<AtestadoItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const [importForm, setImportForm] = useState({
+    clientId: "",
+    projectId: "",
+    year: String(new Date().getFullYear()),
+    name: "",
+    processPdfNow: true,
+  });
+  const [importFile, setImportFile] = useState<File | null>(null);
+  const importFileInputRef = useRef<HTMLInputElement>(null);
+  const [isImporting, setIsImporting] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
 
   // Filters
   const [clientFilter, setClientFilter] = useState("");
@@ -74,22 +89,50 @@ export default function AdminProdutosPage() {
   const fetchAll = async () => {
     setLoading(true);
     setError(null);
-    const productsRes = await fetch("/api/admin/products");
-    const atestadosRes = await fetch("/api/admin/atestados");
-    const clientsRes = await fetch("/api/admin/clients");
+    const [productsRes, atestadosRes, clientsRes, projectsRes] = await Promise.all([
+      fetch("/api/admin/products", { credentials: "include" }),
+      fetch("/api/admin/atestados", { credentials: "include" }),
+      fetch("/api/admin/clients", { credentials: "include" }),
+      fetch("/api/admin/projects", { credentials: "include" }),
+    ]);
 
-    if (!productsRes.ok || !atestadosRes.ok || !clientsRes.ok) {
-      setError("Erro ao carregar dados.");
+    const failed: string[] = [];
+    if (!productsRes.ok) failed.push("produtos");
+    if (!atestadosRes.ok) failed.push("atestados");
+    if (!clientsRes.ok) failed.push("clientes");
+
+    if (failed.length > 0) {
+      const firstBad = !productsRes.ok ? productsRes : !atestadosRes.ok ? atestadosRes : clientsRes;
+      let msg = "Sessão expirada ou sem permissão. Faça login como Admin.";
+      try {
+        const body = await firstBad.json();
+        if (body?.error) msg = body.error;
+      } catch {
+        if (firstBad.status === 403) msg = "Sessão expirada ou sem permissão. Faça login novamente como Admin.";
+        else msg = `Erro ${firstBad.status}.`;
+      }
+      setError(`Erro ao carregar ${failed.join(", ")}: ${msg}`);
       setLoading(false);
+      if (firstBad.status === 403) {
+        const next = encodeURIComponent("/admin/produtos");
+        window.location.replace(`/auth/login?next=${next}&reason=session`);
+      }
       return;
     }
 
     const productsData = await productsRes.json();
     const atestadosData = await atestadosRes.json();
     const clientsData = await clientsRes.json();
+    const projectsData = projectsRes.ok ? await projectsRes.json() : { projects: [] };
     setProducts(productsData.products || []);
     setAtestados(atestadosData.atestados || []);
     setClients(clientsData.clients || []);
+    setProjects((projectsData.projects || []).map((p: { id: string; name: string; slug: string; clientId?: string; client?: { id: string } }) => ({
+      id: p.id,
+      name: p.name,
+      slug: p.slug,
+      clientId: p.clientId ?? p.client?.id ?? "",
+    })));
     setLoading(false);
   };
 
@@ -335,17 +378,168 @@ export default function AdminProdutosPage() {
           <h1 className="text-fluid-2xl font-bold text-[#0F172A]">
             Produtos e Atestados
           </h1>
-          <button
-            onClick={handleBulkImport}
-            disabled={loading}
-            className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 text-sm font-semibold transition-colors disabled:opacity-50"
-          >
-            🔄 Processar Pasta "Entrada"
-          </button>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={handleBulkImport}
+              disabled={loading}
+              className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 text-sm font-semibold transition-colors disabled:opacity-50"
+            >
+              🔄 Processar Pasta "Entrada"
+            </button>
+            <button
+              onClick={async () => {
+                if (!confirm("Apagar TODOS os produtos do cliente Inovajuntos (e arquivos no R2)? Os outros clientes não serão alterados. Confirma?")) return;
+                setIsResetting(true);
+                try {
+                  const res = await fetch("/api/admin/products/reset-inovajuntos", {
+                    method: "POST",
+                    credentials: "include",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ confirm: true }),
+                  });
+                  const data = await res.json();
+                  if (!res.ok) throw new Error(data.error || "Erro ao resetar.");
+                  alert(data.message || "Inovajuntos resetado.");
+                  fetchAll();
+                } catch (err: any) {
+                  alert("Erro: " + err.message);
+                } finally {
+                  setIsResetting(false);
+                }
+              }}
+              disabled={loading || isResetting}
+              className="bg-rose-600 text-white px-4 py-2 rounded hover:bg-rose-700 text-sm font-semibold transition-colors disabled:opacity-50"
+            >
+              {isResetting ? "Resetando…" : "🗑️ Resetar Inovajuntos"}
+            </button>
+          </div>
         </div>
         <p className="text-fluid-sm text-[#64748B] mb-6">
           Cadastre atestados de capacidade técnica para um ou mais produtos.
         </p>
+
+        {/* Importar produto */}
+        <div className="bg-white border border-[#E2E8F0] p-6 mb-8">
+          <h2 className="text-fluid-lg font-semibold text-[#0F172A] mb-4">Importar novo produto (PDF)</h2>
+          <p className="text-sm text-[#64748B] mb-4">
+            Cliente, projeto (opcional), ano e arquivo PDF. O slug é gerado pelo nome do arquivo. Opcionalmente já processa o PDF (capa e galeria no R2).
+          </p>
+          <form
+            className="grid gap-4 md:grid-cols-2 max-w-2xl"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const file = importFile ?? importFileInputRef.current?.files?.[0];
+              if (!importForm.clientId) {
+                alert("Selecione o cliente.");
+                return;
+              }
+              if (!file || !file.name.toLowerCase().endsWith(".pdf")) {
+                alert("Selecione um arquivo PDF.");
+                return;
+              }
+              setIsImporting(true);
+              setError(null);
+              try {
+                const fd = new FormData();
+                fd.set("file", file);
+                fd.set("clientId", importForm.clientId);
+                if (importForm.projectId) fd.set("projectId", importForm.projectId);
+                fd.set("year", importForm.year);
+                if (importForm.name.trim()) fd.set("name", importForm.name.trim());
+                fd.set("processPdfNow", importForm.processPdfNow ? "1" : "0");
+                const res = await fetch("/api/admin/products/import", { method: "POST", body: fd });
+                const data = await res.json();
+                if (!res.ok) throw new Error(data.error || "Erro ao importar.");
+                alert(data.message || "Produto importado.");
+                setImportForm((f) => ({ ...f, name: "" }));
+                setImportFile(null);
+                if (importFileInputRef.current) importFileInputRef.current.value = "";
+                fetchAll();
+              } catch (err: any) {
+                setError(err.message);
+                alert("Erro: " + err.message);
+              } finally {
+                setIsImporting(false);
+              }
+            }}
+          >
+            <div>
+              <label className="block text-xs text-[#64748B] mb-1">Cliente *</label>
+              <select
+                className="w-full border border-[#E2E8F0] px-3 py-2 text-sm"
+                value={importForm.clientId}
+                onChange={(e) => setImportForm((f) => ({ ...f, clientId: e.target.value, projectId: "" }))}
+                required
+              >
+                <option value="">Selecione</option>
+                {clients.map((c) => (
+                  <option key={c.id} value={c.id}>{c.name}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-xs text-[#64748B] mb-1">Projeto (opcional)</label>
+              <select
+                className="w-full border border-[#E2E8F0] px-3 py-2 text-sm"
+                value={importForm.projectId}
+                onChange={(e) => setImportForm((f) => ({ ...f, projectId: e.target.value }))}
+              >
+                <option value="">Nenhum</option>
+                {projects.filter((p) => p.clientId === importForm.clientId).map((p) => (
+                  <option key={p.id} value={p.id}>{p.name}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="block text-xs text-[#64748B] mb-1">Ano</label>
+              <input
+                type="number"
+                className="w-full border border-[#E2E8F0] px-3 py-2 text-sm"
+                value={importForm.year}
+                onChange={(e) => setImportForm((f) => ({ ...f, year: e.target.value }))}
+                min={1990}
+                max={2100}
+              />
+            </div>
+            <div>
+              <label className="block text-xs text-[#64748B] mb-1">Nome (opcional; senão usa o nome do arquivo)</label>
+              <input
+                type="text"
+                className="w-full border border-[#E2E8F0] px-3 py-2 text-sm"
+                value={importForm.name}
+                onChange={(e) => setImportForm((f) => ({ ...f, name: e.target.value }))}
+                placeholder="Ex.: Kit 2023 Postais"
+              />
+            </div>
+            <div className="md:col-span-2">
+              <label className="block text-xs text-[#64748B] mb-1">Arquivo PDF *</label>
+              <input
+                ref={importFileInputRef}
+                type="file"
+                accept=".pdf"
+                className="w-full border border-[#E2E8F0] px-3 py-2 text-sm"
+                onChange={(e) => setImportFile(e.target.files?.[0] ?? null)}
+              />
+            </div>
+            <label className="flex items-center gap-2 text-sm text-[#0F172A] md:col-span-2">
+              <input
+                type="checkbox"
+                checked={importForm.processPdfNow}
+                onChange={(e) => setImportForm((f) => ({ ...f, processPdfNow: e.target.checked }))}
+              />
+              Processar PDF agora (gerar capa e galeria no R2)
+            </label>
+            <div className="md:col-span-2">
+              <button
+                type="submit"
+                disabled={isImporting || !importForm.clientId}
+                className="bg-[#1E3A8A] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#1E40AF] disabled:opacity-50"
+              >
+                {isImporting ? "Importando…" : "Importar produto"}
+              </button>
+            </div>
+          </form>
+        </div>
 
         {error && <div className="text-sm text-rose-600 mb-4">{error}</div>}
 

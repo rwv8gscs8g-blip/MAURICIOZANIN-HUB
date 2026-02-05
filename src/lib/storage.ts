@@ -69,7 +69,57 @@ export async function fetchFile(fileUrl: string): Promise<Buffer> {
     return Buffer.from(arrayBuffer);
 }
 
-import { ListObjectsV2Command } from "@aws-sdk/client-s3";
+import { ListObjectsV2Command, DeleteObjectsCommand, GetObjectCommand } from "@aws-sdk/client-s3";
+
+const DELETE_BATCH_SIZE = 1000;
+
+/** Remove todos os objetos com o prefixo dado (ex: products/slug/). Retorna quantidade apagada. */
+export async function deleteFolder(prefix: string): Promise<number> {
+    const keys = await listFolder(prefix);
+    if (keys.length === 0) return 0;
+    let deleted = 0;
+    for (let i = 0; i < keys.length; i += DELETE_BATCH_SIZE) {
+        const chunk = keys.slice(i, i + DELETE_BATCH_SIZE);
+        const command = new DeleteObjectsCommand({
+            Bucket: R2_BUCKET_NAME,
+            Delete: { Objects: chunk.map((Key) => ({ Key })) },
+        });
+        await storageClient.send(command);
+        deleted += chunk.length;
+    }
+    return deleted;
+}
+
+/** Obtém o buffer de um arquivo no R2 pela key. Retorna null se não existir ou R2 não configurado. */
+export async function getFileFromR2(key: string): Promise<Buffer | null> {
+    if (!R2_BUCKET_NAME) return null;
+    try {
+        const command = new GetObjectCommand({
+            Bucket: R2_BUCKET_NAME,
+            Key: key,
+        });
+        const response = await storageClient.send(command);
+        const body = response.Body;
+        if (!body) return null;
+        // SDK recomenda transformToByteArray() para consumir o stream
+        if (typeof (body as { transformToByteArray?: () => Promise<Uint8Array> }).transformToByteArray === "function") {
+            const bytes = await (body as { transformToByteArray: () => Promise<Uint8Array> }).transformToByteArray();
+            return Buffer.from(bytes);
+        }
+        const chunks: Buffer[] = [];
+        await new Promise<void>((resolve, reject) => {
+            (body as NodeJS.ReadableStream).on("data", (chunk: Buffer | Uint8Array) =>
+                chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk))
+            );
+            (body as NodeJS.ReadableStream).on("end", () => resolve());
+            (body as NodeJS.ReadableStream).on("error", reject);
+        });
+        return Buffer.concat(chunks);
+    } catch (err) {
+        console.warn(`[Storage] getFileFromR2(${key}):`, err);
+        return null;
+    }
+}
 
 export async function listFolder(prefix: string): Promise<string[]> {
     try {
