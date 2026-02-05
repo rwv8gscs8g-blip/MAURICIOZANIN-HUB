@@ -49,8 +49,13 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({ ok: true });
-  } catch (error) {
+  } catch (error: any) {
     console.error("password reset request error", error);
-    return NextResponse.json({ error: "Erro ao solicitar reset" }, { status: 500 });
+    const msg =
+      String(error?.message || "").toLowerCase().includes("resend") ||
+      String(error?.message || "").includes("email")
+        ? "Não foi possível enviar o e-mail. Tente novamente mais tarde ou use o login por certificado."
+        : "Erro ao solicitar reset";
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
 }

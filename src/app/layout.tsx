@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "@fontsource/inter/latin.css";
 import "./globals.css";
 import { MainLayout } from "@/components/layout/MainLayout";
 import { JsonLd } from "@/components/seo/JsonLd";

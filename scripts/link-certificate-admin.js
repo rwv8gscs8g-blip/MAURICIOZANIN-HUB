@@ -107,7 +107,11 @@ async function main() {
     absPath = path.join(root, ".certs", path.basename(certPath));
   }
   if (!fs.existsSync(absPath)) {
-    console.error("Arquivo não encontrado. Tente: .certs/seu-certificado.pfx");
+    console.error("Arquivo não encontrado:", absPath);
+    console.error("");
+    console.error("Copie o .pfx para a pasta .certs/ (não é commitado ao Git):");
+    console.error("  cp /caminho/do/seu/e-CPF-15030004866.pfx .certs/");
+    console.error("");
     process.exit(1);
   }
 

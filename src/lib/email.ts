@@ -28,5 +28,9 @@ export async function sendEmail({ to, subject, html, text }: SendEmailParams) {
     text,
   });
 
+  if (result?.error) {
+    throw new Error(`Resend: ${result.error.message || JSON.stringify(result.error)}`);
+  }
+
   return { ok: true, result };
 }
