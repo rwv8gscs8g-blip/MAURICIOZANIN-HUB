@@ -15,20 +15,12 @@ function LoginForm() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [magicStatus, setMagicStatus] = useState<"idle" | "loading" | "sent">(
-    "idle"
-  );
+  const [magicStatus, setMagicStatus] = useState<"idle" | "loading" | "sent">("idle");
+  const [magicSimulated, setMagicSimulated] = useState(false);
   const [certFile, setCertFile] = useState<File | null>(null);
   const [certPassword, setCertPassword] = useState("");
-  const [certValidated, setCertValidated] = useState(false);
-  const [certCanLogin, setCertCanLogin] = useState(false);
   const [certLoading, setCertLoading] = useState(false);
-  const [certInfo, setCertInfo] = useState<{
-    thumbprint: string;
-    subject: string;
-    validFrom: string;
-    validTo: string;
-  } | null>(null);
+  const [certSuccess, setCertSuccess] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -65,65 +57,20 @@ function LoginForm() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
     });
+    const data = await res.json().catch(() => null);
     if (!res.ok) {
-      const data = await res.json().catch(() => null);
       setError(data?.error || "Erro ao solicitar link");
       setMagicStatus("idle");
       return;
     }
+    setMagicSimulated(Boolean(data?.simulated));
     setMagicStatus("sent");
-  };
-
-  const handleValidateCertificate = async (event: React.FormEvent) => {
-    event.preventDefault();
-    setError(null);
-    setCertValidated(false);
-    setCertCanLogin(false);
-    setCertInfo(null);
-
-    if (!certFile || !certPassword) {
-      setError("Envie o certificado e a senha.");
-      return;
-    }
-
-    setCertLoading(true);
-    try {
-      const formData = new FormData();
-      formData.append("certificate", certFile);
-      formData.append("password", certPassword);
-      const res = await fetch("/api/auth/certificate/validate", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        setError(data?.error || "Erro ao validar certificado.");
-        return;
-      }
-      setCertValidated(true);
-      setCertCanLogin(Boolean(data.canLogin));
-      setCertInfo({
-        thumbprint: data.certInfo.thumbprint,
-        subject: data.certInfo.subject,
-        validFrom: data.certInfo.validFrom,
-        validTo: data.certInfo.validTo,
-      });
-      if (!data.canLogin) {
-        setError("Certificado válido, mas não autorizado.");
-      }
-    } finally {
-      setCertLoading(false);
-    }
   };
 
   const handleCertificateLogin = async (event: React.FormEvent) => {
     event.preventDefault();
     setError(null);
-
-    if (!certValidated || !certCanLogin) {
-      setError("Valide o certificado antes de entrar.");
-      return;
-    }
+    setCertSuccess(false);
 
     if (!certFile || !certPassword) {
       setError("Envie o certificado e a senha.");
@@ -132,18 +79,40 @@ function LoginForm() {
 
     setCertLoading(true);
     try {
-      const formData = new FormData();
-      formData.append("certificate", certFile);
-      formData.append("password", certPassword);
-      const res = await fetch("/api/auth/certificate/login", {
+      const buildFormData = () => {
+        const fd = new FormData();
+        fd.append("certificate", certFile);
+        fd.append("password", certPassword);
+        return fd;
+      };
+
+      // 1. Validar certificado
+      const validateRes = await fetch("/api/auth/certificate/validate", {
         method: "POST",
-        body: formData,
+        body: buildFormData(),
       });
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        setError(data?.error || "Erro ao fazer login.");
+      const validateData = await validateRes.json();
+      if (!validateRes.ok || !validateData.success) {
+        setError(validateData?.error || "Erro ao validar certificado.");
         return;
       }
+      if (!validateData.canLogin) {
+        setError("Certificado válido, mas não autorizado.");
+        return;
+      }
+
+      // 2. Login
+      const loginRes = await fetch("/api/auth/certificate/login", {
+        method: "POST",
+        body: buildFormData(),
+      });
+      const loginData = await loginRes.json();
+      if (!loginRes.ok || !loginData.success) {
+        setError(loginData?.error || "Erro ao fazer login.");
+        return;
+      }
+
+      setCertSuccess(true);
       const redirectTo = next && next.startsWith("/") ? next : "/dashboard";
       window.location.href = redirectTo;
     } finally {
@@ -228,8 +197,22 @@ function LoginForm() {
               {magicStatus === "loading" ? "Enviando..." : "Enviar código"}
             </button>
             {magicStatus === "sent" && (
-              <div className="text-xs text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-2">
-                Se o e-mail estiver cadastrado, você receberá o link em instantes.
+              <div
+                className={`text-xs px-3 py-2 border ${
+                  magicSimulated
+                    ? "text-amber-700 bg-amber-50 border-amber-200"
+                    : "text-emerald-700 bg-emerald-50 border-emerald-200"
+                }`}
+              >
+                {magicSimulated ? (
+                  <>
+                    <strong>Resend não configurado.</strong> O e-mail não foi
+                    enviado. Configure RESEND_API_KEY e MAIL_FROM no .env.local
+                    (dev) ou na Vercel (produção).
+                  </>
+                ) : (
+                  "Se o e-mail estiver cadastrado, você receberá o link em instantes."
+                )}
               </div>
             )}
           </form>
@@ -293,30 +276,19 @@ function LoginForm() {
                 required
               />
             </label>
-            <div className="flex gap-2">
-              <button
-                type="button"
-                onClick={handleValidateCertificate}
-                disabled={certLoading}
-                className="px-4 py-2 border border-[#1E3A8A] text-[#1E3A8A] text-fluid-sm"
-              >
-                {certLoading ? "Validando..." : "Validar certificado"}
-              </button>
-              <button
-                type="submit"
-                disabled={certLoading}
-                className="px-4 py-2 bg-[#1E3A8A] text-white text-fluid-sm"
-              >
-                Entrar
-              </button>
-            </div>
-            {certInfo && (
-              <div className="text-xs text-[#64748B] border border-[#E2E8F0] p-3">
-                <div>Thumbprint: {certInfo.thumbprint}</div>
-                <div>Validade: {new Date(certInfo.validFrom).toLocaleDateString("pt-BR")} até{" "}
-                  {new Date(certInfo.validTo).toLocaleDateString("pt-BR")}</div>
+            {error && <div className="text-xs text-rose-600">{error}</div>}
+            {certSuccess && (
+              <div className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-2 rounded">
+                ✓ Login realizado! Redirecionando...
               </div>
             )}
+            <button
+              type="submit"
+              disabled={certLoading}
+              className="px-4 py-2 bg-[#1E3A8A] text-white text-fluid-sm disabled:opacity-70"
+            >
+              {certLoading ? "Validando e entrando..." : "Entrar com certificado"}
+            </button>
           </form>
         )}
         <div className="mt-4 flex items-center justify-between text-xs text-[#64748B]">

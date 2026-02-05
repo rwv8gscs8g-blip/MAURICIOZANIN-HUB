@@ -1,5 +1,22 @@
 # Guia de Deploy - Mauricio Zanin Hub
 
+**Prioridade atual:** colocar o site no ar e permitir **login com certificado digital** em produção. Resend e fluxos de e-mail estão em [docs/DEBITO_TECNICO.md](docs/DEBITO_TECNICO.md).
+
+### Checklist rápido: site no ar + login com certificado
+
+1. **Vercel → Production:** variáveis `DATABASE_URL` (Neon production) e `AUTH_SECRET` definidas.
+2. **Deploy:** push em `main` (ou rodar `npm run deploy:prod`). Se o build falhar, abra o deploy na Vercel e veja o log.
+3. **Admin na base de produção:** usuário existe e certificado vinculado:
+   ```bash
+   source scripts/carregar-env.sh
+   export DATABASE_URL="$DATABASE_URL_PRODUCTION"
+   npm run admin:check
+   USER_EMAIL="seu@email.com" CERT_FILE=".certs/cert.pfx" CERT_PASSWORD="senha" npm run admin:link-cert:prod
+   ```
+4. **Login:** acesse a URL de produção → Login → aba **Certificado** → envie o .pfx e a senha.
+
+Ver [docs/ADMIN_LOGIN_PRODUCAO.md](docs/ADMIN_LOGIN_PRODUCAO.md) e [docs/RESEND_E_CERTIFICADO.md](docs/RESEND_E_CERTIFICADO.md).
+
 ## 🚀 Deploy para Produção
 
 Este guia descreve o processo completo de deploy do site para produção com domínio customizado `mauriciozanin.com.br`.

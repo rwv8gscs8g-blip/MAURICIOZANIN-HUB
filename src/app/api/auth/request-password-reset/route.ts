@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     const baseUrl = process.env.APP_BASE_URL || "http://localhost:3000";
     const link = `${baseUrl}/auth/reset?token=${token}`;
 
-    await sendEmail({
+    const sendResult = await sendEmail({
       to: user.email,
       subject: "Redefinição de senha",
       html: `<p>Olá ${user.name},</p>
@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
       performedBy: user.id,
     });
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, simulated: sendResult.simulated });
   } catch (error: any) {
     console.error("password reset request error", error);
     const msg =

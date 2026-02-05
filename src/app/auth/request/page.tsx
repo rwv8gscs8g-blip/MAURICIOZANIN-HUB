@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function RequestResetPage() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "sent">("idle");
+  const [simulated, setSimulated] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (event: React.FormEvent) => {
@@ -17,12 +18,13 @@ export default function RequestResetPage() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
     });
+    const data = await res.json().catch(() => null);
     if (!res.ok) {
-      const data = await res.json().catch(() => null);
       setError(data?.error || "Erro ao solicitar reset");
       setStatus("idle");
       return;
     }
+    setSimulated(Boolean(data?.simulated));
     setStatus("sent");
   };
 
@@ -37,8 +39,23 @@ export default function RequestResetPage() {
         </p>
 
         {status === "sent" ? (
-          <div className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-2">
-            Se o e-mail estiver cadastrado, você receberá o link em instantes.
+          <div
+            className={`text-sm px-3 py-2 border ${
+              simulated
+                ? "text-amber-700 bg-amber-50 border-amber-200"
+                : "text-emerald-700 bg-emerald-50 border-emerald-200"
+            }`}
+          >
+            {simulated ? (
+              <>
+                <strong>Resend não configurado.</strong> O e-mail não foi enviado.
+                Configure <code className="text-xs">RESEND_API_KEY</code> e{" "}
+                <code className="text-xs">MAIL_FROM</code> no .env.local (dev) ou
+                na Vercel (produção).
+              </>
+            ) : (
+              "Se o e-mail estiver cadastrado, você receberá o link em instantes."
+            )}
           </div>
         ) : (
           <form className="grid gap-4" onSubmit={handleSubmit}>

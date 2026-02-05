@@ -1,5 +1,7 @@
 # Admin: login em produção
 
+**Prioridade atual:** site no ar + login em produção (via **certificado digital**). Resend e fluxos de e-mail estão registrados como dívida técnica em [DEBITO_TECNICO.md](./DEBITO_TECNICO.md).
+
 ## Problema: senha não entra em produção
 
 Produção usa um **banco de dados separado** (Neon branch production). O usuário admin precisa existir nesse banco e a senha correta deve estar salva lá.
@@ -78,3 +80,18 @@ WHERE role = 'ADMIN';
 ```
 
 Se não retornar linhas, o admin ainda não foi criado nesse branch.
+
+---
+
+## Login com certificado digital (recomendado para produção)
+
+Enquanto o Resend não estiver configurado, use o **certificado digital** para entrar em produção:
+
+1. **Vincule o certificado ao usuário** na base de produção (uma vez):
+   ```bash
+   source scripts/carregar-env.sh
+   export DATABASE_URL="$DATABASE_URL_PRODUCTION"
+   USER_EMAIL="mauriciozanin@gmail.com" CERT_FILE=".certs/seu-certificado.pfx" CERT_PASSWORD="sua_senha" npm run admin:link-cert:prod
+   ```
+2. Acesse a URL de produção → **Login** → aba **Certificado** → envie o .pfx e a senha.
+3. Detalhes: [RESEND_E_CERTIFICADO.md](./RESEND_E_CERTIFICADO.md#2-habilitar-login-por-certificado-digital).

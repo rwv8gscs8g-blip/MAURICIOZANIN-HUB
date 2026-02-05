@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     const baseUrl = process.env.APP_BASE_URL || "http://localhost:3000";
     const link = `${baseUrl}/auth/magic?token=${token}`;
 
-    await sendEmail({
+    const sendResult = await sendEmail({
       to: user.email,
       subject: "Seu acesso rápido ao portal",
       html: `<p>Olá ${user.name},</p>
@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
       performedBy: user.id,
     });
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, simulated: sendResult.simulated });
   } catch (error) {
     console.error("magic link request error", error);
     return NextResponse.json({ error: "Erro ao solicitar link" }, { status: 500 });

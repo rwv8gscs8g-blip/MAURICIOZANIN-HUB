@@ -15,7 +15,7 @@ O fluxo "Esqueci minha senha" **já está implementado**. Para funcionar em prod
 ### Passos
 
 1. Acesse [resend.com](https://resend.com) e crie uma conta.
-2. Verifique seu domínio (DNS) para enviar de `@mauriciozanin.com.br`.
+2. **Verifique seu domínio** (obrigatório). Veja [RESEND_VERIFICAR_DOMINIO.md](./RESEND_VERIFICAR_DOMINIO.md) para o passo a passo.
 3. Crie uma API Key em **API Keys**.
 4. No Vercel → Projeto → Settings → Environment Variables:
    - Adicione `RESEND_API_KEY` (Production)
@@ -70,3 +70,29 @@ O script extrai o thumbprint do .pfx e grava no usuário. Depois, use a aba **Ce
 3. Campo **Certificado (thumbprint)** → cole o thumbprint em hex (ex: `a1b2c3...`).
 
 Para obter o thumbprint sem o script, use a aba Certificado na tela de login: envie o .pfx e a senha. Se aparecer "Certificado válido, mas não autorizado", o thumbprint está sendo exibido na resposta (a API de validate retorna `certInfo`). Você pode adicionar um log temporário ou usar o script acima para gravar automaticamente.
+
+---
+
+## 3. Troubleshooting Resend
+
+### Mensagem "Resend não configurado"
+
+Quando aparece em amarelo **"Resend não configurado. O e-mail não foi enviado"**, significa que `RESEND_API_KEY` não está definido. O sistema simula o envio (retorna sucesso) mas nenhum e-mail é enviado.
+
+**Local:** Adicione no `.env.local`:
+```
+RESEND_API_KEY=sua_chave_aqui
+MAIL_FROM=no-reply@mauriciozanin.com.br
+```
+
+**Produção:** Adicione na Vercel → Settings → Environment Variables (Production):
+- `RESEND_API_KEY`
+- `MAIL_FROM`
+- `APP_BASE_URL` (ex: `https://mauriciozanin.com`)
+
+### E-mail não chega (Resend configurado)
+
+1. **Domínio verificado?** No Resend → Domains, o domínio de `MAIL_FROM` (ex: mauriciozanin.com.br) deve estar "Verified".
+2. **Spam:** Confira a pasta de spam.
+3. **Dashboard Resend:** Em Emails, veja o status (delivered, bounced, suppressed).
+4. **Status "Suppressed":** O destinatário pode estar em lista de supressão. Use outro e-mail para testar.
