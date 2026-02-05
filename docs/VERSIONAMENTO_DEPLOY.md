@@ -1,82 +1,140 @@
 # Versionamento e Deploy – Guia para IAs
 
-> **Propósito:** Garantir que Preview e Production usem a mesma versão (mesmo código). O incremento automático nos 3 últimos dígitos permite rastrear qual build está em cada ambiente.
+> **Propósito:** Toda nova bateria de mudanças em **DEV** já queima uma nova versão (incremento de PATCH).  
+> Preview e Production **não** incrementam versão; eles apenas refletem a versão testada e queimada em DEV.
 
-## Regras Obrigatórias
+## 1. Formato da versão
 
-### 1. Formato da Versão
+- **Arquivo:** `.version` (raiz do projeto)  
+- **Formato:** `V{MAJOR}.{MINOR}.{PATCH}` — ex.: `V1.0.000`, `V1.0.001`  
+- **PATCH:** sempre 3 dígitos; identifica o “conjunto” de mudanças de código.
 
-- **Arquivo:** `.version` (raiz do projeto)
-- **Formato:** `V{MAJOR}.{MINOR}.{PATCH}` — ex: `V1.0.000`, `V1.0.001`
-- **Incremento:** Sempre nos 3 últimos dígitos (PATCH)
+O rodapé lê a versão via:
 
-### 2. Quando Incrementar
+- `scripts/pre-build.js` → gera `.env.build` com `NEXT_PUBLIC_VERSION`  
+- `src/lib/version.ts` → `getVersionInfo()` → `VersionFooter`.
 
-| Script              | Incrementa? | Motivo                                                    |
-|---------------------|------------|-----------------------------------------------------------|
-| `deploy-full.sh`    | Sim        | Uma vez no início; mesma versão para Preview e Production |
-| `deploy-preview.sh` | Sim        | Cada deploy de Preview tem versão própria                 |
-| `deploy-production.sh` | Não     | Usa a versão do Preview promovido (mesmo build)           |
+## 2. Regra central
 
-### 3. Garantia: Mesmo Código = Mesma Versão
+1. **DEV é o único lugar que queima versão.**  
+   - A cada nova bateria de mudanças/correções significativa, incremente o PATCH em DEV.
+   - Isso grava a nova versão em `.version` e passa a valer para DEV, Preview e Production.
+2. **Preview e Production nunca mudam a versão.**  
+   - Eles apenas leem `.version` (via `pre-build.js` e variáveis NEXT_PUBLIC_*).
+3. **Mesmo código = mesma versão.**  
+   - Se DEV, Preview e Production mostram `Deploy: V1.0.038`, todos estão rodando o mesmo conjunto de funcionalidades, diferenciadas apenas pelo `Build` (SHA do commit) e pelo ambiente (DEV/PREVIEW/PROD).
 
-No `deploy-full.sh`:
+## 3. Como queimar nova versão em DEV
 
-1. Incrementa versão **uma única vez** no início
-2. Build Preview usa essa versão
-3. Build Production usa **a mesma versão**
-4. Ambos os ambientes exibem a mesma `NEXT_PUBLIC_VERSION`
-
-Assim, se Preview e Production mostram `V1.0.042`, é o mesmo build em ambos.
-
-### 4. Fluxo Técnico
-
-```
-deploy-full.sh:
-  → version-manager.js increment patch   # Ex: V1.0.000 → V1.0.001
-  → pre-build.js (lê .version)
-  → npm run build
-  → vercel build
-  → deploy Preview
-  → [confirmação]
-  → pre-build.js (lê .version, SEM incrementar)
-  → vercel build --prod
-  → deploy Production
-```
-
-### 5. Arquivos Envolvidos
-
-| Arquivo                   | Função                                        |
-|---------------------------|-----------------------------------------------|
-| `.version`                | Versão atual (ex: `V1.0.001`)                 |
-| `scripts/version-manager.js` | Ler/incrementar versão                     |
-| `scripts/pre-build.js`    | Gera `.env.build` com `NEXT_PUBLIC_VERSION`   |
-
-### 6. Comandos Manuais
+Quando uma nova bateria de mudanças estiver pronta para testes:
 
 ```bash
+cd /Users/macbookpro/Projetos/MAURICIOZANIN-HUB
+
 # Ver versão atual
 node scripts/version-manager.js get
 
-# Incrementar patch (V1.0.001 → V1.0.002)
+# Queimar nova versão (incrementar PATCH: V1.0.037 → V1.0.038)
 node scripts/version-manager.js increment patch
-
-# Incrementar minor (V1.0.002 → V1.1.000)
-node scripts/version-manager.js increment minor
+# ou: npm run version:increment
 ```
 
-### 7. Commit do `.version`
+Depois disso (via comando manual acima **ou** automaticamente pelo `deploy-full.sh`, ver abaixo):
 
-Após deploy, commite o `.version` atualizado para que:
+- `.version` é atualizado (ex.: `V1.0.038`).
+- O rodapé em DEV já mostra `Deploy: V1.0.038` com o `Build` do commit atual.
+- O próximo deploy de Preview/Production deve usar essa versão, **sem** voltar a incrementá-la.
 
-- O histórico reflita a versão em produção
-- O próximo deploy incremente a partir da base correta
+## 4. Comportamento dos scripts
 
----
+### 4.1 `scripts/pre-build.js`
 
-## Para Outras IAs
+- **Não incrementa** versão em nenhuma condição.  
+- Sempre:
 
-1. **Não** remova o incremento de versão dos scripts de deploy.
-2. **Não** faça o pre-build incrementar a versão; o incremento ocorre nos scripts de deploy.
-3. Mantenha o formato `V{MAJOR}.{MINOR}.{PATCH}` com PATCH em 3 dígitos.
-4. `deploy-production.sh` não deve incrementar; ele promove o build do Preview.
+```text
+→ lê versão atual via: node scripts/version-manager.js get
+→ calcula BUILD (SHA do commit, se possível)
+→ escreve .env.build / .env.local.build com:
+   NEXT_PUBLIC_VERSION
+   NEXT_PUBLIC_BUILD
+   NEXT_PUBLIC_BUILD_DATE
+   NEXT_PUBLIC_ENVIRONMENT
+   NEXT_PUBLIC_GIT_SHA
+```
+
+### 4.2 `scripts/deploy-preview.sh` (npm run deploy:preview)
+
+- Assume que a versão já foi queimada em DEV.  
+- Fluxo simplificado:
+
+```text
+→ mostra versão atual (node scripts/version-manager.js get)
+→ export NODE_ENV=production, VERCEL_ENV=preview
+→ node scripts/pre-build.js           # usa versão atual, sem incrementar
+→ carrega .env.build
+→ npm run build
+→ vercel build
+→ vercel deploy --prebuilt (Preview)
+```
+
+O Preview exibirá no rodapé:
+
+- `Deploy: Vx.y.zzz` (mesma de DEV)
+- `PREVIEW`
+- `Build: <sha do commit>`
+
+### 4.3 `scripts/deploy-production.sh` (npm run deploy:prod)
+
+- Exige:
+  - `.release/preview.json` (Preview feito para este commit)
+  - `.release/qa.json` (QA aprovado para este commit)
+- Não incrementa nem lê `.version` diretamente; usa os valores do Preview:
+
+```text
+→ lê .release/preview.json (version, build, gitSha)
+→ exporta NEXT_PUBLIC_VERSION / NEXT_PUBLIC_BUILD a partir do Preview
+→ export NODE_ENV=production, VERCEL_ENV=production
+→ vercel deploy --prebuilt --prod
+```
+
+Production exibirá **a mesma versão** e **mesmo build** do Preview aprovado.
+
+### 4.4 `scripts/deploy-full.sh` (npm run deploy:full)
+
+- **Incrementa** a versão (PATCH) **uma vez no início**, em DEV, para marcar a bateria de mudanças:
+
+```text
+→ node scripts/version-manager.js increment patch   # queima nova versão em DEV
+→ mostra a versão do deploy
+→ executa fluxo Preview (como no deploy-preview.sh)
+→ executa fluxo Production (como no deploy-production.sh), usando mesma versão/build do Preview
+```
+
+- Resultado: com um único comando você:
+  - queima a nova versão em DEV,
+  - faz deploy para Preview,
+  - promove para Produção com a **mesma** versão e build.
+
+## 5. Commit do `.version`
+
+Após um ciclo de deploy (Preview e eventualmente Production):
+
+1. **Sempre** inclua `.version` no commit relacionado àquela bateria de mudanças.  
+2. Isso garante que:
+   - O histórico Git reflita a versão que realmente foi usada em produção.
+   - O próximo ciclo comece do número correto (`increment patch` parte da base certa).
+
+## 6. Resumo para outras IAs (checklist)
+
+1. Antes de mexer com deploy, **leia este arquivo**.  
+2. Para queimar nova versão em DEV:
+
+```bash
+node scripts/version-manager.js increment patch
+```
+
+3. **Não** faça `pre-build.js` ou scripts de deploy incrementarem versão.  
+4. Preview e Production devem sempre refletir a última versão queimada em DEV (mesmo `Deploy: Vx.y.zzz`), mudando apenas:
+   - o `Build` (SHA do commit),
+   - e o ambiente (DEV / PREVIEW / PROD). 

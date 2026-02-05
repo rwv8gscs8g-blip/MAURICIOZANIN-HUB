@@ -37,3 +37,12 @@ operacional e evolucao segura.
 - Garantir logs minimos de auditoria.
 - Manter diagnostico atual funcionando enquanto evolui.
 
+
+---
+
+## Versão V1.0.002 – 2026-02-05
+
+> Resuma aqui, manualmente, as principais mudanças de arquitetura introduzidas nesta versão.
+
+- [TODO] Comentário de arquitetura para V1.0.002.
+

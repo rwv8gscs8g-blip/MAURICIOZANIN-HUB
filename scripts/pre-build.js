@@ -1,8 +1,16 @@
 #!/usr/bin/env node
 
 /**
- * Script executado antes do build
- * Incrementa versão e gera variáveis de ambiente
+ * Script executado antes do build.
+ *
+ * Responsabilidades:
+ * - Ler a versão atual gravada em .version (NÃO incrementa).
+ * - Gerar variáveis de ambiente públicas de build (NEXT_PUBLIC_*).
+ *
+ * Importante:
+ * - O incremento de versão é feito explicitamente em DEV
+ *   via `version-manager.js` (ou scripts npm), antes do deploy.
+ * - Preview e Production apenas leem a versão já "queimada" em DEV.
  */
 
 const { execSync } = require('child_process');
@@ -12,7 +20,7 @@ const path = require('path');
 const ENV = process.env.VERCEL_ENV || process.env.NODE_ENV || 'development';
 const VERSION_FILE = path.join(__dirname, '..', '.version');
 
-// Determinar ambiente
+// Determinar ambiente (baseado em Vercel ou Node)
 let environment = 'development';
 if (ENV === 'production') {
   environment = 'production';
@@ -20,14 +28,18 @@ if (ENV === 'production') {
   environment = 'preview';
 }
 
-// Ler versão atual (não incrementa automaticamente: release precisa ser reprodutível
-// e a mesma versão/commit deve poder ser promovida entre preview e produção).
+// Controle de versão:
+// - Sempre lê a versão atual gravada em .version (sem incrementar).
+// - O incremento do PATCH é feito manualmente em DEV
+//   via `node scripts/version-manager.js increment patch`.
 let version = 'V1.0.000';
 let build = Date.now().toString().slice(-6);
 let buildDate = new Date().toISOString();
 
 try {
+  // Ler a versão atual (sem incremento automático)
   version = execSync('node scripts/version-manager.js get', { encoding: 'utf8' }).trim();
+
   // Preferir SHA do git para manter o mesmo "build" entre dev/preview/prod
   // para o MESMO commit (promovível).
   try {

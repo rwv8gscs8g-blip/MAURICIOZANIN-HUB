@@ -27,9 +27,106 @@ echo ""
 # Carregar tokens
 source scripts/carregar-env.sh 2>/dev/null || true
 
-# Incrementar versão (patch) UMA VEZ – mesma versão em Preview e Production = mesmo código
+# Queimar nova versão em DEV (incremento de PATCH) para esta bateria de mudanças
+echo "📌 Queimando nova versão em DEV (incremento de PATCH)..."
 DEPLOY_VERSION=$(node scripts/version-manager.js increment patch)
-echo "📌 Versão deste deploy: $DEPLOY_VERSION (incremento automático nos 3 últimos dígitos)"
+echo "   Versão deste deploy: $DEPLOY_VERSION"
+
+# Normalizar identificador de pasta da versão (ex.: V1.0.038 → versao-1-0-038)
+DATE_PREFIX=$(date +%Y-%m-%d)
+VERSION_RAW="${DEPLOY_VERSION#V}"
+VERSION_SAFE=$(echo "$VERSION_RAW" | tr '.' '-')
+VERSION_DIR="docs/versao-${VERSION_SAFE}"
+
+echo ""
+echo "📁 Pasta de versão: ${VERSION_DIR}"
+mkdir -p "${VERSION_DIR}"
+
+# Mover documentos de texto da raiz para a pasta da versão
+# Regras:
+# - Mantém na raiz: README.md, DEPLOY_GUIDE.md, VERSIONAMENTO_DEPLOY.md e ARQUITETURA_*.md
+# - Move: outros *.md e *.txt da raiz, prefixando com AAAA-MM-DD-
+echo "📂 Organizando documentos de texto da raiz para ${VERSION_DIR}..."
+shopt -s nullglob
+for file in *.md *.txt; do
+  # Pular se não for arquivo regular
+  [ ! -f "$file" ] && continue
+
+  case "$file" in
+    README.md|DEPLOY_GUIDE.md|VERSIONAMENTO_DEPLOY.md|ARQUITETURA_*.md)
+      # Mantidos na raiz como visão sempre atual
+      continue
+      ;;
+  esac
+
+  NEW_NAME="${DATE_PREFIX}-${file}"
+  # Evitar sobrescrever se já existir (raro, mas por segurança)
+  if [ -e "${VERSION_DIR}/${NEW_NAME}" ]; then
+    echo "   ⚠️  Arquivo já existe na pasta de versão, pulando: ${NEW_NAME}"
+    continue
+  fi
+
+  echo "   ➜ Movendo ${file} → ${VERSION_DIR}/${NEW_NAME}"
+  mv "$file" "${VERSION_DIR}/${NEW_NAME}"
+done
+shopt -u nullglob
+
+# Gerar template de notas de versão para esta versão
+RELEASE_NOTES="${VERSION_DIR}/${DATE_PREFIX}-README-release-${DEPLOY_VERSION}.md"
+if [ ! -f "$RELEASE_NOTES" ]; then
+  GIT_SHA="$(git rev-parse --short HEAD 2>/dev/null || echo unknown)"
+  cat > "${RELEASE_NOTES}" <<EOF
+# Release ${DEPLOY_VERSION} – ${DATE_PREFIX}
+
+## Ambiente
+- Versão: ${DEPLOY_VERSION}
+- Commit (build): ${GIT_SHA}
+
+## Mudanças desta versão
+
+> Preencha abaixo com um resumo humano das mudanças principais (funcionalidades, correções, impactos).
+
+- [TODO] Descrever mudanças de alto nível.
+
+## Arquivos alterados (auto-coletado – opcional ajustar)
+
+> Esta lista pode ser refeita com \`git diff --name-only\` entre versões, se necessário.
+
+EOF
+fi
+
+echo ""
+echo "📘 Notas de versão criadas/atualizadas em: ${RELEASE_NOTES}"
+
+# Atualizar README com entrada simples de histórico de versões
+if [ -f "README.md" ]; then
+  if ! grep -q "Versão ${DEPLOY_VERSION}" README.md; then
+    echo "" >> README.md
+    echo "## Histórico de versões (entrada gerada automaticamente)" >> README.md
+    echo "- Versão ${DEPLOY_VERSION} – ${DATE_PREFIX} – ver \`${RELEASE_NOTES}\`" >> README.md
+  fi
+fi
+
+# Atualizar documento de arquitetura principal na raiz (se existir)
+ARCH_DOC="ARQUITETURA_DIAGNOSTICO_MVP.md"
+if [ -f "${ARCH_DOC}" ]; then
+  if ! grep -q "Versão ${DEPLOY_VERSION}" "${ARCH_DOC}"; then
+    cat >> "${ARCH_DOC}" <<EOF
+
+---
+
+## Versão ${DEPLOY_VERSION} – ${DATE_PREFIX}
+
+> Resuma aqui, manualmente, as principais mudanças de arquitetura introduzidas nesta versão.
+
+- [TODO] Comentário de arquitetura para ${DEPLOY_VERSION}.
+
+EOF
+  fi
+fi
+
+echo ""
+echo "✅ Versão queimada em DEV e documentos organizados para ${DEPLOY_VERSION}."
 echo ""
 
 if [ -z "$VERCEL_TOKEN" ]; then
@@ -178,9 +275,18 @@ fi
 
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "📋 LINKS PARA TESTE (ambos os ambientes)"
+echo "📋 LINKS PARA TESTE (DEV / PREVIEW / PRODUÇÃO)"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
+
+# URL DEV (local). Pode ser ajustada se existir NEXT_PUBLIC_SITE_URL_DEV.
+DEV_URL="http://localhost:3000"
+if [ -f .env.local ]; then
+  DEV_CANDIDATE=$(grep -E '^NEXT_PUBLIC_SITE_URL_DEV=' .env.local 2>/dev/null | cut -d= -f2- | tr -d '\"' | tr -d "'" || true)
+  [ -n "$DEV_CANDIDATE" ] && DEV_URL="$DEV_CANDIDATE"
+fi
+
+echo "   DEV:        ${DEV_URL}"
 echo "   Preview:    ${PREVIEW_URL:-<ver painel Vercel>}"
 echo "   Produção:   ${PRODUCTION_URL}"
 echo ""

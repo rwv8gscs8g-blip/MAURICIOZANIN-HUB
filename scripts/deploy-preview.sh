@@ -31,13 +31,14 @@ export VERCEL_ENV=preview
 # Garantir AUTH_SECRET para o build (fallback se não estiver no .env.local)
 export AUTH_SECRET="${AUTH_SECRET:-build_secret_fallback_for_preview}"
 
-# Incrementar versão (patch) – garante identificador único por deploy
-DEPLOY_VERSION=$(node scripts/version-manager.js increment patch)
-echo "📌 Versão deste deploy: $DEPLOY_VERSION"
+# Versão já deve ter sido "queimada" em DEV via version-manager.js.
+echo ""
+echo "📌 Versão atual (DEV já queimada em .version):"
+node scripts/version-manager.js get || true
 echo ""
 
-# Gerar variáveis de build
-echo "📦 Gerando variáveis de build..."
+# Gerar variáveis de build (lendo a versão atual)
+echo "📦 Gerando variáveis de build (sem incrementar versão)..."
 node scripts/pre-build.js
 
 # Carregar variáveis de build

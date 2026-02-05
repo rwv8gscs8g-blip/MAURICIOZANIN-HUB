@@ -19,7 +19,7 @@ export default defineConfig({
     /* Shared settings */
     use: {
         /* Base URL do ambiente de teste */
-        baseURL: process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000",
+        baseURL: process.env.PLAYWRIGHT_TEST_BASE_URL || "http://127.0.0.1:3070",
 
         /* Coletar trace quando falhar */
         trace: "on-first-retry",
@@ -35,9 +35,9 @@ export default defineConfig({
 
     /* Servidor de desenvolvimento */
     webServer: {
-        command: 'npm run dev',
-        url: 'http://127.0.0.1:3000',
-        reuseExistingServer: !process.env.CI,
+        command: 'PORT=3070 npm run dev',
+        url: 'http://127.0.0.1:3070',
+        reuseExistingServer: false, // Força subir e derrubar o servidor
         timeout: 120 * 1000, // 2 minutos para subir o server
     },
 });

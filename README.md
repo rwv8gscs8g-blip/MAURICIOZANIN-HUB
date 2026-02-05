@@ -152,6 +152,50 @@ npm run test:coverage
 npm run test:ci
 ```
 
+## 🔧 Comandos principais (terminal)
+
+### Versão e build
+
+- **Ver versão atual queimada em DEV**
+
+```bash
+node scripts/version-manager.js get
+```
+
+- **Queimar nova versão (incrementar PATCH)**
+
+```bash
+node scripts/version-manager.js increment patch
+# ou
+npm run version:increment
+```
+
+### Deploys
+
+- **Deploy completo: Preview + Produção + documentação da versão**
+
+```bash
+npm run deploy:full
+```
+
+Esse comando:
+- incrementa a versão em DEV (PATCH),
+- organiza documentos da raiz para `docs/versao-X-X-XXX`,
+- gera templates de notas de versão,
+- faz deploy Preview e, após confirmação, deploy Production.
+
+- **Somente Preview (sem Produção)**
+
+```bash
+npm run deploy:preview
+```
+
+- **Somente Produção (promove Preview já aprovado)**
+
+```bash
+npm run deploy:prod
+```
+
 ## 🚀 Deploy
 
 ### Vercel (Recomendado)
@@ -271,3 +315,6 @@ npm run prisma:dbpush
 ### Observações
 - Para produção, configure `AUTH_SECRET`, `APP_BASE_URL` e `RESEND_API_KEY`.
 - O envio de e-mails é simulado quando `RESEND_API_KEY` não está presente.
+
+## Histórico de versões (entrada gerada automaticamente)
+- Versão V1.0.002 – 2026-02-05 – ver `docs/versao-1-0-002/2026-02-05-README-release-V1.0.002.md`
